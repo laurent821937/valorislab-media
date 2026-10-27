@@ -57,7 +57,7 @@ Si `kit/` est absent du dépôt : arrêter et signaler « INTERVENTION REQUISE :
 - Priorité : réutiliser (en le re-rendant avec le kit actuel) un fichier de `content/` jamais publié, au lieu de créer un nouveau sujet pour ce pilier, s'il respecte le mix et l'anti-doublon. « Jamais publié » = son `id` est absent de `state/history.json`, **ou** tous ses posts Buffer enregistrés dans `history.json` n'existent plus (`get_post` → introuvable ou supprimé) sans avoir atteint le statut `sent`. Exclure les contenus listés dans « Sujets rejetés » (`STRATEGIE.md`).
 - Quand un contenu supprimé avant publication est reprogrammé, mettre à jour son entrée dans `history.json` (nouveaux ID et `dueAt`, `"requeued": true`) au lieu d'en créer une nouvelle. Un contenu supprimé avant publication ne compte pas comme doublon.
 - Chiffres calculés en Python. Données belges et réglementaires vérifiées en ligne (source officielle, année en cours), sources listées dans `sources`.
-- Un fichier JSON par contenu : `content/<AAAA>-W<ss>/<AAAA-MM-JJ>-<slug>.json` (date = lundi de la semaine cible). Le schéma est celui de `content/2026-W45/2026-11-02-faux-support-crypto.json` : `id, date, pillar, theme (bourse|crypto|finance), character (34|hoodie|polo, optionnel), topic, keywords, kicker, slides[], alt, captions{instagram, facebook, tiktok_title, tiktok}, sources`. Chaque slide peut avoir son propre `alt` (texte alternatif de l'image, ≤ 200 caractères).
+- Un fichier JSON par contenu : `content/<AAAA>-W<ss>/<AAAA-MM-JJ>-<slug>.json` (date = lundi de la semaine cible). Le schéma est celui de `content/2026-W45/2026-11-02-faux-support-crypto.json` : `id, date, pillar, theme (bourse|crypto|finance), topic, keywords, kicker, slides[], alt, captions{instagram, facebook, tiktok_title, tiktok}, sources`. Chaque slide peut avoir son propre `alt` (texte alternatif de l'image, ≤ 200 caractères), une `scene` (cover et cta, voir `kit/assets/scenes/scenes.json`) et une `pose` (slides de fond, ou `"none"`), selon la charte visuelle de `STRATEGIE.md`.
 - Types de slides : `cover{title, subtitle}`, `point{index, title, body, stat?{value,label}}`, `stat{title?, value, label, body?}`, `compare{title, left{label,value,note,win?}, right{…}, note?}`, `list{title, items[]}`, `cta{title, body, button, disclaimer}`. Les paragraphes de `body` sont séparés par une ligne vide.
 
 ## 5 bis. Score de viralité
@@ -67,12 +67,12 @@ Si `kit/` est absent du dépôt : arrêter et signaler « INTERVENTION REQUISE :
 ## 6. Rendu et contrôle qualité des visuels (obligatoire, bloquant)
 ```bash
 python3 kit/render.py content/<semaine>/<id>.json        # erreur = texte qui déborde → raccourcir puis relancer
-python3 kit/validate.py media/<AAAA>/<MM>/<id>             # format : JPEG, RGB, 1080×1350 / 1080×1920, ≤ 10 slides IG
-python3 kit/qa.py media/<AAAA>/<MM>/<id> --sheets /tmp/qa  # cadrage, zones sûres TikTok, grille Instagram, chevauchements, lisibilité, contraste, doublon visuel
+python3 kit/validate.py media/<AAAA>/<MM>/<id>             # format : JPEG, RGB, 1080×1350 (4:5, les 3 réseaux), ≤ 10 slides
+python3 kit/qa.py media/<AAAA>/<MM>/<id> --sheets /tmp/qa  # cadrage, zones TikTok sur le 4:5, grille Instagram, chevauchements, lisibilité, contraste, doublon visuel
 ```
-- `qa.py` en erreur → corriger (raccourcir le texte, changer de pose avec `character`, reformuler) puis relancer render + qa. Ne jamais programmer un contenu dont le contrôle qualité échoue.
+- `qa.py` en erreur → corriger (raccourcir le texte, changer de `pose` ou de `scene`, reformuler) puis relancer render + qa. Lire aussi les `notes` affichées par `render.py` (pose retirée faute de place, sous-titre de couverture supprimé) et raccourcir le texte si la pose est souhaitée. Ne jamais programmer un contenu dont le contrôle qualité échoue.
 - Avertissements → les corriger quand c'est possible, sinon les citer dans le rapport.
-- Contrôle visuel humain : ouvrir avec l'outil Read `/tmp/qa/<id>/feed.jpg`, `/tmp/qa/<id>/tiktok-zones.jpg` (zones rouges = interfaces TikTok, cadres verts = blocs de texte) et `/tmp/qa/<id>/instagram-grid.jpg` (cadre bleu = recadrage de la grille du profil). Vérifier : fautes, coupures de mots, texte coupé, protagoniste bien cadré (tête entière, aucun bord droit visible), lisibilité sur téléphone, cohérence des chiffres entre slides et légendes.
+- Contrôle visuel humain : ouvrir avec l'outil Read `/tmp/qa/<id>/feed.jpg`, `/tmp/qa/<id>/tiktok-zones.jpg` (zones rouges = légende et boutons TikTok sur la photo 4:5, cadres verts = blocs de texte) et `/tmp/qa/<id>/instagram-grid.jpg` (cadre bleu = recadrage de la grille du profil). Vérifier : fautes, coupures de mots, texte coupé, couverture premium (photo nette, texte sur la partie sombre, jamais sur un visage), protagoniste bien cadré (tête entière, aucun bord dur), lisibilité sur téléphone, cohérence des chiffres entre slides et légendes.
 
 ## 7. Publication des visuels (GitHub)
 ```bash
@@ -87,7 +87,7 @@ URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valo
 - `create_post` par réseau et créneau, `schedulingType` = valeur du réseau dans `state/config.json` → `buffer.schedulingType` (`automatic` par défaut ; `notification` = rappel Buffer, Laurent publie depuis l'application avec un son), `tagIds: [tag]`, `assets` = images dans l'ordre, chacune avec `metadata.altText` = `alt` de la slide si présent, sinon `alt` global suivi de « (slide k/n) » :
   - Facebook : `text = captions.facebook`, `metadata.facebook.type = "post"`, images `feed-*.jpg`.
   - Instagram : `text = captions.instagram`, `metadata.instagram = {type: "post", shouldShareToFeed: true}`, images `feed-*.jpg`.
-  - TikTok : `text = captions.tiktok`, `metadata.tiktok = {title: captions.tiktok_title}`, images `tiktok-*.jpg`.
+  - TikTok : `text = captions.tiktok`, `metadata.tiktok = {title: captions.tiktok_title}`, images `feed-*.jpg` (4:5, comme Instagram et Facebook ; plus de fichiers `tiktok-*.jpg`).
   - LIVE : `mode: "customScheduled"`, `dueAt` = créneau.  TEST : `saveToDraft: true`, `mode: "addToQueue"`.
 - Après chaque création : vérifier dans la réponse le statut attendu (`scheduled` ou `draft`), l'absence d'erreur, le nombre d'images. Relire avec `get_post` le premier post de chaque réseau et noter si `assets[].source` pointe vers GitHub ou vers un hébergement Buffer.
 - En cas d'échec sur un réseau : continuer les autres et le signaler.

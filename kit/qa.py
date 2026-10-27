@@ -4,10 +4,10 @@
 Usage: python3 kit/qa.py media/<YYYY>/<MM>/<id> [--sheets /tmp/qa]
 
 Reads render-report.json (text-block geometry captured at render time) and the JPEGs, then checks:
-  format      JPEG, RGB, exact size (1080x1350 feed, 1080x1920 TikTok), file size, slide count
+  format      JPEG, RGB, exact size (1080x1350, 4:5 for the 3 networks), file size, slide count
   overflow    no text cut or shrunk below the readable minimum
-  tiktok      every text block inside the TikTok safe zone (top 150, bottom 450, left 60, right 140 px);
-              protagonist's head clear of the right action rail and the bottom caption area
+  tiktok      the same 4:5 images go to TikTok, which draws its caption over the bottom of the photo and its
+              buttons on the right: no text in the bottom 160 px, nothing important under the right rail
   grid        cover title and protagonist's head inside the Instagram profile-grid crop (3:4, x 34..1046)
   overlap     no text over the protagonist (opaque pixels under title / lead)
   framing     protagonist's head fully on canvas, no hard edge visible, upscale <= 1.8x
@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 KIT = ROOT / "kit"
-TIKTOK_SAFE = dict(top=150, bottom=450, left=60, right=140)
+TIKTOK_45 = dict(bottom=160, rail_x=100, rail_y=(700, 1215))  # 4:5 photo shown letterboxed in TikTok
 GRID_X = (34, 1046)  # Instagram profile grid shows a centred 3:4 crop of the 4:5 cover
 MIN_FONT = {"feed": {"body": 30, "title": 56}, "tiktok": {"body": 34, "title": 56}}
 TEXT_ROLES = {"kicker", "title", "lead", "body", "index", "stat", "statLabel", "compare", "note",
@@ -75,7 +75,7 @@ def main():
     def warn(m): warnings.append(m)
 
     files = rep["files"]
-    for fmt, (w, h, max_n) in {"feed": (1080, 1350, 10), "tiktok": (1080, 1920, 35)}.items():
+    for fmt, (w, h, max_n) in {"feed": (1080, 1350, 10)}.items():
         recs = [r for r in files if r["format"] == fmt]
         if not recs:
             err(f"{fmt}: aucune image")
@@ -105,12 +105,13 @@ def main():
             # --- on canvas
             if x0 < 0 or y0 < 0 or x1 > W + 0.5 or y1 > H + 0.5:
                 err(f"{tag}: « {b['text'][:40]} » ({b['role']}) sort du cadre")
-            # --- TikTok safe zone
-            if fmt == "tiktok" and b["role"] in TEXT_ROLES:
-                s = TIKTOK_SAFE
-                if y0 < s["top"] or y1 > H - s["bottom"] or x0 < s["left"] or x1 > W - s["right"]:
-                    err(f"{tag}: « {b['text'][:40]} » ({b['role']}) hors zone sûre TikTok "
-                        f"(x {int(x0)}-{int(x1)}, y {int(y0)}-{int(y1)})")
+            # --- TikTok overlays on the 4:5 photo (footer counter and arrow may sit under them)
+            if b["role"] in TEXT_ROLES - {"count", "next", "brand"}:
+                s = TIKTOK_45
+                if y1 > H - s["bottom"]:
+                    err(f"{tag}: « {b['text'][:40]} » ({b['role']}) sous la légende TikTok (y {int(y1)} > {H - s['bottom']})")
+                elif x1 > W - s["rail_x"] and y1 > s["rail_y"][0] and y0 < s["rail_y"][1]:
+                    warn(f"{tag}: « {b['text'][:40]} » ({b['role']}) touche la colonne de boutons TikTok")
             # --- Instagram grid crop on the cover
             if fmt == "feed" and i == 1 and b["role"] in {"title", "kicker"}:
                 if x0 < GRID_X[0] or x1 > GRID_X[1]:
@@ -135,28 +136,25 @@ def main():
         hero = r.get("hero")
         if hero:
             src = KIT / "templates" / hero["src"]
-            alpha = np.asarray(Image.open(src).convert("RGBA").getchannel("A").resize(
-                (max(1, int(round(hero["w"]))), max(1, int(round(hero["h"])))), Image.BILINEAR), dtype=float) / 255
+            am = Image.open(src).convert("RGBA").getchannel("A").resize(
+                (max(1, int(round(hero["w"]))), max(1, int(round(hero["h"])))), Image.BILINEAR)
+            if hero.get("mirror"):
+                am = am.transpose(Image.FLIP_LEFT_RIGHT)
+            alpha = np.asarray(am, dtype=float) / 255
             ys, xs = np.where(alpha > 0.5)
             if len(ys):
                 top = ys.min()
-                head = (ys < top + 0.30 * (ys.max() - top)) if hero["h"] > 900 else (ys < top + 0.6 * (ys.max() - top))
+                head = (ys < top + 0.13 * (ys.max() - top)) if hero["h"] > 900 else (ys < top + 0.6 * (ys.max() - top))  # full figure: head = top 13 %
                 hx = xs[head] + hero["x"]; hy = ys[head] + hero["y"]
                 if hx.min() < 0 or hx.max() > W or hy.min() < 0:
                     err(f"{tag}: la tête du protagoniste sort du cadre")
-                if fmt == "tiktok":
-                    rail = (hx > W - TIKTOK_SAFE["right"]) & (hy > 900) & (hy < H - 200)
-                    if rail.mean() > 0.10:
-                        warn(f"{tag}: {rail.mean():.0%} de la tête sous les boutons TikTok")
-                    if (hy > H - TIKTOK_SAFE["bottom"]).mean() > 0.05:
-                        err(f"{tag}: tête du protagoniste dans la zone de légende TikTok")
                 if fmt == "feed":
                     outside = ((hx < GRID_X[0]) | (hx > GRID_X[1])).mean()
                     if outside > 0.15:
                         warn(f"{tag}: {outside:.0%} de la tête hors de la grille Instagram")
                 # text over the protagonist
                 for b in boxes:
-                    if b["role"] not in {"title", "lead", "kicker"}:
+                    if b["role"] not in {"title", "lead", "kicker", "body", "listItem", "stat", "card", "compare", "button", "index"}:
                         continue
                     bx0 = int(max(b["x"], hero["x"]) - hero["x"]); bx1 = int(min(b["x"] + b["w"], hero["x"] + hero["w"]) - hero["x"])
                     by0 = int(max(b["y"], hero["y"]) - hero["y"]); by1 = int(min(b["y"] + b["h"], hero["y"] + hero["h"]) - hero["y"])
@@ -170,19 +168,16 @@ def main():
         # --- review sheets
         tile = im.convert("RGB").copy()
         d = ImageDraw.Draw(tile, "RGBA")
-        if fmt == "tiktok":
-            s = TIKTOK_SAFE
-            for rect in [(0, 0, W, s["top"]), (0, H - s["bottom"], W, H), (W - s["right"], s["top"], W, H - s["bottom"]),
-                         (0, s["top"], s["left"], H - s["bottom"])]:
-                d.rectangle(rect, fill=(255, 40, 40, 70))
+        s = TIKTOK_45
+        for rect in [(0, H - s["bottom"], W, H), (W - s["rail_x"], s["rail_y"][0], W, s["rail_y"][1])]:
+            d.rectangle(rect, fill=(255, 40, 40, 70))
         for b in boxes:
             if b["role"] in TEXT_ROLES:
                 d.rectangle((b["x"], b["y"], b["x"] + b["w"], b["y"] + b["h"]), outline=(60, 220, 120, 255), width=3)
         if fmt == "feed" and i == 1:
             d.rectangle((GRID_X[0], 0, GRID_X[1], H), outline=(80, 160, 255, 255), width=4)
             grid_tile = tile.resize((360, 450))
-        if fmt == "tiktok":
-            overlay_tiles.append(tile.resize((270, 480)))
+        overlay_tiles.append(tile.resize((288, 360)))
 
     # --- duplicate cover check
     cover = ROOT / next(r["file"] for r in files if r["format"] == "feed" and r["slide"] == 1)
@@ -195,9 +190,9 @@ def main():
             warn(f"couverture très proche de {other.parent.name} (distance {dist}) : varier pose, composition ou couleur")
 
     if overlay_tiles:
-        sheet = Image.new("RGB", (len(overlay_tiles) * 280 + 10, 490), (30, 30, 30))
+        sheet = Image.new("RGB", (len(overlay_tiles) * 298 + 10, 370), (30, 30, 30))
         for k, t in enumerate(overlay_tiles):
-            sheet.paste(t, (10 + k * 280, 5))
+            sheet.paste(t, (10 + k * 298, 5))
         sheet.save(sheets / "tiktok-zones.jpg", quality=85)
     if grid_tile:
         grid_tile.save(sheets / "instagram-grid.jpg", quality=85)

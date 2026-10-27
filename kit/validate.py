@@ -14,8 +14,7 @@ from PIL import Image
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SPECS = {
     # format: (width, height, max slides, max MB)
-    "feed":   (1080, 1350, 10, 8),    # Instagram carousel (4:5) + Facebook multi-photo
-    "tiktok": (1080, 1920, 35, 20),   # TikTok photo mode (9:16)
+    "feed":   (1080, 1350, 10, 8),    # 4:5, posted on Instagram, Facebook and TikTok (photo mode)
 }
 
 

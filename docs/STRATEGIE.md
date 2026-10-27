@@ -17,14 +17,17 @@ Toute modification de la stratégie passe par Laurent.
 
 Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au moins 1 contenu Bourse/ETF par semaine.
 
-## Format visuel (charte VALORISLAB, mise à jour du 27/10/2026)
-- Carrousel de 6 à 8 slides, gabarits du kit (`kit/templates/slide.html.j2`). Style premium noir et or : fond noir chaud, typographie moderne **Plus Jakarta Sans** (Cormorant Garamond abandonnée), mots d'accent en dégradé or. Pour la Crypto, accent bleu électrique (comme la Crypto Academy) ; le logo reste toujours or.
-- Logo officiel (emblème + « VALORISLAB ») en en-tête de chaque slide, barre de progression et compteur, signature « Laurent, fondateur de VALORISLAB » avec avatar du protagoniste en pied de slide.
-- **Protagoniste** (personnage illustré noir et blanc de Laurent) détouré sur la couverture. Champ `character` du contenu : `34` (buste trois-quarts, sérieux, fondu dans le noir), `hoodie` (en pied, sweat), `polo` (en pied, polo). Par défaut : erreur → `34`, mécanisme → `hoodie`, Belgique → `polo`. Varier d'une semaine à l'autre.
-- Instagram + Facebook : 1080×1350 (4:5). TikTok : 1080×1920 (9:16, mode photo, zone de sécurité respectée).
-- Structure type : `cover` (accroche + protagoniste) → 3 à 5 slides de fond (`point`, `stat`, `compare`, `list`) → `cta` (couverture du guide gratuit + bouton).
-- Limites de texte par slide : titre ≤ 60 caractères, corps ≤ 280 caractères, liste ≤ 4 éléments de ≤ 95 caractères, valeur chiffrée ≤ 10 caractères. Le moteur de rendu réduit le texte si besoin et signale tout débordement : raccourcir, ne jamais forcer.
+## Format visuel (charte VALORISLAB v3, mise à jour du 27/10/2026)
+- **Un seul format : 1080×1350 (4:5), pour Instagram, Facebook ET TikTok** (choix de Laurent : en 9:16, TikTok masquait une partie de l'image). TikTok affiche la photo 4:5 entière ; sa légende recouvre les 160 px du bas et ses boutons le bord droit : aucun texte à ces endroits (vérifié par `qa.py`).
+- Carrousel de 6 à 8 slides, gabarit `kit/templates/slide.html.j2`. Style premium noir et or : fond noir chaud, lumière dorée et bokeh, typographie **Plus Jakarta Sans**, titres blancs, mots d'accent en dégradé or (bleu électrique pour la Crypto). Logo officiel complet centré en haut, compteur « 01 / 07 » avec barre de progression et flèche en bas. Pour le pilier Belgique, filet aux couleurs du drapeau belge sous le surtitre.
+- **Couverture et dernière slide = photo premium** (rendus photoréalistes du protagoniste fournis par Laurent, `kit/assets/scenes/`, catalogue `scenes.json`) : la photo occupe le haut ou le bas de la slide et se fond dans le noir, le texte est posé sur la partie sombre. Champ `scene` de la slide `cover` (et de la `cta`) : choisir dans le catalogue la scène dont l'ambiance (`mood`) colle au sujet, et ne pas réutiliser la scène des 2 dernières couvertures (voir `history.json`). Sans champ `scene`, le moteur fait tourner les scènes automatiquement (jamais deux fois la même dans une semaine). La dernière slide utilise la scène `role: "cta"` (portrait de Laurent).
+- **Couverture courte** : titre ≤ 55 caractères (3 lignes maximum), sous-titre ≤ 90 caractères. Si la place manque, le moteur supprime le sous-titre plutôt que de réduire le titre.
+- **Poses du protagoniste dans les slides de fond** (`kit/assets/pose-*.webp`, illustrations de Laurent détourées, teinte chaude et halo doré) : champ `pose` sur une slide `point`, `stat`, `compare`, `list` ou `cta` sans scène, ou `"none"`. Poses : `reflexion` (comprendre, principe), `pointe` (expliquer, montrer un chiffre), `graphique-hausse` (croissance, bonne nouvelle), `checklist` (liste, règles), `pouce` (bon réflexe), `stress-tablette` (mauvaise surprise, frais), `stress-baisse` (perte, krach), `choc-polo` (erreur grave), `doute-telephone` (message suspect), `doute-telephone-hoodie` (arnaque crypto). Jamais deux fois la même pose dans un carrousel ; 2 à 3 slides avec pose maximum.
+- Une slide avec pose a une colonne de texte étroite (520 px) : titre ≤ 30 caractères, corps ≤ 160 caractères. Si le texte est plus long ou touche le protagoniste, le moteur retire la pose automatiquement (le rapport le signale) : écrire court pour la garder.
+- Structure type : `cover` (scène + accroche) → 3 à 5 slides de fond (`point`, `stat`, `compare`, `list`) → `cta` (scène portrait + bouton).
+- Limites de texte (slides sans pose) : titre ≤ 60 caractères, corps ≤ 260 caractères, liste ≤ 4 éléments de ≤ 90 caractères, valeur chiffrée ≤ 10 caractères. Le moteur réduit le texte si besoin et signale tout débordement : raccourcir, ne jamais forcer.
 - Balises : `*mot*` = accent (1 à 2 mots par titre), `**mot**` = gras.
+- Le champ `character` des anciens contenus est ignoré.
 
 ## Structure des légendes (style actuel de Laurent)
 1. Accroche en 1 ligne (question, contraste chiffré ou citation).
@@ -43,7 +46,7 @@ Texte alternatif (alt) obligatoire pour chaque visuel.
 - **Tout calcul est fait en Python** dans le run, jamais de tête. Hypothèses affichées (taux, durée, « avant frais et impôts », « rendement non garanti »).
 - **Données belges ou réglementaires** (taux, plafonds, montants d'exonération, fiscalité) : vérifier sur une source officielle de l'année en cours (SPF Finances, FSMA, BNB, Wikifin, FEBELFIN). Si une donnée ne peut pas être vérifiée → changer d'angle ; ne jamais publier un chiffre douteux.
 - Pas de recommandation d'achat ou de vente d'un titre, d'une crypto ou d'un produit nommé ; pas de prédiction de prix ; pas de promesse de rendement ; pas de « rendement garanti ».
-- Pas de visage généré par IA, pas de logo de marque tierce, pas de capture d'écran d'un produit tiers.
+- Aucune nouvelle image générée : uniquement les visuels du protagoniste fournis par Laurent (`kit/assets`). Pas de logo de marque tierce, pas de capture d'écran d'un produit tiers.
 - Les sources sont listées dans le fichier de contenu (`sources`) et mentionnées en légende quand un chiffre externe est cité.
 - Si un contenu ne passe pas ces règles → le remplacer par un autre sujet de la banque ci-dessous.
 

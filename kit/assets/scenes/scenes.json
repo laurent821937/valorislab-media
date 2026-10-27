@@ -1,0 +1,54 @@
+{
+ "grand-place-cafe": {
+  "file": "grand-place-cafe.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": true,
+  "focus": "50% 0%",
+  "mood": "Laurent explique, terrasse de la Grand-Place de Bruxelles la nuit",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "text_from": 0.7
+ },
+ "bureau-document": {
+  "file": "bureau-document.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Laurent lit un document d'un air soucieux, bureau sombre (frais, contrat, courtier, piège)",
+  "pillars": [
+   "erreur",
+   "belgique",
+   "mecanisme"
+  ],
+  "text_into": 0.03
+ },
+ "bruxelles-ecran": {
+  "file": "bruxelles-ecran.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Laurent de dos devant ses écrans, graphiques, Bruxelles la nuit (méthode, pratique, marché)",
+  "pillars": [
+   "mecanisme",
+   "erreur",
+   "belgique"
+  ],
+  "text_into": 0.16
+ },
+ "portrait-bureau": {
+  "file": "portrait-bureau.jpg",
+  "role": "cta",
+  "place": "top",
+  "logo": true,
+  "focus": "50% 0%",
+  "mood": "portrait de Laurent dans son bureau VALORISLAB (appel à l'action, guide)",
+  "pillars": [],
+  "text_from": 0.68
+ }
+}
