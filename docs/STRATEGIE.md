@@ -17,12 +17,14 @@ Toute modification de la stratégie passe par Laurent.
 
 Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au moins 1 contenu Bourse/ETF par semaine.
 
-## Format visuel
-- Carrousel de 6 à 8 slides, gabarits du kit (`kit/templates/slide.html.j2`), style éditorial luxe : fond noir chaud, Cormorant Garamond (titres, mots d'accent en italique doré), Outfit (texte), filets dorés. Accent cyan pour la Crypto, or pour la Bourse et les finances.
+## Format visuel (charte VALORISLAB, mise à jour du 27/10/2026)
+- Carrousel de 6 à 8 slides, gabarits du kit (`kit/templates/slide.html.j2`). Style premium noir et or : fond noir chaud, typographie moderne **Plus Jakarta Sans** (Cormorant Garamond abandonnée), mots d'accent en dégradé or. Pour la Crypto, accent bleu électrique (comme la Crypto Academy) ; le logo reste toujours or.
+- Logo officiel (emblème + « VALORISLAB ») en en-tête de chaque slide, barre de progression et compteur, signature « Laurent, fondateur de VALORISLAB » avec avatar du protagoniste en pied de slide.
+- **Protagoniste** (personnage illustré noir et blanc de Laurent) détouré sur la couverture. Champ `character` du contenu : `34` (buste trois-quarts, sérieux), `hoodie` (en pied, sweat), `polo` (en pied, polo), `face` (visage). Par défaut : erreur → `34`, mécanisme → `hoodie`, Belgique → `polo`. Varier d'une semaine à l'autre.
 - Instagram + Facebook : 1080×1350 (4:5). TikTok : 1080×1920 (9:16, mode photo, zone de sécurité respectée).
-- Structure type : `cover` (accroche) → 3 à 5 slides de fond (`point`, `stat`, `compare`, `list`) → `cta`.
-- Limites de texte par slide : titre ≤ 60 caractères, corps ≤ 280 caractères, liste ≤ 4 éléments de ≤ 95 caractères. Le moteur de rendu signale tout débordement : raccourcir, ne jamais forcer.
-- Balises : `*mot*` = italique doré (1 à 2 mots par titre), `**mot**` = gras.
+- Structure type : `cover` (accroche + protagoniste) → 3 à 5 slides de fond (`point`, `stat`, `compare`, `list`) → `cta` (couverture du guide gratuit + bouton).
+- Limites de texte par slide : titre ≤ 60 caractères, corps ≤ 280 caractères, liste ≤ 4 éléments de ≤ 95 caractères, valeur chiffrée ≤ 10 caractères. Le moteur de rendu réduit le texte si besoin et signale tout débordement : raccourcir, ne jamais forcer.
+- Balises : `*mot*` = accent (1 à 2 mots par titre), `**mot**` = gras.
 
 ## Structure des légendes (style actuel de Laurent)
 1. Accroche en 1 ligne (question, contraste chiffré ou citation).

@@ -17,17 +17,24 @@ from playwright.sync_api import sync_playwright
 KIT = pathlib.Path(__file__).resolve().parent
 ROOT = KIT.parent
 
-THEMES = {  # accent per theme (gold = Bourse/finance, cyan = Crypto)
-    "bourse":  ("#C9A24A", "#E4C97F"),
-    "finance": ("#C9A24A", "#E4C97F"),
-    "crypto":  ("#3FB8CF", "#8EDCEA"),
+THEMES = {  # accent gradient per theme (gold = Bourse/finance, electric blue = Crypto)
+    "bourse":  ("#F3DB9C", "#D3AA55", "#9C7633"),
+    "finance": ("#F3DB9C", "#D3AA55", "#9C7633"),
+    "crypto":  ("#A6DCFF", "#3E9BFF", "#1F5FCC"),
 }
 FORMATS = {
-    # name: W, H, paddings (top, right, bottom, left), type scale
-    "feed":   dict(W=1080, H=1350, pad_t=96, pad_r=96, pad_b=92, pad_l=96, h1=114, h2=88, body=40, stat=230),
     # TikTok overlays: caption/buttons bottom ~420px, action icons right ~150px
-    "tiktok": dict(W=1080, H=1920, pad_t=170, pad_r=150, pad_b=430, pad_l=96, h1=124, h2=96, body=44, stat=240),
+    "feed":   dict(W=1080, H=1350, pad_t=112, pad_r=80, pad_b=64, pad_l=80, h1=84, h2=68, body=35, stat=200, cover_copy=590, cover_lead=470),
+    "tiktok": dict(W=1080, H=1920, pad_t=200, pad_r=140, pad_b=420, pad_l=80, h1=86, h2=74, body=40, stat=210, cover_copy=560, cover_lead=500),
 }
+# cover character: (height feed, height tiktok, right offset feed, right offset tiktok)
+CHARACTERS = {
+    "34":     (860, 1150, -70, -170),
+    "hoodie": (1120, 1500, 0, -60),
+    "polo":   (1120, 1500, 0, -60),
+    "face":   (720, 900, -80, -200),
+}
+DEFAULT_CHARACTER = {"erreur": "34", "mecanisme": "hoodie", "belgique": "polo"}
 
 
 def md(text):
@@ -38,7 +45,7 @@ def md(text):
     # French typography: no orphan punctuation at line start
     t = re.sub(r"[ \u00a0]+([?!:;\u00bb])", "\u202f\\1", t)
     t = re.sub(r"\u00ab[ \u00a0]+", "\u00ab\u00a0", t)
-    t = re.sub(r"(\d) (%|\u20ac|h\b|ans\b|mots\b)", "\\1\u00a0\\2", t)
+    t = re.sub(r"(\d) (?=\S)", "\\1\u00a0", t)  # keep a number with the word that follows
     return Markup(t.replace("\n", "<br>"))
 
 
@@ -51,7 +58,11 @@ def main():
 
     c = json.loads(pathlib.Path(a.content).read_text(encoding="utf-8"))
     cid, date = c["id"], c["date"]  # date: YYYY-MM-DD (planned publication week)
-    accent, accent_soft = THEMES[c.get("theme", "bourse")]
+    theme = c.get("theme", "bourse")
+    acc1, acc2, acc3 = THEMES[theme]
+    character = c.get("character") or DEFAULT_CHARACTER.get(c.get("pillar"), "34")
+    if character not in CHARACTERS:
+        character = "34"
     kicker = c["kicker"]
     slides = c["slides"]
     n = len(slides)
@@ -74,8 +85,12 @@ def main():
         for fmt, f in FORMATS.items():
             page = browser.new_page(viewport={"width": f["W"], "height": f["H"]}, device_scale_factor=1)
             for i, s in enumerate(slides, 1):
-                tmp_html.write_text(tpl.render(s=s, i=i, n=n, kicker=kicker, accent=accent,
-                                               accent_soft=accent_soft, **f), encoding="utf-8")
+                ch = CHARACTERS[character]
+                hero = dict(hero_h=ch[0] if fmt == "feed" else ch[1],
+                            hero_right=ch[2] if fmt == "feed" else ch[3], hero_bottom=0)
+                tmp_html.write_text(tpl.render(s=s, i=i, n=n, kicker=kicker, theme=theme, fmt=fmt,
+                                               character=character, acc1=acc1, acc2=acc2, acc3=acc3,
+                                               **f, **hero), encoding="utf-8")
                 page.goto(tmp_html.as_uri())
                 fit = page.evaluate("window.__fit()")
                 png = tmp / f"{fmt}-{i:02d}.png"

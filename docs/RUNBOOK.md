@@ -48,8 +48,9 @@ Si `kit/` est absent du dépôt : arrêter et signaler « INTERVENTION REQUISE :
 
 ## 5. Création des 3 contenus
 - 1 contenu par pilier (mécanisme chiffré, Belgique pratique, erreur ou arnaque), en respectant l'alternance des thèmes de `STRATEGIE.md`.
+- Priorité : si un fichier de `content/` n'a jamais été programmé (son `id` est absent de `state/history.json`) et respecte le mix et l'anti-doublon, le réutiliser (en le re-rendant avec le kit actuel) au lieu de créer un nouveau sujet pour ce pilier.
 - Chiffres calculés en Python. Données belges et réglementaires vérifiées en ligne (source officielle, année en cours), sources listées dans `sources`.
-- Un fichier JSON par contenu : `content/<AAAA>-W<ss>/<AAAA-MM-JJ>-<slug>.json` (date = lundi de la semaine cible). Le schéma est celui de `content/2026-W45/2026-11-02-faux-support-crypto.json` : `id, date, pillar, theme (bourse|crypto|finance), topic, keywords, kicker, slides[], alt, captions{instagram, facebook, tiktok_title, tiktok}, sources`.
+- Un fichier JSON par contenu : `content/<AAAA>-W<ss>/<AAAA-MM-JJ>-<slug>.json` (date = lundi de la semaine cible). Le schéma est celui de `content/2026-W45/2026-11-02-faux-support-crypto.json` : `id, date, pillar, theme (bourse|crypto|finance), character (34|hoodie|polo|face, optionnel), topic, keywords, kicker, slides[], alt, captions{instagram, facebook, tiktok_title, tiktok}, sources`. Chaque slide peut avoir son propre `alt` (texte alternatif de l'image, ≤ 200 caractères).
 - Types de slides : `cover{title, subtitle}`, `point{index, title, body, stat?{value,label}}`, `stat{title?, value, label, body?}`, `compare{title, left{label,value,note,win?}, right{…}, note?}`, `list{title, items[]}`, `cta{title, body, button, disclaimer}`. Les paragraphes de `body` sont séparés par une ligne vide.
 
 ## 6. Rendu et contrôle visuel
@@ -69,7 +70,7 @@ URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valo
 
 ## 8. Programmation Buffer
 - Tag : `execute_query` `tagsV2(input:{organizationId})` → chercher `auto-valorislab` ; s'il est absent, `execute_mutation` `createTag(input:{organizationId, tag:{name:"auto-valorislab", color:"#C9A24A"}})`. Si la limite de tags est atteinte, continuer sans tag et le signaler.
-- `create_post` par réseau et créneau, `schedulingType: "automatic"`, `tagIds: [tag]`, `assets` = images dans l'ordre, chacune avec `metadata.altText` :
+- `create_post` par réseau et créneau, `schedulingType: "automatic"`, `tagIds: [tag]`, `assets` = images dans l'ordre, chacune avec `metadata.altText` = `alt` de la slide si présent, sinon `alt` global suivi de « (slide k/n) » :
   - Facebook : `text = captions.facebook`, `metadata.facebook.type = "post"`, images `feed-*.jpg`.
   - Instagram : `text = captions.instagram`, `metadata.instagram = {type: "post", shouldShareToFeed: true}`, images `feed-*.jpg`.
   - TikTok : `text = captions.tiktok`, `metadata.tiktok = {title: captions.tiktok_title}`, images `tiktok-*.jpg`.
