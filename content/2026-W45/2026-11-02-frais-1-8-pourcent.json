@@ -1,0 +1,86 @@
+{
+ "id": "2026-11-02-frais-1-8-pourcent",
+ "date": "2026-11-02",
+ "pillar": "mecanisme",
+ "theme": "finance",
+ "topic": "Frais de 1,8 % par an sur 30 ans : fonds classique vs ETF (illustration hypothétique)",
+ "keywords": [
+  "frais",
+  "ETF",
+  "fonds",
+  "30 ans",
+  "intérêts composés",
+  "coût caché"
+ ],
+ "kicker": "Finance · Mécanisme chiffré",
+ "character": "face",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "1,8 % de frais par an, ça paraît *peu*",
+   "subtitle": "Sur 30 ans, l'écart se compte en dizaines de milliers d'euros."
+  },
+  {
+   "type": "point",
+   "index": "01",
+   "title": "Le *scénario*",
+   "body": "Hypothèse : 10 000 € placés une fois, avec un rendement brut de 6 % par an, pendant 30 ans.\n\nOn compare deux produits : l'un coûte 1,8 % de frais par an, l'autre 0,2 %."
+  },
+  {
+   "type": "compare",
+   "title": "Après *30 ans*",
+   "left": {
+    "label": "Frais 1,8 % / an",
+    "value": "34 358 €",
+    "note": "rendement net 4,2 % par an"
+   },
+   "right": {
+    "label": "Frais 0,2 % / an",
+    "value": "54 271 €",
+    "note": "rendement net 5,8 % par an",
+    "win": true
+   },
+   "note": "Hypothèse : 6 % brut, avant impôts, non garanti."
+  },
+  {
+   "type": "stat",
+   "title": "L'écart",
+   "value": "19 913 €",
+   "label": "perdus en frais sur 30 ans",
+   "body": "C'est 37 % du résultat final du produit le moins cher. Le rendement n'est pas garanti, mais les frais, eux, sont prélevés chaque année."
+  },
+  {
+   "type": "list",
+   "title": "Les *frais* à repérer",
+   "items": [
+    "Frais d'entrée et de sortie",
+    "Frais de gestion annuels (courants)",
+    "Frais du courtier ou de la banque",
+    "Les frais cumulés, pas seulement le premier"
+   ]
+  },
+  {
+   "type": "point",
+   "index": "02",
+   "title": "Le bon *réflexe*",
+   "body": "Avant d'investir, demande le total des frais par an en pourcentage, tous frais compris.\n\nCompare ensuite avec un autre produit similaire : c'est un calcul de deux minutes."
+  },
+  {
+   "type": "cta",
+   "title": "Ignorer les frais est l'une des *20 erreurs*",
+   "body": "Mon guide gratuit t'apprend à les repérer et à comparer avant d'agir.",
+   "button": "Guide gratuit · lien en bio",
+   "disclaimer": "Illustration hypothétique, pas un conseil financier."
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 7 slides : illustration hypothétique de 10 000 € sur 30 ans à 6 % brut, avec 1,8 % de frais annuels contre 0,2 %, soit 34 358 € contre 54 271 €.",
+ "sources": [
+  "Calcul en Python : 10 000 x (1+0,042)^30 et 10 000 x (1+0,058)^30, illustration hypothétique"
+ ],
+ "captions": {
+  "instagram": "Quand 1,8 % de frais par an coûtent près de 20 000 € sur 30 ans.\n\nIllustration : 10 000 € placés une fois, 6 % de rendement brut par an, pendant 30 ans. Avec 1,8 % de frais annuels : environ 34 358 €. Avec 0,2 % : environ 54 271 €. L'écart est de 19 913 €.\n\nÀ retenir :\n\n • Les frais sont prélevés chaque année, le rendement n'est jamais garanti\n\n • Demande le total des frais par an, tous frais compris\n\n • Compare deux produits similaires avant de choisir\n\nCombien paies-tu de frais aujourd'hui ? Dis-le en commentaire si tu le sais.\n\nEnregistre ce post pour comparer tes frais.\n\nPour repérer les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nHypothèses : 6 % brut par an, avant impôts, rendement non garanti. Contenu éducatif, pas un conseil financier.\n\n#frais #etf #investir #belgique #finance",
+  "facebook": "Quand 1,8 % de frais par an coûtent près de 20 000 € sur 30 ans.\n\nIllustration : 10 000 € placés une fois, 6 % de rendement brut par an, pendant 30 ans. Avec 1,8 % de frais annuels : environ 34 358 €. Avec 0,2 % : environ 54 271 €. L'écart est de 19 913 €.\n\nÀ retenir :\n\n • Les frais sont prélevés chaque année, le rendement n'est jamais garanti\n\n • Demande le total des frais par an, tous frais compris\n\n • Compare deux produits similaires avant de choisir\n\nCombien paies-tu de frais aujourd'hui ? Dis-le en commentaire si tu le sais.\n\nPartage ce post à quelqu'un qui investit.\n\nPour repérer les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nHypothèses : 6 % brut par an, avant impôts, rendement non garanti. Contenu éducatif, pas un conseil financier.\n\n#frais #etf #investir #belgique #finance",
+  "tiktok_title": "1,8 % de frais = près de 20 000 € perdus",
+  "tiktok": "10 000 € sur 30 ans à 6 % brut : 34 358 € avec 1,8 % de frais, 54 271 € avec 0,2 %. Illustration hypothétique, non garantie. Guide gratuit des 20 erreurs : lien en bio. Contenu éducatif, pas un conseil financier. #frais #etf #investir #belgique #finance"
+ }
+}

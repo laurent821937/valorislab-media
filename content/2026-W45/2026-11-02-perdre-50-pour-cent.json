@@ -1,0 +1,84 @@
+{
+ "id": "2026-11-02-perdre-50-pour-cent",
+ "date": "2026-11-02",
+ "pillar": "mecanisme",
+ "theme": "bourse",
+ "topic": "Perdre 50 % exige +100 % pour revenir à l'équilibre",
+ "keywords": [
+  "perte",
+  "rebond",
+  "+100 %",
+  "volatilité",
+  "asymétrie des pertes"
+ ],
+ "kicker": "Bourse · Mécanisme chiffré",
+ "character": "hoodie",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Perdre 50 %, c'est *+100 %* pour revenir",
+   "subtitle": "Pourquoi une perte pèse toujours plus lourd que le gain qui la compense."
+  },
+  {
+   "type": "point",
+   "index": "01",
+   "title": "Le *calcul* de base",
+   "body": "Tu as 1 000 €. Une baisse de 50 %, et il te reste 500 €.\n\nPour revenir à 1 000 €, il faut que ces 500 € doublent : c'est +100 %, pas +50 %."
+  },
+  {
+   "type": "compare",
+   "title": "Une perte, un *rebond* différent",
+   "left": {
+    "label": "Tu perds",
+    "value": "-50 %",
+    "note": "1 000 € deviennent 500 €"
+   },
+   "right": {
+    "label": "Tu dois gagner",
+    "value": "+100 %",
+    "note": "500 € redeviennent 1 000 €",
+    "win": true
+   },
+   "note": "Calcul simple, sans frais ni impôts."
+  },
+  {
+   "type": "list",
+   "title": "Plus la perte est *grande*",
+   "items": [
+    "-10 % demande +11,1 % pour revenir",
+    "-20 % demande +25 % pour revenir",
+    "-33 % demande +50 % pour revenir",
+    "-75 % demande +300 % pour revenir"
+   ]
+  },
+  {
+   "type": "point",
+   "index": "02",
+   "title": "Ce que ça *change*",
+   "body": "Éviter les grosses pertes compte autant que chercher les gros gains.\n\nC'est une des raisons de diversifier : un seul titre qui s'effondre est très difficile à rattraper."
+  },
+  {
+   "type": "point",
+   "index": "03",
+   "title": "Le piège du *« je me referai »*",
+   "body": "Après une grosse perte, on est tenté de prendre plus de risque pour récupérer vite.\n\nC'est souvent ainsi qu'une perte supportable devient une perte durable."
+  },
+  {
+   "type": "cta",
+   "title": "Les pertes font partie des *20 erreurs*",
+   "body": "Mon guide gratuit explique comment les limiter, pas à pas, pour la Bourse et la Crypto.",
+   "button": "Guide gratuit · lien en bio",
+   "disclaimer": "Contenu éducatif, pas un conseil financier."
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 7 slides : une perte de 50 % exige un gain de 100 % pour revenir à l'équilibre, avec exemples chiffrés de -10 % à -75 % et deux conseils de prudence.",
+ "sources": [
+  "Calcul en Python : rebond requis = 1 / (1 - perte) - 1"
+ ],
+ "captions": {
+  "instagram": "Perdre 50 %, c'est +100 % pour revenir à l'équilibre.\n\nTu as 1 000 €. Tu perds 50 % : il te reste 500 €. Pour retrouver 1 000 €, ces 500 € doivent doubler. Une perte et son rebond ne sont jamais symétriques.\n\nÀ retenir :\n\n • -10 % demande +11,1 % pour revenir\n\n • -50 % demande +100 %\n\n • -75 % demande +300 %\n\nTu as déjà vécu une grosse baisse sur un placement ? Raconte en commentaire.\n\nEnregistre ce post pour t'en souvenir la prochaine fois que le marché secoue.\n\nPour comprendre les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nCalcul simple, sans frais ni impôts. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #pertes #belgique #finance",
+  "facebook": "Perdre 50 %, c'est +100 % pour revenir à l'équilibre.\n\nTu as 1 000 €. Tu perds 50 % : il te reste 500 €. Pour retrouver 1 000 €, ces 500 € doivent doubler. Une perte et son rebond ne sont jamais symétriques.\n\nÀ retenir :\n\n • -10 % demande +11,1 % pour revenir\n\n • -50 % demande +100 %\n\n • -75 % demande +300 %\n\nTu as déjà vécu une grosse baisse sur un placement ? Raconte en commentaire.\n\nPartage ce post pour t'en souvenir la prochaine fois que le marché secoue.\n\nPour comprendre les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nCalcul simple, sans frais ni impôts. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #pertes #belgique #finance",
+  "tiktok_title": "Perdre 50 % = gagner 100 % pour revenir",
+  "tiktok": "Tu perds 50 % : 1 000 € deviennent 500 €. Pour revenir à 1 000 €, il faut +100 %. Le détail de -10 % à -75 % est dans le carrousel. Guide gratuit des 20 erreurs : lien en bio. Contenu éducatif, pas un conseil financier. #bourse #investir #pertes #belgique #finance"
+ }
+}
