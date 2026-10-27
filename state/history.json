@@ -127,18 +127,20 @@
    ],
    "buffer": {
     "facebook": {
-     "id": "6ae0da40431b6933a500e42e",
+     "id": "6ae0eacdd7b92f8391461230",
      "dueAt": "2026-11-04T09:54:00+01:00"
     },
     "instagram": {
-     "id": "6ae0da55d7e117a25cc12f2b",
+     "id": "6ae0eadf2d4e3ce4bcb08ccc",
      "dueAt": "2026-11-03T19:26:00+01:00"
     },
     "tiktok": {
-     "id": "6ae0da5fd7e117a25cc13221",
+     "id": "6ae0eaea5c0b60ca12b1b9a9",
      "dueAt": "2026-11-02T09:34:00+01:00"
     }
-   }
+   },
+   "requeued": true,
+   "id": "2026-11-02-perdre-50-pour-cent"
   },
   {
    "date": "2026-11-02",
@@ -155,18 +157,20 @@
    ],
    "buffer": {
     "facebook": {
-     "id": "6ae0da71d7e117a25cc1373c",
-     "dueAt": "2026-11-05T09:26:00+01:00"
+     "id": "6ae0eb25a7712201c217a771",
+     "dueAt": "2026-11-06T08:45:00+01:00"
     },
     "instagram": {
-     "id": "6ae0da7d431b6933a500f433",
-     "dueAt": "2026-11-04T18:06:00+01:00"
+     "id": "6ae0eb33a7712201c217ada5",
+     "dueAt": "2026-11-05T10:51:00+01:00"
     },
     "tiktok": {
-     "id": "6ae0da8a1e9cd6ef0a512b72",
-     "dueAt": "2026-11-07T08:36:00+01:00"
+     "id": "6ae0eb402d4e3ce4bcb0aafa",
+     "dueAt": "2026-11-08T09:41:00+01:00"
     }
-   }
+   },
+   "requeued": true,
+   "id": "2026-11-02-faux-support-crypto"
   },
   {
    "date": "2026-11-02",
@@ -193,6 +197,35 @@
     "tiktok": {
      "id": "6ae0dab44490ad849032f979",
      "dueAt": "2026-11-08T09:41:00+01:00"
+    }
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "source": "auto",
+   "id": "2026-11-02-compte-etranger-pcc",
+   "pillar": "belgique",
+   "theme": "finance",
+   "topic": "Compte ouvert à l'étranger : à déclarer au PCC de la BNB",
+   "keywords": [
+    "compte étranger",
+    "PCC",
+    "BNB",
+    "déclaration",
+    "résident belge"
+   ],
+   "buffer": {
+    "facebook": {
+     "id": "6ae0eafaa7712201c2179d8e",
+     "dueAt": "2026-11-05T09:26:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae0eb09a7712201c217a106",
+     "dueAt": "2026-11-04T18:06:00+01:00"
+    },
+    "tiktok": {
+     "id": "6ae0eb18229a249d5349d1e8",
+     "dueAt": "2026-11-07T08:36:00+01:00"
     }
    }
   }
