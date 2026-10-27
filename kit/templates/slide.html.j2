@@ -90,7 +90,8 @@ ol.list li .n{flex:0 0 auto;display:grid;place-items:center;width:1.55em;height:
 .hero{position:absolute;z-index:2;right:{{ hero_right }}px;bottom:{{ hero_bottom }}px;height:{{ hero_h }}px;width:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))}
 .halo{position:absolute;z-index:1;right:{{ hero_right - 120 }}px;bottom:{{ hero_bottom - 40 }}px;width:{{ (hero_h * 0.95)|int }}px;height:{{ (hero_h * 0.95)|int }}px;border-radius:50%;
   background:radial-gradient(circle at 50% 45%, color-mix(in srgb,var(--acc-2) 30%,transparent), transparent 62%)}
-.ring{position:absolute;z-index:1;right:{{ hero_right - 30 }}px;bottom:{{ hero_bottom + (hero_h * 0.22)|int }}px;width:{{ (hero_h * 0.62)|int }}px;height:{{ (hero_h * 0.62)|int }}px;border-radius:50%;border:2px solid color-mix(in srgb,var(--gold-2) 55%,transparent)}
+.ring{position:absolute;z-index:1;right:{{ hero_right - 30 }}px;bottom:{{ hero_bottom + (hero_h * 0.22)|int }}px;width:{{ (hero_h * 0.62)|int }}px;height:{{ (hero_h * 0.62)|int }}px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--gold-2) 28%,transparent)}
+.floor{position:absolute;z-index:1;right:{{ hero_right + 20 }}px;bottom:-30px;width:{{ (hero_h * 0.42)|int }}px;height:90px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.85),transparent)}
 .t-cover footer{border-top-color:transparent;justify-content:flex-start}
 .t-cover .next{position:relative;z-index:4}
 
@@ -104,7 +105,7 @@ ol.list li .n{flex:0 0 auto;display:grid;place-items:center;width:1.55em;height:
 .book img{width:42%;align-self:flex-start}
 .cta-btn{display:inline-flex;align-items:center;gap:14px;margin-top:calc(40 * var(--u));padding:calc(24 * var(--u)) calc(36 * var(--u));border-radius:999px;
   background:linear-gradient(180deg,var(--gold-1),var(--gold-2));color:#16130D;font-weight:800;font-size:calc(25 * var(--u));letter-spacing:.06em;text-transform:uppercase;box-shadow:0 14px 40px rgba(211,170,85,.25)}
-.disclaimer{font-size:calc(20 * var(--u));line-height:1.45;color:var(--dim);margin-top:calc(30 * var(--u))}
+.disclaimer{font-size:calc(21 * var(--u));line-height:1.45;color:var(--muted);margin-top:calc(30 * var(--u))}
 </style>
 </head>
 <body class="t-{{ s.type }} theme-{{ theme }} fmt-{{ fmt }}">
@@ -112,7 +113,7 @@ ol.list li .n{flex:0 0 auto;display:grid;place-items:center;width:1.55em;height:
 <div class="grain"></div>
 <div class="progress"><i></i></div>
 {% if s.type == "cover" %}
-<div class="halo"></div><div class="ring"></div>
+<div class="halo"></div><div class="ring"></div>{% if character != "34" %}<div class="floor"></div>{% endif %}
 <img class="hero" src="../assets/char-{{ character }}.webp" alt="">
 {% endif %}
 <div class="stage">

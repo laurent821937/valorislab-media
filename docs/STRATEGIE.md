@@ -20,7 +20,7 @@ Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au 
 ## Format visuel (charte VALORISLAB, mise à jour du 27/10/2026)
 - Carrousel de 6 à 8 slides, gabarits du kit (`kit/templates/slide.html.j2`). Style premium noir et or : fond noir chaud, typographie moderne **Plus Jakarta Sans** (Cormorant Garamond abandonnée), mots d'accent en dégradé or. Pour la Crypto, accent bleu électrique (comme la Crypto Academy) ; le logo reste toujours or.
 - Logo officiel (emblème + « VALORISLAB ») en en-tête de chaque slide, barre de progression et compteur, signature « Laurent, fondateur de VALORISLAB » avec avatar du protagoniste en pied de slide.
-- **Protagoniste** (personnage illustré noir et blanc de Laurent) détouré sur la couverture. Champ `character` du contenu : `34` (buste trois-quarts, sérieux), `hoodie` (en pied, sweat), `polo` (en pied, polo), `face` (visage). Par défaut : erreur → `34`, mécanisme → `hoodie`, Belgique → `polo`. Varier d'une semaine à l'autre.
+- **Protagoniste** (personnage illustré noir et blanc de Laurent) détouré sur la couverture. Champ `character` du contenu : `34` (buste trois-quarts, sérieux, fondu dans le noir), `hoodie` (en pied, sweat), `polo` (en pied, polo). Par défaut : erreur → `34`, mécanisme → `hoodie`, Belgique → `polo`. Varier d'une semaine à l'autre.
 - Instagram + Facebook : 1080×1350 (4:5). TikTok : 1080×1920 (9:16, mode photo, zone de sécurité respectée).
 - Structure type : `cover` (accroche + protagoniste) → 3 à 5 slides de fond (`point`, `stat`, `compare`, `list`) → `cta` (couverture du guide gratuit + bouton).
 - Limites de texte par slide : titre ≤ 60 caractères, corps ≤ 280 caractères, liste ≤ 4 éléments de ≤ 95 caractères, valeur chiffrée ≤ 10 caractères. Le moteur de rendu réduit le texte si besoin et signale tout débordement : raccourcir, ne jamais forcer.
@@ -47,10 +47,50 @@ Texte alternatif (alt) obligatoire pour chaque visuel.
 - Les sources sont listées dans le fichier de contenu (`sources`) et mentionnées en légende quand un chiffre externe est cité.
 - Si un contenu ne passe pas ces règles → le remplacer par un autre sujet de la banque ci-dessous.
 
+## Score de viralité (avant publication, obligatoire)
+Chaque contenu reçoit une note sur 100, calculée et justifiée dans le champ `virality` du fichier de contenu :
+| Critère | Poids | Ce qui donne 10/10 |
+|---|---|---|
+| Accroche (couverture + 1re ligne) | 20 | Arrête le scroll en moins d'une seconde : chiffre choc, contraste, citation ou question ; 12 mots maximum |
+| Boucle de curiosité | 15 | La couverture promet une réponse qu'on n'obtient qu'en glissant |
+| Valeur à enregistrer | 15 | Calcul, checklist ou règles qu'on veut garder (déclenche les enregistrements) |
+| Partage | 10 | Donne une raison d'envoyer le post à quelqu'un (protéger un proche, débutant, injustice) |
+| Ancrage belge | 10 | Exemple, règle ou chiffre propre à la Belgique |
+| Clarté débutant | 10 | Une idée par slide, aucun jargon non expliqué |
+| Rétention du carrousel | 10 | Chaque slide donne envie de la suivante ; la dernière récompense et appelle à l'action |
+| Actualité / saison | 10 | Lié à un moment (déclaration fiscale, fin d'année, krach, arnaque du moment…) |
+- Note ≥ 70 : publiable. Entre 55 et 69 : retravailler l'accroche (écrire 5 variantes, garder la meilleure) et la couverture, puis renoter. Sous 55 : changer de sujet.
+- Les enseignements de l'analyse de performance (ci-dessous) priment sur ces poids : ce qui marche chez l'audience VALORISLAB l'emporte sur la théorie.
+
+## Analyse de performance (après publication, à chaque exécution)
+- Récupérer les statistiques Buffer des posts publiés depuis 28 jours, posts natifs compris (vues, portée, taux d'engagement, enregistrements, partages, commentaires ; temps de visionnage pour les vidéos). Ignorer les posts de moins de 48 h (statistiques incomplètes).
+- Comparer chaque post à la médiane de son réseau. Identifier le top 3 et le flop 3, puis ce qui les distingue : pilier, thème, type d'accroche (chiffre, question, citation, contraste), pose du protagoniste, jour et heure, carrousel automatique ou vidéo native.
+- Appliquer les enseignements à la semaine suivante : favoriser le pilier et le type d'accroche gagnants, mais garder au moins 1 contenu sur 3 en exploration pour continuer à apprendre.
+- Repère connu (oct. 2026) : la vidéo explicative animée sur l'inflation a dépassé 70 000 vues sur TikTok ; les vidéos natives tournent autour de 150 à 300 vues. Les explications chiffrées et visuelles pour débutants sont le meilleur filon.
+
+## Sons et musique
+- Les publications automatiques via Buffer ne peuvent pas ajouter les sons proposés par Instagram ou TikTok (limite des API). Les carrousels partent donc sans musique.
+- `state/config.json` → `buffer.schedulingType` : passer un réseau en `notification` fait publier ce réseau par rappel Buffer. Laurent reçoit une notification à l'heure prévue et publie depuis l'application en choisissant un son tendance (environ 1 minute par post).
+
 ## Originalité et doublons
 - Ne jamais reprendre un sujet présent dans `state/history.json` au cours des 120 derniers jours (même sujet, même angle ou même accroche).
 - Comparer aussi avec les 60 derniers posts Buffer (publiés, programmés, brouillons) sur les 3 réseaux, y compris les posts publiés à la main.
 - Un même sujet peut revenir après 120 jours seulement avec un angle et des exemples nouveaux.
+
+### Angles et exemples chiffrés déjà publiés (ne pas réutiliser avant 120 jours)
+Un même exemple chiffré, une même comparaison ou une même statistique qu'un post récent est un doublon, même si le titre change.
+- 26/10/2026 (carrousel banques belges) : frais de fonds 1,5 % vs ETF 0,2 % sur 10 000 € pendant 30 ans à 6 % ; 97 % des fonds actions Europe sous leur indice sur 10 ans (SPIVA) ; compte à vue à 0 % ; prime de fidélité après 12 mois ; exonération des dividendes (833 €) ; conseil bancaire non indépendant.
+- 27/10/2026 : intérêts composés (centime qui double 30 jours, Emma vs Lucas, règle de 72) ; 100 € par mois jusqu'à 65 ans.
+- 21 et 23/10/2026 : inflation (100 € de 2002 = 58 €, S&P 500 et or depuis 2002).
+
+### Sujets rejetés (ne jamais reprogrammer)
+- `2026-11-02-frais-1-8-pourcent` (frais 1,8 % vs 0,2 % sur 30 ans) : doublon du carrousel banques belges du 26/10/2026.
+
+### Contenus supprimés avant publication (disponibles, à reprogrammer en priorité)
+- `2026-11-02-perdre-50-pour-cent` et `2026-11-02-faux-support-crypto` : programmés le 27/10/2026 puis supprimés de Buffer par Laurent avant publication (27/10, 19 h). Jamais publiés : ils ne comptent pas comme doublons.
+
+## Sources officielles belges (pilier « Belgique pratique »)
+FSMA (fsma.be), Wikifin (wikifin.be), SPF Finances (finances.belgium.be), Banque nationale (nbb.be), Statbel (statbel.fgov.be), SPF Économie (economie.fgov.be), Febelfin (febelfin.be). Utiliser WebFetch sur ces sites ; si l'accès est bloqué, WebSearch avec `allowed_domains` limité à ces domaines. Si aucun chiffre n'est vérifiable, garder le pilier Belgique avec un sujet sans chiffre volatil (obligation, procédure, mécanisme de protection : déclaration d'un compte étranger au Point de contact central de la BNB, liste d'avertissements de la FSMA, garantie des dépôts…), plutôt que de le remplacer par un autre pilier.
 
 ## Banque de sujets (point de départ, à enrichir)
 **Mécanisme chiffré** : coût de 1,8 % de frais par an sur 30 ans (fonds vs ETF) · perdre 50 % exige +100 % pour revenir · rendement nominal vs réel · le coût d'attendre 5 ans pour commencer · intérêts composés à l'envers (crédit à la consommation) · investissement programmé vs investissement en une fois (illustration hypothétique) · diversification : 1 titre vs 500 · volatilité ≠ risque de perte définitive · frais d'entrée et de sortie · rééquilibrer un portefeuille · capitalisant vs distribuant (principe) · épargne de précaution : combien de mois ?

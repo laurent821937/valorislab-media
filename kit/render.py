@@ -25,14 +25,13 @@ THEMES = {  # accent gradient per theme (gold = Bourse/finance, electric blue = 
 FORMATS = {
     # TikTok overlays: caption/buttons bottom ~420px, action icons right ~150px
     "feed":   dict(W=1080, H=1350, pad_t=112, pad_r=80, pad_b=64, pad_l=80, h1=84, h2=68, body=35, stat=200, cover_copy=590, cover_lead=470),
-    "tiktok": dict(W=1080, H=1920, pad_t=200, pad_r=140, pad_b=420, pad_l=80, h1=86, h2=74, body=40, stat=210, cover_copy=560, cover_lead=500),
+    "tiktok": dict(W=1080, H=1920, pad_t=200, pad_r=140, pad_b=460, pad_l=80, h1=86, h2=74, body=40, stat=210, cover_copy=560, cover_lead=430),
 }
-# cover character: (height feed, height tiktok, right offset feed, right offset tiktok)
+# cover character: height, right offset, bottom offset — for feed and for TikTok
 CHARACTERS = {
-    "34":     (860, 1150, -70, -170),
-    "hoodie": (1120, 1500, 0, -60),
-    "polo":   (1120, 1500, 0, -60),
-    "face":   (720, 900, -80, -200),
+    "34":     dict(feed=(840, 0, 0), tiktok=(880, 30, 440)),   # bust: kept above the TikTok caption zone
+    "hoodie": dict(feed=(1120, 0, 0), tiktok=(1420, -10, 0)),
+    "polo":   dict(feed=(1120, 0, 0), tiktok=(1420, -10, 0)),
 }
 DEFAULT_CHARACTER = {"erreur": "34", "mecanisme": "hoodie", "belgique": "polo"}
 
@@ -49,6 +48,28 @@ def md(text):
     return Markup(t.replace("\n", "<br>"))
 
 
+# Layout probe: geometry of every text block (and the cover character) for kit/qa.py
+LAYOUT_JS = """() => {
+  const roles = {kicker: '.kicker', title: '.t1,.t2', lead: '.lead', body: '.body p', index: '.idx',
+    stat: '.stat', statLabel: '.stat-label', card: '.card', compare: '.cmp .col', note: '.foot-note',
+    listItem: 'ol.list li', button: '.cta-btn', book: '.book', disclaimer: '.disclaimer',
+    brand: 'header .brand', count: 'header .count', author: 'footer .author', next: 'footer .next'};
+  const boxes = [];
+  for (const [role, q] of Object.entries(roles)) {
+    document.querySelectorAll(q).forEach(e => {
+      const r = e.getBoundingClientRect(), cs = getComputedStyle(e);
+      boxes.push({role, x: r.x, y: r.y, w: r.width, h: r.height, font: parseFloat(cs.fontSize),
+                  color: cs.color, text: (e.innerText || '').replace(/\\s+/g, ' ').slice(0, 70)});
+    });
+  }
+  const h = document.querySelector('.hero');
+  let hero = null;
+  if (h) { const r = h.getBoundingClientRect();
+    hero = {x: r.x, y: r.y, w: r.width, h: r.height, src: h.getAttribute('src'), nw: h.naturalWidth, nh: h.naturalHeight}; }
+  return {boxes, hero};
+}"""
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("content")
@@ -61,8 +82,8 @@ def main():
     theme = c.get("theme", "bourse")
     acc1, acc2, acc3 = THEMES[theme]
     character = c.get("character") or DEFAULT_CHARACTER.get(c.get("pillar"), "34")
-    if character not in CHARACTERS:
-        character = "34"
+    if character not in CHARACTERS:  # "face" retired (hair cut by the source sheet)
+        character = DEFAULT_CHARACTER.get(c.get("pillar"), "34")
     kicker = c["kicker"]
     slides = c["slides"]
     n = len(slides)
@@ -77,7 +98,8 @@ def main():
     env.filters["md"] = md
     tpl = env.get_template("slide.html.j2")
 
-    report = {"id": cid, "files": [], "errors": []}
+    kit_version = (KIT / "VERSION").read_text().strip() if (KIT / "VERSION").exists() else "?"
+    report = {"id": cid, "kit_version": kit_version, "files": [], "errors": []}
     tmp = pathlib.Path(tempfile.mkdtemp(dir=KIT / "templates"))  # same depth -> ../fonts resolves
     tmp_html = KIT / "templates" / "_render.html"
     with sync_playwright() as p:
@@ -85,21 +107,22 @@ def main():
         for fmt, f in FORMATS.items():
             page = browser.new_page(viewport={"width": f["W"], "height": f["H"]}, device_scale_factor=1)
             for i, s in enumerate(slides, 1):
-                ch = CHARACTERS[character]
-                hero = dict(hero_h=ch[0] if fmt == "feed" else ch[1],
-                            hero_right=ch[2] if fmt == "feed" else ch[3], hero_bottom=0)
+                hh, hr, hb = CHARACTERS[character][fmt]
+                hero = dict(hero_h=hh, hero_right=hr, hero_bottom=hb)
                 tmp_html.write_text(tpl.render(s=s, i=i, n=n, kicker=kicker, theme=theme, fmt=fmt,
                                                character=character, acc1=acc1, acc2=acc2, acc3=acc3,
                                                **f, **hero), encoding="utf-8")
                 page.goto(tmp_html.as_uri())
                 fit = page.evaluate("window.__fit()")
+                layout = page.evaluate(LAYOUT_JS)
                 png = tmp / f"{fmt}-{i:02d}.png"
                 page.screenshot(path=str(png), type="png")
                 jpg = out_dir / f"{fmt}-{i:02d}.jpg"
                 Image.open(png).convert("RGB").save(jpg, "JPEG", quality=a.quality, optimize=True,
                                                     progressive=False, subsampling=0)
-                rec = {"file": str(jpg.relative_to(ROOT)), "format": fmt, "slide": i,
-                       "scale": fit["scale"], "bytes": jpg.stat().st_size}
+                rec = {"file": str(jpg.relative_to(ROOT)), "format": fmt, "slide": i, "type": s["type"],
+                       "scale": fit["scale"], "overflow": fit["overflow"], "bytes": jpg.stat().st_size,
+                       "W": f["W"], "H": f["H"], "boxes": layout["boxes"], "hero": layout["hero"]}
                 report["files"].append(rec)
                 if fit["overflow"]:
                     report["errors"].append(f"{fmt} slide {i}: text overflows even at scale {fit['scale']} -> shorten it")

@@ -44,21 +44,35 @@ Si `kit/` est absent du dépôt : arrêter et signaler « INTERVENTION REQUISE :
 - `state/history.json` : sujets des 120 derniers jours.
 - Buffer : `list_posts` toutes chaînes, `createdAt.start` = maintenant − 60 jours, `first: 100` (tous statuts) → première ligne et thème de chaque post.
 - Un sujet est refusé s'il reprend le même sujet, le même angle, la même accroche ou au moins la moitié des mots-clés d'une entrée existante.
+- Il est aussi refusé s'il réutilise un exemple chiffré, une comparaison ou une statistique listés dans « Angles et exemples chiffrés déjà publiés » (`STRATEGIE.md`) ou présents dans un post des 120 derniers jours.
+- Le pilier « Belgique pratique » ne doit pas être remplacé par un autre pilier : suivre la section « Sources officielles belges » de `STRATEGIE.md`. Si un site officiel est bloqué par le réseau de l'environnement, le signaler dans le rapport (liste des domaines bloqués).
 - Avant chaque `create_post` : vérifier qu'aucun post du réseau ne commence par les mêmes 80 premiers caractères (programmé, brouillon ou publié depuis moins de 60 jours). Si c'est le cas, ne pas créer.
+
+## 4 bis. Analyse de performance
+- `list_posts` avec `status: ["sent"]`, `dueAt.start` = maintenant − 28 jours, `includeMetrics: true` (paginer). Exclure les posts de moins de 48 h.
+- Suivre la section « Analyse de performance » de `STRATEGIE.md` et écrire `reports/perf-<AAAA>-W<ss>.md` : tableau des posts (réseau, date, sujet, vues ou portée, taux d'engagement, enregistrements, partages), top 3, flop 3, enseignements, décisions pour la semaine.
 
 ## 5. Création des 3 contenus
 - 1 contenu par pilier (mécanisme chiffré, Belgique pratique, erreur ou arnaque), en respectant l'alternance des thèmes de `STRATEGIE.md`.
-- Priorité : si un fichier de `content/` n'a jamais été programmé (son `id` est absent de `state/history.json`) et respecte le mix et l'anti-doublon, le réutiliser (en le re-rendant avec le kit actuel) au lieu de créer un nouveau sujet pour ce pilier.
+- Priorité : réutiliser (en le re-rendant avec le kit actuel) un fichier de `content/` jamais publié, au lieu de créer un nouveau sujet pour ce pilier, s'il respecte le mix et l'anti-doublon. « Jamais publié » = son `id` est absent de `state/history.json`, **ou** tous ses posts Buffer enregistrés dans `history.json` n'existent plus (`get_post` → introuvable ou supprimé) sans avoir atteint le statut `sent`. Exclure les contenus listés dans « Sujets rejetés » (`STRATEGIE.md`).
+- Quand un contenu supprimé avant publication est reprogrammé, mettre à jour son entrée dans `history.json` (nouveaux ID et `dueAt`, `"requeued": true`) au lieu d'en créer une nouvelle. Un contenu supprimé avant publication ne compte pas comme doublon.
 - Chiffres calculés en Python. Données belges et réglementaires vérifiées en ligne (source officielle, année en cours), sources listées dans `sources`.
-- Un fichier JSON par contenu : `content/<AAAA>-W<ss>/<AAAA-MM-JJ>-<slug>.json` (date = lundi de la semaine cible). Le schéma est celui de `content/2026-W45/2026-11-02-faux-support-crypto.json` : `id, date, pillar, theme (bourse|crypto|finance), character (34|hoodie|polo|face, optionnel), topic, keywords, kicker, slides[], alt, captions{instagram, facebook, tiktok_title, tiktok}, sources`. Chaque slide peut avoir son propre `alt` (texte alternatif de l'image, ≤ 200 caractères).
+- Un fichier JSON par contenu : `content/<AAAA>-W<ss>/<AAAA-MM-JJ>-<slug>.json` (date = lundi de la semaine cible). Le schéma est celui de `content/2026-W45/2026-11-02-faux-support-crypto.json` : `id, date, pillar, theme (bourse|crypto|finance), character (34|hoodie|polo, optionnel), topic, keywords, kicker, slides[], alt, captions{instagram, facebook, tiktok_title, tiktok}, sources`. Chaque slide peut avoir son propre `alt` (texte alternatif de l'image, ≤ 200 caractères).
 - Types de slides : `cover{title, subtitle}`, `point{index, title, body, stat?{value,label}}`, `stat{title?, value, label, body?}`, `compare{title, left{label,value,note,win?}, right{…}, note?}`, `list{title, items[]}`, `cta{title, body, button, disclaimer}`. Les paragraphes de `body` sont séparés par une ligne vide.
 
-## 6. Rendu et contrôle visuel
+## 5 bis. Score de viralité
+- Noter chaque contenu selon la grille de `STRATEGIE.md`, en tenant compte des enseignements de l'étape 4 bis. Enregistrer dans le fichier de contenu `"virality": {"score": n, "detail": {...}, "hook_variants": [...]}`.
+- Sous 70 : retravailler l'accroche et la couverture, puis renoter. Sous 55 : changer de sujet. Aucun contenu sous 70 n'est programmé.
+
+## 6. Rendu et contrôle qualité des visuels (obligatoire, bloquant)
 ```bash
 python3 kit/render.py content/<semaine>/<id>.json        # erreur = texte qui déborde → raccourcir puis relancer
-python3 kit/validate.py media/<AAAA>/<MM>/<id>             # JPEG, RGB, 1080×1350 / 1080×1920, ≤ 10 slides IG
+python3 kit/validate.py media/<AAAA>/<MM>/<id>             # format : JPEG, RGB, 1080×1350 / 1080×1920, ≤ 10 slides IG
+python3 kit/qa.py media/<AAAA>/<MM>/<id> --sheets /tmp/qa  # cadrage, zones sûres TikTok, grille Instagram, chevauchements, lisibilité, contraste, doublon visuel
 ```
-Assembler une planche contact (Pillow) et la regarder avec l'outil Read : lisibilité, fautes, césures, rien de coupé. Corriger avant de continuer.
+- `qa.py` en erreur → corriger (raccourcir le texte, changer de pose avec `character`, reformuler) puis relancer render + qa. Ne jamais programmer un contenu dont le contrôle qualité échoue.
+- Avertissements → les corriger quand c'est possible, sinon les citer dans le rapport.
+- Contrôle visuel humain : ouvrir avec l'outil Read `/tmp/qa/<id>/feed.jpg`, `/tmp/qa/<id>/tiktok-zones.jpg` (zones rouges = interfaces TikTok, cadres verts = blocs de texte) et `/tmp/qa/<id>/instagram-grid.jpg` (cadre bleu = recadrage de la grille du profil). Vérifier : fautes, coupures de mots, texte coupé, protagoniste bien cadré (tête entière, aucun bord droit visible), lisibilité sur téléphone, cohérence des chiffres entre slides et légendes.
 
 ## 7. Publication des visuels (GitHub)
 ```bash
@@ -70,7 +84,7 @@ URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valo
 
 ## 8. Programmation Buffer
 - Tag : `execute_query` `tagsV2(input:{organizationId})` → chercher `auto-valorislab` ; s'il est absent, `execute_mutation` `createTag(input:{organizationId, tag:{name:"auto-valorislab", color:"#C9A24A"}})`. Si la limite de tags est atteinte, continuer sans tag et le signaler.
-- `create_post` par réseau et créneau, `schedulingType: "automatic"`, `tagIds: [tag]`, `assets` = images dans l'ordre, chacune avec `metadata.altText` = `alt` de la slide si présent, sinon `alt` global suivi de « (slide k/n) » :
+- `create_post` par réseau et créneau, `schedulingType` = valeur du réseau dans `state/config.json` → `buffer.schedulingType` (`automatic` par défaut ; `notification` = rappel Buffer, Laurent publie depuis l'application avec un son), `tagIds: [tag]`, `assets` = images dans l'ordre, chacune avec `metadata.altText` = `alt` de la slide si présent, sinon `alt` global suivi de « (slide k/n) » :
   - Facebook : `text = captions.facebook`, `metadata.facebook.type = "post"`, images `feed-*.jpg`.
   - Instagram : `text = captions.instagram`, `metadata.instagram = {type: "post", shouldShareToFeed: true}`, images `feed-*.jpg`.
   - TikTok : `text = captions.tiktok`, `metadata.tiktok = {title: captions.tiktok_title}`, images `tiktok-*.jpg`.
@@ -78,11 +92,17 @@ URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valo
 - Après chaque création : vérifier dans la réponse le statut attendu (`scheduled` ou `draft`), l'absence d'erreur, le nombre d'images. Relire avec `get_post` le premier post de chaque réseau et noter si `assets[].source` pointe vers GitHub ou vers un hébergement Buffer.
 - En cas d'échec sur un réseau : continuer les autres et le signaler.
 
+## 8 bis. Mise à niveau des posts déjà programmés (après une mise à jour du kit)
+- Pour chaque post `scheduled` portant le tag `auto-valorislab`, dont `dueAt` est à plus de 2 h, et dont le contenu a été rendu avec une autre version du kit (`kit_version` absent ou différent dans `media/.../render-report.json`) :
+  - re-rendre le contenu avec le kit actuel, passer `validate.py` et `qa.py` (bloquant), pousser, vérifier les URL publiques ;
+  - `edit_post` en remplaçant uniquement `assets` (nouvelles URL, même ordre, `altText`) et en reprenant à l'identique `text`, `metadata` et `tagIds`. Ne jamais envoyer `mode`, `dueAt` ni `schedulingType` (la date ne doit pas bouger).
+- Le signaler dans le rapport (posts mis à niveau).
+
 ## 9. Mémoire et rapport
 - Ajouter à `state/history.json` une entrée par contenu (`date, source: "auto", pillar, theme, topic, keywords, buffer: {facebook, instagram, tiktok}` avec les ID de posts et les `dueAt`).
 - Écrire `reports/<AAAA>-W<ss>.md` : posts créés (réseau, date et heure, sujet), réseaux ignorés et pourquoi, erreurs Buffer détectées, interventions requises.
 - `git add state reports && git commit -m "Rapport <AAAA>-W<ss>" && git push origin HEAD:main`.
-- Message final de la session (il sert de notification) : 5 à 10 lignes, en commençant par « INTERVENTION REQUISE » si une action de Laurent est nécessaire, sinon par « OK — <n> posts programmés ».
+- Message final de la session (il sert de notification) : 5 à 10 lignes, en commençant par « INTERVENTION REQUISE » si une action de Laurent est nécessaire, sinon par « OK — <n> posts programmés ». Y inclure le score de viralité de chaque contenu, le meilleur post des 28 derniers jours et l'enseignement principal de l'analyse de performance.
 
 ## MODE TEST (validation avant activation)
 - Étapes 0, 1 et 2 : exécutées et rapportées, sans rien modifier dans Buffer.

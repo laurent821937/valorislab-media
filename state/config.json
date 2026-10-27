@@ -4,14 +4,28 @@
     "organizationName": "My organization",
     "timezone": "Europe/Brussels",
     "channels": {
-      "facebook":  {"id": "6ae0c18e2f1f5ed648ebc72b", "name": "Valorislab (Page)"},
-      "instagram": {"id": "6ae0c07b2f1f5ed648ebba1f", "name": "valoris_lab (Business)"},
-      "tiktok":    {"id": "6ae0c1ea2f1f5ed648ebcb5b", "name": "valorislab"}
+      "facebook": {
+        "id": "6ae0c18e2f1f5ed648ebc72b",
+        "name": "Valorislab (Page)"
+      },
+      "instagram": {
+        "id": "6ae0c07b2f1f5ed648ebba1f",
+        "name": "valoris_lab (Business)"
+      },
+      "tiktok": {
+        "id": "6ae0c1ea2f1f5ed648ebcb5b",
+        "name": "valorislab"
+      }
     },
     "maxPendingPerChannel": 10,
     "postsPerChannelPerWeek": 3,
     "minLeadHours": 48,
-    "tagName": "auto-valorislab"
+    "tagName": "auto-valorislab",
+    "schedulingType": {
+      "facebook": "automatic",
+      "instagram": "automatic",
+      "tiktok": "automatic"
+    }
   },
   "github": {
     "repo": "laurent821937/valorislab-media",
