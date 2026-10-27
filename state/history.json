@@ -1,0 +1,14 @@
+{
+  "note": "Sujets déjà traités (natifs + automatiques). Le run ajoute une entrée par contenu programmé. Fenêtre anti-doublon : 120 jours.",
+  "items": [
+    {"date": "2026-10-21", "source": "natif", "pillar": "mecanisme", "theme": "finance", "topic": "Inflation : l'argent perd de la valeur sans dépenser", "keywords": ["inflation", "pouvoir d'achat"]},
+    {"date": "2026-10-22", "source": "natif", "pillar": "erreur", "theme": "bourse", "topic": "3 phrases d'influenceurs à fuir avant d'investir", "keywords": ["influenceurs", "rendement garanti", "FOMO"]},
+    {"date": "2026-10-22", "source": "natif", "pillar": "cta", "theme": "bourse", "topic": "Guide gratuit des 20 erreurs (promotion)", "keywords": ["guide", "20 erreurs"]},
+    {"date": "2026-10-23", "source": "natif", "pillar": "mecanisme", "theme": "finance", "topic": "Inflation depuis 2002 : 100 € = 58 €, vs S&P 500 et or", "keywords": ["inflation", "S&P 500", "or", "pouvoir d'achat"]},
+    {"date": "2026-10-24", "source": "natif", "pillar": "mecanisme", "theme": "finance", "topic": "10 règles d'argent qu'on n'apprend pas à l'école", "keywords": ["épargne", "frais", "inflation", "arnaques", "règles"]},
+    {"date": "2026-10-26", "source": "natif", "pillar": "cta", "theme": "bourse", "topic": "J'ai commis 15 des 20 erreurs : présentation de la formation", "keywords": ["formation", "20 erreurs", "témoignage"]},
+    {"date": "2026-10-26", "source": "natif", "pillar": "belgique", "theme": "finance", "topic": "Ta banque belge : 6 points à connaître (compte à vue, prime de fidélité, fonds bancaires, précompte)", "keywords": ["banque", "compte d'épargne", "prime de fidélité", "fonds bancaires", "frais", "précompte"]},
+    {"date": "2026-10-27", "source": "natif", "pillar": "mecanisme", "theme": "bourse", "topic": "Le toi de 2036 : 100 € par mois jusqu'à 65 ans", "keywords": ["commencer tôt", "investissement mensuel", "intérêts composés"]},
+    {"date": "2026-10-27", "source": "natif", "pillar": "mecanisme", "theme": "bourse", "topic": "1 centime qui double 30 jours : intérêts composés, Emma vs Lucas, règle de 72", "keywords": ["intérêts composés", "règle de 72", "commencer tôt"]}
+  ]
+}

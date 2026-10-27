@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-02-faux-support-crypto",
+  "date": "2026-11-02",
+  "pillar": "erreur",
+  "theme": "crypto",
+  "topic": "Arnaque au faux support crypto : demande de phrase de récupération",
+  "keywords": ["arnaque", "faux support", "phrase de récupération", "seed phrase", "wallet", "sécurité crypto"],
+  "kicker": "Crypto · Arnaque à éviter",
+  "slides": [
+    {"type": "cover",
+     "title": "« Bonjour, ici le *support*. Votre wallet est bloqué. »",
+     "subtitle": "Le message qui vide un portefeuille crypto en quelques minutes. Comment il fonctionne, et comment ne jamais tomber dedans."},
+    {"type": "point", "index": "01", "title": "Le *scénario*",
+     "body": "Tu poses une question dans un groupe Telegram, sur Discord ou sous un post.\n\nQuelques minutes plus tard, un « agent » t'écrit en privé. Logo officiel, ton rassurant, urgence : « votre compte sera suspendu sous 24 h »."},
+    {"type": "point", "index": "02", "title": "La *demande*",
+     "body": "Pour « débloquer » ou « synchroniser » ton wallet, il te demande ta **phrase de récupération** (12 ou 24 mots).\n\nOu il t'envoie un lien vers un site copié à l'identique, où tu la tapes toi-même."},
+    {"type": "stat", "value": "12 mots", "label": "= un accès total à tes cryptos",
+     "body": "Qui connaît ta phrase de récupération contrôle ton portefeuille. Une transaction envoyée est **irréversible** : aucune banque ne peut l'annuler."},
+    {"type": "list", "title": "Les règles à ne *jamais* enfreindre",
+     "items": [
+       "Aucun support légitime ne te demandera ta phrase de récupération. Jamais.",
+       "Un vrai support ne t'écrit pas en premier en message privé.",
+       "Ta phrase s'écrit sur papier ou sur métal. Pas de photo, pas de cloud.",
+       "Tu tapes toi-même l'adresse du site officiel. Tu ne cliques pas sur un lien reçu."
+     ]},
+    {"type": "point", "index": "03", "title": "Déjà *partagé* ta phrase ?",
+     "body": "Agis tout de suite : crée un nouveau wallet avec une nouvelle phrase et transfères-y ce qui reste.\n\nPuis signale l'arnaque au SPF Économie (pointdecontact.belgique.be) et à la plateforme concernée."},
+    {"type": "cta", "title": "La sécurité fait partie des *20 erreurs* du débutant",
+     "body": "Mon guide gratuit les détaille une par une, avec un plan d'action concret pour la Bourse et la Crypto.",
+     "button": "Guide gratuit · lien en bio",
+     "disclaimer": "Contenu éducatif, pas un conseil financier."}
+  ],
+  "alt": "Carrousel VALORISLAB en 7 slides sur l'arnaque au faux support crypto : le scénario, la demande de phrase de récupération, pourquoi 12 mots donnent un accès total, 4 règles de sécurité et que faire si on a déjà partagé sa phrase.",
+  "captions": {
+    "instagram": "« Bonjour, ici le support. Votre wallet est bloqué. »\n\nSi tu reçois ce message, ton portefeuille crypto est en danger.\n\nLe scénario est toujours le même : tu poses une question en public, un faux agent t'écrit en privé, puis il te demande ta phrase de récupération pour « débloquer » ton compte.\n\nÀ retenir :\n\n • Aucun support légitime ne te demandera jamais ta phrase de récupération\n\n • Un vrai support ne t'écrit pas en premier en message privé\n\n • Ta phrase reste hors ligne : papier ou métal, jamais en photo ni dans le cloud\n\nTu as déjà reçu ce genre de message ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui débute en crypto.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nContenu éducatif, pas un conseil financier.\n\n#crypto #arnaque #securitecrypto #belgique #investir",
+    "facebook": "« Bonjour, ici le support. Votre wallet est bloqué. »\n\nSi tu reçois ce message, ton portefeuille crypto est en danger.\n\nLe scénario est toujours le même : tu poses une question en public, un faux agent t'écrit en privé, puis il te demande ta phrase de récupération pour « débloquer » ton compte.\n\nÀ retenir :\n\n • Aucun support légitime ne te demandera jamais ta phrase de récupération\n\n • Un vrai support ne t'écrit pas en premier en message privé\n\n • Ta phrase reste hors ligne : papier ou métal, jamais en photo ni dans le cloud\n\nTu as déjà reçu ce genre de message ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui débute en crypto.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nContenu éducatif, pas un conseil financier.\n\n#crypto #arnaque #securitecrypto #belgique #investir",
+    "tiktok_title": "Le message qui vide un wallet crypto",
+    "tiktok": "« Bonjour, ici le support. Votre wallet est bloqué. » Si tu reçois ça, c'est une arnaque. Aucun support ne te demandera jamais ta phrase de récupération. Les 4 règles sont dans le carrousel. Guide gratuit des 20 erreurs du débutant : lien en bio. Contenu éducatif, pas un conseil financier. #crypto #arnaque #securitecrypto #belgique #investir"
+  },
+  "sources": ["Règle générale de sécurité des wallets non custodiaux (phrase de récupération = clé d'accès)", "SPF Économie, Point de contact : pointdecontact.belgique.be"]
+}

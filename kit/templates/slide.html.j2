@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"Cormorant";src:url("../fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal}
+@font-face{font-family:"Cormorant";src:url("../fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal}
+@font-face{font-family:"Cormorant";src:url("../fonts/cormorant-garamond-latin-700-normal.woff2") format("woff2");font-weight:700;font-style:normal}
+@font-face{font-family:"Cormorant";src:url("../fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2");font-weight:500;font-style:italic}
+@font-face{font-family:"Cormorant";src:url("../fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2");font-weight:600;font-style:italic}
+@font-face{font-family:"Cormorant";src:url("../fonts/cormorant-garamond-latin-700-italic.woff2") format("woff2");font-weight:700;font-style:italic}
+@font-face{font-family:"Outfit";src:url("../fonts/outfit-latin-300-normal.woff2") format("woff2");font-weight:300}
+@font-face{font-family:"Outfit";src:url("../fonts/outfit-latin-400-normal.woff2") format("woff2");font-weight:400}
+@font-face{font-family:"Outfit";src:url("../fonts/outfit-latin-500-normal.woff2") format("woff2");font-weight:500}
+@font-face{font-family:"Outfit";src:url("../fonts/outfit-latin-600-normal.woff2") format("woff2");font-weight:600}
+
+:root{
+  --W:{{ W }}px; --H:{{ H }}px;
+  --bg:#0D0C0A; --bg2:#17140F;
+  --ink:#F2ECE1; --muted:#A99F90; --dim:#6E675C;
+  --gold:#C9A24A; --gold-soft:#E4C97F;
+  --accent:{{ accent }}; --accent-soft:{{ accent_soft }};
+  --line:rgba(201,162,74,.32);
+  --s:1;
+  --u:calc(1px * var(--s));
+  /* safe zone (TikTok UI covers bottom + right edge on 9:16) */
+  --pad-t:{{ pad_t }}px; --pad-r:{{ pad_r }}px; --pad-b:{{ pad_b }}px; --pad-l:{{ pad_l }}px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:var(--W);height:var(--H);background:var(--bg);overflow:hidden}
+body{
+  position:relative;color:var(--ink);font-family:"Outfit",sans-serif;font-weight:300;
+  -webkit-font-smoothing:antialiased;text-rendering:geometricPrecision;
+  background:
+    radial-gradient(1100px 900px at 92% -8%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 62%),
+    radial-gradient(900px 700px at -10% 108%, rgba(201,162,74,.08), transparent 60%),
+    linear-gradient(180deg,var(--bg2),var(--bg));
+}
+.grain{position:absolute;inset:0;opacity:.07;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");}
+.frame{position:absolute;inset:34px;border:1px solid var(--line);pointer-events:none}
+.frame::before,.frame::after{content:"";position:absolute;width:46px;height:46px;border-color:var(--gold);border-style:solid}
+.frame::before{top:-1px;left:-1px;border-width:2px 0 0 2px}
+.frame::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+
+.stage{position:absolute;top:var(--pad-t);right:var(--pad-r);bottom:var(--pad-b);left:var(--pad-l);display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;align-items:center;flex:0 0 auto}
+.kicker{font-family:"Outfit";font-weight:500;font-size:24px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent-soft)}
+.count{font-family:"Outfit";font-weight:400;font-size:23px;letter-spacing:.18em;color:var(--dim)}
+main{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;min-height:0;overflow:hidden}
+footer{flex:0 0 auto;display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.brand{font-family:"Outfit";font-weight:600;font-size:23px;letter-spacing:.42em;color:var(--ink)}
+.brand b{color:var(--gold);font-weight:600}
+.hint{font-family:"Outfit";font-weight:400;font-size:23px;letter-spacing:.14em;color:var(--muted)}
+
+em{font-style:italic;color:var(--gold-soft);font-weight:600}
+strong{font-weight:500;color:var(--ink)}
+.rule{width:120px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:calc(44 * var(--u)) 0}
+
+/* typographic scale is expressed in em of main (1em = 1px * --s) */
+.h1{font-family:"Cormorant";font-weight:600;font-size:calc({{ h1 }} * var(--u));line-height:1.02;letter-spacing:-.01em}
+.h2{font-family:"Cormorant";font-weight:600;font-size:calc({{ h2 }} * var(--u));line-height:1.06;letter-spacing:-.005em}
+.lead{font-size:calc({{ body }} * var(--u) * 1.08);line-height:1.45;color:var(--muted);font-weight:300}
+.body{font-size:calc({{ body }} * var(--u));line-height:1.5;color:#D9D1C4;font-weight:300}
+.body p+p{margin-top:.7em}
+.idx{font-family:"Cormorant";font-style:italic;font-weight:600;font-size:calc(130 * var(--u));line-height:.8;color:var(--gold);opacity:.95;margin-bottom:calc(26 * var(--u))}
+.stat{font-variant-numeric:lining-nums;font-family:"Cormorant";font-weight:700;font-size:calc({{ stat }} * var(--u));line-height:.92;color:var(--gold-soft);letter-spacing:-.02em}
+.stat-label{font-family:"Outfit";font-weight:500;font-size:calc(26 * var(--u));letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:calc(18 * var(--u))}
+.box{border:1px solid var(--line);background:rgba(255,255,255,.025);padding:calc(34 * var(--u)) calc(36 * var(--u));margin-top:calc(40 * var(--u))}
+.box .stat{font-size:calc({{ stat }} * var(--u) * .62)}
+
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:calc(26 * var(--u));margin-top:calc(46 * var(--u))}
+.cmp .col{border:1px solid var(--line);padding:calc(34 * var(--u)) calc(30 * var(--u));background:rgba(255,255,255,.02)}
+.cmp .col.win{border-color:var(--gold);background:rgba(201,162,74,.07)}
+.cmp .lab{font-family:"Outfit";font-weight:500;font-size:calc(22 * var(--u));letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.cmp .val{font-variant-numeric:lining-nums;font-family:"Cormorant";font-weight:700;font-size:calc({{ stat }} * var(--u) * .5);line-height:1;margin:calc(18 * var(--u)) 0 calc(12 * var(--u));color:var(--ink)}
+.cmp .win .val{color:var(--gold-soft)}
+.cmp .note{font-size:calc(25 * var(--u));line-height:1.4;color:var(--muted)}
+.foot-note{font-size:calc(23 * var(--u));line-height:1.45;color:var(--dim);margin-top:calc(34 * var(--u))}
+
+ul.list{list-style:none;margin-top:calc(40 * var(--u))}
+ul.list li{display:flex;gap:calc(26 * var(--u));font-size:calc({{ body }} * var(--u));line-height:1.45;color:#D9D1C4;padding:calc(24 * var(--u)) 0;border-top:1px solid rgba(201,162,74,.18)}
+ul.list li:last-child{border-bottom:1px solid rgba(201,162,74,.18)}
+ul.list li .n{font-family:"Cormorant";font-style:italic;font-weight:600;color:var(--gold);font-size:1.5em;line-height:.95;min-width:1.2em}
+
+.cta-btn{display:inline-block;margin-top:calc(48 * var(--u));padding:calc(26 * var(--u)) calc(44 * var(--u));border:1.5px solid var(--gold);color:var(--gold-soft);
+  font-family:"Outfit";font-weight:500;font-size:calc(27 * var(--u));letter-spacing:.16em;text-transform:uppercase}
+.disclaimer{font-size:calc(24 * var(--u));line-height:1.45;color:var(--dim);margin-top:calc(40 * var(--u))}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="frame"></div>
+<div class="stage">
+  <header>
+    <div class="kicker">{{ kicker }}</div>
+    <div class="count">{{ "%02d"|format(i) }} / {{ "%02d"|format(n) }}</div>
+  </header>
+  <main id="main">
+  {% if s.type == "cover" %}
+    <div class="h1">{{ s.title|md }}</div>
+    <div class="rule"></div>
+    {% if s.subtitle %}<div class="lead">{{ s.subtitle|md }}</div>{% endif %}
+  {% elif s.type == "point" %}
+    {% if s.index %}<div class="idx">{{ s.index }}</div>{% endif %}
+    <div class="h2">{{ s.title|md }}</div>
+    {% if s.body %}<div class="body" style="margin-top:calc(34 * var(--u))">{% for p in s.body_paras %}<p>{{ p|md }}</p>{% endfor %}</div>{% endif %}
+    {% if s.stat %}<div class="box"><div class="stat">{{ s.stat.value }}</div><div class="stat-label">{{ s.stat.label }}</div></div>{% endif %}
+  {% elif s.type == "stat" %}
+    {% if s.title %}<div class="h2" style="margin-bottom:calc(40 * var(--u))">{{ s.title|md }}</div>{% endif %}
+    <div class="stat">{{ s.value }}</div>
+    <div class="stat-label">{{ s.label }}</div>
+    {% if s.body %}<div class="body" style="margin-top:calc(40 * var(--u))">{% for p in s.body_paras %}<p>{{ p|md }}</p>{% endfor %}</div>{% endif %}
+  {% elif s.type == "compare" %}
+    <div class="h2">{{ s.title|md }}</div>
+    <div class="cmp">
+      {% for c in [s.left, s.right] %}
+      <div class="col{% if c.win %} win{% endif %}">
+        <div class="lab">{{ c.label }}</div>
+        <div class="val">{{ c.value }}</div>
+        <div class="note">{{ c.note|md }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if s.note %}<div class="foot-note">{{ s.note|md }}</div>{% endif %}
+  {% elif s.type == "list" %}
+    <div class="h2">{{ s.title|md }}</div>
+    <ul class="list">{% for it in s["items"] %}<li><span class="n">{{ loop.index }}</span><span>{{ it|md }}</span></li>{% endfor %}</ul>
+  {% elif s.type == "cta" %}
+    <div class="h2">{{ s.title|md }}</div>
+    {% if s.body %}<div class="body" style="margin-top:calc(34 * var(--u))">{% for p in s.body_paras %}<p>{{ p|md }}</p>{% endfor %}</div>{% endif %}
+    <div><span class="cta-btn">{{ s.button }}</span></div>
+    {% if s.disclaimer %}<div class="disclaimer">{{ s.disclaimer }}</div>{% endif %}
+  {% endif %}
+  </main>
+  <footer>
+    <div class="brand">VALORIS<b>LAB</b></div>
+    <div class="hint">{% if i < n %}Glisse&nbsp;&nbsp;→{% else %}valorislab.be{% endif %}</div>
+  </footer>
+</div>
+<script>
+// shrink-to-fit: lower --s until main content fits its box
+window.__fit = async () => {
+  await document.fonts.ready;
+  const m = document.getElementById('main');
+  let s = 1;
+  const root = document.documentElement;
+  root.style.setProperty('--s', s);
+  while (m.scrollHeight > m.clientHeight + 1 && s > 0.72) {
+    s = +(s - 0.02).toFixed(2);
+    root.style.setProperty('--s', s);
+  }
+  return {scale: s, overflow: m.scrollHeight > m.clientHeight + 1};
+};
+</script>
+</body>
+</html>
