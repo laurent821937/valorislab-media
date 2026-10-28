@@ -55,13 +55,15 @@
    "type": "point",
    "index": "02",
    "title": "Ce que ça *change*",
-   "body": "Éviter les grosses pertes compte autant que chercher les gros gains.\n\nC'est une des raisons de diversifier : un seul titre qui s'effondre est très difficile à rattraper."
+   "body": "Éviter les grosses pertes compte autant que chercher les gros gains.\n\nD'où l'intérêt de diversifier.",
+   "pose": "pointe"
   },
   {
    "type": "point",
    "index": "03",
    "title": "Le piège du *« je me referai »*",
-   "body": "Après une grosse perte, on est tenté de prendre plus de risque pour récupérer vite.\n\nC'est souvent ainsi qu'une perte supportable devient une perte durable."
+   "body": "Après une grosse perte, on prend plus de risque pour récupérer vite.\n\nUne perte supportable devient durable.",
+   "pose": "stress-baisse"
   },
   {
    "type": "cta",

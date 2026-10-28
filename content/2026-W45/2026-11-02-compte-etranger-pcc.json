@@ -24,7 +24,8 @@
    "type": "point",
    "index": "01",
    "title": "Le *principe*",
-   "body": "Si tu résides en Belgique et que tu détiens un compte ouvert à l'étranger, c'est **à toi** de le déclarer à la Banque nationale de Belgique.\n\nLa banque étrangère ne le fait pas automatiquement."
+   "body": "Si tu résides en Belgique et détiens un compte à l'étranger, c'est **à toi** de le déclarer à la BNB.\n\nLa banque étrangère ne le fait pas.",
+   "pose": "reflexion"
   },
   {
    "type": "point",
@@ -52,13 +53,15 @@
    "type": "point",
    "index": "04",
    "title": "Et si tu *oublies* ?",
-   "body": "Le contrôle revient à l'administration fiscale, qui peut infliger des amendes fiscales.\n\nSi tu n'as encore rien déclaré, la BNB conseille de le faire dès que possible. En ligne, c'est le plus simple."
+   "body": "Le contrôle revient au fisc, qui peut infliger des amendes.\n\nTu n'as rien déclaré ? Fais-le dès que possible, en ligne.",
+   "pose": "stress-tablette"
   },
   {
    "type": "point",
    "index": "05",
    "title": "Le *réflexe* à garder",
-   "body": "Le compte reste à mentionner chaque année dans ta déclaration d'impôt, même si tu l'as déjà déclaré au PCC.\n\nEn cas de doute sur ta situation, demande à l'administration fiscale ou à un professionnel."
+   "body": "Mentionne le compte chaque année dans ta déclaration d'impôt, même déjà déclaré au PCC.\n\nUn doute ? Demande au fisc.",
+   "pose": "pouce"
   },
   {
    "type": "cta",

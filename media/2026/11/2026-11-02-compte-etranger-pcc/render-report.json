@@ -79,7 +79,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 150143,
+   "bytes": 125444,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -98,20 +98,20 @@
      "x": 107,
      "y": 427.625,
      "w": 869,
-     "h": 249.875,
+     "h": 187.40625,
      "font": 44,
      "color": "rgb(255, 255, 255)",
-     "text": "Si tu résides en Belgique et que tu détiens un compte ouvert à l'étran"
+     "text": "Si tu résides en Belgique et détiens un compte à l'étranger, c'est à t"
     },
     {
      "role": "body",
      "x": 107,
-     "y": 708.296875,
+     "y": 645.828125,
      "w": 869,
-     "h": 124.9375,
+     "h": 62.46875,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "La banque étrangère ne le fait pas automatiquement."
+     "text": "La banque étrangère ne le fait pas."
     },
     {
      "role": "index",
@@ -230,7 +230,7 @@
    "type": "point",
    "pose": null,
    "scene": null,
-   "note": "pose pointe retirée : chevauche « Tu déclares le compte une seule fois au  »",
+   "note": null,
    "scale": 1,
    "overflow": false,
    "bytes": 156927,
@@ -394,10 +394,10 @@
    "type": "point",
    "pose": null,
    "scene": null,
-   "note": null,
+   "note": "pose stress-tablette retirée : chevauche « Tu n'as rien déclaré ? Fais-le dès que p »",
    "scale": 1,
    "overflow": false,
-   "bytes": 158386,
+   "bytes": 124851,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -416,20 +416,20 @@
      "x": 107,
      "y": 427.625,
      "w": 869,
-     "h": 187.40625,
+     "h": 124.9375,
      "font": 44,
      "color": "rgb(255, 255, 255)",
-     "text": "Le contrôle revient à l'administration fiscale, qui peut infliger des "
+     "text": "Le contrôle revient au fisc, qui peut infliger des amendes."
     },
     {
      "role": "body",
      "x": 107,
-     "y": 645.828125,
+     "y": 583.359375,
      "w": 869,
-     "h": 187.40625,
+     "h": 124.9375,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "Si tu n'as encore rien déclaré, la BNB conseille de le faire dès que p"
+     "text": "Tu n'as rien déclaré ? Fais-le dès que possible, en ligne."
     },
     {
      "role": "index",
@@ -471,10 +471,10 @@
    "type": "point",
    "pose": null,
    "scene": null,
-   "note": "pose graphique-hausse retirée : chevauche « En cas de doute sur ta situation, demand »",
+   "note": "pose pouce retirée : chevauche « Mentionne le compte chaque année dans ta »",
    "scale": 1,
    "overflow": false,
-   "bytes": 169966,
+   "bytes": 137225,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -496,17 +496,17 @@
      "h": 187.40625,
      "font": 44,
      "color": "rgb(255, 255, 255)",
-     "text": "Le compte reste à mentionner chaque année dans ta déclaration d'impôt,"
+     "text": "Mentionne le compte chaque année dans ta déclaration d'impôt, même déj"
     },
     {
      "role": "body",
      "x": 107,
      "y": 645.828125,
      "w": 869,
-     "h": 187.40625,
+     "h": 62.46875,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "En cas de doute sur ta situation, demande à l'administration fiscale o"
+     "text": "Un doute ? Demande au fisc."
     },
     {
      "role": "index",

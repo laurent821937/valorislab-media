@@ -29,7 +29,8 @@
    "type": "point",
    "index": "02",
    "title": "La *demande*",
-   "body": "Pour « débloquer » ou « synchroniser » ton wallet, il te demande ta **phrase de récupération** (12 ou 24 mots).\n\nOu il t'envoie un lien vers un site copié à l'identique, où tu la tapes toi-même."
+   "body": "Pour « débloquer » ton wallet, il te demande ta **phrase de récupération** (12 ou 24 mots).\n\nOu un lien vers un faux site.",
+   "pose": "doute-telephone-hoodie"
   },
   {
    "type": "stat",
@@ -50,8 +51,9 @@
   {
    "type": "point",
    "index": "03",
-   "title": "Déjà *partagé* ta phrase ?",
-   "body": "Agis tout de suite : crée un nouveau wallet avec une nouvelle phrase et transfères-y ce qui reste.\n\nPuis signale l'arnaque au SPF Économie (pointdecontact.belgique.be) et à la plateforme concernée."
+   "title": "*Déjà* partagé ?",
+   "body": "Crée vite un nouveau wallet avec une nouvelle phrase et transfères-y le reste.\n\nSignale l'arnaque : pointdecontact.belgique.be.",
+   "pose": "choc-polo"
   },
   {
    "type": "cta",

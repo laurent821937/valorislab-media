@@ -326,10 +326,10 @@
    "type": "point",
    "pose": null,
    "scene": null,
-   "note": null,
+   "note": "pose pointe retirée : chevauche « D'où l'intérêt de diversifier. »",
    "scale": 1,
    "overflow": false,
-   "bytes": 149259,
+   "bytes": 123210,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -358,10 +358,10 @@
      "x": 107,
      "y": 583.359375,
      "w": 869,
-     "h": 187.40625,
+     "h": 62.46875,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "C'est une des raisons de diversifier : un seul titre qui s'effondre es"
+     "text": "D'où l'intérêt de diversifier."
     },
     {
      "role": "index",
@@ -403,10 +403,10 @@
    "type": "point",
    "pose": null,
    "scene": null,
-   "note": "pose pointe retirée : chevauche « C'est souvent ainsi qu'une perte support »",
+   "note": "pose stress-baisse retirée : chevauche « Après une grosse perte, on prend plus de »",
    "scale": 1,
    "overflow": false,
-   "bytes": 158566,
+   "bytes": 141070,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -425,20 +425,20 @@
      "x": 107,
      "y": 518.25,
      "w": 869,
-     "h": 187.40625,
+     "h": 124.9375,
      "font": 44,
      "color": "rgb(255, 255, 255)",
-     "text": "Après une grosse perte, on est tenté de prendre plus de risque pour ré"
+     "text": "Après une grosse perte, on prend plus de risque pour récupérer vite."
     },
     {
      "role": "body",
      "x": 107,
-     "y": 736.453125,
+     "y": 673.984375,
      "w": 869,
-     "h": 124.9375,
+     "h": 62.46875,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "C'est souvent ainsi qu'une perte supportable devient une perte durable"
+     "text": "Une perte supportable devient durable."
     },
     {
      "role": "index",

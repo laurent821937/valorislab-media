@@ -155,7 +155,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 152996,
+   "bytes": 124536,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -177,17 +177,17 @@
      "h": 187.40625,
      "font": 44,
      "color": "rgb(255, 255, 255)",
-     "text": "Pour « débloquer » ou « synchroniser » ton wallet, il te demande ta ph"
+     "text": "Pour « débloquer » ton wallet, il te demande ta phrase de récupération"
     },
     {
      "role": "body",
      "x": 107,
      "y": 645.828125,
      "w": 869,
-     "h": 124.9375,
+     "h": 62.46875,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "Ou il t'envoie un lien vers un site copié à l'identique, où tu la tape"
+     "text": "Ou un lien vers un faux site."
     },
     {
      "role": "index",
@@ -383,10 +383,10 @@
    "type": "point",
    "pose": null,
    "scene": null,
-   "note": null,
+   "note": "pose choc-polo retirée : chevauche « Crée vite un nouveau wallet avec une nou »",
    "scale": 1,
    "overflow": false,
-   "bytes": 175365,
+   "bytes": 135408,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -395,30 +395,30 @@
      "x": 80,
      "y": 307,
      "w": 896,
-     "h": 181.25,
+     "h": 90.625,
      "font": 88,
      "color": "rgba(0, 0, 0, 0)",
-     "text": "Déjà partagé ta phrase ?"
+     "text": "Déjà partagé ?"
     },
     {
      "role": "body",
      "x": 107,
-     "y": 518.25,
+     "y": 427.625,
      "w": 869,
-     "h": 187.40625,
+     "h": 124.9375,
      "font": 44,
      "color": "rgb(255, 255, 255)",
-     "text": "Agis tout de suite : crée un nouveau wallet avec une nouvelle phrase e"
+     "text": "Crée vite un nouveau wallet avec une nouvelle phrase et transfères-y l"
     },
     {
      "role": "body",
      "x": 107,
-     "y": 736.453125,
+     "y": 583.359375,
      "w": 869,
-     "h": 187.40625,
+     "h": 124.9375,
      "font": 44,
      "color": "rgb(220, 214, 204)",
-     "text": "Puis signale l'arnaque au SPF Économie (pointdecontact.belgique.be) et"
+     "text": "Signale l'arnaque : pointdecontact.belgique.be."
     },
     {
      "role": "index",
