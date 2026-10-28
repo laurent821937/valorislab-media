@@ -1,0 +1,102 @@
+{
+ "id": "2026-11-09-etf-capitalisant-distribuant",
+ "date": "2026-11-09",
+ "pillar": "mecanisme",
+ "theme": "bourse",
+ "topic": "ETF capitalisant ou distribuant : l'effet de la réinvestissement des dividendes (illustration hypothétique)",
+ "keywords": [
+  "ETF",
+  "capitalisant",
+  "distribuant",
+  "dividendes",
+  "réinvestir",
+  "20 ans"
+ ],
+ "kicker": "Mécanisme chiffré · ETF",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Capitalisant ou distribuant : *4 200 €* d'écart ?",
+   "subtitle": "Même ETF, même rendement. Un seul réglage change tout.",
+   "scene": "bruxelles-ecran"
+  },
+  {
+   "type": "point",
+   "index": "01",
+   "title": "Deux *versions*",
+   "body": "Un ETF capitalisant **réinvestit** automatiquement les dividendes.\n\nUn ETF distribuant te les **verse** en cash.",
+   "pose": "pointe"
+  },
+  {
+   "type": "point",
+   "index": "02",
+   "title": "L'*hypothèse*",
+   "body": "10 000 € investis pendant 20 ans.\n\nRendement total de 6 % par an, dont 2 % de dividendes. Avant frais et impôts."
+  },
+  {
+   "type": "compare",
+   "title": "Après *20 ans*",
+   "left": {
+    "label": "Capitalisant",
+    "value": "32 071 €",
+    "note": "dividendes réinvestis",
+    "win": true
+   },
+   "right": {
+    "label": "Distribuant",
+    "value": "27 867 €",
+    "note": "21 911 € + 5 956 € de dividendes encaissés"
+   },
+   "note": "Illustration hypothétique, rendement non garanti."
+  },
+  {
+   "type": "point",
+   "index": "03",
+   "title": "Pourquoi cet *écart* ?",
+   "body": "Les dividendes réinvestis rapportent à leur tour.\n\nVersés et dépensés, ils quittent le portefeuille et ne travaillent plus."
+  },
+  {
+   "type": "list",
+   "title": "Comment *choisir* ?",
+   "items": [
+    "Capitaliser : tu construis un capital à long terme",
+    "Distribuer : tu veux un revenu régulier",
+    "Vérifie la fiscalité belge de ton choix avant d'acheter"
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Bien choisir fait partie des *20 erreurs*",
+   "body": "Mon guide gratuit t'explique les bases pour investir en comprenant, sans mauvaise surprise.",
+   "button": "Guide gratuit · lien en bio",
+   "disclaimer": "Contenu éducatif, pas un conseil financier.",
+   "scene": "portrait-bureau"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 7 slides comparant un ETF capitalisant et un ETF distribuant : 10 000 € sur 20 ans à 6 % par an (illustration hypothétique), soit 32 071 € si les dividendes sont réinvestis contre 27 867 € s'ils sont encaissés, et comment choisir.",
+ "captions": {
+  "instagram": "Même ETF, même rendement : 4 200 € d'écart après 20 ans ? Tout dépend de ce que tu fais des dividendes.\n\nUn ETF capitalisant réinvestit les dividendes à ta place. Un ETF distribuant te les verse en cash. Sur 10 000 € à 6 % par an (dont 2 % de dividendes), on arrive à 32 071 € dans le premier cas, contre 27 867 € (capital + dividendes encaissés) dans le second.\n\nÀ retenir :\n\n • Capitalisant : les dividendes sont réinvestis et travaillent à leur tour\n\n • Distribuant : tu reçois un revenu, mais le capital grandit moins vite\n\n • Avant de choisir, vérifie la fiscalité belge de chaque version\n\nCapitalisant ou distribuant : tu préfères lequel, et pourquoi ?\n\nEnregistre ce post et envoie-le à quelqu'un qui débute.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nHypothèses : 10 000 € investis 20 ans, 6 % de rendement total par an dont 2 % de dividendes, avant frais et impôts, dividendes distribués non réinvestis. Illustration hypothétique, rendement non garanti. Contenu éducatif, pas un conseil financier.\n\n#etf #investir #bourse #belgique #dividendes",
+  "facebook": "Même ETF, même rendement : 4 200 € d'écart après 20 ans ? Tout dépend de ce que tu fais des dividendes.\n\nUn ETF capitalisant réinvestit les dividendes à ta place. Un ETF distribuant te les verse en cash. Sur 10 000 € à 6 % par an (dont 2 % de dividendes), on arrive à 32 071 € dans le premier cas, contre 27 867 € (capital + dividendes encaissés) dans le second.\n\nÀ retenir :\n\n • Capitalisant : les dividendes sont réinvestis et travaillent à leur tour\n\n • Distribuant : tu reçois un revenu, mais le capital grandit moins vite\n\n • Avant de choisir, vérifie la fiscalité belge de chaque version\n\nCapitalisant ou distribuant : tu préfères lequel, et pourquoi ?\n\nPartage ce post à quelqu'un qui débute.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nHypothèses : 10 000 € investis 20 ans, 6 % de rendement total par an dont 2 % de dividendes, avant frais et impôts, dividendes distribués non réinvestis. Illustration hypothétique, rendement non garanti. Contenu éducatif, pas un conseil financier.\n\n#etf #investir #bourse #belgique #dividendes",
+  "tiktok_title": "ETF capitalisant ou distribuant : 4 200 € d'écart ?",
+  "tiktok": "Même ETF, même rendement : capitalisant ou distribuant ? Sur 20 ans, l'écart peut dépasser 4 200 € (illustration hypothétique). Tout est dans le carrousel. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #etf #investir #bourse #belgique #dividendes"
+ },
+ "sources": [
+  "Calcul Python du run (10 000 € ; 6 % total ; 2 % de dividendes ; 20 ans), hypothèses affichées. Aucune donnée réglementaire externe."
+ ],
+ "virality": {
+  "score": 73,
+  "detail": {
+   "accroche": 14,
+   "curiosite": 12,
+   "valeur": 12,
+   "partage": 6,
+   "belge": 6,
+   "clarte": 9,
+   "retention": 8,
+   "actualite": 6
+  },
+  "hook_variants": [
+   "Capitalisant ou distribuant : *4 200 €* d'écart ?"
+  ]
+ }
+}

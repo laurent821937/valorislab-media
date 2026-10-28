@@ -1,0 +1,545 @@
+{
+ "id": "2026-11-09-faux-courtier-clone-fsma",
+ "kit_version": "2026-10-27.7",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "grand-place-cafe",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 313788,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 80,
+     "y": 691.90625,
+     "w": 896,
+     "h": 48,
+     "font": 22,
+     "color": "rgb(246, 224, 166)",
+     "text": "ERREUR À ÉVITER · ARNAQUE"
+    },
+    {
+     "role": "title",
+     "x": 80,
+     "y": 769.90625,
+     "w": 896,
+     "h": 288,
+     "font": 96,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Ce courtier a l'air officiel. Et si c'était un clone ?"
+    },
+    {
+     "role": "lead",
+     "x": 80,
+     "y": 1125.90625,
+     "w": 896,
+     "h": 54.09375,
+     "font": 39.2,
+     "color": "rgb(220, 214, 204)",
+     "text": "Le réflexe de 2 minutes qui évite l'arnaque."
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    },
+    {
+     "role": "next",
+     "x": 912,
+     "y": 1242,
+     "w": 64,
+     "h": 64,
+     "font": 30,
+     "color": "rgb(246, 224, 166)",
+     "text": "→"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": "pose doute-telephone retirée : chevauche « Son nom, son logo et son site ressemblen »",
+   "scale": 1,
+   "overflow": false,
+   "bytes": 142966,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 80,
+     "y": 307,
+     "w": 896,
+     "h": 90.625,
+     "font": 88,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Un clone, c'est quoi ?"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 427.625,
+     "w": 869,
+     "h": 187.40625,
+     "font": 44,
+     "color": "rgb(255, 255, 255)",
+     "text": "Une société frauduleuse se fait passer pour une société régulière, san"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 645.828125,
+     "w": 869,
+     "h": 124.9375,
+     "font": 44,
+     "color": "rgb(220, 214, 204)",
+     "text": "Son nom, son logo et son site ressemblent à l'original."
+    },
+    {
+     "role": "index",
+     "x": 80,
+     "y": 230,
+     "w": 896,
+     "h": 53,
+     "font": 42,
+     "color": "rgb(255, 255, 255)",
+     "text": "01"
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    },
+    {
+     "role": "next",
+     "x": 912,
+     "y": 1242,
+     "w": 64,
+     "h": 64,
+     "font": 30,
+     "color": "rgb(246, 224, 166)",
+     "text": "→"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": "pose checklist retirée : chevauche « 3 Adresse e-mail différente de celle du  »",
+   "scale": 1,
+   "overflow": false,
+   "bytes": 137298,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 80,
+     "y": 377.78125,
+     "w": 896,
+     "h": 82.390625,
+     "font": 80,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Les signaux d'alerte"
+    },
+    {
+     "role": "listItem",
+     "x": 80,
+     "y": 496.171875,
+     "w": 896,
+     "h": 145.34375,
+     "font": 38,
+     "color": "rgb(255, 255, 255)",
+     "text": "1 Contact inattendu par téléphone ou message"
+    },
+    {
+     "role": "listItem",
+     "x": 80,
+     "y": 657.515625,
+     "w": 896,
+     "h": 93.671875,
+     "font": 38,
+     "color": "rgb(255, 255, 255)",
+     "text": "2 Promesse de gains rapides ou garantis"
+    },
+    {
+     "role": "listItem",
+     "x": 80,
+     "y": 767.1875,
+     "w": 896,
+     "h": 145.34375,
+     "font": 38,
+     "color": "rgb(255, 255, 255)",
+     "text": "3 Adresse e-mail différente de celle du vrai site"
+    },
+    {
+     "role": "listItem",
+     "x": 80,
+     "y": 928.53125,
+     "w": 896,
+     "h": 93.671875,
+     "font": 38,
+     "color": "rgb(255, 255, 255)",
+     "text": "4 Pression pour décider vite"
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    },
+    {
+     "role": "next",
+     "x": 912,
+     "y": 1242,
+     "w": 64,
+     "h": 64,
+     "font": 30,
+     "color": "rgb(246, 224, 166)",
+     "text": "→"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "point",
+   "pose": "reflexion",
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 219094,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 80,
+     "y": 428.3125,
+     "w": 520,
+     "h": 164.78125,
+     "font": 80,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Le réflexe FSMA"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 623.09375,
+     "w": 493,
+     "h": 227.1875,
+     "font": 40,
+     "color": "rgb(255, 255, 255)",
+     "text": "Cherche le prestataire par son nom ou son numéro d'entreprise sur le s"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 878.28125,
+     "w": 493,
+     "h": 170.390625,
+     "font": 40,
+     "color": "rgb(220, 214, 204)",
+     "text": "Pas dans la liste ? Il n'est pas autorisé à proposer ces produits en B"
+    },
+    {
+     "role": "index",
+     "x": 80,
+     "y": 351.3125,
+     "w": 520,
+     "h": 53,
+     "font": 42,
+     "color": "rgb(255, 255, 255)",
+     "text": "02"
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    },
+    {
+     "role": "next",
+     "x": 912,
+     "y": 1242,
+     "w": 64,
+     "h": 64,
+     "font": 30,
+     "color": "rgb(246, 224, 166)",
+     "text": "→"
+    }
+   ],
+   "hero": {
+    "x": 578,
+    "y": 500,
+    "w": 522,
+    "h": 1328,
+    "src": "../assets/pose-reflexion.webp",
+    "nw": 577,
+    "nh": 1466,
+    "mirror": false
+   }
+  },
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 153082,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 80,
+     "y": 307,
+     "w": 896,
+     "h": 181.25,
+     "font": 88,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Compare les coordonnées"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 518.25,
+     "w": 869,
+     "h": 187.40625,
+     "font": 44,
+     "color": "rgb(255, 255, 255)",
+     "text": "Compare l'adresse e-mail et les coordonnées avec celles de la vraie so"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 736.453125,
+     "w": 869,
+     "h": 124.9375,
+     "font": 44,
+     "color": "rgb(220, 214, 204)",
+     "text": "Les adresses de la FSMA se terminent toutes par @fsma.be."
+    },
+    {
+     "role": "index",
+     "x": 80,
+     "y": 230,
+     "w": 896,
+     "h": 53,
+     "font": 42,
+     "color": "rgb(255, 255, 255)",
+     "text": "03"
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    },
+    {
+     "role": "next",
+     "x": 912,
+     "y": 1242,
+     "w": 64,
+     "h": 64,
+     "font": 30,
+     "color": "rgb(246, 224, 166)",
+     "text": "→"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": "pose stress-tablette retirée : chevauche « Être absent de la liste ne prouve pas qu »",
+   "scale": 1,
+   "overflow": false,
+   "bytes": 155546,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 80,
+     "y": 307,
+     "w": 896,
+     "h": 90.625,
+     "font": 88,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Liste incomplète"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 427.625,
+     "w": 869,
+     "h": 124.9375,
+     "font": 44,
+     "color": "rgb(255, 255, 255)",
+     "text": "La liste des mises en garde est mise à jour souvent, mais elle n'est p"
+    },
+    {
+     "role": "body",
+     "x": 107,
+     "y": 583.359375,
+     "w": 869,
+     "h": 187.40625,
+     "font": 44,
+     "color": "rgb(220, 214, 204)",
+     "text": "Être absent de la liste ne prouve pas qu'une société est fiable. En ca"
+    },
+    {
+     "role": "index",
+     "x": 80,
+     "y": 230,
+     "w": 896,
+     "h": 53,
+     "font": 42,
+     "color": "rgb(255, 255, 255)",
+     "text": "04"
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    },
+    {
+     "role": "next",
+     "x": 912,
+     "y": 1242,
+     "w": 64,
+     "h": 64,
+     "font": 30,
+     "color": "rgb(246, 224, 166)",
+     "text": "→"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-07.jpg",
+   "format": "feed",
+   "slide": 7,
+   "type": "cta",
+   "pose": null,
+   "scene": "portrait-bureau",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 310672,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 80,
+     "y": 698.1875,
+     "w": 896,
+     "h": 164.78125,
+     "font": 80,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "Savoir vérifier fait partie des 20 erreurs"
+    },
+    {
+     "role": "body",
+     "x": 80,
+     "y": 892.96875,
+     "w": 896,
+     "h": 113.59375,
+     "font": 40,
+     "color": "rgb(255, 255, 255)",
+     "text": "Mon guide gratuit t'apprend à repérer les pièges avant d'investir en B"
+    },
+    {
+     "role": "button",
+     "x": 80,
+     "y": 1042.5625,
+     "w": 492.625,
+     "h": 81,
+     "font": 25,
+     "color": "rgb(22, 19, 13)",
+     "text": "GUIDE GRATUIT · LIEN EN BIO →"
+    },
+    {
+     "role": "disclaimer",
+     "x": 80,
+     "y": 1149.5625,
+     "w": 896,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(163, 155, 142)",
+     "text": "Contenu éducatif, pas un conseil financier."
+    },
+    {
+     "role": "brand",
+     "x": 458.375,
+     "y": 46,
+     "w": 139.234375,
+     "h": 104,
+     "font": 16,
+     "color": "rgb(255, 255, 255)",
+     "text": ""
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": []
+}

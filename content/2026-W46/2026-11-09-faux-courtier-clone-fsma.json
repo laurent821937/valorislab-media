@@ -1,0 +1,95 @@
+{
+ "id": "2026-11-09-faux-courtier-clone-fsma",
+ "date": "2026-11-09",
+ "pillar": "erreur",
+ "theme": "bourse",
+ "topic": "Faux courtiers clonés : comment vérifier un prestataire avec la FSMA",
+ "keywords": [
+  "faux courtier",
+  "clone",
+  "FSMA",
+  "arnaque",
+  "mise en garde",
+  "vérifier"
+ ],
+ "kicker": "Erreur à éviter · Arnaque",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Ce courtier a l'air *officiel*. Et si c'était un clone ?",
+   "subtitle": "Le réflexe de 2 minutes qui évite l'arnaque.",
+   "scene": "grand-place-cafe"
+  },
+  {
+   "type": "point",
+   "index": "01",
+   "title": "Un *clone*, c'est quoi ?",
+   "body": "Une société frauduleuse se fait passer pour une société **régulière**, sans aucun lien avec elle.\n\nSon nom, son logo et son site ressemblent à l'original.",
+   "pose": "doute-telephone"
+  },
+  {
+   "type": "list",
+   "title": "Les *signaux* d'alerte",
+   "items": [
+    "Contact inattendu par téléphone ou message",
+    "Promesse de gains rapides ou garantis",
+    "Adresse e-mail différente de celle du vrai site",
+    "Pression pour décider vite"
+   ]
+  },
+  {
+   "type": "point",
+   "index": "02",
+   "title": "Le réflexe *FSMA*",
+   "body": "Cherche le prestataire par son nom ou son numéro d'entreprise sur le site de la **FSMA**.\n\nPas dans la liste ? Il n'est pas autorisé à proposer ces produits en Belgique."
+  },
+  {
+   "type": "point",
+   "index": "03",
+   "title": "Compare les *coordonnées*",
+   "body": "Compare l'adresse e-mail et les coordonnées avec celles de la vraie société.\n\nLes adresses de la FSMA se terminent toutes par @fsma.be."
+  },
+  {
+   "type": "point",
+   "index": "04",
+   "title": "Liste *incomplète*",
+   "body": "La liste des mises en garde est mise à jour souvent, mais elle n'est pas exhaustive.\n\nÊtre absent de la liste ne prouve pas qu'une société est fiable. En cas de doute, contacte la FSMA.",
+   "pose": "stress-tablette"
+  },
+  {
+   "type": "cta",
+   "title": "Savoir vérifier fait partie des *20 erreurs*",
+   "body": "Mon guide gratuit t'apprend à repérer les pièges avant d'investir en Belgique.",
+   "button": "Guide gratuit · lien en bio",
+   "disclaimer": "Contenu éducatif, pas un conseil financier.",
+   "scene": "portrait-bureau"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 7 slides sur les faux courtiers qui clonent une société régulière : définition, signaux d'alerte, vérification auprès de la FSMA, comparaison des coordonnées et limites de la liste des mises en garde.",
+ "captions": {
+  "instagram": "Ce courtier a l'air officiel. Et si c'était un clone ?\n\nCertaines sociétés frauduleuses copient le nom et le site d'une société régulière. Avant de verser un euro, cherche le prestataire sur le site de la FSMA, et compare ses coordonnées avec celles de la vraie société.\n\nÀ retenir :\n\n • Un clone se fait passer pour une société régulière, sans aucun lien avec elle\n\n • Une société absente de la liste de la FSMA n'est pas autorisée à proposer ces produits en Belgique\n\n • La liste des mises en garde n'est pas exhaustive : en cas de doute, contacte la FSMA\n\nQuelle arnaque as-tu déjà croisée ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui débute.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nSource : FSMA (fsma.be), mises en garde et vérification du prestataire. Contenu éducatif, pas un conseil financier.\n\n#arnaque #fsma #belgique #bourse #investir",
+  "facebook": "Ce courtier a l'air officiel. Et si c'était un clone ?\n\nCertaines sociétés frauduleuses copient le nom et le site d'une société régulière. Avant de verser un euro, cherche le prestataire sur le site de la FSMA, et compare ses coordonnées avec celles de la vraie société.\n\nÀ retenir :\n\n • Un clone se fait passer pour une société régulière, sans aucun lien avec elle\n\n • Une société absente de la liste de la FSMA n'est pas autorisée à proposer ces produits en Belgique\n\n • La liste des mises en garde n'est pas exhaustive : en cas de doute, contacte la FSMA\n\nQuelle arnaque as-tu déjà croisée ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui débute.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nSource : FSMA (fsma.be), mises en garde et vérification du prestataire. Contenu éducatif, pas un conseil financier.\n\n#arnaque #fsma #belgique #bourse #investir",
+  "tiktok_title": "Faux courtier cloné : vérifie avec la FSMA",
+  "tiktok": "Ce courtier a l'air officiel, mais c'est peut-être un clone. Vérifie-le sur le site de la FSMA avant de verser un euro. Détails dans le carrousel. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #arnaque #fsma #belgique #bourse #investir"
+ },
+ "sources": [
+  "FSMA, mises en garde : fsma.be/fr/warnings",
+  "FSMA, liste des entreprises irrégulièrement actives en Belgique : fsma.be/fr/warnings/companies-operating-unlawfully-in-belgium (consulté le 28/10/2026)"
+ ],
+ "virality": {
+  "score": 71,
+  "detail": {
+   "accroche": 13,
+   "curiosite": 11,
+   "valeur": 11,
+   "partage": 8,
+   "belge": 9,
+   "clarte": 9,
+   "retention": 7,
+   "actualite": 3
+  },
+  "hook_variants": [
+   "Ce courtier a l'air *officiel*. Et si c'était un clone ?"
+  ]
+ }
+}

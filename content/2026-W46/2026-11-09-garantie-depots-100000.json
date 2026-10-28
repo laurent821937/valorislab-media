@@ -1,0 +1,95 @@
+{
+ "id": "2026-11-09-garantie-depots-100000",
+ "date": "2026-11-09",
+ "pillar": "belgique",
+ "theme": "finance",
+ "topic": "Garantie des dépôts : 100 000 € par personne et par banque",
+ "keywords": [
+  "garantie des dépôts",
+  "100 000 €",
+  "faillite bancaire",
+  "épargne",
+  "banque"
+ ],
+ "kicker": "Belgique pratique · Épargne",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Ta banque fait faillite : *100 000 €* protégés",
+   "subtitle": "Mais par quoi, par qui, et que se passe-t-il au-delà ?",
+   "scene": "bureau-document"
+  },
+  {
+   "type": "point",
+   "index": "01",
+   "title": "Le *plafond*",
+   "body": "En Belgique, tes dépôts sont protégés jusqu'à **100 000 €**.\n\nLe calcul se fait par banque et par personne, **pas par compte**.",
+   "pose": "pointe"
+  },
+  {
+   "type": "stat",
+   "title": "Un seul *plafond*",
+   "value": "100 000 €",
+   "label": "par personne et par banque",
+   "body": "Plusieurs comptes dans la même banque : leurs montants s'additionnent."
+  },
+  {
+   "type": "list",
+   "title": "Ce qui est *couvert*",
+   "items": [
+    "Comptes à vue et comptes d'épargne",
+    "Comptes à terme",
+    "Bons de caisse",
+    "Produits de la branche 21"
+   ]
+  },
+  {
+   "type": "point",
+   "index": "02",
+   "title": "Plus de *100 000 €* ?",
+   "body": "Au-delà du plafond, la partie en trop n'est plus protégée.\n\nUne piste : répartir ton épargne entre plusieurs banques.",
+   "pose": "reflexion"
+  },
+  {
+   "type": "point",
+   "index": "03",
+   "title": "Banque *étrangère*",
+   "body": "Banque agréée ailleurs dans l'EEE : c'est l'État qui lui a délivré son agrément qu'il faut contacter en cas de problème."
+  },
+  {
+   "type": "cta",
+   "title": "Protéger son argent fait partie des *20 erreurs*",
+   "body": "Mon guide gratuit t'explique les bases pour épargner et investir en Belgique sans mauvaise surprise.",
+   "button": "Guide gratuit · lien en bio",
+   "disclaimer": "Contenu éducatif, pas un conseil financier.",
+   "scene": "portrait-bureau"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 7 slides sur la garantie des dépôts en Belgique : plafond de 100 000 € par personne et par banque, produits couverts, que faire au-delà du plafond et cas d'une banque étrangère de l'Espace économique européen.",
+ "captions": {
+  "instagram": "Ta banque fait faillite : 100 000 € sont protégés. Mais par personne et par banque, pas par compte.\n\nEn Belgique, les dépôts sont garantis jusqu'à 100 000 €. Tes comptes à vue, d'épargne et à terme dans une même banque s'additionnent pour ce plafond.\n\nÀ retenir :\n\n • Plafond : 100 000 € par personne et par banque, pas par compte\n\n • Sont couverts : comptes à vue, d'épargne, à terme, bons de caisse, branche 21\n\n • Banque étrangère de l'EEE : contacte l'État qui l'a agréée\n\nTu connaissais ce plafond ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui débute.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nSource : Wikifin (wikifin.be), page « garantie des dépôts ». Contenu éducatif, pas un conseil financier.\n\n#belgique #epargne #banque #finance #investir",
+  "facebook": "Ta banque fait faillite : 100 000 € sont protégés. Mais par personne et par banque, pas par compte.\n\nEn Belgique, les dépôts sont garantis jusqu'à 100 000 €. Tes comptes à vue, d'épargne et à terme dans une même banque s'additionnent pour ce plafond.\n\nÀ retenir :\n\n • Plafond : 100 000 € par personne et par banque, pas par compte\n\n • Sont couverts : comptes à vue, d'épargne, à terme, bons de caisse, branche 21\n\n • Banque étrangère de l'EEE : contacte l'État qui l'a agréée\n\nTu connaissais ce plafond ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui débute.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nSource : Wikifin (wikifin.be), page « garantie des dépôts ». Contenu éducatif, pas un conseil financier.\n\n#belgique #epargne #banque #finance #investir",
+  "tiktok_title": "Garantie des dépôts : 100 000 € par banque",
+  "tiktok": "Ta banque fait faillite : 100 000 € sont protégés, par personne et par banque, pas par compte. Les détails dans le carrousel. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #belgique #epargne #banque #finance #investir"
+ },
+ "sources": [
+  "Wikifin, « Votre épargne est-elle en sécurité ? » : wikifin.be/fr/thematiques/epargner-et-investir/compte-depargne/garantie (consulté le 28/10/2026)",
+  "Fonds de garantie : fondsdegarantie.belgium.be"
+ ],
+ "virality": {
+  "score": 72,
+  "detail": {
+   "accroche": 14,
+   "curiosite": 10,
+   "valeur": 11,
+   "partage": 7,
+   "belge": 10,
+   "clarte": 9,
+   "retention": 7,
+   "actualite": 4
+  },
+  "hook_variants": [
+   "Ta banque fait faillite : *100 000 €* protégés"
+  ]
+ }
+}
