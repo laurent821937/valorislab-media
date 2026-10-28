@@ -243,7 +243,7 @@ def main():
     env.filters["md"] = md
     tpl = env.get_template("slide.html.j2")
 
-    kit_version = (KIT / "VERSION").read_text().strip() if (KIT / "VERSION").exists() else "?"
+    kit_version = ((KIT / "RENDER_VERSION") if (KIT / "RENDER_VERSION").exists() else (KIT / "VERSION")).read_text().strip() if ((KIT / "RENDER_VERSION").exists() or (KIT / "VERSION").exists()) else "?"
     report = {"id": cid, "kit_version": kit_version, "files": [], "errors": []}
     tmp = pathlib.Path(tempfile.mkdtemp(dir=KIT / "templates"))  # same depth -> ../fonts resolves
     tmp_html = KIT / "templates" / "_render.html"

@@ -24,16 +24,19 @@ Si `kit/` est absent du dépôt : arrêter et signaler « INTERVENTION REQUISE :
 - `get_account` → `currentTime` (référence du « maintenant »).
 - `list_channels` (organizationId de config) : pour Facebook, Instagram, TikTok, relever `isDisconnected`, `isLocked`.
 - `get_channel` pour chaque réseau : `isQueuePaused`, `postingSchedule`.
-- `execute_query` : `configuration(input:{organizationId})` → `channels { channelId authorizationStatus { feature status reason } }` : `posting` doit être `ok`.
+- Si l'outil `execute_query` est disponible : `configuration(input:{organizationId})` → `channels { channelId authorizationStatus { feature status reason } }` : `posting` doit être `ok`. S'il est absent ou répond « Tool not found » (cas constaté le 28/10/2026), ne pas bloquer : se fier à `list_channels` + `get_channel` et le signaler en une ligne dans le rapport, sans « INTERVENTION REQUISE ».
 - `list_posts` avec `status: ["error"]` et `dueAt.start` = maintenant − 14 jours : pour chaque post en erreur, `get_post` → `error.message`, `error.supportUrl`.
 - Tout réseau déconnecté, verrouillé, en pause ou non autorisé → ne rien programmer dessus et le signaler en tête du rapport (« INTERVENTION REQUISE »).
 
 ## 2. Capacité par réseau
 - `list_posts` avec `channelIds: [id]`, `status: ["scheduled","sending","needs_approval"]` (paginer jusqu'au bout) → `pending`.
-- `capacité = min(3, 10 − pending)`. Si `capacité ≤ 0` → réseau ignoré (le signaler).
+- La capacité finale est calculée à l'étape 3, une fois la semaine cible connue.
 
 ## 3. Créneaux de la semaine cible
-- Semaine cible = du lundi 00:00 au dimanche 23:59 (Europe/Brussels) de la semaine qui suit la date du run.
+- **Anti-doublon de semaine (obligatoire)** : semaine cible = la première semaine (lundi 00:00 → dimanche 23:59, Europe/Brussels), en partant de la semaine qui suit la date du run, dans laquelle au moins un réseau compte moins de `buffer.postsPerChannelPerWeek` (3) posts portant le tag `auto-valorislab` (statuts scheduled, sending, needs_approval ou sent). Compter avec `list_posts` filtré **uniquement** par `channelIds: [id]` et `tagIds: [buffer.tagId]` (paginer jusqu'au bout), puis filtrer localement sur `dueAt` (bornes de la semaine) et `status`. Ne pas combiner `tagIds` avec `dueAt` ou `status` dans le même appel : le 28/10/2026, cette combinaison renvoyait une liste vide alors que la semaine contenait 3 posts.
+- Ne jamais regarder au-delà de la 2e semaine qui suit le run. Si ces 2 semaines sont déjà complètes sur les 3 réseaux : ne créer aucun contenu ni aucun post, et terminer par « OK — semaines déjà programmées, aucun doublon créé ».
+- Par réseau : `déjà` = posts tagués dans la semaine cible ; `capacité = min(3 − déjà, 10 − pending)`. Si `capacité ≤ 0` → réseau ignoré pour ce run (le signaler). Nombre de contenus à créer = la plus grande capacité parmi les 3 réseaux.
+- Un lancement manuel en cours de semaine suit exactement la même règle : il complète la première semaine non remplie et ne double jamais une semaine déjà programmée.
 - Créneaux = heures de `postingSchedule` du réseau tombant dans la semaine cible, triés par date.
 - Moins de 3 créneaux → compléter avec 12:30 les jours sans créneau, répartis (mardi, jeudi, samedi en priorité).
 - Écarter un créneau si `dueAt < currentTime + 48 h` ou si un post est déjà programmé sur ce réseau à ± 60 min.
@@ -47,6 +50,7 @@ Si `kit/` est absent du dépôt : arrêter et signaler « INTERVENTION REQUISE :
 - Il est aussi refusé s'il réutilise un exemple chiffré, une comparaison ou une statistique listés dans « Angles et exemples chiffrés déjà publiés » (`STRATEGIE.md`) ou présents dans un post des 120 derniers jours.
 - Le pilier « Belgique pratique » ne doit pas être remplacé par un autre pilier : suivre la section « Sources officielles belges » de `STRATEGIE.md`. Si un site officiel est bloqué par le réseau de l'environnement, le signaler dans le rapport (liste des domaines bloqués).
 - Avant chaque `create_post` : vérifier qu'aucun post du réseau ne commence par les mêmes 80 premiers caractères (programmé, brouillon ou publié depuis moins de 60 jours). Si c'est le cas, ne pas créer.
+- Ne jamais créer un second post pour un même `id` de contenu sur un même réseau tant que le premier existe (programmé, en cours ou publié) : vérifier dans `state/history.json` puis avec `get_post`.
 
 ## 4 bis. Analyse de performance
 - `list_posts` avec `status: ["sent"]`, `dueAt.start` = maintenant − 28 jours, `includeMetrics: true` (paginer). Exclure les posts de moins de 48 h.
@@ -83,7 +87,7 @@ python3 kit/validate.py media/<AAAA>/<MM>/<id> --base-url https://raw.githubuser
 URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valorislab-media/<SHA>/media/<AAAA>/<MM>/<id>/<fichier>.jpg` (liée au commit, donc permanente). Si la vérification échoue, réessayer 3 fois à 20 s d'intervalle. Si le push ou la vérification échoue : ne créer aucun post et signaler « INTERVENTION REQUISE : accès GitHub ».
 
 ## 8. Programmation Buffer
-- Tag : `execute_query` `tagsV2(input:{organizationId})` → chercher `auto-valorislab` ; s'il est absent, `execute_mutation` `createTag(input:{organizationId, tag:{name:"auto-valorislab", color:"#C9A24A"}})`. Si la limite de tags est atteinte, continuer sans tag et le signaler.
+- Tag : utiliser `buffer.tagId` de `state/config.json` (tag `auto-valorislab`). Vérifier qu'il existe toujours en relisant `tags[].id` d'un post existant (`list_posts` avec `tagIds: [buffer.tagId]`). S'il a disparu et que `execute_query` / `execute_mutation` sont disponibles : `tagsV2(input:{organizationId})` pour le retrouver, sinon `createTag(input:{organizationId, tag:{name:"auto-valorislab", color:"#C9A24A"}})`, puis le signaler. **Ne jamais programmer un post sans ce tag** (le comptage anti-doublon en dépend) : si aucun tag valide n'est disponible, ne rien programmer et répondre « INTERVENTION REQUISE : tag Buffer auto-valorislab introuvable ».
 - `create_post` par réseau et créneau, `schedulingType` = valeur du réseau dans `state/config.json` → `buffer.schedulingType` (`automatic` par défaut ; `notification` = rappel Buffer, Laurent publie depuis l'application avec un son), `tagIds: [tag]`, `assets` = images dans l'ordre, chacune avec `metadata.altText` = `alt` de la slide si présent, sinon `alt` global suivi de « (slide k/n) » :
   - Facebook : `text = captions.facebook`, `metadata.facebook.type = "post"`, images `feed-*.jpg`.
   - Instagram : `text = captions.instagram`, `metadata.instagram = {type: "post", shouldShareToFeed: true}`, images `feed-*.jpg`.
@@ -93,7 +97,7 @@ URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valo
 - En cas d'échec sur un réseau : continuer les autres et le signaler.
 
 ## 8 bis. Mise à niveau des posts déjà programmés (après une mise à jour du kit)
-- Pour chaque post `scheduled` portant le tag `auto-valorislab`, dont `dueAt` est à plus de 2 h, et dont le contenu a été rendu avec une autre version du kit (`kit_version` absent ou différent dans `media/.../render-report.json`) :
+- Pour chaque post `scheduled` portant le tag `auto-valorislab`, dont `dueAt` est à plus de 2 h, et dont le contenu a été rendu avec une autre version du rendu visuel (`kit_version` absent ou différent de `kit/RENDER_VERSION` dans `media/.../render-report.json` ; une mise à jour de procédure seule ne change pas ce numéro et ne déclenche aucune mise à niveau) :
   - re-rendre le contenu avec le kit actuel, passer `validate.py` et `qa.py` (bloquant), pousser, vérifier les URL publiques ;
   - `edit_post` en remplaçant uniquement `assets` (nouvelles URL, même ordre, `altText`) et en reprenant à l'identique `text`, `metadata` et `tagIds`. Ne jamais envoyer `mode`, `dueAt` ni `schedulingType` (la date ne doit pas bouger).
 - Le signaler dans le rapport (posts mis à niveau).
