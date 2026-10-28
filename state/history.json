@@ -229,6 +229,89 @@
     }
    },
    "requeued": true
+  },
+  {
+   "date": "2026-11-09",
+   "source": "auto",
+   "id": "2026-11-09-etf-capitalisant-distribuant",
+   "pillar": "mecanisme",
+   "theme": "bourse",
+   "topic": "ETF capitalisant ou distribuant : 10 000 € sur 20 ans à 6 % (32 071 € vs 27 867 €, hypothétique)",
+   "keywords": [
+    "ETF",
+    "capitalisant",
+    "distribuant",
+    "dividendes"
+   ],
+   "buffer": {
+    "facebook": {
+     "id": "6ae22344ac0d79d7033dcde2",
+     "dueAt": "2026-11-11T09:54:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae22357bf52775abae0a58e",
+     "dueAt": "2026-11-10T19:26:00+01:00"
+    },
+    "tiktok": {
+     "id": "6ae22360bf52775abae0a7c4",
+     "dueAt": "2026-11-09T09:34:00+01:00"
+    }
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "source": "auto",
+   "id": "2026-11-09-garantie-depots-100000",
+   "pillar": "belgique",
+   "theme": "finance",
+   "topic": "Garantie des dépôts : 100 000 € par personne et par banque",
+   "keywords": [
+    "garantie des dépôts",
+    "100 000 €",
+    "faillite bancaire"
+   ],
+   "buffer": {
+    "facebook": {
+     "id": "6ae2236aa557fadd21681b89",
+     "dueAt": "2026-11-12T09:26:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae2237429693522999909db",
+     "dueAt": "2026-11-11T18:06:00+01:00"
+    },
+    "tiktok": {
+     "id": "6ae2237da557fadd21681f7d",
+     "dueAt": "2026-11-14T08:36:00+01:00"
+    }
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "source": "auto",
+   "id": "2026-11-09-faux-courtier-clone-fsma",
+   "pillar": "erreur",
+   "theme": "bourse",
+   "topic": "Faux courtiers clonés : vérifier un prestataire avec la FSMA",
+   "keywords": [
+    "faux courtier",
+    "clone",
+    "FSMA",
+    "arnaque"
+   ],
+   "buffer": {
+    "facebook": {
+     "id": "6ae22387bf52775abae0b337",
+     "dueAt": "2026-11-13T08:45:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae22390a557fadd216826f2",
+     "dueAt": "2026-11-12T10:51:00+01:00"
+    },
+    "tiktok": {
+     "id": "6ae22399bf52775abae0b5a2",
+     "dueAt": "2026-11-15T09:41:00+01:00"
+    }
+   }
   }
  ]
 }
