@@ -11,7 +11,8 @@
    "mecanisme",
    "erreur"
   ],
-  "text_from": 0.7
+  "text_from": 0.7,
+  "hide_header": true
  },
  "bureau-document": {
   "file": "bureau-document.jpg",
@@ -43,12 +44,16 @@
  },
  "portrait-bureau": {
   "file": "portrait-bureau.jpg",
-  "role": "cta",
+  "role": "cover",
   "place": "top",
   "logo": true,
   "focus": "50% 0%",
-  "mood": "portrait de Laurent dans son bureau VALORISLAB (appel à l'action, guide)",
-  "pillars": [],
+  "mood": "portrait de Laurent face caméra dans son bureau VALORISLAB (couverture de référence de la charte v4 : sujet d'argent du quotidien, banque, épargne)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
   "text_from": 0.68
  }
 }

@@ -1,12 +1,12 @@
 # Charte carrousel VALORISLAB v4 (référence visuelle de Laurent, 29/10/2026)
 
-Remplace la charte v3 pour toute nouvelle génération. Modèle à reproduire : `kit/assets/references/carrousel-v4/slide-01.jpg` à `slide-09.jpg` (carrousel « 6 choses sur ton argent que ta banque ne met pas en avant »). En cas de doute, ces 9 images font foi.
+Remplace la charte v3 pour toute nouvelle génération. **Rendu : `kit/render.py` + `kit/templates/slide.html.j2`** (décision de Laurent : rendu HTML, pas d'image IA pour les slides). Schéma JSON des slides : `docs/RUNBOOK.md`, étape 5. Modèle à reproduire : `kit/assets/references/carrousel-v4/slide-01.jpg` à `slide-09.jpg` (carrousel « 6 choses sur ton argent que ta banque ne met pas en avant »). En cas de doute, ces 9 images font foi.
 
 ## Ambiance générale
 - Éditorial premium, sobre, noir et or. Beaucoup d'espace vide, aucun élément décoratif superflu (pas de bokeh chargé, pas d'icônes, pas d'émoji, pas de cadre doré épais).
 - Fond : noir presque pur `#0A0A0B`, avec un halo chaud très léger (brun doré `#231E18` à 10-20 % d'opacité) derrière le titre ou le chiffre clé. Jamais de dégradé visible ni de texture.
 - Typographie unique : **Plus Jakarta Sans** (géométrique, sans empattement). Titres en gras serré (interlettrage légèrement négatif), corps en regular.
-- Format 1080×1350 (4:5). Marges latérales 72 px. Texte aligné à gauche, jamais centré (sauf la maquette du guide en slide finale).
+- Format 1080×1350 (4:5). Marges latérales 72 px (100 px à droite pour le contenu : boutons TikTok). Texte aligné à gauche, jamais centré (sauf la maquette du guide en slide finale).
 
 ## Couleurs
 | Rôle | Couleur |
@@ -23,7 +23,7 @@ Remplace la charte v3 pour toute nouvelle génération. Modèle à reproduire : 
 Crypto : même charte (pas de bleu électrique en v4, sauf demande contraire de Laurent).
 
 ## Éléments fixes de chaque slide (gabarit)
-1. **En-tête de marque, en haut à gauche** (x 72, y 56, environ 246 × 54 px) : emblème rond + « VALORISLAB » (blanc, capitales espacées) + « FINANCE BELGIQUE » (or mat, plus petit). **Jamais dessiné par l'IA** : superposé ensuite avec `kit/assets/header-brand.png` (voir RUNBOOK). Zone à laisser vide dans l'image générée.
+1. **En-tête de marque, en haut à gauche** (x 72, y 56, environ 246 × 54 px) : emblème rond + « VALORISLAB » (blanc, capitales espacées) + « FINANCE BELGIQUE » (or mat, plus petit). Dessiné par le kit ; `kit/assets/header-brand.png` en est une version détourée pour tout autre usage.
 2. **Compteur en haut à droite** : « 02 / 9 » (numéro en or mat gras, « / 9 » en gris), aligné à droite sur la marge de 72 px, à la hauteur de l'en-tête.
 3. **Pied de page** : « valorislab.be » en gris à gauche (y ≈ 1275) ; à droite « Glisse » en or mat + cercle fin (48 px, bordure 1,5 px gris clair) contenant une flèche →. Dernière slide : la mention « Contenu éducatif, pas un conseil financier. » remplace « Glisse ».
 4. **Barre de progression** tout en bas (y ≈ 1320, de x 72 à x 1008, 3 px) : piste gris très sombre `#1A1A1C`, partie remplie en or proportionnelle au rang de la slide (slide k/n = k/n de la largeur). Dernière slide : barre entièrement or.
@@ -45,7 +45,7 @@ Crypto : même charte (pas de bleu électrique en v4, sauf demande contraire de 
 - Contenu essentiel entre y 150 et y 1150 et à au moins 100 px du bord droit entre y 700 et y 1215 (boutons TikTok). Seuls le pied de page et la barre de progression vont plus bas (éléments accessoires, ils peuvent être recouverts par la légende TikTok).
 - Protagoniste : toujours sur la couverture (photo de scène). Le modèle de référence n'a aucune pose dans les slides de fond : poses facultatives, 0 à 2 par carrousel, seulement sur un point sans chiffre géant, jamais deux fois la même.
 
-## Bloc STYLE à placer au début de chaque `image_prompt`
+## Bloc STYLE (uniquement si une image est générée par IA)
 ```
 STYLE : slide de carrousel Instagram 1080×1350, éditorial premium noir et or. Fond noir uni #0A0A0B avec un très léger halo brun doré derrière le titre. Typographie unique Plus Jakarta Sans, texte aligné à gauche, marges de 72 px. Titre en gras serré blanc cassé #F4EFE6 dont la fin est en dégradé or #E8D3A0→#BD9756. Corps en gris chaud #B8B2A8, mots clés en gras blanc. Grands chiffres en dégradé or. Cartes sombres #15130F à bordure fine et coins arrondis. Aucune icône, aucun émoji, aucun motif décoratif. En haut à droite : compteur « {k} / {n} » (numéro en or, « / {n} » en gris). En bas à gauche : « valorislab.be » en gris ; en bas à droite : « Glisse » en or et une flèche → dans un cercle fin. Tout en bas : fine barre de progression or remplie à {k}/{n} de la largeur.
 ZONE RÉSERVÉE : laisser entièrement vide le coin supérieur gauche (de x 0 à x 360, de y 0 à y 130) : ni texte, ni logo, ni élément graphique. Le logo est ajouté ensuite.

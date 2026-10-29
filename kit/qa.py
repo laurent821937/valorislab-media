@@ -81,8 +81,10 @@ def main():
             err(f"{fmt}: aucune image")
         if len(recs) > max_n:
             err(f"{fmt}: {len(recs)} slides > {max_n}")
-        if not 5 <= len(recs) <= 9:
-            warn(f"{fmt}: {len(recs)} slides (cible 6 à 8)")
+        if len(recs) > 8:
+            err(f"{fmt}: {len(recs)} slides, 8 au maximum (décision de Laurent)")
+        elif len(recs) < 6:
+            warn(f"{fmt}: {len(recs)} slides (cible 7, 8 au maximum)")
 
     overlay_tiles, grid_tile = [], None
     for r in files:

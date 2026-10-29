@@ -18,16 +18,11 @@ SS = 2  # supersampling factor
 KIT = pathlib.Path(__file__).resolve().parent
 ROOT = KIT.parent
 
-THEMES = {  # accent gradient per theme (gold = Bourse/finance, electric blue = Crypto)
-    "bourse":  ("#F6E0A6", "#D6AD58", "#9A7432"),
-    "finance": ("#F6E0A6", "#D6AD58", "#9A7432"),
-    "crypto":  ("#A6DCFF", "#3E9BFF", "#1F5FCC"),
-}
 FORMATS = {
     # One 4:5 format for Instagram, Facebook and TikTok (TikTok shows 4:5 photos whole, letterboxed).
     # Text stays clear of the bottom 160 px and of the right edge, where TikTok draws its caption and buttons.
-    "feed": dict(W=1080, H=1350, pad_t=46, pad_r=104, pad_b=46, pad_l=80, logo_h=104, h1=96, h2=80, body=40, stat=210, ghost=500,
-                 col_w=520, fig_h=880, scene_top_max=800, scene_bottom_max=756),
+    # Charte v4 (docs/STYLE-CARROUSEL.md): content between y 150 and y 1190, footer and progress bar below.
+    "feed": dict(W=1080, H=1350, col_w=540, fig_h=880, scene_max=1050),
 }
 # Protagonist poses (kit/assets/pose-<name>.webp, cut from Laurent's white-background renders).
 # side: where the figure stands; mirror: flip so the gesture points towards the text; crop: share of the
@@ -44,28 +39,18 @@ POSES = {
     "doute-telephone":        dict(side="right", crop=0.62, mood="message suspect, arnaque"),
     "doute-telephone-hoodie": dict(side="right", crop=0.62, mood="arnaque crypto, faux support"),
 }
-DEFAULT_COVER_POSE = {"erreur": "choc-polo", "mecanisme": "graphique-hausse", "belgique": "reflexion"}
-DEFAULT_TYPE_POSE = {"list": "checklist", "cta": "pouce", "stat": "pointe", "compare": "reflexion"}
-POINT_POOL = ["reflexion", None, "pointe", None, "graphique-hausse", None]
+MAX_POSES = 2  # charte v4: poses are optional, at most 2 per carousel
 MIN_SCALE_WITH_FIG = 0.86  # below this, the slide is re-rendered without the protagonist (full-width text)
 
 
 def pick_poses(c):
-    """One pose per slide (or None), never the same pose twice in a carousel."""
-    pillar, theme = c.get("pillar"), c.get("theme")
-    used, out, k_point = set(), [], 0
+    """Charte v4: a pose only where the content asks for one (`pose` on a point slide without a big figure,
+    split bar, cards or box), never the same pose twice, at most MAX_POSES per carousel."""
+    used, out = set(), []
     for s in c["slides"]:
         p = s.get("pose")
-        if p in (None, ""):
-            if s["type"] == "cover":
-                p = DEFAULT_COVER_POSE.get(pillar, "reflexion")
-                if pillar == "erreur" and theme == "crypto":
-                    p = "doute-telephone-hoodie"
-            elif s["type"] == "point":
-                p = POINT_POOL[k_point % len(POINT_POOL)]; k_point += 1
-            else:
-                p = DEFAULT_TYPE_POSE.get(s["type"])
-        if p == "none" or p not in POSES or p in used:
+        plain_point = s["type"] == "point" and not any(s.get(k) for k in ("stat", "split", "cards", "card_note", "box"))
+        if not plain_point or p not in POSES or p in used or len(used) >= MAX_POSES:
             p = None
         if p:
             used.add(p)
@@ -89,19 +74,11 @@ def fig_geometry(name, f):
                 spot_x=offset + w // 2 - spot_d // 2, spot_y=f["H"] - vis_h - int(spot_d * 0.08), spot_d=spot_d)
 
 
-def bokeh_for(seed, f, theme):
+def halo_for(seed):
+    """Position (in %) of the faint warm halo behind the content, varied per slide."""
     import random
     r = random.Random(seed)
-    W, H = f["W"], f["H"]
-    cols = ["rgba(246,214,140,1)", "rgba(232,180,90,1)", "rgba(255,236,190,1)"]
-    if theme == "crypto":
-        cols += ["rgba(120,190,255,1)"]
-    out = []
-    for _ in range(11):
-        d = r.randint(30, 150)
-        out.append(dict(x=int(r.uniform(0.42, 1.0) * W - d / 2), y=int(r.uniform(0.0, 0.55) * H - d / 2), d=d,
-                        c=r.choice(cols), o=round(r.uniform(0.10, 0.34), 2), blur=r.randint(3, 14)))
-    return out
+    return round(r.uniform(35, 70)), round(r.uniform(28, 48))
 
 
 def md(text):
@@ -118,10 +95,10 @@ def md(text):
 
 # Layout probe: geometry of every text block (and the protagonist pose) for kit/qa.py
 LAYOUT_JS = """() => {
-  const roles = {kicker: '.kicker', title: '.t1,.t2', lead: '.lead', body: '.body p', index: '.idx',
-    stat: '.stat', statLabel: '.stat-label', card: '.card', compare: '.cmp .col', note: '.foot-note',
-    listItem: 'ol.list li', button: '.cta-btn', book: '.book', disclaimer: '.disclaimer',
-    brand: 'header .brand', count: 'header .count', author: 'footer .author', next: 'footer .next'};
+  const roles = {kicker: '.kicker', title: '.title', lead: '.lead', body: '.body p', index: '.pill',
+    stat: '.big', statLabel: '.figure .lab,.split .k', card: '.cards .c,.card-note,.box,.split', note: '.source,.split-note,.save',
+    listItem: 'ol.recap .it', button: '.cta-btn', book: '.mock',
+    brand: '.brand', count: '.count', next: 'footer .next,footer .url,footer .disclaimer'};
   const boxes = [];
   for (const [role, q] of Object.entries(roles)) {
     document.querySelectorAll(q).forEach(e => {
@@ -181,18 +158,17 @@ def pick_scenes(c):
     out = []
     for s in c["slides"]:
         name = s.get("scene")
-        if name == "none":
+        if s["type"] != "cover" or name == "none":  # charte v4: only the cover carries a photo
             name = None
         elif not name and s["type"] == "cover" and covers:
             base = {"belgique": 0, "erreur": 1, "mecanisme": 2}.get(pillar, 0)
             name = sorted(covers)[(base + 3 * week) % len(covers)]  # 3 contents of a week never share a scene
-        elif not name and s["type"] == "cta" and ctas:
-            name = ctas[week % len(ctas)]
         out.append(name if name in cat else None)
     return out
 
 
 def load_scene(name, f):
+    """Charte v4: the photo fills the top of the cover and fades into black, the text sits at the bottom."""
     if not name:
         return None
     meta = scene_catalog().get(name, {})
@@ -201,18 +177,9 @@ def load_scene(name, f):
         print(f"scène introuvable : {name}", file=sys.stderr)
         return None
     w0, h0 = Image.open(src).size
-    place = meta.get("place", "top")
-    h = min(int(f["W"] * h0 / w0), f["scene_top_max"] if place == "top" else f["scene_bottom_max"])
-    # text area kept off the opaque part of the photo (the fade zone may sit under the text)
-    main_top = f["pad_t"] + f["logo_h"]                      # where <main> starts on the page
-    main_bottom = f["H"] - f["pad_b"] - 60                    # where the footer starts
-    if place == "top":
-        pad_top, pad_bottom = max(0, int(h * meta.get("text_from", 0.70)) - main_top), 64
-    else:
-        pad_top, pad_bottom = 24, max(64, main_bottom - (f["H"] - h + int(h * meta.get("text_into", 0.20))))
-    return dict(src=f"../assets/scenes/{src.name}", name=name, place=place, logo=meta.get("logo", False),
-                pos=meta.get("focus", "50% 0%"), h=h, keep=60 if place == "top" else 70,
-                pad_top=pad_top, pad_bottom=pad_bottom, upscale=round(f["W"] / w0, 2))
+    h = min(f["scene_max"], int(f["W"] * h0 / w0 * 1.05))
+    return dict(src=f"../assets/scenes/{src.name}", name=name, hide_header=meta.get("hide_header", False),
+                pos=meta.get("focus", "50% 0%"), h=h, upscale=round(max(f["W"] / w0, h / h0), 2))
 
 
 def main():
@@ -225,8 +192,6 @@ def main():
     c = json.loads(pathlib.Path(a.content).read_text(encoding="utf-8"))
     cid, date = c["id"], c["date"]  # date: YYYY-MM-DD (planned publication week)
     theme = c.get("theme", "bourse")
-    acc1, acc2, acc3 = THEMES[theme]
-    flag_be = c.get("pillar") == "belgique"
     kicker = c["kicker"]
     slides = c["slides"]
     n = len(slides)
@@ -234,6 +199,8 @@ def main():
         if isinstance(s.get("body"), str):
             s["body_paras"] = [p for p in s["body"].split("\n\n") if p.strip()]
     poses = pick_poses(c)
+    mock = next((KIT / "assets" / f"guide-mockup.{e}" for e in ("png", "webp", "jpg") if (KIT / "assets" / f"guide-mockup.{e}").exists()), None)
+    guide_mockup = f"../assets/{mock.name}" if mock else None
     scenes = pick_scenes(c)
 
     out_dir = pathlib.Path(a.out) / date[:4] / date[5:7] / cid
@@ -255,12 +222,13 @@ def main():
                 scene = load_scene(scenes[i - 1], f)
                 pose = None if scene else poses[i - 1]
                 note = None
+                hx, hy = halo_for(f"{cid}-{i}")
 
                 def render(pose_name):
                     fig = fig_geometry(pose_name, f) if pose_name else None
-                    tmp_html.write_text(tpl.render(s=s, i=i, n=n, kicker=kicker, theme=theme, fmt=fmt, flag_be=flag_be,
-                                                   fig=fig, scene=scene, bokeh=bokeh_for(f"{cid}-{i}", f, theme),
-                                                   acc1=acc1, acc2=acc2, acc3=acc3, **f), encoding="utf-8")
+                    tmp_html.write_text(tpl.render(s=s, i=i, n=n, kicker=kicker, theme=theme, fmt=fmt, date=date,
+                                                   fig=fig, scene=scene, guide_mockup=guide_mockup,
+                                                   halo_x=hx, halo_y=hy, **f), encoding="utf-8")
                     page.goto(tmp_html.as_uri())
                     return page.evaluate("window.__fit()"), page.evaluate(LAYOUT_JS)
 
