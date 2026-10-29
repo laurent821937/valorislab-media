@@ -40,7 +40,7 @@ Crypto : même charte (pas de bleu électrique en v4, sauf demande contraire de 
 - **Dernière slide (cta)** : surtitre « —— POUR ALLER PLUS LOIN », titre (« Évite les 20 erreurs de débutant. »), sous-titre gris, maquette du guide PDF au centre (couverture noire « 20 erreurs de débutant » entourée de deux pages claires inclinées), bouton or arrondi « Lien en bio → » à gauche, à côté « Enregistre ce post pour le retrouver. » en gris clair.
 
 ## Structure et densité
-- Carrousel : couverture → 4 à 6 points numérotés → récapitulatif → CTA. 9 slides au maximum, 7 recommandé tant que le scénario Make limite `slide_index` à 8 et le plafond à 10 générations par contenu.
+- Carrousel : couverture → 4 à 5 points numérotés → récapitulatif → CTA, soit **8 slides au maximum** (décision de Laurent, 29/10/2026), 7 par défaut. Le modèle de référence en compte 9 (6 points) : ne pas le reproduire sur ce point, garder au plus 5 points. Le récapitulatif reprend autant de lignes que de points (4 à 5).
 - Titre de point ≤ 60 caractères, 1 à 2 segments en or (toujours la fin de la phrase). Corps ≤ 2 paragraphes de ≤ 140 caractères chacun. Chaque point de fond porte une source datée.
 - Contenu essentiel entre y 150 et y 1150 et à au moins 100 px du bord droit entre y 700 et y 1215 (boutons TikTok). Seuls le pied de page et la barre de progression vont plus bas (éléments accessoires, ils peuvent être recouverts par la légende TikTok).
 - Protagoniste : toujours sur la couverture (photo de scène). Le modèle de référence n'a aucune pose dans les slides de fond : poses facultatives, 0 à 2 par carrousel, seulement sur un point sans chiffre géant, jamais deux fois la même.
