@@ -1,6 +1,6 @@
 # Charte carrousel VALORISLAB v4 (référence visuelle de Laurent, 29/10/2026)
 
-Remplace la charte v3 pour toute nouvelle génération. **Rendu : `kit/render.py` + `kit/templates/slide.html.j2`** (décision de Laurent : rendu HTML, pas d'image IA pour les slides). Schéma JSON des slides : `docs/RUNBOOK.md`, étape 5. Modèle à reproduire : `kit/assets/references/carrousel-v4/slide-01.jpg` à `slide-09.jpg` (carrousel « 6 choses sur ton argent que ta banque ne met pas en avant »). En cas de doute, ces 9 images font foi.
+Remplace la charte v3 pour toute nouvelle génération. **Rendu : `kit/render.py` + `kit/templates/slide.html.j2`** (décision de Laurent : rendu HTML, pas d'image IA pour les slides). Schéma JSON des slides : `docs/RUNBOOK.md`, étape 5. Modèle à reproduire : `kit/assets/references/carrousel-v4/slide-01.jpg` à `slide-09.jpg` (carrousel « 6 choses sur ton argent que ta banque ne met pas en avant »). Ces 9 images sont une référence de **style** uniquement : en cas de doute sur un rendu, elles font foi ; leur sujet, leurs textes et leurs chiffres ne doivent jamais être réutilisés.
 
 ## Ambiance générale
 - Éditorial premium, sobre, noir et or. Beaucoup d'espace vide, aucun élément décoratif superflu (pas de bokeh chargé, pas d'icônes, pas d'émoji, pas de cadre doré épais).
@@ -43,7 +43,7 @@ Crypto : même charte (pas de bleu électrique en v4, sauf demande contraire de 
 - Carrousel : couverture → 4 à 5 points numérotés → récapitulatif → CTA, soit **8 slides au maximum** (décision de Laurent, 29/10/2026), 7 par défaut. Le modèle de référence en compte 9 (6 points) : ne pas le reproduire sur ce point, garder au plus 5 points. Le récapitulatif reprend autant de lignes que de points (4 à 5).
 - Titre de point ≤ 60 caractères, 1 à 2 segments en or (toujours la fin de la phrase). Corps ≤ 2 paragraphes de ≤ 140 caractères chacun. Chaque point de fond porte une source datée.
 - Contenu essentiel entre y 150 et y 1150 et à au moins 100 px du bord droit entre y 700 et y 1215 (boutons TikTok). Seuls le pied de page et la barre de progression vont plus bas (éléments accessoires, ils peuvent être recouverts par la légende TikTok).
-- Protagoniste : toujours sur la couverture (photo de scène). Le modèle de référence n'a aucune pose dans les slides de fond : poses facultatives, 0 à 2 par carrousel, seulement sur un point sans chiffre géant, jamais deux fois la même.
+- Couverture : photo de scène du catalogue (Laurent, de préférence) ou, si aucune ne convient, décor généré par IA sans personne (voir RUNBOOK). Poses dans les slides de fond : facultatives, 0 à 2 par carrousel, seulement sur un point sans chiffre géant, jamais deux fois la même.
 
 ## Bloc STYLE (uniquement si une image est générée par IA)
 ```
