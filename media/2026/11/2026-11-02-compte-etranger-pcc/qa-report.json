@@ -2,7 +2,9 @@
  "id": "2026-11-02-compte-etranger-pcc",
  "ok": true,
  "errors": [],
- "warnings": [],
+ "warnings": [
+  "couverture très proche de 2026-11-02-faux-support-crypto (distance 6) : varier pose, composition ou couleur"
+ ],
  "sheets": [
   "/tmp/qa/2026-11-02-compte-etranger-pcc/feed.jpg",
   "/tmp/qa/2026-11-02-compte-etranger-pcc/instagram-grid.jpg",
