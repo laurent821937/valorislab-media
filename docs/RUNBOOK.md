@@ -151,7 +151,9 @@ URL publique d'un visuel = `https://raw.githubusercontent.com/laurent821937/valo
 
 ## MODE TEST (validation avant activation)
 - Étapes 0, 1 et 2 : exécutées et rapportées, sans rien modifier dans Buffer.
-- Pas de génération de nouveau sujet : utiliser uniquement `content/2026-W45/2026-11-02-faux-support-crypto.json`.
+- **1 seul contenu, nouveau sujet** (étapes 4, 5 et 5 bis complètes : anti-doublon, données vérifiées, score), écrit avec les blocs de la charte v4 (chiffre géant, sources datées, récapitulatif), 7 slides.
+- Décor IA : ne rien générer ; vérifier seulement l'accès au scénario Make 8230680 avec `dry_run: true` (aucune génération, aucun coût) et noter la réponse.
+- Étape 8 bis (mise à niveau des posts programmés) : ne pas l'exécuter, seulement lister les posts qui seraient mis à niveau.
 - Étapes 6 et 7 : rendu, contrôle visuel, push, vérification des URL publiques.
 - Étape 8 : créer **3 brouillons** (`saveToDraft: true`, `mode: "addToQueue"`), un par réseau (Facebook, Instagram, TikTok), sans tag ni date. Aucun post programmé, aucune publication.
 - Pour chaque brouillon : `get_post` → statut `draft`, nombre d'images, `assets[].source` (hébergé par GitHub ou recopié par Buffer ?), erreurs éventuelles.
