@@ -16,9 +16,9 @@ URL des slides (à vérifier visuellement par Laurent avant toute programmation)
 État : enregistrements `contenu::slide::NN` en `pending_review` dans le Data Store. Rien n'est programmé dans Buffer. Les slides n'ont pas été vérifiées visuellement par Claude (domaine Cloudinary inaccessible depuis l'environnement).
 
 ## Essai logo (29/10/2026)
-Logo téléversé dans Cloudinary (valorislab/brand/vl_brand_logo_full), aucune génération IA consommée (budget toujours 8/10). Variantes avec logo superposé (haut gauche) à contrôler par Laurent :
+Logo téléversé dans Cloudinary (vl_brand_logo_full, racine), aucune génération IA consommée (budget toujours 8/10). Variantes avec logo superposé (haut gauche) à contrôler par Laurent :
 
-- Couverture : https://res.cloudinary.com/zqugntn5/image/upload/l_valorislab:brand:vl_brand_logo_full,w_170,g_north_west,x_60,y_60/v1793264313/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g1.png
-- Dernière slide : https://res.cloudinary.com/zqugntn5/image/upload/l_valorislab:brand:vl_brand_logo_full,w_170,g_north_west,x_60,y_60/v1793264442/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s7_g8.png
+- Couverture : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_logo_full,w_170,g_north_west,x_60,y_60/v1793264313/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g1.png
+- Dernière slide : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_logo_full,w_170,g_north_west,x_60,y_60/v1793264442/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s7_g8.png
 
 Non vérifié par Claude (res.cloudinary.com bloqué dans le bac à sable). Si le logo n'apparaît pas, le chemin du logo est à ajuster (extension .webp possible).
