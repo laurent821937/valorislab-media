@@ -15,54 +15,86 @@
  "slides": [
   {
    "type": "cover",
-   "title": "Ta banque fait faillite : *100 000 €* protégés",
-   "subtitle": "Mais par quoi, par qui, et que se passe-t-il au-delà ?",
+   "title": "Ta banque fait faillite.\n*Tu récupères combien ?*",
+   "subtitle": "En Belgique, la réponse n'est pas « tout ».",
    "scene": "bureau-document"
   },
   {
    "type": "point",
    "index": "01",
-   "title": "Le *plafond*",
-   "body": "En Belgique, tes dépôts sont protégés jusqu'à **100 000 €**.\n\nLe calcul se fait par banque et par personne, **pas par compte**.",
-   "pose": "pointe"
-  },
-  {
-   "type": "stat",
-   "title": "Un seul *plafond*",
-   "value": "100 000 €",
-   "label": "par personne et par banque",
-   "body": "Plusieurs comptes dans la même banque : leurs montants s'additionnent."
-  },
-  {
-   "type": "list",
-   "title": "Ce qui est *couvert*",
-   "items": [
-    "Comptes à vue et comptes d'épargne",
-    "Comptes à terme",
-    "Bons de caisse",
-    "Produits de la branche 21"
-   ]
+   "title": "Ton épargne est protégée jusqu'à *100 000 €.*",
+   "stat": {
+    "value": "100 000",
+    "unit": "€",
+    "label": "par personne et par banque"
+   },
+   "body": "Le calcul se fait **par banque et par personne**, pas par compte.",
+   "source": "Wikifin (28/10/2026)"
   },
   {
    "type": "point",
    "index": "02",
-   "title": "Plus de *100 000 €* ?",
-   "body": "Au-delà du plafond, la partie en trop n'est plus protégée.\n\nUne piste : répartir ton épargne entre plusieurs banques.",
-   "pose": "reflexion"
+   "title": "Deux comptes, une seule *banque* ?",
+   "cards": [
+    {
+     "value": "60 000 €",
+     "label": "compte d'épargne"
+    },
+    {
+     "value": "60 000 €",
+     "label": "compte à vue"
+    }
+   ],
+   "card_note": "Exemple hypothétique, même banque : 120 000 € au total, mais seuls 100 000 € sont garantis.",
+   "source": "Wikifin (28/10/2026)"
   },
   {
    "type": "point",
    "index": "03",
-   "title": "Banque *étrangère*",
-   "body": "Banque agréée ailleurs dans l'EEE : c'est l'État qui lui a délivré son agrément qu'il faut contacter en cas de problème."
+   "title": "Ce qui est *couvert*",
+   "box": {
+    "title": "COMPTES ET PRODUITS COUVERTS",
+    "items": [
+     "Comptes à vue et comptes d'épargne",
+     "Comptes à terme et bons de caisse",
+     "Produits de la branche 21"
+    ]
+   },
+   "source": "Wikifin (28/10/2026)"
+  },
+  {
+   "type": "point",
+   "index": "04",
+   "title": "Plus de 100 000 € ? *Répartis.*",
+   "body": "Au-delà du plafond, la partie en trop **n'est plus protégée**.\n\nUne piste : répartir ton épargne entre plusieurs banques.",
+   "source": "Wikifin (28/10/2026)",
+   "pose": "reflexion"
+  },
+  {
+   "type": "list",
+   "title": "Ton plan : *3 vérifications* cette semaine.",
+   "items": [
+    {
+     "title": "Additionne tes comptes par banque",
+     "sub": "Le plafond est par personne et par banque"
+    },
+    {
+     "title": "Repère ce qui dépasse 100 000 €",
+     "sub": "La partie en trop n'est plus garantie"
+    },
+    {
+     "title": "Vérifie l'agrément de ta banque",
+     "sub": "Banque étrangère de l'EEE : l'État qui l'a agréée"
+    }
+   ]
   },
   {
    "type": "cta",
-   "title": "Protéger son argent fait partie des *20 erreurs*",
-   "body": "Mon guide gratuit t'explique les bases pour épargner et investir en Belgique sans mauvaise surprise.",
-   "button": "Guide gratuit · lien en bio",
+   "title": "Évite les *20 erreurs* de débutant.",
+   "subtitle": "Mon guide gratuit t'explique les bases pour épargner et investir en Belgique sans mauvaise surprise.",
+   "button": "Lien en bio",
    "disclaimer": "Contenu éducatif, pas un conseil financier.",
-   "scene": "portrait-bureau"
+   "save_note": "Enregistre ce post pour le retrouver."
   }
  ],
  "alt": "Carrousel VALORISLAB en 7 slides sur la garantie des dépôts en Belgique : plafond de 100 000 € par personne et par banque, produits couverts, que faire au-delà du plafond et cas d'une banque étrangère de l'Espace économique européen.",
