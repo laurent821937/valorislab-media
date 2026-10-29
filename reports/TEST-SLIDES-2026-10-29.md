@@ -22,3 +22,10 @@ Logo téléversé dans Cloudinary (vl_brand_logo_full, racine), aucune générat
 - Dernière slide : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_logo_full,w_170,g_north_east,x_60,y_60/v1793264442/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s7_g8.png
 
 Non vérifié par Claude (res.cloudinary.com bloqué dans le bac à sable). Si le logo n'apparaît pas, le chemin du logo est à ajuster (extension .webp possible).
+
+## Slide 1 refaite (génération n°9, budget 9/10)
+Accroche A : « Ta banque fait faillite. Tu récupères combien ? » + « En Belgique, la réponse n'est pas « tout ». » Fond premium sans personnage, coin bas gauche libre pour le protagoniste, coin haut droit libre pour le logo.
+
+- Fond seul : https://res.cloudinary.com/zqugntn5/image/upload/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
+- Avec logo : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_logo_full,w_170/fl_layer_apply,g_north_east,x_60,y_60/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
+- Avec logo + protagoniste (après téléversement de la pose dans Cloudinary sous l'id vl_pose_choc_polo) : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_pose_choc_polo,h_900/fl_layer_apply,g_south_west,x_20,y_0/l_vl_brand_logo_full,w_170/fl_layer_apply,g_north_east,x_60,y_60/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
