@@ -3,6 +3,7 @@
 Kit de publication automatique VALORISLAB (Facebook, Instagram, TikTok via Buffer).
 
 - `docs/STRATEGIE.md` : ligne éditoriale validée (référence de toute génération).
+- `docs/STYLE-CARROUSEL.md` : charte visuelle v4 des carrousels (modèle : `kit/assets/references/carrousel-v4/`).
 - `docs/RUNBOOK.md` : procédure hebdomadaire suivie par la tâche planifiée Claude.
 - `kit/` : gabarits de slides (HTML → JPEG via Playwright), rendu, validation, installation des polices.
 - `content/` : contenus générés (JSON : slides + légendes + sources).
