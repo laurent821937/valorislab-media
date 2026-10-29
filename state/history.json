@@ -317,5 +317,13 @@
    "requeued": true
   }
  ],
- "ai_decors": []
+ "ai_decors": [
+  {
+   "date": "2026-10-29",
+   "slug": "contrat-stylo",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-test-contrat"
+  }
+ ]
 }

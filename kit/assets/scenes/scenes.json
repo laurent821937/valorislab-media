@@ -55,5 +55,20 @@
    "erreur"
   ],
   "text_from": 0.68
+ },
+ "ia-contrat-stylo": {
+  "file": "ia-contrat-stylo.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Contrat et stylo doré sur bureau sombre, lampe dorée (contrat, frais, courtier, piège)",
+  "pillars": [
+   "belgique",
+   "erreur",
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-10-29"
  }
 }
