@@ -29,3 +29,14 @@ Accroche A : « Ta banque fait faillite. Tu récupères combien ? » + « En Bel
 - Fond seul : https://res.cloudinary.com/zqugntn5/image/upload/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
 - Avec logo : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_logo_full,w_170/fl_layer_apply,g_north_east,x_60,y_60/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
 - Avec logo + protagoniste (après téléversement de la pose dans Cloudinary sous l'id vl_pose_choc_polo) : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_pose_choc_polo,h_900/fl_layer_apply,g_south_west,x_20,y_0/l_vl_brand_logo_full,w_170/fl_layer_apply,g_north_east,x_60,y_60/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
+
+## Décision de Laurent (29/10/2026) : on garde les slides existantes
+Pas de V2 : plafond gratuit respecté, 9 générations utilisées sur 10 pour `VL_FB_GARANTIE_DEPOTS_20261112_V1`. Les slides existantes (style v3, slide 1 refaite en g9) sont conservées. L'en-tête de marque v4 (`vl_brand_header`) est superposé en haut à gauche ; à vérifier : il ne doit pas recouvrir les numéros de page des slides v3.
+
+- Slide 1 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793266680/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s1_g9.png
+- Slide 2 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793264345/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s2_g2.png
+- Slide 3 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793264362/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s3_g3.png
+- Slide 4 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793264378/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s4_g4.png
+- Slide 5 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793264394/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s5_g5.png
+- Slide 6 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793264409/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s6_g6.png
+- Slide 7 : https://res.cloudinary.com/zqugntn5/image/upload/l_vl_brand_header,w_246/fl_layer_apply,g_north_west,x_72,y_56/v1793264442/valorislab/posts/vl_fb_garantie_depots_20261112_v1_s7_g8.png
