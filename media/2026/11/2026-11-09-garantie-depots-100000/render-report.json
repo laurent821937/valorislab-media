@@ -8,11 +8,11 @@
    "slide": 1,
    "type": "cover",
    "pose": null,
-   "scene": "bureau-document",
+   "scene": "grand-place-cafe",
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 241236,
+   "bytes": 317783,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -54,7 +54,7 @@
      "h": 50,
      "font": 16,
      "color": "rgb(244, 239, 230)",
-     "text": "VALORISLAB FINANCE BELGIQUE"
+     "text": ""
     },
     {
      "role": "count",

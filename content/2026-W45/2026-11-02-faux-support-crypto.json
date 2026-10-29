@@ -23,7 +23,15 @@
    "type": "point",
    "index": "01",
    "title": "Le *scénario*",
-   "body": "Tu poses une question dans un groupe Telegram, sur Discord ou sous un post.\n\nQuelques minutes plus tard, un « agent » t'écrit en privé. Logo officiel, ton rassurant, urgence : « votre compte sera suspendu sous 24 h »."
+   "body": "Tu poses une question dans un groupe Telegram, sur Discord ou sous un post. Quelques minutes plus tard, un « agent » t'écrit en privé.",
+   "box": {
+    "title": "LES SIGNES QUI DOIVENT T'ALERTER",
+    "items": [
+     "Un message privé que tu n'as pas demandé",
+     "Une urgence : « sous 24 h »",
+     "Un logo officiel, impossible à vérifier"
+    ]
+   }
   },
   {
    "type": "point",
@@ -52,8 +60,15 @@
    "type": "point",
    "index": "03",
    "title": "*Déjà* partagé ?",
-   "body": "Crée vite un nouveau wallet avec une nouvelle phrase et transfères-y le reste.\n\nSignale l'arnaque : pointdecontact.belgique.be.",
-   "pose": "choc-polo"
+   "body": "Une phrase partagée donne un accès total à ton portefeuille.",
+   "box": {
+    "title": "SI TU AS DÉJÀ PARTAGÉ TA PHRASE",
+    "items": [
+     "Crée un nouveau wallet avec une nouvelle phrase",
+     "Transfères-y le reste de tes fonds",
+     "Signale sur pointdecontact.belgique.be"
+    ]
+   }
   },
   {
    "type": "cta",

@@ -23,7 +23,13 @@
    "type": "point",
    "index": "01",
    "title": "Le *calcul* de base",
-   "body": "Tu as 1 000 €. Une baisse de 50 %, et il te reste 500 €.\n\nPour revenir à 1 000 €, il faut que ces 500 € doublent : c'est +100 %, pas +50 %."
+   "body": "Tu as 1 000 €. Une baisse de 50 %, et il te reste 500 €.\n\nPour revenir à 1 000 €, il faut que ces 500 € doublent : c'est +100 %, pas +50 %.",
+   "stat": {
+    "value": "+100",
+    "unit": "%",
+    "label": "pour revenir à 1 000 €"
+   },
+   "source": "Calcul simple, sans frais ni impôts (29/10/2026)"
   },
   {
    "type": "compare",
@@ -55,8 +61,15 @@
    "type": "point",
    "index": "02",
    "title": "Ce que ça *change*",
-   "body": "Éviter les grosses pertes compte autant que chercher les gros gains.\n\nD'où l'intérêt de diversifier.",
-   "pose": "pointe"
+   "body": "Éviter les grosses pertes compte autant que chercher les gros gains.",
+   "box": {
+    "title": "POUR LIMITER LES GROSSES PERTES",
+    "items": [
+     "Répartir sur plusieurs placements",
+     "Garder hors Bourse l'argent dont tu as besoin bientôt",
+     "Fixer ta perte maximale supportable avant d'investir"
+    ]
+   }
   },
   {
    "type": "point",
