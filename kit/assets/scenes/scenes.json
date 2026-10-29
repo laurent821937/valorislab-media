@@ -70,5 +70,19 @@
   ],
   "source": "ia",
   "created": "2026-10-29"
+ },
+ "ia-wallet-telephone": {
+  "file": "ia-wallet-telephone.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Smartphone éteint et clé de sécurité dorée sur table sombre (crypto, wallet, sécurité, arnaque)",
+  "pillars": [
+   "erreur",
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-10-29"
  }
 }

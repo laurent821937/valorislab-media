@@ -1,0 +1,11 @@
+{
+ "id": "2026-11-16-empoisonnement-adresse",
+ "ok": true,
+ "errors": [],
+ "warnings": [],
+ "sheets": [
+  "/tmp/qa/2026-11-16-empoisonnement-adresse/feed.jpg",
+  "/tmp/qa/2026-11-16-empoisonnement-adresse/instagram-grid.jpg",
+  "/tmp/qa/2026-11-16-empoisonnement-adresse/tiktok-zones.jpg"
+ ]
+}

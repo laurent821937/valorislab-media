@@ -1,0 +1,756 @@
+{
+ "id": "2026-11-16-empoisonnement-adresse",
+ "kit_version": "2026-10-29.1",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-wallet-telephone",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 251387,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 731.828125,
+     "w": 908,
+     "h": 27,
+     "font": 21,
+     "color": "rgb(201, 169, 110)",
+     "text": "CRYPTO · ERREUR À ÉVITER"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 788.828125,
+     "w": 908,
+     "h": 277.171875,
+     "font": 84,
+     "color": "rgb(244, 239, 230)",
+     "text": "Cette adresse est dans ton historique. Elle est fausse."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1096,
+     "w": 908,
+     "h": 84,
+     "font": 30,
+     "color": "rgb(216, 210, 200)",
+     "text": "Comment une transaction de presque 0 € peut vider un portefeuille cryp"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "01 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 884.4375,
+     "y": 1251,
+     "w": 123.5625,
+     "h": 46,
+     "font": 19,
+     "color": "rgb(216, 192, 138)",
+     "text": "Glisse →"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 127067,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 409.25,
+     "w": 860,
+     "h": 69.4375,
+     "font": 62,
+     "color": "rgb(244, 239, 230)",
+     "text": "Le piège"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 524.6875,
+     "w": 908,
+     "h": 134.8125,
+     "font": 31,
+     "color": "rgb(184, 178, 168)",
+     "text": "Un escroc crée une adresse presque identique à une que tu utilises déj"
+    },
+    {
+     "role": "index",
+     "x": 72,
+     "y": 313.25,
+     "w": 92,
+     "h": 56,
+     "font": 24,
+     "color": "rgb(232, 217, 181)",
+     "text": "01"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 705.5,
+     "w": 908,
+     "h": 260.234375,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "CE QUI SE PASSE Mêmes premiers et derniers caractères Un montant nul o"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 999.734375,
+     "w": 908,
+     "h": 27,
+     "font": 18,
+     "color": "rgb(138, 133, 125)",
+     "text": "Source · Explications de sécurité crypto (Trust Wallet, Sardine, oct. "
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "02 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 884.4375,
+     "y": 1251,
+     "w": 123.5625,
+     "h": 46,
+     "font": 19,
+     "color": "rgb(216, 192, 138)",
+     "text": "Glisse →"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "stat",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 120692,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 389.296875,
+     "w": 860,
+     "h": 69.4375,
+     "font": 62,
+     "color": "rgb(244, 239, 230)",
+     "text": "Ce que tu vérifies vraiment"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 754.875,
+     "w": 908,
+     "h": 134.8125,
+     "font": 31,
+     "color": "rgb(184, 178, 168)",
+     "text": "Une adresse Ethereum compte 40 caractères après « 0x ». Si tu compares"
+    },
+    {
+     "role": "stat",
+     "x": 72,
+     "y": 504.734375,
+     "w": 217.609375,
+     "h": 161.5,
+     "font": 170,
+     "color": "rgba(0, 0, 0, 0)",
+     "text": "80"
+    },
+    {
+     "role": "statLabel",
+     "x": 72,
+     "y": 681.734375,
+     "w": 908,
+     "h": 39.140625,
+     "font": 29,
+     "color": "rgb(230, 225, 216)",
+     "text": "de l'adresse n'est jamais regardée"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 923.6875,
+     "w": 908,
+     "h": 27,
+     "font": 18,
+     "color": "rgb(138, 133, 125)",
+     "text": "Source · Calcul VALORISLAB (format d'adresse Ethereum, 29/10/2026)"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "03 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 884.4375,
+     "y": 1251,
+     "w": 123.5625,
+     "h": 46,
+     "font": 19,
+     "color": "rgb(216, 192, 138)",
+     "text": "Glisse →"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 125550,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 431.71875,
+     "w": 860,
+     "h": 69.4375,
+     "font": 62,
+     "color": "rgb(244, 239, 230)",
+     "text": "Le réflexe qui te piège"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 547.15625,
+     "w": 908,
+     "h": 89.875,
+     "font": 31,
+     "color": "rgb(184, 178, 168)",
+     "text": "Tu veux renvoyer des fonds. Tu ouvres l'historique, tu copies la derni"
+    },
+    {
+     "role": "index",
+     "x": 72,
+     "y": 335.71875,
+     "w": 92,
+     "h": 56,
+     "font": 24,
+     "color": "rgb(232, 217, 181)",
+     "text": "02"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 683.03125,
+     "w": 908,
+     "h": 260.234375,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "LES 3 ERREURS CLASSIQUES Copier depuis l'historique Comparer seulement"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 977.265625,
+     "w": 908,
+     "h": 27,
+     "font": 18,
+     "color": "rgb(138, 133, 125)",
+     "text": "Source · Explications de sécurité crypto (Sardine, oct. 2026)"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "04 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 884.4375,
+     "y": 1251,
+     "w": 123.5625,
+     "h": 46,
+     "font": 19,
+     "color": "rgb(216, 192, 138)",
+     "text": "Glisse →"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 113133,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 515.046875,
+     "w": 860,
+     "h": 69.4375,
+     "font": 62,
+     "color": "rgb(244, 239, 230)",
+     "text": "Aucun retour possible"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 770.078125,
+     "w": 908,
+     "h": 89.875,
+     "font": 31,
+     "color": "rgb(184, 178, 168)",
+     "text": "Une transaction crypto confirmée ne s'annule pas. Envoyée à la mauvais"
+    },
+    {
+     "role": "index",
+     "x": 72,
+     "y": 419.046875,
+     "w": 92,
+     "h": 56,
+     "font": 24,
+     "color": "rgb(232, 217, 181)",
+     "text": "03"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 606.484375,
+     "w": 908,
+     "h": 129.59375,
+     "font": 27,
+     "color": "rgb(184, 178, 168)",
+     "text": "Aucune banque ni aucun support ne peut annuler une transaction envoyée"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 893.953125,
+     "w": 908,
+     "h": 27,
+     "font": 18,
+     "color": "rgb(138, 133, 125)",
+     "text": "Source · Explications de sécurité crypto (Trust Wallet, oct. 2026)"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "05 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 884.4375,
+     "y": 1251,
+     "w": 123.5625,
+     "h": 46,
+     "font": 19,
+     "color": "rgb(216, 192, 138)",
+     "text": "Glisse →"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 131213,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 329.6875,
+     "w": 908,
+     "h": 27,
+     "font": 21,
+     "color": "rgb(201, 169, 110)",
+     "text": "CE QU'IL FAUT RETENIR"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 386.6875,
+     "w": 860,
+     "h": 69.4375,
+     "font": 62,
+     "color": "rgb(244, 239, 230)",
+     "text": "Ton plan : 4 réflexes"
+    },
+    {
+     "role": "listItem",
+     "x": 154,
+     "y": 523.125,
+     "w": 493.09375,
+     "h": 38.75,
+     "font": 31,
+     "color": "rgb(244, 239, 230)",
+     "text": "Utilise un carnet d'adresses"
+    },
+    {
+     "role": "listItem",
+     "x": 154,
+     "y": 651.671875,
+     "w": 410.265625,
+     "h": 38.75,
+     "font": 31,
+     "color": "rgb(244, 239, 230)",
+     "text": "Compare l'adresse en entier"
+    },
+    {
+     "role": "listItem",
+     "x": 154,
+     "y": 780.21875,
+     "w": 402.671875,
+     "h": 38.75,
+     "font": 31,
+     "color": "rgb(244, 239, 230)",
+     "text": "Teste avec un petit montant"
+    },
+    {
+     "role": "listItem",
+     "x": 154,
+     "y": 908.765625,
+     "w": 544.09375,
+     "h": 38.75,
+     "font": 31,
+     "color": "rgb(244, 239, 230)",
+     "text": "Ignore les transferts inconnus"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "06 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 884.4375,
+     "y": 1251,
+     "w": 123.5625,
+     "h": 46,
+     "font": 19,
+     "color": "rgb(216, 192, 138)",
+     "text": "Glisse →"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-empoisonnement-adresse/feed-07.jpg",
+   "format": "feed",
+   "slide": 7,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 202790,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 170,
+     "w": 908,
+     "h": 27,
+     "font": 21,
+     "color": "rgb(201, 169, 110)",
+     "text": "POUR ALLER PLUS LOIN"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 227,
+     "w": 908,
+     "h": 156.78125,
+     "font": 70,
+     "color": "rgb(244, 239, 230)",
+     "text": "La sécurité fait partie des 20 erreurs du débutant"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 405.78125,
+     "w": 908,
+     "h": 86.78125,
+     "font": 31,
+     "color": "rgb(184, 178, 168)",
+     "text": "Mon guide gratuit les détaille une par une, avec un plan d'action pour"
+    },
+    {
+     "role": "note",
+     "x": 363.140625,
+     "y": 1109.3125,
+     "w": 207.671875,
+     "h": 62.375,
+     "font": 24,
+     "color": "rgb(216, 210, 200)",
+     "text": "Enregistre ce post pour le retrouver."
+    },
+    {
+     "role": "button",
+     "x": 72,
+     "y": 1099,
+     "w": 265.140625,
+     "h": 83,
+     "font": 30,
+     "color": "rgb(27, 23, 18)",
+     "text": "Lien en bio →"
+    },
+    {
+     "role": "book",
+     "x": 72,
+     "y": 516.5625,
+     "w": 908,
+     "h": 558.4375,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": ""
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 56,
+     "w": 241.125,
+     "h": 50,
+     "font": 16,
+     "color": "rgb(244, 239, 230)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 943.96875,
+     "y": 72,
+     "w": 64.03125,
+     "h": 25,
+     "font": 20,
+     "color": "rgb(163, 158, 150)",
+     "text": "07 / 7"
+    },
+    {
+     "role": "next",
+     "x": 72,
+     "y": 1262,
+     "w": 124.421875,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(163, 158, 150)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 613.609375,
+     "y": 1262,
+     "w": 394.390625,
+     "h": 24,
+     "font": 19,
+     "color": "rgb(138, 133, 125)",
+     "text": "Contenu éducatif, pas un conseil financier."
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": []
+}

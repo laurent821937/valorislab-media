@@ -324,6 +324,13 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-test-contrat"
+  },
+  {
+   "date": "2026-10-29",
+   "slug": "wallet-telephone",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-wallet-telephone"
   }
  ]
 }

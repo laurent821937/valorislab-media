@@ -1,0 +1,132 @@
+{
+ "id": "2026-11-16-empoisonnement-adresse",
+ "date": "2026-11-16",
+ "pillar": "erreur",
+ "theme": "crypto",
+ "topic": "Empoisonnement d'adresse crypto : la fausse adresse copiée depuis l'historique",
+ "keywords": [
+  "address poisoning",
+  "empoisonnement d'adresse",
+  "historique",
+  "wallet",
+  "copier-coller",
+  "irréversible"
+ ],
+ "kicker": "Crypto · Erreur à éviter",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Cette adresse est dans ton historique. Elle est *fausse*.",
+   "subtitle": "Comment une transaction de presque 0 € peut vider un portefeuille crypto.",
+   "scene": "ia-wallet-telephone"
+  },
+  {
+   "type": "point",
+   "index": "01",
+   "title": "Le *piège*",
+   "body": "Un escroc crée une adresse presque identique à une que tu utilises déjà. Il t'envoie un montant minuscule : sa fausse adresse apparaît dans ton historique.",
+   "box": {
+    "title": "CE QUI SE PASSE",
+    "items": [
+     "Mêmes premiers et derniers caractères",
+     "Un montant nul ou minuscule",
+     "Le faux s'affiche parmi les vrais"
+    ]
+   },
+   "source": "Explications de sécurité crypto (Trust Wallet, Sardine, oct. 2026)"
+  },
+  {
+   "type": "stat",
+   "title": "Ce que tu *vérifies* vraiment",
+   "value": "80",
+   "unit": "%",
+   "label": "de l'adresse n'est jamais regardée",
+   "body": "Une adresse Ethereum compte **40 caractères** après « 0x ». Si tu compares les 4 premiers et les 4 derniers, tu en vérifies 8 : **20 %**.",
+   "source": "Calcul VALORISLAB (format d'adresse Ethereum, 29/10/2026)"
+  },
+  {
+   "type": "point",
+   "index": "02",
+   "title": "Le *réflexe* qui te piège",
+   "body": "Tu veux renvoyer des fonds. Tu ouvres l'historique, tu copies la dernière adresse. Tu valides sans test.",
+   "box": {
+    "title": "LES 3 ERREURS CLASSIQUES",
+    "items": [
+     "Copier depuis l'historique",
+     "Comparer seulement début et fin",
+     "Envoyer le gros montant d'un coup"
+    ]
+   },
+   "source": "Explications de sécurité crypto (Sardine, oct. 2026)"
+  },
+  {
+   "type": "point",
+   "index": "03",
+   "title": "Aucun *retour* possible",
+   "body": "Une transaction crypto confirmée ne s'annule pas. Envoyée à la mauvaise adresse, elle est perdue.",
+   "card_note": "Aucune banque ni aucun support ne peut annuler une transaction envoyée à la mauvaise adresse.",
+   "source": "Explications de sécurité crypto (Trust Wallet, oct. 2026)"
+  },
+  {
+   "type": "list",
+   "title": "Ton plan : 4 *réflexes*",
+   "items": [
+    {
+     "title": "Utilise un carnet d'adresses",
+     "sub": "Enregistre tes destinataires une fois pour toutes"
+    },
+    {
+     "title": "Compare l'adresse en entier",
+     "sub": "Pas seulement le début et la fin"
+    },
+    {
+     "title": "Teste avec un petit montant",
+     "sub": "Avant tout gros transfert"
+    },
+    {
+     "title": "Ignore les transferts inconnus",
+     "sub": "Un dépôt que tu n'attendais pas est un signal d'alerte"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "La sécurité fait partie des *20 erreurs* du débutant",
+   "subtitle": "Mon guide gratuit les détaille une par une, avec un plan d'action pour la Bourse et la Crypto.",
+   "button": "Lien en bio",
+   "disclaimer": "Contenu éducatif, pas un conseil financier."
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 7 slides sur l'empoisonnement d'adresse crypto : le piège de la fausse adresse dans l'historique, 80 % de l'adresse jamais vérifiée, le réflexe qui piège, l'irréversibilité et 4 réflexes de protection.",
+ "captions": {
+  "instagram": "Cette adresse crypto est dans ton historique. Elle est fausse.\n\nTu veux renvoyer des cryptos à une adresse que tu as déjà utilisée. Tu ouvres ton historique, tu copies la dernière adresse. Et c'est celle d'un escroc.\n\nC'est l'empoisonnement d'adresse : l'escroc crée une adresse dont les premiers et les derniers caractères ressemblent à ceux d'une adresse que tu utilises. Il t'envoie une transaction de montant nul ou minuscule, et sa fausse adresse s'affiche dans ton historique, parmi les vraies.\n\nÀ retenir :\n\n • Une adresse Ethereum compte 40 caractères après « 0x » : en comparant seulement le début et la fin, tu n'en vérifies que 20 %\n\n • Une transaction crypto envoyée à la mauvaise adresse ne s'annule pas\n\n • Enregistre tes destinataires dans un carnet d'adresses au lieu de copier depuis l'historique\n\nTu compares l'adresse en entier ou juste le début et la fin ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui débute en crypto.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nContenu éducatif, pas un conseil financier.\n\n#crypto #arnaque #securitecrypto #belgique #wallet",
+  "facebook": "Cette adresse crypto est dans ton historique. Elle est fausse.\n\nTu veux renvoyer des cryptos à une adresse que tu as déjà utilisée. Tu ouvres ton historique, tu copies la dernière adresse. Et c'est celle d'un escroc.\n\nC'est l'empoisonnement d'adresse : l'escroc crée une adresse dont les premiers et les derniers caractères ressemblent à ceux d'une adresse que tu utilises. Il t'envoie une transaction de montant nul ou minuscule, et sa fausse adresse s'affiche dans ton historique, parmi les vraies.\n\nÀ retenir :\n\n • Une adresse Ethereum compte 40 caractères après « 0x » : en comparant seulement le début et la fin, tu n'en vérifies que 20 %\n\n • Une transaction crypto envoyée à la mauvaise adresse ne s'annule pas\n\n • Enregistre tes destinataires dans un carnet d'adresses au lieu de copier depuis l'historique\n\nTu compares l'adresse en entier ou juste le début et la fin ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui débute en crypto.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nContenu éducatif, pas un conseil financier.\n\n#crypto #arnaque #securitecrypto #belgique #wallet",
+  "tiktok_title": "Cette adresse crypto est fausse (et elle est dans ton historique)",
+  "tiktok": "Cette adresse est dans ton historique. Elle est fausse. L'empoisonnement d'adresse : un escroc t'envoie 0 € depuis une adresse presque identique, puis attend que tu la copies. Comparer le début et la fin ne vérifie que 20 % de l'adresse. Les 4 réflexes sont dans le carrousel. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #crypto #arnaque #securitecrypto #belgique #wallet"
+ },
+ "sources": [
+  "Glossaire Trust Wallet : Address Poisoning (consulté le 29/10/2026)",
+  "Sardine, What Is Address Poisoning (consulté le 29/10/2026)",
+  "Calcul Python : 8 caractères sur 40 = 20 % vérifiés ; 80 % non vérifiés (format d'adresse Ethereum, 0x + 40 caractères hexadécimaux)",
+  "Sources officielles belges (FSMA, Wikifin) injoignables depuis l'environnement ce jour : aucun chiffre belge cité"
+ ],
+ "virality": {
+  "score": 75,
+  "detail": {
+   "accroche": 16,
+   "curiosite": 13,
+   "valeur": 13,
+   "partage": 8,
+   "belge": 3,
+   "clarte": 9,
+   "retention": 8,
+   "actualite": 5
+  },
+  "hook_variants": [
+   "Cette adresse est dans ton historique. Elle est *fausse*.",
+   "Tu as copié la bonne adresse crypto. Vraiment ?",
+   "0 € reçus. Tout ton portefeuille perdu.",
+   "Ton historique crypto peut te mentir."
+  ]
+ }
+}
