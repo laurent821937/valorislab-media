@@ -46,7 +46,7 @@ Texte alternatif (alt) obligatoire pour chaque visuel.
 - **Tout calcul est fait en Python** dans le run, jamais de tête. Hypothèses affichées (taux, durée, « avant frais et impôts », « rendement non garanti »).
 - **Données belges ou réglementaires** (taux, plafonds, montants d'exonération, fiscalité) : vérifier sur une source officielle de l'année en cours (SPF Finances, FSMA, BNB, Wikifin, FEBELFIN). Si une donnée ne peut pas être vérifiée → changer d'angle ; ne jamais publier un chiffre douteux.
 - Pas de recommandation d'achat ou de vente d'un titre, d'une crypto ou d'un produit nommé ; pas de prédiction de prix ; pas de promesse de rendement ; pas de « rendement garanti ».
-- Aucune nouvelle image générée : uniquement les visuels du protagoniste fournis par Laurent (`kit/assets`). Pas de logo de marque tierce, pas de capture d'écran d'un produit tiers.
+- **Images générées par IA autorisées (décision de Laurent, 29/10/2026), sous conditions** : chaque slide d'un carrousel est générée par OpenAI via le scénario Make « AI Visual Generator » (8230680), texte compris. Plafond : 10 images par contenu (retouches comprises) et 30 par exécution ; 1 contenu par semaine au départ. **Aucun contenu n'est programmé sans vérification humaine de chaque slide** (fautes, accents, chiffres, lisibilité, absence de faux logo), par Laurent. Pas de logo de marque tierce, pas de capture d'écran d'un produit tiers. Les visuels du kit (`kit/assets`) restent utilisables.
 - Les sources sont listées dans le fichier de contenu (`sources`) et mentionnées en légende quand un chiffre externe est cité.
 - Si un contenu ne passe pas ces règles → le remplacer par un autre sujet de la banque ci-dessous.
 
