@@ -23,10 +23,15 @@
     "tagName": "auto-valorislab",
     "schedulingType": {
       "facebook": "automatic",
-      "instagram": "automatic",
-      "tiktok": "automatic"
+      "instagram": "notification",
+      "tiktok": "notification"
     },
-    "tagId": "6ae0da26431b6933a500d79e"
+    "tagId": "6ae0da26431b6933a500d79e",
+    "formats": {
+      "facebook": "image unique fb-01.jpg",
+      "instagram": "carrousel feed-*.jpg",
+      "tiktok": "carrousel feed-*.jpg"
+    }
   },
   "github": {
     "repo": "laurent821937/valorislab-media",

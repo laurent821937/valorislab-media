@@ -4,8 +4,9 @@
 Usage: python3 kit/render.py content/2026-W45/2026-11-03-frais-etf.json [--out media]
 
 Produces, for each slide i:
-  <out>/<YYYY>/<MM>/<id>/feed-<i>.jpg    1080x1350 (4:5)
-(the same 4:5 images are posted on Instagram, Facebook and TikTok)
+  <out>/<YYYY>/<MM>/<id>/feed-<i>.jpg    1080x1350 (4:5), carousel for Instagram and TikTok
+and <out>/<YYYY>/<MM>/<id>/fb-01.jpg     1080x1350 (4:5), single hook image for Facebook
+(hook = title of the cover, or the optional `fb` block of the content: {title, subtitle})
 and a render-report.json next to them. Exits non-zero if any slide overflows.
 """
 import html, json, re, sys, tempfile, pathlib, argparse
@@ -253,6 +254,30 @@ def main():
                 report["files"].append(rec)
                 if fit["overflow"]:
                     report["errors"].append(f"{fmt} slide {i}: text overflows even at scale {fit['scale']} -> shorten it")
+            if fmt == "feed":
+                # Facebook: one single image, the cover's hook as a big headline (same scene as the cover)
+                cover = next(s for s in slides if s["type"] == "cover")
+                fb = c.get("fb") or {}
+                hook = dict(cover, type="hook", title=fb.get("title", cover["title"]),
+                            subtitle=fb.get("subtitle", cover.get("subtitle")))
+                hook.pop("scene", None)
+                scene = load_scene(scenes[slides.index(cover)], f)
+                hx, hy = halo_for(f"{cid}-fb")
+                tmp_html.write_text(tpl.render(s=hook, i=1, n=1, kicker=kicker, theme=theme, fmt="fb", date=date,
+                                               fig=None, scene=scene, guide_mockup=None,
+                                               halo_x=hx, halo_y=hy, **f), encoding="utf-8")
+                page.goto(tmp_html.as_uri())
+                fit, layout = page.evaluate("window.__fit()"), page.evaluate(LAYOUT_JS)
+                png = tmp / "fb-01.png"
+                page.screenshot(path=str(png), type="png")
+                jpg = out_dir / "fb-01.jpg"
+                Image.open(png).convert("RGB").resize((f["W"], f["H"]), Image.LANCZOS).save(
+                    jpg, "JPEG", quality=a.quality, optimize=True, progressive=False, subsampling=0)
+                report["fb"] = {"file": str(jpg.relative_to(ROOT)), "scale": fit["scale"], "overflow": fit["overflow"],
+                                "scene": scene["name"] if scene else None, "bytes": jpg.stat().st_size,
+                                "W": f["W"], "H": f["H"], "boxes": layout["boxes"]}
+                if fit["overflow"]:
+                    report["errors"].append(f"fb: text overflows even at scale {fit['scale']} -> shorten it")
             page.close()
         browser.close()
     tmp_html.unlink(missing_ok=True)

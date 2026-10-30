@@ -125,22 +125,9 @@
     "+100 %",
     "volatilité"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae325cb0c2cf6705772c3dc",
-     "dueAt": "2026-11-04T09:54:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae325c004fdcc0ef22daff2",
-     "dueAt": "2026-11-03T19:26:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae325ad871db13a17ae7d83",
-     "dueAt": "2026-11-02T09:34:00+01:00"
-    }
-   },
    "requeued": true,
-   "id": "2026-11-02-perdre-50-pour-cent"
+   "id": "2026-11-02-perdre-50-pour-cent",
+   "buffer_supprime": "2026-10-30"
   },
   {
    "date": "2026-11-02",
@@ -155,22 +142,9 @@
     "seed phrase",
     "wallet"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae325f435265d851e02c300",
-     "dueAt": "2026-11-06T08:45:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae325fe0c2cf6705772ce77",
-     "dueAt": "2026-11-05T10:51:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae32608568655049ebfc322",
-     "dueAt": "2026-11-08T09:41:00+01:00"
-    }
-   },
    "requeued": true,
-   "id": "2026-11-02-faux-support-crypto"
+   "id": "2026-11-02-faux-support-crypto",
+   "buffer_supprime": "2026-10-30"
   },
   {
    "date": "2026-11-02",
@@ -185,20 +159,8 @@
     "30 ans",
     "coût caché"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae0da9c4490ad849032f057",
-     "dueAt": "2026-11-06T08:45:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae0daa84f694510fb31fbbc",
-     "dueAt": "2026-11-05T10:51:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae0dab44490ad849032f979",
-     "dueAt": "2026-11-08T09:41:00+01:00"
-    }
-   }
+   "buffer_supprime": "2026-10-30",
+   "requeued": true
   },
   {
    "date": "2026-11-02",
@@ -214,21 +176,8 @@
     "déclaration",
     "résident belge"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae329d50c2cf6705774934e",
-     "dueAt": "2026-11-12T09:26:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae329df04fdcc0ef22f7b55",
-     "dueAt": "2026-11-11T18:06:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae329e80c2cf670577497f5",
-     "dueAt": "2026-11-14T08:36:00+01:00"
-    }
-   },
-   "requeued": true
+   "requeued": true,
+   "buffer_supprime": "2026-10-30"
   },
   {
    "date": "2026-11-09",
@@ -243,21 +192,8 @@
     "distribuant",
     "dividendes"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae329b435265d851e047a64",
-     "dueAt": "2026-11-11T09:54:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae329c2568655049ec18973",
-     "dueAt": "2026-11-10T19:26:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae329cb0c2cf67057748f67",
-     "dueAt": "2026-11-09T09:34:00+01:00"
-    }
-   },
-   "requeued": true
+   "requeued": true,
+   "buffer_supprime": "2026-10-30"
   },
   {
    "date": "2026-11-09",
@@ -271,21 +207,8 @@
     "100 000 €",
     "faillite bancaire"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae325d604fdcc0ef22db375",
-     "dueAt": "2026-11-05T09:26:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae325e030bf75460fd0a80f",
-     "dueAt": "2026-11-04T18:06:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae325ea871db13a17ae89f7",
-     "dueAt": "2026-11-07T08:36:00+01:00"
-    }
-   },
-   "requeued": true
+   "requeued": true,
+   "buffer_supprime": "2026-10-30"
   },
   {
    "date": "2026-11-09",
@@ -300,21 +223,8 @@
     "FSMA",
     "arnaque"
    ],
-   "buffer": {
-    "facebook": {
-     "id": "6ae329f1568655049ec1972b",
-     "dueAt": "2026-11-13T08:45:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae329fadbb85b462c7b7a6f",
-     "dueAt": "2026-11-12T10:51:00+01:00"
-    },
-    "tiktok": {
-     "id": "6ae32a02dbb85b462c7b7ea6",
-     "dueAt": "2026-11-15T09:41:00+01:00"
-    }
-   },
-   "requeued": true
+   "requeued": true,
+   "buffer_supprime": "2026-10-30"
   }
  ],
  "ai_decors": [

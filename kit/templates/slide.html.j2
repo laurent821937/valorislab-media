@@ -113,9 +113,13 @@ ol.recap .sub{font-size:calc(22 * var(--u));line-height:1.4;color:var(--body);ma
 .scene-shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(10,10,11,.35) 0,transparent 14%,transparent 48%,rgba(10,10,11,.88) 82%,var(--bg) 100%)}
 {% if scene.hide_header %}.brand{visibility:hidden}{% endif %}
 {% endif %}
-.t-cover main{justify-content:flex-end;bottom:170px}
-.t-cover .title{max-width:none;font-size:calc(84 * var(--u));line-height:1.1;letter-spacing:-.04em;filter:drop-shadow(0 4px 20px rgba(0,0,0,.7))}
-.t-cover .lead{font-size:calc(30 * var(--u));line-height:1.4;color:#D8D2C8;margin-top:calc(30 * var(--u));text-shadow:0 2px 14px rgba(0,0,0,.9)}
+.t-cover main,.t-hook main{justify-content:flex-end;bottom:170px}
+.t-cover .title,.t-hook .title{max-width:none;font-size:calc(84 * var(--u));line-height:1.1;letter-spacing:-.04em;filter:drop-shadow(0 4px 20px rgba(0,0,0,.7))}
+.t-cover .lead,.t-hook .lead{font-size:calc(30 * var(--u));line-height:1.4;color:#D8D2C8;margin-top:calc(30 * var(--u));text-shadow:0 2px 14px rgba(0,0,0,.9)}
+
+/* image Facebook (accroche en gros titre, une seule image) */
+.t-hook .title{font-size:calc(104 * var(--u));line-height:1.06}
+.t-hook .lead{font-size:calc(36 * var(--u))}
 
 /* cta */
 .t-cta main{justify-content:flex-start;top:170px;bottom:168px}
@@ -162,10 +166,10 @@ ol.recap .sub{font-size:calc(22 * var(--u));line-height:1.4;color:var(--body);ma
 {% if fig %}<div class="fig"><img class="hero" src="{{ fig.src }}" alt=""></div>{% endif %}
 
 <div class="brand"><div class="ring"><img src="../assets/logo-emblem.webp" alt=""></div><div><div class="t1">VALORISLAB</div><div class="t2">FINANCE BELGIQUE</div></div></div>
-<div class="count"><b>{{ "%02d"|format(i) }}</b> / {{ n }}</div>
+{% if s.type != "hook" %}<div class="count"><b>{{ "%02d"|format(i) }}</b> / {{ n }}</div>{% endif %}
 
 <main id="main">
-{% if s.type == "cover" %}
+{% if s.type in ["cover", "hook"] %}
   <div class="kicker">{{ s.kicker or kicker }}</div>
   <div class="title">{{ s.title|md }}</div>
   {% if s.subtitle %}<div class="lead">{{ s.subtitle|md }}</div>{% endif %}
@@ -226,9 +230,9 @@ ol.recap .sub{font-size:calc(22 * var(--u));line-height:1.4;color:var(--body);ma
 
 <footer>
   <span class="url">valorislab.be</span>
-  {% if i < n %}<span class="next">Glisse <i>→</i></span>{% else %}<span class="disclaimer">{{ s.disclaimer or "Contenu éducatif, pas un conseil financier." }}</span>{% endif %}
+  {% if i < n and s.type != "hook" %}<span class="next">Glisse <i>→</i></span>{% else %}<span class="disclaimer">{{ s.disclaimer or "Contenu éducatif, pas un conseil financier." }}</span>{% endif %}
 </footer>
-<div class="progress"><i></i></div>
+{% if s.type != "hook" %}<div class="progress"><i></i></div>{% endif %}
 
 <script>
 window.__fit = async () => {
@@ -244,7 +248,7 @@ window.__fit = async () => {
   while (over() && s > 0.6) {
     s = +(s - 0.02).toFixed(2);
     // on a cover, the subtitle goes before the headline gets small
-    const lead = document.querySelector('.t-cover .lead');
+    const lead = document.querySelector('.t-cover .lead,.t-hook .lead');
     if (s < 0.86 && lead && !dropped) { lead.remove(); dropped = true; s = 1; }
     root.style.setProperty('--s', s);
   }
