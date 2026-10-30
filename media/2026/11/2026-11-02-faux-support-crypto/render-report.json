@@ -8,11 +8,11 @@
    "slide": 1,
    "type": "cover",
    "pose": null,
-   "scene": "bruxelles-ecran",
+   "scene": "ia-wallet-telephone",
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 307799,
+   "bytes": 258943,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -702,5 +702,76 @@
    "hero": null
   }
  ],
- "errors": []
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-02-faux-support-crypto/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-wallet-telephone",
+  "bytes": 262693,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 646.515625,
+    "w": 908,
+    "h": 27,
+    "font": 21,
+    "color": "rgb(201, 169, 110)",
+    "text": "CRYPTO · ARNAQUE À ÉVITER"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 703.515625,
+    "w": 908,
+    "h": 295.3125,
+    "font": 92,
+    "color": "rgb(244, 239, 230)",
+    "text": "« Bonjour, ici le support. Votre wallet est bloqué. »"
+   },
+   {
+    "role": "lead",
+    "x": 72,
+    "y": 1028.828125,
+    "w": 908,
+    "h": 151.171875,
+    "font": 36,
+    "color": "rgb(216, 210, 200)",
+    "text": "Le message qui vide un portefeuille crypto en quelques minutes. Commen"
+   },
+   {
+    "role": "brand",
+    "x": 72,
+    "y": 56,
+    "w": 241.125,
+    "h": 50,
+    "font": 16,
+    "color": "rgb(244, 239, 230)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 72,
+    "y": 1262,
+    "w": 124.421875,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(163, 158, 150)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 613.609375,
+    "y": 1262,
+    "w": 394.390625,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(138, 133, 125)",
+    "text": "Contenu éducatif, pas un conseil financier."
+   }
+  ]
+ }
 }

@@ -809,5 +809,76 @@
    "hero": null
   }
  ],
- "errors": []
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-02-compte-etranger-pcc/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "bruxelles-ecran",
+  "bytes": 312160,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 598.46875,
+    "w": 908,
+    "h": 27,
+    "font": 21,
+    "color": "rgb(201, 169, 110)",
+    "text": "BELGIQUE PRATIQUE · OBLIGATION"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 655.46875,
+    "w": 908,
+    "h": 393.75,
+    "font": 92,
+    "color": "rgb(244, 239, 230)",
+    "text": "Un compte à l'étranger ? Ta banque ne le déclare pas."
+   },
+   {
+    "role": "lead",
+    "x": 72,
+    "y": 1079.21875,
+    "w": 908,
+    "h": 100.78125,
+    "font": 36,
+    "color": "rgb(216, 210, 200)",
+    "text": "Résident belge : l'obligation que beaucoup de débutants ignorent, et c"
+   },
+   {
+    "role": "brand",
+    "x": 72,
+    "y": 56,
+    "w": 241.125,
+    "h": 50,
+    "font": 16,
+    "color": "rgb(244, 239, 230)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 72,
+    "y": 1262,
+    "w": 124.421875,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(163, 158, 150)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 613.609375,
+    "y": 1262,
+    "w": 394.390625,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(138, 133, 125)",
+    "text": "Contenu éducatif, pas un conseil financier."
+   }
+  ]
+ }
 }

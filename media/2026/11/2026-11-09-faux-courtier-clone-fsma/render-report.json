@@ -712,5 +712,76 @@
    "hero": null
   }
  ],
- "errors": []
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "bureau-document",
+  "bytes": 233381,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 747.296875,
+    "w": 908,
+    "h": 27,
+    "font": 21,
+    "color": "rgb(201, 169, 110)",
+    "text": "ERREUR À ÉVITER · ARNAQUE"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 804.296875,
+    "w": 908,
+    "h": 295.3125,
+    "font": 92,
+    "color": "rgb(244, 239, 230)",
+    "text": "Ce courtier a l'air officiel. Et si c'était un clone ?"
+   },
+   {
+    "role": "lead",
+    "x": 72,
+    "y": 1129.609375,
+    "w": 908,
+    "h": 50.390625,
+    "font": 36,
+    "color": "rgb(216, 210, 200)",
+    "text": "Le réflexe de 2 minutes qui évite l'arnaque."
+   },
+   {
+    "role": "brand",
+    "x": 72,
+    "y": 56,
+    "w": 241.125,
+    "h": 50,
+    "font": 16,
+    "color": "rgb(244, 239, 230)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 72,
+    "y": 1262,
+    "w": 124.421875,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(163, 158, 150)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 613.609375,
+    "y": 1262,
+    "w": 394.390625,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(138, 133, 125)",
+    "text": "Contenu éducatif, pas un conseil financier."
+   }
+  ]
+ }
 }

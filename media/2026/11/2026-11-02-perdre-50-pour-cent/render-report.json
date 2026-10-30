@@ -8,11 +8,11 @@
    "slide": 1,
    "type": "cover",
    "pose": null,
-   "scene": "bureau-document",
+   "scene": "portrait-bureau",
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 239147,
+   "bytes": 328493,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -742,5 +742,76 @@
    "hero": null
   }
  ],
- "errors": []
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-02-perdre-50-pour-cent/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "portrait-bureau",
+  "bytes": 311112,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 795.34375,
+    "w": 908,
+    "h": 27,
+    "font": 21,
+    "color": "rgb(201, 169, 110)",
+    "text": "BOURSE · MÉCANISME CHIFFRÉ"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 852.34375,
+    "w": 908,
+    "h": 196.875,
+    "font": 92,
+    "color": "rgb(244, 239, 230)",
+    "text": "Perdre 50 %, c'est +100 % pour revenir"
+   },
+   {
+    "role": "lead",
+    "x": 72,
+    "y": 1079.21875,
+    "w": 908,
+    "h": 100.78125,
+    "font": 36,
+    "color": "rgb(216, 210, 200)",
+    "text": "Pourquoi une perte pèse toujours plus lourd que le gain qui la compens"
+   },
+   {
+    "role": "brand",
+    "x": 72,
+    "y": 56,
+    "w": 241.125,
+    "h": 50,
+    "font": 16,
+    "color": "rgb(244, 239, 230)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 72,
+    "y": 1262,
+    "w": 124.421875,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(163, 158, 150)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 613.609375,
+    "y": 1262,
+    "w": 394.390625,
+    "h": 24,
+    "font": 19,
+    "color": "rgb(138, 133, 125)",
+    "text": "Contenu éducatif, pas un conseil financier."
+   }
+  ]
+ }
 }

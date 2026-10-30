@@ -2,12 +2,10 @@
  "id": "2026-11-09-faux-courtier-clone-fsma",
  "ok": true,
  "errors": [],
- "warnings": [
-  "couverture très proche de 2026-11-02-perdre-50-pour-cent (distance 6) : varier pose, composition ou couleur"
- ],
+ "warnings": [],
  "sheets": [
-  "/tmp/qa/2026-11-09-faux-courtier-clone-fsma/feed.jpg",
-  "/tmp/qa/2026-11-09-faux-courtier-clone-fsma/instagram-grid.jpg",
-  "/tmp/qa/2026-11-09-faux-courtier-clone-fsma/tiktok-zones.jpg"
+  "/tmp/claude-0/qa/2026-11-09-faux-courtier-clone-fsma/feed.jpg",
+  "/tmp/claude-0/qa/2026-11-09-faux-courtier-clone-fsma/instagram-grid.jpg",
+  "/tmp/claude-0/qa/2026-11-09-faux-courtier-clone-fsma/tiktok-zones.jpg"
  ]
 }

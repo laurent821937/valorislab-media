@@ -2,10 +2,12 @@
  "id": "2026-11-09-etf-capitalisant-distribuant",
  "ok": true,
  "errors": [],
- "warnings": [],
+ "warnings": [
+  "couverture très proche de 2026-11-02-perdre-50-pour-cent (distance 7) : varier pose, composition ou couleur"
+ ],
  "sheets": [
-  "/tmp/qa/2026-11-09-etf-capitalisant-distribuant/feed.jpg",
-  "/tmp/qa/2026-11-09-etf-capitalisant-distribuant/instagram-grid.jpg",
-  "/tmp/qa/2026-11-09-etf-capitalisant-distribuant/tiktok-zones.jpg"
+  "/tmp/claude-0/qa/2026-11-09-etf-capitalisant-distribuant/feed.jpg",
+  "/tmp/claude-0/qa/2026-11-09-etf-capitalisant-distribuant/instagram-grid.jpg",
+  "/tmp/claude-0/qa/2026-11-09-etf-capitalisant-distribuant/tiktok-zones.jpg"
  ]
 }

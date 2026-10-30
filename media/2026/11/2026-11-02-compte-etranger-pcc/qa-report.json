@@ -2,12 +2,10 @@
  "id": "2026-11-02-compte-etranger-pcc",
  "ok": true,
  "errors": [],
- "warnings": [
-  "couverture très proche de 2026-11-02-faux-support-crypto (distance 6) : varier pose, composition ou couleur"
- ],
+ "warnings": [],
  "sheets": [
-  "/tmp/qa/2026-11-02-compte-etranger-pcc/feed.jpg",
-  "/tmp/qa/2026-11-02-compte-etranger-pcc/instagram-grid.jpg",
-  "/tmp/qa/2026-11-02-compte-etranger-pcc/tiktok-zones.jpg"
+  "/tmp/claude-0/qa/2026-11-02-compte-etranger-pcc/feed.jpg",
+  "/tmp/claude-0/qa/2026-11-02-compte-etranger-pcc/instagram-grid.jpg",
+  "/tmp/claude-0/qa/2026-11-02-compte-etranger-pcc/tiktok-zones.jpg"
  ]
 }

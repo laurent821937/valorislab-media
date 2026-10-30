@@ -2,10 +2,12 @@
  "id": "2026-11-02-faux-support-crypto",
  "ok": true,
  "errors": [],
- "warnings": [],
+ "warnings": [
+  "couverture très proche de 2026-11-16-empoisonnement-adresse (distance 5) : varier pose, composition ou couleur"
+ ],
  "sheets": [
-  "/tmp/claude-0/-home-user-valorislab-media/801135ee-dd88-5a57-b4dc-7868f99c1a1b/scratchpad/qaM/2026-11-02-faux-support-crypto/feed.jpg",
-  "/tmp/claude-0/-home-user-valorislab-media/801135ee-dd88-5a57-b4dc-7868f99c1a1b/scratchpad/qaM/2026-11-02-faux-support-crypto/instagram-grid.jpg",
-  "/tmp/claude-0/-home-user-valorislab-media/801135ee-dd88-5a57-b4dc-7868f99c1a1b/scratchpad/qaM/2026-11-02-faux-support-crypto/tiktok-zones.jpg"
+  "/tmp/claude-0/qa/2026-11-02-faux-support-crypto/feed.jpg",
+  "/tmp/claude-0/qa/2026-11-02-faux-support-crypto/instagram-grid.jpg",
+  "/tmp/claude-0/qa/2026-11-02-faux-support-crypto/tiktok-zones.jpg"
  ]
 }

@@ -98,5 +98,8 @@
   "hook_variants": [
    "Un compte à *l'étranger* ? Ta banque ne le déclare pas pour toi"
   ]
+ },
+ "fb": {
+  "title": "Un compte à *l'étranger* ?\nTa banque ne le déclare pas."
  }
 }
