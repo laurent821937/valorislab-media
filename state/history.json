@@ -127,7 +127,20 @@
    ],
    "requeued": true,
    "id": "2026-11-02-perdre-50-pour-cent",
-   "buffer_supprime": "2026-10-30"
+   "buffer": {
+    "tiktok": {
+     "id": "6ae477e514812ff59676394e",
+     "dueAt": "2026-11-02T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae477f2ab6b84214ccdc708",
+     "dueAt": "2026-11-03T19:26:00+01:00"
+    },
+    "facebook": {
+     "id": "6ae477f6e9727055055529ae",
+     "dueAt": "2026-11-04T09:54:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-02",
@@ -144,7 +157,20 @@
    ],
    "requeued": true,
    "id": "2026-11-02-faux-support-crypto",
-   "buffer_supprime": "2026-10-30"
+   "buffer": {
+    "tiktok": {
+     "id": "6ae4782680f61ee519110e97",
+     "dueAt": "2026-11-08T09:41:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae478321c1ab1e7bc3084f6",
+     "dueAt": "2026-11-05T10:51:00+01:00"
+    },
+    "facebook": {
+     "id": "6ae47836e972705505553496",
+     "dueAt": "2026-11-06T08:45:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-02",
@@ -177,7 +203,20 @@
     "résident belge"
    ],
    "requeued": true,
-   "buffer_supprime": "2026-10-30"
+   "buffer": {
+    "tiktok": {
+     "id": "6ae47809e972705505552cc3",
+     "dueAt": "2026-11-07T08:36:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae478171c1ab1e7bc308060",
+     "dueAt": "2026-11-04T18:06:00+01:00"
+    },
+    "facebook": {
+     "id": "6ae4781be972705505552fc7",
+     "dueAt": "2026-11-05T09:26:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-09",
@@ -193,7 +232,20 @@
     "dividendes"
    ],
    "requeued": true,
-   "buffer_supprime": "2026-10-30"
+   "buffer": {
+    "tiktok": {
+     "id": "6ae47847ab6b84214ccdd522",
+     "dueAt": "2026-11-09T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae47856e972705505553acf",
+     "dueAt": "2026-11-10T19:26:00+01:00"
+    },
+    "facebook": {
+     "id": "6ae4785bc56bf7afb3aceeb3",
+     "dueAt": "2026-11-11T09:54:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-09",
@@ -208,7 +260,20 @@
     "faillite bancaire"
    ],
    "requeued": true,
-   "buffer_supprime": "2026-10-30"
+   "buffer": {
+    "tiktok": {
+     "id": "6ae47868c56bf7afb3acf15c",
+     "dueAt": "2026-11-14T08:36:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae478741c1ab1e7bc308f8a",
+     "dueAt": "2026-11-11T18:06:00+01:00"
+    },
+    "facebook": {
+     "id": "6ae47879c56bf7afb3acf3a0",
+     "dueAt": "2026-11-12T09:26:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-09",
@@ -224,7 +289,20 @@
     "arnaque"
    ],
    "requeued": true,
-   "buffer_supprime": "2026-10-30"
+   "buffer": {
+    "tiktok": {
+     "id": "6ae47886ab6b84214ccddf08",
+     "dueAt": "2026-11-15T09:41:00+01:00"
+    },
+    "instagram": {
+     "id": "6ae4789380f61ee5191121ab",
+     "dueAt": "2026-11-12T10:51:00+01:00"
+    },
+    "facebook": {
+     "id": "6ae47898c56bf7afb3acf8e2",
+     "dueAt": "2026-11-13T08:45:00+01:00"
+    }
+   }
   }
  ],
  "ai_decors": [
