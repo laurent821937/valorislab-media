@@ -19,7 +19,7 @@
    "type": "cover",
    "title": "Un compte à *l'étranger* ? Ta banque ne le déclare pas pour toi",
    "subtitle": "Résident belge : l'obligation que beaucoup de débutants ignorent, et comment la remplir.",
-   "scene": "bruxelles-ecran"
+   "scene": "ia-compte-etranger"
   },
   {
    "type": "point",
@@ -100,6 +100,7 @@
   ]
  },
  "fb": {
-  "title": "Un compte à *l'étranger* ?\nTa banque ne le déclare pas."
+  "title": "Un compte à *l'étranger* ?\nTa banque ne le déclare pas.",
+  "scene": "ia-compte-etranger-fb"
  }
 }

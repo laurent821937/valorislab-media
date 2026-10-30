@@ -84,5 +84,86 @@
   ],
   "source": "ia",
   "created": "2026-10-29"
+ },
+ "ia-perdre-50": {
+  "file": "ia-perdre-50.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Deux piles de pièces d'or, l'une réduite de moitié, lampe dorée (perte, rebond, mécanisme chiffré)",
+  "pillars": [
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-10-30"
+ },
+ "ia-perdre-50-fb": {
+  "file": "ia-perdre-50-fb.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Sablier en laiton doré et pièces d'or flou (temps, perte, rebond)",
+  "pillars": [
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-10-30"
+ },
+ "ia-compte-etranger": {
+  "file": "ia-compte-etranger.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Globe ancien en laiton doré sur bureau sombre (compte étranger, international, déclaration)",
+  "pillars": [
+   "belgique",
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-10-30"
+ },
+ "ia-compte-etranger-fb": {
+  "file": "ia-compte-etranger-fb.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Trousseau de clés dorées sur dossier fermé (déclaration, obligation, démarche)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-10-30"
+ },
+ "ia-faux-support": {
+  "file": "ia-faux-support.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Cadenas doré ouvert sur clavier noir (sécurité, wallet, arnaque)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-10-30"
+ },
+ "ia-faux-support-fb": {
+  "file": "ia-faux-support-fb.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Cadenas doré brisé, éclats d'or en suspension (arnaque, vol, piège)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-10-30"
  }
 }

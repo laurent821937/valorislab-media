@@ -17,7 +17,8 @@
   {
    "type": "cover",
    "title": "« Bonjour, ici le *support*. Votre wallet est bloqué. »",
-   "subtitle": "Le message qui vide un portefeuille crypto en quelques minutes. Comment il fonctionne, et comment ne jamais tomber dedans."
+   "subtitle": "Le message qui vide un portefeuille crypto en quelques minutes. Comment il fonctionne, et comment ne jamais tomber dedans.",
+   "scene": "ia-faux-support"
   },
   {
    "type": "point",
@@ -104,5 +105,8 @@
   "hook_variants": [
    "« Bonjour, ici le *support*. Votre wallet est bloqué. »"
   ]
+ },
+ "fb": {
+  "scene": "ia-faux-support-fb"
  }
 }

@@ -2,9 +2,7 @@
  "id": "2026-11-02-perdre-50-pour-cent",
  "ok": true,
  "errors": [],
- "warnings": [
-  "couverture très proche de 2026-11-09-etf-capitalisant-distribuant (distance 7) : varier pose, composition ou couleur"
- ],
+ "warnings": [],
  "sheets": [
   "/tmp/claude-0/qa/2026-11-02-perdre-50-pour-cent/feed.jpg",
   "/tmp/claude-0/qa/2026-11-02-perdre-50-pour-cent/instagram-grid.jpg",

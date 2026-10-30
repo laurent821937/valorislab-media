@@ -17,7 +17,8 @@
   {
    "type": "cover",
    "title": "Perdre 50 %, c'est *+100 %* pour revenir",
-   "subtitle": "Pourquoi une perte pèse toujours plus lourd que le gain qui la compense."
+   "subtitle": "Pourquoi une perte pèse toujours plus lourd que le gain qui la compense.",
+   "scene": "ia-perdre-50"
   },
   {
    "type": "point",
@@ -111,5 +112,8 @@
   "hook_variants": [
    "Perdre 50 %, c'est *+100 %* pour revenir"
   ]
+ },
+ "fb": {
+  "scene": "ia-perdre-50-fb"
  }
 }

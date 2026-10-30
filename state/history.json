@@ -319,6 +319,48 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-wallet-telephone"
+  },
+  {
+   "date": "2026-10-30",
+   "slug": "perdre-50",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-perdre-50"
+  },
+  {
+   "date": "2026-10-30",
+   "slug": "perdre-50-fb",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-perdre-50-fb"
+  },
+  {
+   "date": "2026-10-30",
+   "slug": "compte-etranger",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-compte-etranger"
+  },
+  {
+   "date": "2026-10-30",
+   "slug": "compte-etranger-fb",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-compte-etranger-fb"
+  },
+  {
+   "date": "2026-10-30",
+   "slug": "faux-support",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-support"
+  },
+  {
+   "date": "2026-10-30",
+   "slug": "faux-support-fb",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-support-fb"
   }
  ]
 }
