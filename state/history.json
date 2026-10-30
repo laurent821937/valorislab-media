@@ -129,15 +129,15 @@
    "id": "2026-11-02-perdre-50-pour-cent",
    "buffer": {
     "tiktok": {
-     "id": "6ae477e514812ff59676394e",
+     "id": "6ae47e3c1c1ab1e7bc32f876",
      "dueAt": "2026-11-02T09:34:00+01:00"
     },
     "instagram": {
-     "id": "6ae477f2ab6b84214ccdc708",
+     "id": "6ae47e4814812ff59678b5f2",
      "dueAt": "2026-11-03T19:26:00+01:00"
     },
     "facebook": {
-     "id": "6ae477f6e9727055055529ae",
+     "id": "6ae47e4c80f61ee51913951d",
      "dueAt": "2026-11-04T09:54:00+01:00"
     }
    }
@@ -159,15 +159,15 @@
    "id": "2026-11-02-faux-support-crypto",
    "buffer": {
     "tiktok": {
-     "id": "6ae4782680f61ee519110e97",
+     "id": "6ae47e751c1ab1e7bc3307b6",
      "dueAt": "2026-11-08T09:41:00+01:00"
     },
     "instagram": {
-     "id": "6ae478321c1ab1e7bc3084f6",
+     "id": "6ae47e7f1c1ab1e7bc3309ea",
      "dueAt": "2026-11-05T10:51:00+01:00"
     },
     "facebook": {
-     "id": "6ae47836e972705505553496",
+     "id": "6ae47e841c1ab1e7bc330b3e",
      "dueAt": "2026-11-06T08:45:00+01:00"
     }
    }
@@ -205,15 +205,15 @@
    "requeued": true,
    "buffer": {
     "tiktok": {
-     "id": "6ae47809e972705505552cc3",
+     "id": "6ae47e591c1ab1e7bc32ff89",
      "dueAt": "2026-11-07T08:36:00+01:00"
     },
     "instagram": {
-     "id": "6ae478171c1ab1e7bc308060",
+     "id": "6ae47e661c1ab1e7bc3302d8",
      "dueAt": "2026-11-04T18:06:00+01:00"
     },
     "facebook": {
-     "id": "6ae4781be972705505552fc7",
+     "id": "6ae47e6bc56bf7afb3af3e8c",
      "dueAt": "2026-11-05T09:26:00+01:00"
     }
    }
