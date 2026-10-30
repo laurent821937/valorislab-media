@@ -6,7 +6,7 @@ Usage: python3 kit/render.py content/2026-W45/2026-11-03-frais-etf.json [--out m
 Produces, for each slide i:
   <out>/<YYYY>/<MM>/<id>/feed-<i>.jpg    1080x1350 (4:5), carousel for Instagram and TikTok
 and <out>/<YYYY>/<MM>/<id>/fb-01.jpg     1080x1350 (4:5), single hook image for Facebook
-(hook = title of the cover, or the optional `fb` block of the content: {title, subtitle})
+(hook = title of the cover, or the optional `fb` block of the content: {title, subtitle, scene})
 and a render-report.json next to them. Exits non-zero if any slide overflows.
 """
 import html, json, re, sys, tempfile, pathlib, argparse
@@ -261,7 +261,8 @@ def main():
                 hook = dict(cover, type="hook", title=fb.get("title", cover["title"]),
                             subtitle=fb.get("subtitle", cover.get("subtitle")))
                 hook.pop("scene", None)
-                scene = load_scene(scenes[slides.index(cover)], f)
+                fb_scene = fb.get("scene")  # own AI decor for Facebook (kit/assets/scenes/ia-<slug>-fb.jpg), else the cover's scene
+                scene = load_scene(fb_scene if fb_scene in scene_catalog() else scenes[slides.index(cover)], f)
                 hx, hy = halo_for(f"{cid}-fb")
                 tmp_html.write_text(tpl.render(s=hook, i=1, n=1, kicker=kicker, theme=theme, fmt="fb", date=date,
                                                fig=None, scene=scene, guide_mockup=None,
