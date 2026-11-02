@@ -17,3 +17,13 @@ La branche **`sauvegarde-charte-v4`** garde l'état après la mise à jour, pour
    Les nouveaux fichiers ajoutés depuis (références, maquette du guide, ce document) peuvent rester : ils ne sont plus lus.
 3. Remettre le prompt d'origine de la routine (copie dans `state/backups/…`) avec `update_trigger` (`prompt`), et la laisser désactivée comme avant.
 4. Ne pas modifier les posts déjà programmés dans Buffer : la vérification de l'étape 8 bis ne s'applique plus une fois l'ancien `kit/RENDER_VERSION` restauré.
+
+## Retour de la charte v5 (02/11/2026) à la charte v4
+- Branche **`sauvegarde-avant-charte-v5`** (commit `2b301c3`) : dernier état en charte v4 (routine LIVE, décors IA, image Facebook).
+- Restaurer le kit et la procédure, sans toucher à `media/`, `content/` ni `state/` :
+  ```bash
+  git fetch origin sauvegarde-avant-charte-v5
+  git checkout origin/sauvegarde-avant-charte-v5 -- docs kit
+  git commit -m "Retour à la charte v4" && git push origin HEAD:main
+  ```
+- Le texte de la routine n'a pas besoin de changer (il renvoie au RUNBOOK).
