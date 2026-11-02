@@ -22,8 +22,8 @@ ROOT = KIT.parent
 FORMATS = {
     # One 4:5 format for Instagram, Facebook and TikTok (TikTok shows 4:5 photos whole, letterboxed).
     # Text stays clear of the bottom 160 px and of the right edge, where TikTok draws its caption and buttons.
-    # Charte v4 (docs/STYLE-CARROUSEL.md): content between y 150 and y 1190, footer and progress bar below.
-    "feed": dict(W=1080, H=1350, col_w=540, fig_h=880, scene_max=1050),
+    # Charte v5 (docs/STYLE-CARROUSEL.md): content between y 290 and y 1060, footer rule at y 1084, nothing below.
+    "feed": dict(W=1080, H=1350, col_w=540, fig_h=880, scene_max=800),
 }
 # Protagonist poses (kit/assets/pose-<name>.webp, cut from Laurent's white-background renders).
 # side: where the figure stands; mirror: flip so the gesture points towards the text; crop: share of the
@@ -40,7 +40,7 @@ POSES = {
     "doute-telephone":        dict(side="right", crop=0.62, mood="message suspect, arnaque"),
     "doute-telephone-hoodie": dict(side="right", crop=0.62, mood="arnaque crypto, faux support"),
 }
-MAX_POSES = 2  # charte v4: poses are optional, at most 2 per carousel
+MAX_POSES = 0  # charte v5: no protagonist pose in the slides (set to 2 to allow them again)
 MIN_SCALE_WITH_FIG = 0.86  # below this, the slide is re-rendered without the protagonist (full-width text)
 
 
@@ -96,10 +96,10 @@ def md(text):
 
 # Layout probe: geometry of every text block (and the protagonist pose) for kit/qa.py
 LAYOUT_JS = """() => {
-  const roles = {kicker: '.kicker', title: '.title', lead: '.lead', body: '.body p', index: '.pill',
-    stat: '.big', statLabel: '.figure .lab,.split .k', card: '.cards .c,.card-note,.box,.split', note: '.source,.split-note,.save',
-    listItem: 'ol.recap .it', button: '.cta-btn', book: '.mock',
-    brand: '.brand', count: '.count', next: 'footer .next,footer .url,footer .disclaimer'};
+  const roles = {kicker: '.kicker', title: '.title', lead: '.lead', body: '.body p', index: 'ol.steps .n',
+    stat: '.big,.card .val', statLabel: '.big-lab,.card .lab,.split .k', card: '.card,.box,.split', note: '.note,.source,.hl',
+    listItem: 'ol.steps .t', button: '.cta-btn', book: '.mock img',
+    brand: '.brand', count: '.count', next: 'footer .url,footer .disclaimer'};
   const boxes = [];
   for (const [role, q] of Object.entries(roles)) {
     document.querySelectorAll(q).forEach(e => {
@@ -169,7 +169,7 @@ def pick_scenes(c):
 
 
 def load_scene(name, f):
-    """Charte v4: the photo fills the top of the cover and fades into black, the text sits at the bottom."""
+    """Charte v5: the decor fills the lower part of the cover under the grid, the text sits above it."""
     if not name:
         return None
     meta = scene_catalog().get(name, {})
@@ -178,7 +178,7 @@ def load_scene(name, f):
         print(f"scène introuvable : {name}", file=sys.stderr)
         return None
     w0, h0 = Image.open(src).size
-    h = min(f["scene_max"], int(f["W"] * h0 / w0 * 1.05))
+    h = f["scene_max"]
     return dict(src=f"../assets/scenes/{src.name}", name=name, hide_header=meta.get("hide_header", False),
                 pos=meta.get("focus", "50% 0%"), h=h, upscale=round(max(f["W"] / w0, h / h0), 2))
 
