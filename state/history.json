@@ -232,7 +232,20 @@
     "dividendes"
    ],
    "requeued": true,
-   "replanned": "2026-11-06"
+   "buffer": {
+    "tiktok": {
+     "id": "6aed9561f3498efda77f7a36",
+     "dueAt": "2026-11-09T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6aed9539c1e74b84e5da3a6e",
+     "dueAt": "2026-11-10T19:26:00+01:00"
+    },
+    "facebook": {
+     "id": "6aed951c86fe9b8379846593",
+     "dueAt": "2026-11-11T09:54:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-09",
@@ -247,7 +260,20 @@
     "faillite bancaire"
    ],
    "requeued": true,
-   "replanned": "2026-11-06"
+   "buffer": {
+    "tiktok": {
+     "id": "6aed956a07f945cca95117c9",
+     "dueAt": "2026-11-14T08:36:00+01:00"
+    },
+    "instagram": {
+     "id": "6aed9544f3498efda77f7559",
+     "dueAt": "2026-11-11T18:06:00+01:00"
+    },
+    "facebook": {
+     "id": "6aed95207b7e47e8f41bbd00",
+     "dueAt": "2026-11-12T09:26:00+01:00"
+    }
+   }
   },
   {
    "date": "2026-11-09",
@@ -263,7 +289,20 @@
     "arnaque"
    ],
    "requeued": true,
-   "replanned": "2026-11-06"
+   "buffer": {
+    "tiktok": {
+     "id": "6aed957307f945cca951194e",
+     "dueAt": "2026-11-15T09:41:00+01:00"
+    },
+    "instagram": {
+     "id": "6aed954e07f945cca951114e",
+     "dueAt": "2026-11-12T10:51:00+01:00"
+    },
+    "facebook": {
+     "id": "6aed95247b7e47e8f41bbdc2",
+     "dueAt": "2026-11-13T08:45:00+01:00"
+    }
+   }
   }
  ],
  "ai_decors": [
