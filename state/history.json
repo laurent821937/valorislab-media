@@ -453,6 +453,13 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-faux-courtier-fb-v5"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "faux-support-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-support-v5"
   }
  ]
 }

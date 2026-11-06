@@ -339,5 +339,19 @@
   "source": "ia",
   "style": "v5-sobre",
   "created": "2026-11-06"
+ },
+ "ia-faux-support-v5": {
+  "file": "ia-faux-support-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "portefeuille matériel crypto et téléphone éteint, pierre grise (sécurité crypto, prudence)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
  }
 }
