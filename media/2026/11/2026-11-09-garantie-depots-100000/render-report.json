@@ -1,6 +1,6 @@
 {
  "id": "2026-11-09-garantie-depots-100000",
- "kit_version": "2026-11-02.1",
+ "kit_version": "2026-11-06.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-09-garantie-depots-100000/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 186546,
+   "bytes": 188098,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -33,7 +33,7 @@
      "w": 700,
      "h": 325.5625,
      "font": 74,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "TA BANQUE FAIT FAILLITE. TU RÉCUPÈRES COMBIEN ?"
     },
     {
@@ -43,7 +43,7 @@
      "w": 620,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "En Belgique, la réponse n'est pas « tout »."
     },
     {
@@ -53,7 +53,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -63,7 +63,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "01 / 07"
     },
     {
@@ -73,7 +73,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -83,7 +83,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -99,7 +99,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 157089,
+   "bytes": 157470,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -120,7 +120,7 @@
      "w": 700,
      "h": 216.9375,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "TON ÉPARGNE EST PROTÉGÉE JUSQU'À 100 000 €."
     },
     {
@@ -130,7 +130,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Le calcul se fait par banque et par personne, pas par compte."
     },
     {
@@ -150,7 +150,7 @@
      "w": 884,
      "h": 39.1875,
      "font": 28,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "par personne et par banque"
     },
     {
@@ -160,7 +160,7 @@
      "w": 884,
      "h": 30.4375,
      "font": 21,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Source · Wikifin (06/11/2026)"
     },
     {
@@ -170,7 +170,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -180,7 +180,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "02 / 07"
     },
     {
@@ -190,7 +190,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -200,7 +200,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -216,7 +216,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 163009,
+   "bytes": 155622,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -237,7 +237,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "DEUX COMPTES, UNE SEULE BANQUE ?"
     },
     {
@@ -247,7 +247,7 @@
      "w": 381,
      "h": 79.796875,
      "font": 76,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "60 000 €"
     },
     {
@@ -257,7 +257,7 @@
      "w": 380,
      "h": 79.796875,
      "font": 76,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "60 000 €"
     },
     {
@@ -267,7 +267,7 @@
      "w": 884,
      "h": 194.984375,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "60 000 € compte d'épargne 60 000 € compte à vue"
     },
     {
@@ -277,7 +277,7 @@
      "w": 884,
      "h": 132.375,
      "font": 28,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(94, 87, 77)",
      "text": "Exemple hypothétique, même banque : 120 000 € au total, mais seuls 100"
     },
     {
@@ -287,7 +287,7 @@
      "w": 884,
      "h": 30.4375,
      "font": 21,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Source · Wikifin (06/11/2026)"
     },
     {
@@ -297,7 +297,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -307,7 +307,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "03 / 07"
     },
     {
@@ -317,7 +317,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -327,7 +327,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -343,7 +343,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 126618,
+   "bytes": 124669,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -364,7 +364,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "CE QUI EST COUVERT"
     },
     {
@@ -374,7 +374,7 @@
      "w": 884,
      "h": 233.390625,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "COMPTES ET PRODUITS COUVERTS Comptes à vue et comptes d'épargne Compte"
     },
     {
@@ -384,7 +384,7 @@
      "w": 884,
      "h": 30.4375,
      "font": 21,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Source · Wikifin (06/11/2026)"
     },
     {
@@ -394,7 +394,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -404,7 +404,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "04 / 07"
     },
     {
@@ -414,7 +414,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -424,7 +424,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -440,7 +440,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 127385,
+   "bytes": 128572,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -461,7 +461,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "PLUS DE 100 000 € ? RÉPARTIS."
     },
     {
@@ -471,7 +471,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Au-delà du plafond, la partie en trop n'est plus protégée."
     },
     {
@@ -481,7 +481,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Une piste : répartir ton épargne entre plusieurs banques."
     },
     {
@@ -491,7 +491,7 @@
      "w": 884,
      "h": 30.4375,
      "font": 21,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Source · Wikifin (06/11/2026)"
     },
     {
@@ -501,7 +501,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -511,7 +511,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "05 / 07"
     },
     {
@@ -521,7 +521,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -531,7 +531,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -547,7 +547,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 184076,
+   "bytes": 174398,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -568,7 +568,7 @@
      "w": 700,
      "h": 216.9375,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "TON PLAN : 3 VÉRIFICATIONS CETTE SEMAINE."
     },
     {
@@ -578,7 +578,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "01"
     },
     {
@@ -588,7 +588,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "02"
     },
     {
@@ -598,7 +598,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "03"
     },
     {
@@ -608,7 +608,7 @@
      "w": 657.109375,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Additionne tes comptes par banque Le plafond est par personne et par b"
     },
     {
@@ -618,7 +618,7 @@
      "w": 554.765625,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Repère ce qui dépasse 100 000 € La partie en trop n'est plus garantie"
     },
     {
@@ -628,7 +628,7 @@
      "w": 721.1875,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Vérifie l'agrément de ta banque Banque étrangère de l'EEE : l'État qui"
     },
     {
@@ -638,7 +638,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -648,7 +648,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "06 / 07"
     },
     {
@@ -658,7 +658,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -668,7 +668,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -684,7 +684,7 @@
    "note": null,
    "scale": 0.96,
    "overflow": false,
-   "bytes": 154269,
+   "bytes": 155277,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -705,7 +705,7 @@
      "w": 600,
      "h": 227.8125,
      "font": 67.2,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "ÉVITE LES 20 ERREURS DE DÉBUTANT."
     },
     {
@@ -715,7 +715,7 @@
      "w": 700,
      "h": 140.0625,
      "font": 30.72,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Mon guide gratuit t'explique les bases pour épargner et investir en Be"
     },
     {
@@ -735,7 +735,7 @@
      "w": 391.15625,
      "h": 245.5625,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": ""
     },
     {
@@ -745,7 +745,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -755,7 +755,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "07 / 07"
     },
     {
@@ -765,7 +765,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -775,7 +775,7 @@
      "w": 362.0625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif, pas un conseil financier."
     }
    ],
@@ -788,7 +788,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-garantie-depots-fb-v5",
-  "bytes": 192961,
+  "bytes": 193464,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -809,7 +809,7 @@
     "w": 860,
     "h": 393.75,
     "font": 92,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "TA BANQUE FAIT FAILLITE. TU RÉCUPÈRES COMBIEN ?"
    },
    {
@@ -819,7 +819,7 @@
     "w": 700,
     "h": 109.4375,
     "font": 36,
-    "color": "rgb(214, 209, 200)",
+    "color": "rgb(226, 221, 212)",
     "text": "En Belgique, la réponse n'est pas « tout »."
    },
    {
@@ -829,7 +829,7 @@
     "w": 264.296875,
     "h": 52,
     "font": 16,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "VALORISLAB FINANCE BELGIQUE"
    },
    {
@@ -839,7 +839,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "valorislab.be"
    },
    {
@@ -849,7 +849,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]

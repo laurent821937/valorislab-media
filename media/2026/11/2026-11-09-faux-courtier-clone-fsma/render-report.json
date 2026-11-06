@@ -1,6 +1,6 @@
 {
  "id": "2026-11-09-faux-courtier-clone-fsma",
- "kit_version": "2026-11-02.1",
+ "kit_version": "2026-11-06.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-09-faux-courtier-clone-fsma/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 155937,
+   "bytes": 157198,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -33,7 +33,7 @@
      "w": 700,
      "h": 325.5625,
      "font": 74,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "CE COURTIER A L'AIR OFFICIEL. ET SI C'ÉTAIT UN CLONE ?"
     },
     {
@@ -43,7 +43,7 @@
      "w": 620,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Le réflexe de 2 minutes qui évite l'arnaque."
     },
     {
@@ -53,7 +53,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -63,7 +63,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "01 / 07"
     },
     {
@@ -73,7 +73,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -83,7 +83,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -99,7 +99,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 124225,
+   "bytes": 125583,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -120,7 +120,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "UN CLONE, C'EST QUOI ?"
     },
     {
@@ -130,7 +130,7 @@
      "w": 700,
      "h": 150.46875,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Une société frauduleuse se fait passer pour une société régulière, san"
     },
     {
@@ -140,7 +140,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Son nom, son logo et son site ressemblent à l'original."
     },
     {
@@ -150,7 +150,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -160,7 +160,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "02 / 07"
     },
     {
@@ -170,7 +170,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -180,7 +180,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -196,7 +196,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 157168,
+   "bytes": 151423,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -217,7 +217,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LES SIGNAUX D'ALERTE"
     },
     {
@@ -227,7 +227,7 @@
      "w": 102,
      "h": 66,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "01"
     },
     {
@@ -237,7 +237,7 @@
      "w": 102,
      "h": 66,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "02"
     },
     {
@@ -247,7 +247,7 @@
      "w": 102,
      "h": 66,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "03"
     },
     {
@@ -257,7 +257,7 @@
      "w": 102,
      "h": 66,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "04"
     },
     {
@@ -267,7 +267,7 @@
      "w": 696.578125,
      "h": 39,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Contact inattendu par téléphone ou message"
     },
     {
@@ -277,7 +277,7 @@
      "w": 607.359375,
      "h": 39,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Promesse de gains rapides ou garantis"
     },
     {
@@ -287,7 +287,7 @@
      "w": 700.171875,
      "h": 39,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Adresse e-mail différente de celle du vrai site"
     },
     {
@@ -297,7 +297,7 @@
      "w": 427.40625,
      "h": 39,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Pression pour décider vite"
     },
     {
@@ -307,7 +307,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -317,7 +317,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "03 / 07"
     },
     {
@@ -327,7 +327,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -337,7 +337,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -353,7 +353,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 122350,
+   "bytes": 123153,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -374,7 +374,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LE RÉFLEXE FSMA"
     },
     {
@@ -384,7 +384,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Cherche le prestataire par son nom ou son numéro d'entreprise sur le s"
     },
     {
@@ -394,7 +394,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Pas dans la liste ? Il n'est pas autorisé à proposer ces produits en B"
     },
     {
@@ -404,7 +404,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -414,7 +414,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "04 / 07"
     },
     {
@@ -424,7 +424,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -434,7 +434,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -450,7 +450,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 129942,
+   "bytes": 130803,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -471,7 +471,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "COMPARE LES COORDONNÉES"
     },
     {
@@ -481,7 +481,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Compare l'adresse e-mail et les coordonnées avec celles de la vraie so"
     },
     {
@@ -491,7 +491,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Les adresses de la FSMA se terminent toutes par @fsma.be."
     },
     {
@@ -501,7 +501,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -511,7 +511,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "05 / 07"
     },
     {
@@ -521,7 +521,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -531,7 +531,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -547,7 +547,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 129325,
+   "bytes": 130234,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -568,7 +568,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LISTE INCOMPLÈTE"
     },
     {
@@ -578,7 +578,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "La liste des mises en garde est mise à jour souvent, mais elle n'est p"
     },
     {
@@ -588,7 +588,7 @@
      "w": 700,
      "h": 150.46875,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Être absent de la liste ne prouve pas qu'une société est fiable. En ca"
     },
     {
@@ -598,7 +598,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -608,7 +608,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "06 / 07"
     },
     {
@@ -618,7 +618,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -628,7 +628,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -644,7 +644,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 162790,
+   "bytes": 163565,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -665,7 +665,7 @@
      "w": 600,
      "h": 237.28125,
      "font": 70,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "SAVOIR VÉRIFIER FAIT PARTIE DES 20 ERREURS"
     },
     {
@@ -675,7 +675,7 @@
      "w": 700,
      "h": 97.25,
      "font": 32,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Mon guide gratuit t'apprend à repérer les pièges avant d'investir en B"
     },
     {
@@ -695,7 +695,7 @@
      "w": 432.421875,
      "h": 271.46875,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": ""
     },
     {
@@ -705,7 +705,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -715,7 +715,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "07 / 07"
     },
     {
@@ -725,7 +725,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -735,7 +735,7 @@
      "w": 362.0625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif, pas un conseil financier."
     }
    ],
@@ -748,7 +748,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-faux-courtier-fb-v5",
-  "bytes": 170410,
+  "bytes": 170945,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -769,7 +769,7 @@
     "w": 860,
     "h": 393.75,
     "font": 92,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "CE COURTIER A L'AIR OFFICIEL. ET SI C'ÉTAIT UN CLONE ?"
    },
    {
@@ -779,7 +779,7 @@
     "w": 700,
     "h": 109.4375,
     "font": 36,
-    "color": "rgb(214, 209, 200)",
+    "color": "rgb(226, 221, 212)",
     "text": "Le réflexe de 2 minutes qui évite l'arnaque."
    },
    {
@@ -789,7 +789,7 @@
     "w": 264.296875,
     "h": 52,
     "font": 16,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "VALORISLAB FINANCE BELGIQUE"
    },
    {
@@ -799,7 +799,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "valorislab.be"
    },
    {
@@ -809,7 +809,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]

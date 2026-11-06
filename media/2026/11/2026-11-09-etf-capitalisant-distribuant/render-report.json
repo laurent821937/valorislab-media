@@ -1,6 +1,6 @@
 {
  "id": "2026-11-09-etf-capitalisant-distribuant",
- "kit_version": "2026-11-02.1",
+ "kit_version": "2026-11-06.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-09-etf-capitalisant-distribuant/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 163852,
+   "bytes": 164983,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -33,7 +33,7 @@
      "w": 700,
      "h": 244.171875,
      "font": 74,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "CAPITALISANT OU DISTRIBUANT : 4 200 € D'ÉCART ?"
     },
     {
@@ -43,7 +43,7 @@
      "w": 620,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Même ETF, même rendement. Un seul réglage change tout."
     },
     {
@@ -53,7 +53,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -63,7 +63,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "01 / 07"
     },
     {
@@ -73,7 +73,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -83,7 +83,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -99,7 +99,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 108156,
+   "bytes": 109486,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -120,7 +120,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "DEUX VERSIONS"
     },
     {
@@ -130,7 +130,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Un ETF capitalisant réinvestit automatiquement les dividendes."
     },
     {
@@ -140,7 +140,7 @@
      "w": 700,
      "h": 50.15625,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Un ETF distribuant te les verse en cash."
     },
     {
@@ -150,7 +150,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -160,7 +160,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "02 / 07"
     },
     {
@@ -170,7 +170,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -180,7 +180,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -196,7 +196,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 106751,
+   "bytes": 107802,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -217,7 +217,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "L'HYPOTHÈSE"
     },
     {
@@ -227,7 +227,7 @@
      "w": 700,
      "h": 50.15625,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "10 000 € investis pendant 20 ans."
     },
     {
@@ -237,7 +237,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Rendement total de 6 % par an, dont 2 % de dividendes. Avant frais et "
     },
     {
@@ -247,7 +247,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -257,7 +257,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "03 / 07"
     },
     {
@@ -267,7 +267,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -277,7 +277,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -293,7 +293,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 136873,
+   "bytes": 133917,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -314,7 +314,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "APRÈS 20 ANS"
     },
     {
@@ -324,7 +324,7 @@
      "w": 381,
      "h": 79.796875,
      "font": 76,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "32 071 €"
     },
     {
@@ -334,7 +334,7 @@
      "w": 380,
      "h": 79.796875,
      "font": 76,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "27 867 €"
     },
     {
@@ -344,7 +344,7 @@
      "w": 381,
      "h": 29,
      "font": 24,
-     "color": "rgb(189, 183, 173)",
+     "color": "rgb(94, 87, 77)",
      "text": "CAPITALISANT"
     },
     {
@@ -354,7 +354,7 @@
      "w": 380,
      "h": 29,
      "font": 24,
-     "color": "rgb(189, 183, 173)",
+     "color": "rgb(94, 87, 77)",
      "text": "DISTRIBUANT"
     },
     {
@@ -364,7 +364,7 @@
      "w": 884,
      "h": 289.171875,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "CAPITALISANT 32 071 € dividendes réinvestis DISTRIBUANT 27 867 € 21 91"
     },
     {
@@ -374,7 +374,7 @@
      "w": 884,
      "h": 30.4375,
      "font": 21,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Illustration hypothétique, rendement non garanti."
     },
     {
@@ -384,7 +384,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -394,7 +394,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "04 / 07"
     },
     {
@@ -404,7 +404,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -414,7 +414,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -430,7 +430,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 114302,
+   "bytes": 115244,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -451,7 +451,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "POURQUOI CET ÉCART ?"
     },
     {
@@ -461,7 +461,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Les dividendes réinvestis rapportent à leur tour."
     },
     {
@@ -471,7 +471,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Versés et dépensés, ils quittent le portefeuille et ne travaillent plu"
     },
     {
@@ -481,7 +481,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -491,7 +491,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "05 / 07"
     },
     {
@@ -501,7 +501,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -511,7 +511,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -527,7 +527,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 142512,
+   "bytes": 137751,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -548,7 +548,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "COMMENT CHOISIR ?"
     },
     {
@@ -558,7 +558,7 @@
      "w": 102,
      "h": 66,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "01"
     },
     {
@@ -568,7 +568,7 @@
      "w": 102,
      "h": 66,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "02"
     },
     {
@@ -578,7 +578,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "03"
     },
     {
@@ -588,7 +588,7 @@
      "w": 730.515625,
      "h": 39,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Capitaliser : tu construis un capital à long terme"
     },
     {
@@ -598,7 +598,7 @@
      "w": 587.375,
      "h": 39,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Distribuer : tu veux un revenu régulier"
     },
     {
@@ -608,7 +608,7 @@
      "w": 780,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Vérifie la fiscalité belge de ton choix avant d'acheter"
     },
     {
@@ -618,7 +618,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -628,7 +628,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "06 / 07"
     },
     {
@@ -638,7 +638,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -648,7 +648,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -664,7 +664,7 @@
    "note": null,
    "scale": 0.96,
    "overflow": false,
-   "bytes": 156054,
+   "bytes": 156758,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -685,7 +685,7 @@
      "w": 600,
      "h": 227.8125,
      "font": 67.2,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "BIEN CHOISIR FAIT PARTIE DES 20 ERREURS"
     },
     {
@@ -695,7 +695,7 @@
      "w": 700,
      "h": 140.0625,
      "font": 30.72,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Mon guide gratuit t'explique les bases pour investir en comprenant, sa"
     },
     {
@@ -715,7 +715,7 @@
      "w": 391.15625,
      "h": 245.5625,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": ""
     },
     {
@@ -725,7 +725,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -735,7 +735,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "07 / 07"
     },
     {
@@ -745,7 +745,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -755,7 +755,7 @@
      "w": 362.0625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif, pas un conseil financier."
     }
    ],
@@ -768,7 +768,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-etf-capitalisant-fb-v5",
-  "bytes": 167274,
+  "bytes": 168447,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -789,7 +789,7 @@
     "w": 860,
     "h": 295.3125,
     "font": 92,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "CAPITALISANT OU DISTRIBUANT : 4 200 € D'ÉCART ?"
    },
    {
@@ -799,7 +799,7 @@
     "w": 700,
     "h": 109.4375,
     "font": 36,
-    "color": "rgb(214, 209, 200)",
+    "color": "rgb(226, 221, 212)",
     "text": "Même ETF, même rendement. Un seul réglage change tout."
    },
    {
@@ -809,7 +809,7 @@
     "w": 264.296875,
     "h": 52,
     "font": 16,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "VALORISLAB FINANCE BELGIQUE"
    },
    {
@@ -819,7 +819,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "valorislab.be"
    },
    {
@@ -829,7 +829,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]

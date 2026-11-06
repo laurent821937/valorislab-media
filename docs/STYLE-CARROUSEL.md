@@ -6,20 +6,20 @@ Remplace la charte v4 (archivée sur la branche `sauvegarde-charte-v4`). **Rendu
 
 ## Format et grille
 - 1080 × 1350 (4:5), mêmes images pour Instagram et TikTok ; image unique `fb-01.jpg` (même charte) pour Facebook.
-- Fond noir `#0A0A0B`, halo chaud brun très doux, **grille fine** (traits blancs à 5 % d'opacité tous les 220 px, à partir de x 96 et y 180), visible aussi sur la photo de couverture.
+- Fond anthracite `#141416`, halo chaud brun doux, **grille fine** (traits blancs à 6 % d'opacité tous les 220 px, à partir de x 96 et y 180), visible aussi sur la photo de couverture.
 - Typographie unique **Inter**. Titres **en majuscules**, gras, interlignage serré. Texte aligné à gauche, marges de 96 px.
 - Zones : en-tête à y 214 ; contenu de y 290 à y 1060 ; filet or du pied de page à y 1084 ; **rien sous le pied de page** (zone de la légende TikTok).
 
 ## Couleurs
 | Rôle | Couleur |
 |---|---|
-| Fond | `#0A0A0B` |
+| Fond | `#141416` (anthracite, éclairci le 06/11/2026) |
 | Titre (partie blanche) | `#F4F0E8` |
 | Partie or du titre, chiffres clés | `#E5C07B` (aplat, pas de dégradé) |
 | Surtitre, libellés de carte, numéros | `#D4AF6A` |
-| Corps de texte | `#D6D1C8` ; seconde ligne des étapes `#BDB7AD` |
-| Pied de page, compteur, notes | `#A8A29A` |
-| Cartes | fond `#151516`, bordure or `#B8975A` 1,5 px, coins arrondis 18 à 22 px |
+| Corps de texte | `#E2DDD4` |
+| Pied de page, compteur, notes | `#B0AAA1` |
+| **Encadrés (cartes, étapes, listes, notes) : ivoire** (demande de Laurent, 06/11/2026) | fond `#F3EEE4`, bordure `#D9CBB0`, ombre douce, coins arrondis 18 à 22 px ; texte `#1C1A17`, texte secondaire `#5E574D`, libellés, numéros et chiffres de gauche en or foncé `#8A6A2E` |
 | Bouton | `#E3BE78`, texte `#1A1612`, majuscules |
 
 ## Éléments fixes (toutes les slides)

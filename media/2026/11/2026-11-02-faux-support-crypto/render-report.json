@@ -1,6 +1,6 @@
 {
  "id": "2026-11-02-faux-support-crypto",
- "kit_version": "2026-11-02.1",
+ "kit_version": "2026-11-06.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-02-faux-support-crypto/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 204602,
+   "bytes": 206371,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -33,7 +33,7 @@
      "w": 700,
      "h": 325.5625,
      "font": 74,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "« BONJOUR, ICI LE SUPPORT. VOTRE WALLET EST BLOQUÉ. »"
     },
     {
@@ -43,7 +43,7 @@
      "w": 620,
      "h": 200.625,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Le message qui vide un portefeuille crypto en quelques minutes. Commen"
     },
     {
@@ -53,7 +53,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -63,7 +63,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "01 / 07"
     },
     {
@@ -73,7 +73,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -83,7 +83,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -99,7 +99,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 154777,
+   "bytes": 153524,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -120,7 +120,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LE SCÉNARIO"
     },
     {
@@ -130,7 +130,7 @@
      "w": 700,
      "h": 200.625,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Tu poses une question dans un groupe Telegram, sur Discord ou sous un "
     },
     {
@@ -140,7 +140,7 @@
      "w": 884,
      "h": 233.390625,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LES SIGNES QUI DOIVENT T'ALERTER Un message privé que tu n'as pas dema"
     },
     {
@@ -150,7 +150,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -160,7 +160,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "02 / 07"
     },
     {
@@ -170,7 +170,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -180,7 +180,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -196,7 +196,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 106596,
+   "bytes": 107791,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -217,7 +217,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LA DEMANDE"
     },
     {
@@ -227,7 +227,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Pour « débloquer » ton wallet, il te demande ta phrase de récupération"
     },
     {
@@ -237,7 +237,7 @@
      "w": 700,
      "h": 50.15625,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Ou un lien vers un faux site."
     },
     {
@@ -247,7 +247,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -257,7 +257,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "03 / 07"
     },
     {
@@ -267,7 +267,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -277,7 +277,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -293,7 +293,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 125641,
+   "bytes": 126500,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -314,7 +314,7 @@
      "w": 700,
      "h": 200.625,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Qui connaît ta phrase de récupération contrôle ton portefeuille. Une t"
     },
     {
@@ -334,7 +334,7 @@
      "w": 884,
      "h": 39.1875,
      "font": 28,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "= un accès total à tes cryptos"
     },
     {
@@ -344,7 +344,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -354,7 +354,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "04 / 07"
     },
     {
@@ -364,7 +364,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -374,7 +374,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -390,7 +390,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 199570,
+   "bytes": 192287,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -411,7 +411,7 @@
      "w": 700,
      "h": 144.625,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LES RÈGLES À NE JAMAIS ENFREINDRE"
     },
     {
@@ -421,7 +421,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "01"
     },
     {
@@ -431,7 +431,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "02"
     },
     {
@@ -441,7 +441,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "03"
     },
     {
@@ -451,7 +451,7 @@
      "w": 102,
      "h": 78,
      "font": 32,
-     "color": "rgb(212, 175, 106)",
+     "color": "rgb(138, 106, 46)",
      "text": "04"
     },
     {
@@ -461,7 +461,7 @@
      "w": 780,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Aucun support légitime ne te demandera ta phrase de récupération. Jama"
     },
     {
@@ -471,7 +471,7 @@
      "w": 780,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Un vrai support ne t'écrit pas en premier en message privé."
     },
     {
@@ -481,7 +481,7 @@
      "w": 780,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Ta phrase s'écrit sur papier ou sur métal. Pas de photo, pas de cloud."
     },
     {
@@ -491,7 +491,7 @@
      "w": 780,
      "h": 78,
      "font": 30,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(28, 26, 23)",
      "text": "Tu tapes toi-même l'adresse du site officiel. Tu ne cliques pas sur un"
     },
     {
@@ -501,7 +501,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -511,7 +511,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "05 / 07"
     },
     {
@@ -521,7 +521,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -531,7 +531,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -547,7 +547,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 141342,
+   "bytes": 138969,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -568,7 +568,7 @@
      "w": 700,
      "h": 72.3125,
      "font": 64,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "DÉJÀ PARTAGÉ ?"
     },
     {
@@ -578,7 +578,7 @@
      "w": 700,
      "h": 100.3125,
      "font": 33,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Une phrase partagée donne un accès total à ton portefeuille."
     },
     {
@@ -588,7 +588,7 @@
      "w": 884,
      "h": 233.390625,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "SI TU AS DÉJÀ PARTAGÉ TA PHRASE Crée un nouveau wallet avec une nouvel"
     },
     {
@@ -598,7 +598,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -608,7 +608,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "06 / 07"
     },
     {
@@ -618,7 +618,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -628,7 +628,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -644,7 +644,7 @@
    "note": null,
    "scale": 0.9,
    "overflow": false,
-   "bytes": 158923,
+   "bytes": 159490,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -665,7 +665,7 @@
      "w": 600,
      "h": 284.75,
      "font": 63,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "LA SÉCURITÉ FAIT PARTIE DES 20 ERREURS DU DÉBUTANT"
     },
     {
@@ -675,7 +675,7 @@
      "w": 700,
      "h": 87.53125,
      "font": 28.8,
-     "color": "rgb(214, 209, 200)",
+     "color": "rgb(226, 221, 212)",
      "text": "Mon guide gratuit les détaille une par une, avec un plan d'action conc"
     },
     {
@@ -695,7 +695,7 @@
      "w": 398.765625,
      "h": 250.34375,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": ""
     },
     {
@@ -705,7 +705,7 @@
      "w": 264.296875,
      "h": 52,
      "font": 16,
-     "color": "rgb(244, 240, 232)",
+     "color": "rgb(246, 242, 234)",
      "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
@@ -715,7 +715,7 @@
      "w": 94.609375,
      "h": 31,
      "font": 26,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "07 / 07"
     },
     {
@@ -725,7 +725,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "valorislab.be"
     },
     {
@@ -735,7 +735,7 @@
      "w": 362.0625,
      "h": 21,
      "font": 18,
-     "color": "rgb(168, 162, 154)",
+     "color": "rgb(176, 170, 161)",
      "text": "Contenu éducatif, pas un conseil financier."
     }
    ],
@@ -748,7 +748,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-faux-support-v5",
-  "bytes": 215630,
+  "bytes": 216919,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -769,7 +769,7 @@
     "w": 860,
     "h": 393.75,
     "font": 92,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "« BONJOUR, ICI LE SUPPORT. VOTRE WALLET EST BLOQUÉ. »"
    },
    {
@@ -779,7 +779,7 @@
     "w": 700,
     "h": 218.875,
     "font": 36,
-    "color": "rgb(214, 209, 200)",
+    "color": "rgb(226, 221, 212)",
     "text": "Le message qui vide un portefeuille crypto en quelques minutes. Commen"
    },
    {
@@ -789,7 +789,7 @@
     "w": 264.296875,
     "h": 52,
     "font": 16,
-    "color": "rgb(244, 240, 232)",
+    "color": "rgb(246, 242, 234)",
     "text": "VALORISLAB FINANCE BELGIQUE"
    },
    {
@@ -799,7 +799,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "valorislab.be"
    },
    {
@@ -809,7 +809,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(168, 162, 154)",
+    "color": "rgb(176, 170, 161)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]
