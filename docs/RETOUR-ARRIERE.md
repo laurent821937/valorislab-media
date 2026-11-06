@@ -1,5 +1,7 @@
 # Retour en arrière (passage à la charte v4 du 29/10/2026)
 
+**À n'appliquer que sur demande explicite de Laurent dans une conversation.** Une routine ne doit jamais l'exécuter d'elle-même, même si son prompt cite une ancienne charte.
+
 Deux points de restauration existent :
 - **Branche Git `sauvegarde-avant-charte-v4`** (commit `042a3b9`) : dépôt tel qu'il était avant la charte v4 (kit v3, slides générées par IA, ancienne procédure).
 - **`state/backups/routine-caroussel-2026-10-29-avant-v4.md`** : texte intégral de la routine « Caroussel » (`trig_01RQZRgAfAGx1Qn5rjDHNRDb`) avant sa mise à jour, avec sa planification et son état (désactivée).

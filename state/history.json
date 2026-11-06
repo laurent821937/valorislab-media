@@ -403,6 +403,56 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-faux-courtier-fb"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "test-sobre",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-test-sobre",
+   "note": "test du prompt sobre (charte v5)"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "etf-capitalisant-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-etf-capitalisant-v5"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "etf-capitalisant-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-etf-capitalisant-fb-v5"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "garantie-depots-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-garantie-depots-v5"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "garantie-depots-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-garantie-depots-fb-v5"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "faux-courtier-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-courtier-v5"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "faux-courtier-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-courtier-fb-v5"
   }
  ]
 }

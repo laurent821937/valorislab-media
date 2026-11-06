@@ -17,7 +17,7 @@
    "type": "cover",
    "title": "Ta banque fait faillite.\n*Tu récupères combien ?*",
    "subtitle": "En Belgique, la réponse n'est pas « tout ».",
-   "scene": "ia-garantie-depots"
+   "scene": "ia-garantie-depots-v5"
   },
   {
    "type": "point",
@@ -125,6 +125,6 @@
   ]
  },
  "fb": {
-  "scene": "ia-garantie-depots-fb"
+  "scene": "ia-garantie-depots-fb-v5"
  }
 }

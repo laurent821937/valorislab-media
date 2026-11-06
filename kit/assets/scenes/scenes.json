@@ -243,5 +243,101 @@
   ],
   "source": "ia",
   "created": "2026-11-06"
+ },
+ "ia-etf-capitalisant-v5": {
+  "file": "ia-etf-capitalisant-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "ordinateur portable fermé et carnet noir, bureau sombre (méthode, long terme)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
+ },
+ "ia-etf-capitalisant-fb-v5": {
+  "file": "ia-etf-capitalisant-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "jeune pousse dans un pot noir, pierre grise (croissance)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
+ },
+ "ia-garantie-depots-v5": {
+  "file": "ia-garantie-depots-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "carte bancaire noire et portefeuille, pierre grise (épargne, banque)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
+ },
+ "ia-garantie-depots-fb-v5": {
+  "file": "ia-garantie-depots-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "hall de banque moderne en pierre grise (institution, sécurité)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
+ },
+ "ia-faux-courtier-v5": {
+  "file": "ia-faux-courtier-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "téléphone retourné et enveloppe blanche (méfiance, message suspect)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
+ },
+ "ia-faux-courtier-fb-v5": {
+  "file": "ia-faux-courtier-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "loupe sur feuille blanche (vérifier, enquêter)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-06"
  }
 }
