@@ -18,7 +18,7 @@ Toute modification de la stratégie passe par Laurent.
 Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au moins 1 contenu Bourse/ETF par semaine.
 
 ## Format visuel
-**Charte v5 (02/11/2026) : `docs/STYLE-CARROUSEL.md` et les 5 slides de référence `kit/assets/references/carrousel-v5/` (style uniquement : jamais leur sujet ni leurs chiffres), rendue par le kit (`kit/render.py`). 5 slides par défaut, 8 au maximum.** Elle remplace la charte v4 (branche `sauvegarde-avant-charte-v5`). La charte v3 ci-dessous n'est gardée qu'en archive.
+**Charte v4 (29/10/2026) : `docs/STYLE-CARROUSEL.md` et les 9 slides de référence `kit/assets/references/carrousel-v4/`, rendue par le kit (`kit/render.py`).** Elle prime sur la charte v3 ci-dessous, qui n'est gardée qu'en archive pour les règles non contredites (format 4:5, zones TikTok). **8 slides au maximum.**
 
 ### Charte v3 (27/10/2026, archive)
 - **Un seul format : 1080×1350 (4:5), pour Instagram, Facebook ET TikTok** (choix de Laurent : en 9:16, TikTok masquait une partie de l'image). TikTok affiche la photo 4:5 entière ; sa légende recouvre les 160 px du bas et ses boutons le bord droit : aucun texte à ces endroits (vérifié par `qa.py`).

@@ -1,47 +1,53 @@
-# Charte carrousel VALORISLAB v5 (référence visuelle de Laurent, 02/11/2026)
+# Charte carrousel VALORISLAB v4 (référence visuelle de Laurent, 29/10/2026)
 
-Remplace la charte v4 (archivée sur la branche `sauvegarde-charte-v4`). **Rendu : `kit/render.py` + `kit/templates/slide.html.j2`**, jamais d'image IA pour les slides. Modèle : `kit/assets/references/carrousel-v5/slide-01.jpg` à `slide-05.jpg`.
+Remplace la charte v3 pour toute nouvelle génération. **Rendu : `kit/render.py` + `kit/templates/slide.html.j2`** (décision de Laurent : rendu HTML, pas d'image IA pour les slides). Schéma JSON des slides : `docs/RUNBOOK.md`, étape 5. Modèle à reproduire : `kit/assets/references/carrousel-v4/slide-01.jpg` à `slide-09.jpg` (carrousel « 6 choses sur ton argent que ta banque ne met pas en avant »). Ces 9 images sont une référence de **style** uniquement : en cas de doute sur un rendu, elles font foi ; leur sujet, leurs textes et leurs chiffres ne doivent jamais être réutilisés.
 
-**Règle de Laurent : ces 5 images sont une référence de STYLE uniquement** (format, design, couleurs, structure, qualité). Leur sujet (Apple, résultats trimestriels), leurs textes et leurs chiffres ne sont jamais réutilisés. Tout le reste (sujets, textes, chiffres, décor) est produit par la routine. Les défauts des images de référence ne sont pas reproduits : chevauchements du guide, du bouton et du pied de page (slide 5), filet vertical qui traverse le texte (slide 3), carte collée au filet du pied de page (slide 4).
-
-## Format et grille
-- 1080 × 1350 (4:5), mêmes images pour Instagram et TikTok ; image unique `fb-01.jpg` (même charte) pour Facebook.
-- Fond noir `#0A0A0B`, halo chaud brun très doux, **grille fine** (traits blancs à 5 % d'opacité tous les 220 px, à partir de x 96 et y 180), visible aussi sur la photo de couverture.
-- Typographie unique **Inter**. Titres **en majuscules**, gras, interlignage serré. Texte aligné à gauche, marges de 96 px.
-- Zones : en-tête à y 214 ; contenu de y 290 à y 1060 ; filet or du pied de page à y 1084 ; **rien sous le pied de page** (zone de la légende TikTok).
+## Ambiance générale
+- Éditorial premium, sobre, noir et or. Beaucoup d'espace vide, aucun élément décoratif superflu (pas de bokeh chargé, pas d'icônes, pas d'émoji, pas de cadre doré épais).
+- Fond : noir presque pur `#0A0A0B`, avec un halo chaud très léger (brun doré `#231E18` à 10-20 % d'opacité) derrière le titre ou le chiffre clé. Jamais de dégradé visible ni de texture.
+- Typographie unique : **Plus Jakarta Sans** (géométrique, sans empattement). Titres en gras serré (interlettrage légèrement négatif), corps en regular.
+- Format 1080×1350 (4:5). Marges latérales 72 px (100 px à droite pour le contenu : boutons TikTok). Texte aligné à gauche, jamais centré (sauf la maquette du guide en slide finale).
 
 ## Couleurs
 | Rôle | Couleur |
 |---|---|
 | Fond | `#0A0A0B` |
-| Titre (partie blanche) | `#F4F0E8` |
-| Partie or du titre, chiffres clés | `#E5C07B` (aplat, pas de dégradé) |
-| Surtitre, libellés de carte, numéros | `#D4AF6A` |
-| Corps de texte | `#D6D1C8` ; seconde ligne des étapes `#BDB7AD` |
-| Pied de page, compteur, notes | `#A8A29A` |
-| Cartes | fond `#151516`, bordure or `#B8975A` 1,5 px, coins arrondis 18 à 22 px |
-| Bouton | `#E3BE78`, texte `#1A1612`, majuscules |
+| Titre (partie blanche), chiffres en gras dans le corps | blanc cassé `#F4EFE6` |
+| Mots d'accent du titre, grands chiffres | dégradé or `#E8D3A0` → `#BD9756` (haut-gauche vers bas-droite) |
+| Corps de texte | gris chaud `#B8B2A8` |
+| Surtitres, « Source », compteur actif, « Glisse » | or mat `#C9A96E` |
+| Ligne de source, url | gris `#8A857D` |
+| Cartes | fond `#15130F`, bordure 1 px `#2A251D`, coins arrondis 22 px |
+| Bouton CTA | dégradé or `#E7D5A7` → `#BA9755`, texte noir `#141210` |
 
-## Éléments fixes (toutes les slides)
-1. En-tête : emblème rond + « VALORISLAB » (capitales espacées) + « FINANCE BELGIQUE » (or), en haut à gauche.
-2. Compteur « 01 / 05 » en gris, en haut à droite.
-3. Surtitre : trait or + texte or en majuscules (`kicker` de la slide ; couverture : thème · date, ex. « BOURSE · 02 NOVEMBRE 2026 »).
-4. Pied de page : filet or, « valorislab.be » à gauche, « Contenu éducatif · Pas un conseil financier » à droite.
+Crypto : même charte (pas de bleu électrique en v4, sauf demande contraire de Laurent).
 
-## Structure de référence (5 slides par défaut, 8 au maximum)
-1. **Couverture (`cover`)** : surtitre thème · date, titre-accroche en majuscules (fin en or), sous-titre qui explique le « pourquoi » (`subtitle`), ligne or d'actualité facultative (`highlight`, ex. « X publie ses résultats aujourd'hui. »). Décor IA du sujet dans la partie basse, sous la grille.
-2. **Le point essentiel (`compare` sans valeur)** : surtitre « Le point essentiel », titre (fin en or), une phrase d'explication (`body`), puis une carte à 2 colonnes : libellé or + texte (`left{label, note}`, `right{label, note}`).
-3. **Exemple chiffré (`compare` avec valeurs)** : surtitre « Exemple fictif · pour comprendre » (ou « Exemple réel » avec source), titre, carte à 2 colonnes : libellé gris + grand chiffre (gauche or, droite blanc) + phrase de conclusion sous un filet (`caption`), puis une note grise (`note`, ex. « Chiffres illustratifs » ou la source).
-4. **Méthode (`list`)** : surtitre « Ta méthode de débutant », titre, 4 étapes en cartes numérotées 01 à 04 ; chaque étape = 1re ligne blanche (`title`) + 2e ligne grise (`sub`).
-5. **CTA (`cta`)** : surtitre « Pour aller plus loin », titre « 20 erreurs de débutant à éviter. », sous-titre « Bourse & Crypto · Guide gratuit », maquette du guide, bouton or « LIEN EN BIO → ».
+## Éléments fixes de chaque slide (gabarit)
+1. **En-tête de marque, en haut à gauche** (x 72, y 56, environ 246 × 54 px) : emblème rond + « VALORISLAB » (blanc, capitales espacées) + « FINANCE BELGIQUE » (or mat, plus petit). Dessiné par le kit ; `kit/assets/header-brand.png` en est une version détourée pour tout autre usage.
+2. **Compteur en haut à droite** : « 02 / 9 » (numéro en or mat gras, « / 9 » en gris), aligné à droite sur la marge de 72 px, à la hauteur de l'en-tête.
+3. **Pied de page** : « valorislab.be » en gris à gauche (y ≈ 1275) ; à droite « Glisse » en or mat + cercle fin (48 px, bordure 1,5 px gris clair) contenant une flèche →. Dernière slide : la mention « Contenu éducatif, pas un conseil financier. » remplace « Glisse ».
+4. **Barre de progression** tout en bas (y ≈ 1320, de x 72 à x 1008, 3 px) : piste gris très sombre `#1A1A1C`, partie remplie en or proportionnelle au rang de la slide (slide k/n = k/n de la largeur). Dernière slide : barre entièrement or.
 
-Pour un sujet qui le demande, ajouter 1 à 3 slides du même type (`point`, `stat`, `compare`, `list`), sans dépasser 8.
+## Types de slides
+- **Couverture (cover)** : photo photoréaliste du protagoniste (scène du catalogue `kit/assets/scenes/`) sur les 60 % supérieurs, fondue dans le noir vers le bas. En bas : surtitre (trait or 40 px + texte or mat en capitales très espacées, ex. « VERSION BELGIQUE »), titre géant sur 3 lignes maximum (≈ 76 px, blanc, fin du titre en or : « ne met pas en avant. »), sous-titre d'une ligne en gris clair (« Rien d'illégal. Juste rarement expliqué au guichet. »). Le texte n'est jamais posé sur le visage.
+- **Point numéroté (point)** : pastille arrondie contour fin (≈ 92 × 56 px) avec le numéro « 01 » en or mat, puis titre sur 2-3 lignes (≈ 60 px, début blanc, fin en or), puis contenu. Le contenu varie selon le point :
+  - **chiffre géant** : valeur en or dégradé (≈ 150-190 px, ex. « 92 » + « milliards € » en blanc ≈ 60 px, ou « 97 % », « 249,90 € »), légende d'une ligne en dessous en blanc cassé ;
+  - **barre partagée** (comparaison de deux composantes) : barre arrondie pleine largeur coupée en deux, partie gauche sombre avec bordure, partie droite en dégradé or ; valeur en gras + petite légende dans chaque partie ;
+  - **cartes chiffrées** : 2 cartes côte à côte (la première avec un léger reflet or), puis une carte pleine largeur pour la phrase de comparaison ;
+  - **encadré liste** : carte avec surtitre or en capitales espacées (« AVANT DE SIGNER, DEMANDE ») et 3 lignes précédées de « → ».
+  Puis 1 à 2 paragraphes courts en gris chaud (≈ 30 px), les mots clés en gras blanc. Enfin la ligne de source : « **Source** · Organisme (date) » en petit (≈ 18 px), « Source » en or mat, le reste en gris.
+- **Récapitulatif (list)** : surtitre « —— CE QU'IL FAUT RETENIR », titre (« Ton plan : 4 vérifications cette semaine. »), filet fin, puis 4 lignes séparées par des filets : cercle fin numéroté « 01 » (or mat), titre de l'action en blanc (≈ 30 px), sous-ligne grise.
+- **Dernière slide (cta)** : surtitre « —— POUR ALLER PLUS LOIN », titre (« Évite les 20 erreurs de débutant. »), sous-titre gris, maquette du guide PDF au centre (couverture noire « 20 erreurs de débutant » entourée de deux pages claires inclinées), bouton or arrondi « Lien en bio → » à gauche, à côté « Enregistre ce post pour le retrouver. » en gris clair.
 
-## Limites de texte (lisibilité sur téléphone)
-- Titre de couverture ≤ 55 caractères ; autres titres ≤ 60 caractères ; 1 segment en or, toujours la fin.
-- `subtitle` / `body` ≤ 140 caractères ; texte de carte ≤ 35 caractères par colonne ; chiffre de carte ≤ 7 caractères.
-- Étapes : `title` ≤ 32 caractères, `sub` ≤ 32 caractères.
-- Le moteur réduit le texte si besoin et le signale : raccourcir plutôt que forcer.
+## Structure et densité
+- Carrousel : couverture → 4 à 5 points numérotés → récapitulatif → CTA, soit **8 slides au maximum** (décision de Laurent, 29/10/2026), 7 par défaut. Le modèle de référence en compte 9 (6 points) : ne pas le reproduire sur ce point, garder au plus 5 points. Le récapitulatif reprend autant de lignes que de points (4 à 5).
+- Titre de point ≤ 60 caractères, 1 à 2 segments en or (toujours la fin de la phrase). Corps ≤ 2 paragraphes de ≤ 140 caractères chacun. Chaque point de fond porte une source datée.
+- Contenu essentiel entre y 150 et y 1150 et à au moins 100 px du bord droit entre y 700 et y 1215 (boutons TikTok). Seuls le pied de page et la barre de progression vont plus bas (éléments accessoires, ils peuvent être recouverts par la légende TikTok).
+- Couverture : décor généré par IA propre au sujet, sans personne ni texte, par défaut (couvertures variées, voir RUNBOOK) ; photo de scène du catalogue (Laurent) en repli. Poses dans les slides de fond : facultatives, 0 à 2 par carrousel, seulement sur un point sans chiffre géant, jamais deux fois la même.
 
-## Décor de couverture (IA)
-Photo réaliste sans personne, texte, chiffre ni logo, noir chaud et or, objet du sujet (document, téléphone, écran flou, stylo…). Elle occupe la partie basse de la couverture (y 550 à 1350) et se fond dans le noir vers le haut. Prompt : `docs/RUNBOOK.md`, étape 5.
+## Bloc STYLE (uniquement si une image est générée par IA)
+```
+STYLE : slide de carrousel Instagram 1080×1350, éditorial premium noir et or. Fond noir uni #0A0A0B avec un très léger halo brun doré derrière le titre. Typographie unique Plus Jakarta Sans, texte aligné à gauche, marges de 72 px. Titre en gras serré blanc cassé #F4EFE6 dont la fin est en dégradé or #E8D3A0→#BD9756. Corps en gris chaud #B8B2A8, mots clés en gras blanc. Grands chiffres en dégradé or. Cartes sombres #15130F à bordure fine et coins arrondis. Aucune icône, aucun émoji, aucun motif décoratif. En haut à droite : compteur « {k} / {n} » (numéro en or, « / {n} » en gris). En bas à gauche : « valorislab.be » en gris ; en bas à droite : « Glisse » en or et une flèche → dans un cercle fin. Tout en bas : fine barre de progression or remplie à {k}/{n} de la largeur.
+ZONE RÉSERVÉE : laisser entièrement vide le coin supérieur gauche (de x 0 à x 360, de y 0 à y 130) : ni texte, ni logo, ni élément graphique. Le logo est ajouté ensuite.
+```
+Remplacer `{k}` et `{n}` par le rang de la slide et le nombre total. Pour la dernière slide, remplacer « Glisse » et sa flèche par « Contenu éducatif, pas un conseil financier. » et dire « barre de progression entièrement or ».

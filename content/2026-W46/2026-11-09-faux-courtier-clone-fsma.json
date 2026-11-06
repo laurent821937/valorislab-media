@@ -18,7 +18,7 @@
    "type": "cover",
    "title": "Ce courtier a l'air *officiel*. Et si c'était un clone ?",
    "subtitle": "Le réflexe de 2 minutes qui évite l'arnaque.",
-   "scene": "bureau-document"
+   "scene": "ia-faux-courtier"
   },
   {
    "type": "point",
@@ -74,7 +74,7 @@
  },
  "sources": [
   "FSMA, mises en garde : fsma.be/fr/warnings",
-  "FSMA, liste des entreprises irrégulièrement actives en Belgique : fsma.be/fr/warnings/companies-operating-unlawfully-in-belgium (consulté le 28/10/2026)"
+  "FSMA, liste des entreprises irrégulièrement actives en Belgique : fsma.be/fr/warnings/companies-operating-unlawfully-in-belgium (consulté le 06/11/2026)"
  ],
  "virality": {
   "score": 71,
@@ -91,5 +91,8 @@
   "hook_variants": [
    "Ce courtier a l'air *officiel*. Et si c'était un clone ?"
   ]
+ },
+ "fb": {
+  "scene": "ia-faux-courtier-fb"
  }
 }

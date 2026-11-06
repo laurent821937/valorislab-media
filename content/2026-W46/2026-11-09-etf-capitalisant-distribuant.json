@@ -18,7 +18,7 @@
    "type": "cover",
    "title": "Capitalisant ou distribuant : *4 200 €* d'écart ?",
    "subtitle": "Même ETF, même rendement. Un seul réglage change tout.",
-   "scene": "portrait-bureau"
+   "scene": "ia-etf-capitalisant"
   },
   {
    "type": "point",
@@ -98,5 +98,8 @@
   "hook_variants": [
    "Capitalisant ou distribuant : *4 200 €* d'écart ?"
   ]
+ },
+ "fb": {
+  "scene": "ia-etf-capitalisant-fb"
  }
 }

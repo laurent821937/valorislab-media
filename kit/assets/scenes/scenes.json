@@ -165,5 +165,83 @@
   ],
   "source": "ia",
   "created": "2026-10-30"
+ },
+ "ia-garantie-depots": {
+  "file": "ia-garantie-depots.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Coffre-fort de banque entrouvert, lingots d'or (garantie, protection, épargne)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-11-06"
+ },
+ "ia-garantie-depots-fb": {
+  "file": "ia-garantie-depots-fb.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Clé ancienne sur livret d'épargne en cuir, tirelire dorée (épargne, protection)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-11-06"
+ },
+ "ia-etf-capitalisant": {
+  "file": "ia-etf-capitalisant.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Deux piles de pièces d'or, l'une haute, l'autre éparpillée (capitalisation, dividendes)",
+  "pillars": [
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-11-06"
+ },
+ "ia-etf-capitalisant-fb": {
+  "file": "ia-etf-capitalisant-fb.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Jeune arbre aux feuilles dorées dans un pot de pièces (croissance, intérêts composés)",
+  "pillars": [
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-11-06"
+ },
+ "ia-faux-courtier": {
+  "file": "ia-faux-courtier.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Loupe sur contrat flou, masque noir et or (arnaque, faux courtier, vérification)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-11-06"
+ },
+ "ia-faux-courtier-fb": {
+  "file": "ia-faux-courtier-fb.jpg",
+  "role": "cover",
+  "place": "top",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "Deux clés dorées jumelles dont une fissurée (clone, imitation, arnaque)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-11-06"
  }
 }

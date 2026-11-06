@@ -83,8 +83,8 @@ def main():
             err(f"{fmt}: {len(recs)} slides > {max_n}")
         if len(recs) > 8:
             err(f"{fmt}: {len(recs)} slides, 8 au maximum (décision de Laurent)")
-        elif len(recs) < 5:
-            warn(f"{fmt}: {len(recs)} slides (charte v5 : 5 par défaut, 8 au maximum)")
+        elif len(recs) < 6:
+            warn(f"{fmt}: {len(recs)} slides (cible 7, 8 au maximum)")
 
     overlay_tiles, grid_tile = [], None
     for r in files:

@@ -17,7 +17,7 @@
    "type": "cover",
    "title": "Ta banque fait faillite.\n*Tu récupères combien ?*",
    "subtitle": "En Belgique, la réponse n'est pas « tout ».",
-   "scene": "grand-place-cafe"
+   "scene": "ia-garantie-depots"
   },
   {
    "type": "point",
@@ -29,7 +29,7 @@
     "label": "par personne et par banque"
    },
    "body": "Le calcul se fait **par banque et par personne**, pas par compte.",
-   "source": "Wikifin (28/10/2026)"
+   "source": "Wikifin (06/11/2026)"
   },
   {
    "type": "point",
@@ -46,7 +46,7 @@
     }
    ],
    "card_note": "Exemple hypothétique, même banque : 120 000 € au total, mais seuls 100 000 € sont garantis.",
-   "source": "Wikifin (28/10/2026)"
+   "source": "Wikifin (06/11/2026)"
   },
   {
    "type": "point",
@@ -60,14 +60,14 @@
      "Produits de la branche 21"
     ]
    },
-   "source": "Wikifin (28/10/2026)"
+   "source": "Wikifin (06/11/2026)"
   },
   {
    "type": "point",
    "index": "04",
    "title": "Plus de 100 000 € ? *Répartis.*",
    "body": "Au-delà du plafond, la partie en trop **n'est plus protégée**.\n\nUne piste : répartir ton épargne entre plusieurs banques.",
-   "source": "Wikifin (28/10/2026)",
+   "source": "Wikifin (06/11/2026)",
    "pose": "reflexion"
   },
   {
@@ -105,7 +105,7 @@
   "tiktok": "Ta banque fait faillite : 100 000 € sont protégés, par personne et par banque, pas par compte. Les détails dans le carrousel. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #belgique #epargne #banque #finance #investir"
  },
  "sources": [
-  "Wikifin, « Votre épargne est-elle en sécurité ? » : wikifin.be/fr/thematiques/epargner-et-investir/compte-depargne/garantie (consulté le 28/10/2026)",
+  "Wikifin, « Votre épargne est-elle en sécurité ? » : wikifin.be/fr/thematiques/epargner-et-investir/compte-depargne/garantie (consulté le 06/11/2026)",
   "Fonds de garantie : fondsdegarantie.belgium.be"
  ],
  "virality": {
@@ -123,5 +123,8 @@
   "hook_variants": [
    "Ta banque fait faillite : *100 000 €* protégés"
   ]
+ },
+ "fb": {
+  "scene": "ia-garantie-depots-fb"
  }
 }

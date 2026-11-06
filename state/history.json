@@ -232,20 +232,7 @@
     "dividendes"
    ],
    "requeued": true,
-   "buffer": {
-    "tiktok": {
-     "id": "6ae47847ab6b84214ccdd522",
-     "dueAt": "2026-11-09T09:34:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae47856e972705505553acf",
-     "dueAt": "2026-11-10T19:26:00+01:00"
-    },
-    "facebook": {
-     "id": "6ae4785bc56bf7afb3aceeb3",
-     "dueAt": "2026-11-11T09:54:00+01:00"
-    }
-   }
+   "replanned": "2026-11-06"
   },
   {
    "date": "2026-11-09",
@@ -260,20 +247,7 @@
     "faillite bancaire"
    ],
    "requeued": true,
-   "buffer": {
-    "tiktok": {
-     "id": "6ae47868c56bf7afb3acf15c",
-     "dueAt": "2026-11-14T08:36:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae478741c1ab1e7bc308f8a",
-     "dueAt": "2026-11-11T18:06:00+01:00"
-    },
-    "facebook": {
-     "id": "6ae47879c56bf7afb3acf3a0",
-     "dueAt": "2026-11-12T09:26:00+01:00"
-    }
-   }
+   "replanned": "2026-11-06"
   },
   {
    "date": "2026-11-09",
@@ -289,20 +263,7 @@
     "arnaque"
    ],
    "requeued": true,
-   "buffer": {
-    "tiktok": {
-     "id": "6ae47886ab6b84214ccddf08",
-     "dueAt": "2026-11-15T09:41:00+01:00"
-    },
-    "instagram": {
-     "id": "6ae4789380f61ee5191121ab",
-     "dueAt": "2026-11-12T10:51:00+01:00"
-    },
-    "facebook": {
-     "id": "6ae47898c56bf7afb3acf8e2",
-     "dueAt": "2026-11-13T08:45:00+01:00"
-    }
-   }
+   "replanned": "2026-11-06"
   }
  ],
  "ai_decors": [
@@ -361,6 +322,48 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-faux-support-fb"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "garantie-depots",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-garantie-depots"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "garantie-depots-fb",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-garantie-depots-fb"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "etf-capitalisant",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-etf-capitalisant"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "etf-capitalisant-fb",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-etf-capitalisant-fb"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "faux-courtier",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-courtier"
+  },
+  {
+   "date": "2026-11-06",
+   "slug": "faux-courtier-fb",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-faux-courtier-fb"
   }
  ]
 }

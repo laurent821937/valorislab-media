@@ -8,11 +8,11 @@
    "slide": 1,
    "type": "cover",
    "pose": null,
-   "scene": "grand-place-cafe",
+   "scene": "ia-garantie-depots",
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 317783,
+   "bytes": 354644,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -54,7 +54,7 @@
      "h": 50,
      "font": 16,
      "color": "rgb(244, 239, 230)",
-     "text": ""
+     "text": "VALORISLAB FINANCE BELGIQUE"
     },
     {
      "role": "count",
@@ -99,7 +99,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 130535,
+   "bytes": 130469,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -161,7 +161,7 @@
      "h": 27,
      "font": 18,
      "color": "rgb(138, 133, 125)",
-     "text": "Source · Wikifin (28/10/2026)"
+     "text": "Source · Wikifin (06/11/2026)"
     },
     {
      "role": "brand",
@@ -216,7 +216,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 117877,
+   "bytes": 117774,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -278,7 +278,7 @@
      "h": 27,
      "font": 18,
      "color": "rgb(138, 133, 125)",
-     "text": "Source · Wikifin (28/10/2026)"
+     "text": "Source · Wikifin (06/11/2026)"
     },
     {
      "role": "brand",
@@ -333,7 +333,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 95369,
+   "bytes": 95194,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -375,7 +375,7 @@
      "h": 27,
      "font": 18,
      "color": "rgb(138, 133, 125)",
-     "text": "Source · Wikifin (28/10/2026)"
+     "text": "Source · Wikifin (06/11/2026)"
     },
     {
      "role": "brand",
@@ -430,7 +430,7 @@
    "note": "pose reflexion retirée : chevauche « Une piste : répartir ton épargne entre p »",
    "scale": 1,
    "overflow": false,
-   "bytes": 99990,
+   "bytes": 99963,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -482,7 +482,7 @@
      "h": 27,
      "font": 18,
      "color": "rgb(138, 133, 125)",
-     "text": "Source · Wikifin (28/10/2026)"
+     "text": "Source · Wikifin (06/11/2026)"
     },
     {
      "role": "brand",
@@ -757,8 +757,8 @@
   "file": "media/2026/11/2026-11-09-garantie-depots-100000/fb-01.jpg",
   "scale": 1,
   "overflow": false,
-  "scene": "grand-place-cafe",
-  "bytes": 313057,
+  "scene": "ia-garantie-depots-fb",
+  "bytes": 317151,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -800,7 +800,7 @@
     "h": 50,
     "font": 16,
     "color": "rgb(244, 239, 230)",
-    "text": ""
+    "text": "VALORISLAB FINANCE BELGIQUE"
    },
    {
     "role": "next",

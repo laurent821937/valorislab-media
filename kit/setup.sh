@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
-# Installs the brand fonts (Inter for charte v5, Plus Jakarta Sans for older renders, from npm — reachable in Claude cloud environments) into kit/fonts.
+# Installs the brand font (Plus Jakarta Sans, from npm — reachable in Claude cloud environments) into kit/fonts.
 # Chromium, Pillow and Jinja2 are preinstalled in the cloud environment; Python Playwright is installed if missing.
 set -euo pipefail
 KIT="$(cd "$(dirname "$0")" && pwd)"
 TMP="$(mktemp -d)"
-( cd "$TMP" && npm init -y >/dev/null 2>&1 && npm install --silent @fontsource/plus-jakarta-sans@5.3.0 @fontsource/inter@5.2.8 )
+( cd "$TMP" && npm init -y >/dev/null 2>&1 && npm install --silent @fontsource/plus-jakarta-sans@5.3.0 )
 mkdir -p "$KIT/fonts"
 for w in 400 500 600 700 800; do
   cp "$TMP/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-$w-normal.woff2" "$KIT/fonts/"
   cp "$TMP/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-ext-$w-normal.woff2" "$KIT/fonts/"
-  cp "$TMP/node_modules/@fontsource/inter/files/inter-latin-$w-normal.woff2" "$KIT/fonts/"      # charte v5
-  cp "$TMP/node_modules/@fontsource/inter/files/inter-latin-ext-$w-normal.woff2" "$KIT/fonts/"
 done
 rm -rf "$TMP"
 # Python Playwright is not always preinstalled: install the version matching the preinstalled Chromium
