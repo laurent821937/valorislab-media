@@ -353,5 +353,89 @@
   "source": "ia",
   "style": "v5-sobre",
   "created": "2026-11-06"
+ },
+ "ia-investissement-programme-v5": {
+  "file": "ia-investissement-programme-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "escalier en pierre grise aux marches régulières (régularité, investissement programmé)",
+  "pillars": [
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-11-13",
+  "style": "v5-sobre"
+ },
+ "ia-investissement-programme-fb-v5": {
+  "file": "ia-investissement-programme-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "cinq pots en céramique alignés sur une étagère en béton (versements réguliers)",
+  "pillars": [
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-11-13",
+  "style": "v5-sobre"
+ },
+ "ia-tob-achat-vente-v5": {
+  "file": "ia-tob-achat-vente-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "deux enveloppes blanches et un stylo noir sur bois sombre (achat et vente, taxe)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-11-13",
+  "style": "v5-sobre"
+ },
+ "ia-tob-achat-vente-fb-v5": {
+  "file": "ia-tob-achat-vente-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "porte tournante en verre, immeuble en pierre (aller-retour, entrée et sortie)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-11-13",
+  "style": "v5-sobre"
+ },
+ "ia-arnaque-sentimentale-v5": {
+  "file": "ia-arnaque-sentimentale-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "deux tasses de café face à face et téléphone retourné, marbre gris (rendez-vous, confiance, arnaque)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-11-13",
+  "style": "v5-sobre"
+ },
+ "ia-arnaque-sentimentale-fb-v5": {
+  "file": "ia-arnaque-sentimentale-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "rose blanche et téléphone noir retourné sur pierre grise (séduction, piège)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-11-13",
+  "style": "v5-sobre"
  }
 }

@@ -1,0 +1,713 @@
+{
+ "id": "2026-11-16-tob-achat-vente",
+ "kit_version": "2026-11-06.1",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-16-tob-achat-vente/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-tob-achat-vente-v5",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 165024,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "BELGIQUE · 16 NOVEMBRE 2026"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 244.171875,
+     "font": 74,
+     "color": "rgb(246, 242, 234)",
+     "text": "ACHAT : TAXÉ. VENTE : ENCORE TAXÉ."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 680.171875,
+     "w": 620,
+     "h": 150.46875,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "La taxe sur les opérations de bourse (TOB) : ce que ta banque prélève "
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "01 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-tob-achat-vente/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 0.98,
+   "overflow": false,
+   "bytes": 162628,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 27,
+     "font": 22.54,
+     "color": "rgb(212, 175, 106)",
+     "text": "LE POINT ESSENTIEL"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 364.03125,
+     "w": 700,
+     "h": 141.71875,
+     "font": 62.72,
+     "color": "rgb(246, 242, 234)",
+     "text": "LA TOB FRAPPE L'ACHAT ET LA VENTE."
+    },
+    {
+     "role": "body",
+     "x": 96,
+     "y": 558.65625,
+     "w": 700,
+     "h": 147.46875,
+     "font": 32.34,
+     "color": "rgb(226, 221, 212)",
+     "text": "Ta banque ou ton courtier la prélève à chaque ordre sur le marché, pas"
+    },
+    {
+     "role": "stat",
+     "x": 126.390625,
+     "y": 834.09375,
+     "w": 382.21875,
+     "h": 78.203125,
+     "font": 74.48,
+     "color": "rgb(138, 106, 46)",
+     "text": "0,35 %"
+    },
+    {
+     "role": "stat",
+     "x": 568.390625,
+     "y": 834.09375,
+     "w": 381.21875,
+     "h": 78.203125,
+     "font": 74.48,
+     "color": "rgb(28, 26, 23)",
+     "text": "0,12 %"
+    },
+    {
+     "role": "statLabel",
+     "x": 126.390625,
+     "y": 779.625,
+     "w": 382.21875,
+     "h": 29,
+     "font": 23.52,
+     "color": "rgb(94, 87, 77)",
+     "text": "ACTIONS"
+    },
+    {
+     "role": "statLabel",
+     "x": 568.390625,
+     "y": 779.625,
+     "w": 381.21875,
+     "h": 29,
+     "font": 23.52,
+     "color": "rgb(94, 87, 77)",
+     "text": "OBLIGATIONS"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 749.234375,
+     "w": 884,
+     "h": 245.578125,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "ACTIONS 0,35 % max 1 600 € par ordre OBLIGATIONS 0,12 % max 1 300 € pa"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 1020.28125,
+     "w": 884,
+     "h": 29.828125,
+     "font": 20.58,
+     "color": "rgb(176, 170, 161)",
+     "text": "Source · Wikifin, mise à jour du 27/01/2026"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "02 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-tob-achat-vente/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 153013,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "EXEMPLE FICTIF · POUR COMPRENDRE"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 216.9375,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "5 000 € D'ACTIONS : CE QUE PREND LA TOB."
+    },
+    {
+     "role": "stat",
+     "x": 127,
+     "y": 712.9375,
+     "w": 381,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(138, 106, 46)",
+     "text": "17,50 €"
+    },
+    {
+     "role": "stat",
+     "x": 569,
+     "y": 712.9375,
+     "w": 380,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(28, 26, 23)",
+     "text": "21 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 127,
+     "y": 657.9375,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "ACHAT À 5 000 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 569,
+     "y": 657.9375,
+     "w": 380,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "VENTE À 6 000 €"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 626.9375,
+     "w": 884,
+     "h": 284.1875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "ACHAT À 5 000 € 17,50 € VENTE À 6 000 € 21 € Aller-retour : 38,50 € de"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 937.125,
+     "w": 884,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Taux de 0,35 % (actions). Exemple illustratif. Source : Wikifin (27/01"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "03 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-tob-achat-vente/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 160106,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "TA MÉTHODE DE DÉBUTANT"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "AVANT TON ORDRE : 4 RÉFLEXES."
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 571.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "01"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 697.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "02"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 823.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "03"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 949.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "04"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 571.625,
+     "w": 406.359375,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Repère le type de titre Action, obligation ou ETF"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 697.625,
+     "w": 410.25,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Vérifie le taux de ton ETF 0,12 %, 0,35 % ou 1,32 %"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 823.625,
+     "w": 459.25,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Courtier à l'étranger ? Tu dois parfois la verser seul"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 949.625,
+     "w": 428.3125,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Compte-la dans ton calcul À l'achat et à la vente"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "04 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-tob-achat-vente/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 148874,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "POUR ALLER PLUS LOIN"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 600,
+     "h": 237.28125,
+     "font": 70,
+     "color": "rgb(246, 242, 234)",
+     "text": "20 ERREURS DE DÉBUTANT À ÉVITER."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 629.28125,
+     "w": 700,
+     "h": 48.625,
+     "font": 32,
+     "color": "rgb(226, 221, 212)",
+     "text": "Bourse & Crypto · Guide gratuit"
+    },
+    {
+     "role": "button",
+     "x": 311.2265625,
+     "y": 969,
+     "w": 453.546875,
+     "h": 91,
+     "font": 42,
+     "color": "rgb(26, 22, 18)",
+     "text": "LIEN EN BIO →"
+    },
+    {
+     "role": "book",
+     "x": 283.0625,
+     "y": 693.90625,
+     "w": 509.875,
+     "h": 320.09375,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "05 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-16-tob-achat-vente/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-tob-achat-vente-fb-v5",
+  "bytes": 198587,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 96,
+    "y": 290,
+    "w": 884,
+    "h": 28,
+    "font": 23,
+    "color": "rgb(212, 175, 106)",
+    "text": "BELGIQUE · 16 NOVEMBRE 2026"
+   },
+   {
+    "role": "title",
+    "x": 96,
+    "y": 366,
+    "w": 860,
+    "h": 295.3125,
+    "font": 92,
+    "color": "rgb(246, 242, 234)",
+    "text": "ACHAT : TAXÉ. VENTE : ENCORE TAXÉ."
+   },
+   {
+    "role": "lead",
+    "x": 96,
+    "y": 715.3125,
+    "w": 700,
+    "h": 164.15625,
+    "font": 36,
+    "color": "rgb(226, 221, 212)",
+    "text": "La taxe sur les opérations de bourse (TOB) : ce que ta banque prélève "
+   },
+   {
+    "role": "brand",
+    "x": 100,
+    "y": 214,
+    "w": 264.296875,
+    "h": 52,
+    "font": 16,
+    "color": "rgb(246, 242, 234)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 96,
+    "y": 1103,
+    "w": 132.359375,
+    "h": 26,
+    "font": 22,
+    "color": "rgb(176, 170, 161)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 619.609375,
+    "y": 1107,
+    "w": 364.390625,
+    "h": 21,
+    "font": 18,
+    "color": "rgb(176, 170, 161)",
+    "text": "Contenu éducatif · Pas un conseil financier"
+   }
+  ]
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "id": "2026-11-16-tob-achat-vente",
+ "date": "2026-11-16",
+ "pillar": "belgique",
+ "theme": "bourse",
+ "topic": "Taxe sur les opérations de bourse (TOB) : prélevée à l'achat et à la vente (actions 0,35 %, exemple 5 000 €)",
+ "keywords": [
+  "TOB",
+  "taxe sur les opérations de bourse",
+  "achat",
+  "vente",
+  "0,35 %",
+  "courtier étranger"
+ ],
+ "kicker": "Belgique · 16 novembre 2026",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Achat : taxé. Vente : *encore taxé.*",
+   "subtitle": "La taxe sur les opérations de bourse (TOB) : ce que ta banque prélève à chaque ordre en Belgique.",
+   "scene": "ia-tob-achat-vente-v5"
+  },
+  {
+   "type": "compare",
+   "kicker": "Le point essentiel",
+   "title": "La TOB frappe *l'achat et la vente.*",
+   "body": "Ta banque ou ton courtier la prélève à chaque ordre sur le marché, pas à la souscription d'un titre neuf.",
+   "left": {
+    "label": "Actions",
+    "value": "0,35 %",
+    "note": "max 1 600 € par ordre"
+   },
+   "right": {
+    "label": "Obligations",
+    "value": "0,12 %",
+    "note": "max 1 300 € par ordre"
+   },
+   "source": "Wikifin, mise à jour du 27/01/2026"
+  },
+  {
+   "type": "compare",
+   "kicker": "Exemple fictif · pour comprendre",
+   "title": "5 000 € d'actions : *ce que prend la TOB.*",
+   "left": {
+    "label": "Achat à 5 000 €",
+    "value": "17,50 €"
+   },
+   "right": {
+    "label": "Vente à 6 000 €",
+    "value": "21 €"
+   },
+   "caption": "Aller-retour : 38,50 € de TOB, en plus des frais du courtier.",
+   "note": "Taux de 0,35 % (actions). Exemple illustratif. Source : Wikifin (27/01/2026)."
+  },
+  {
+   "type": "list",
+   "kicker": "Ta méthode de débutant",
+   "title": "Avant ton ordre : *4 réflexes.*",
+   "items": [
+    {
+     "title": "Repère le type de titre",
+     "sub": "Action, obligation ou ETF"
+    },
+    {
+     "title": "Vérifie le taux de ton ETF",
+     "sub": "0,12 %, 0,35 % ou 1,32 %"
+    },
+    {
+     "title": "Courtier à l'étranger ?",
+     "sub": "Tu dois parfois la verser seul"
+    },
+    {
+     "title": "Compte-la dans ton calcul",
+     "sub": "À l'achat et à la vente"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "Pour aller plus loin",
+   "title": "20 erreurs de débutant *à éviter.*",
+   "subtitle": "Bourse & Crypto · Guide gratuit",
+   "button": "Lien en bio"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 5 slides sur la taxe sur les opérations de bourse en Belgique : prélevée à l'achat et à la vente, 0,35 % pour les actions et 0,12 % pour les obligations, exemple de 17,50 € à l'achat et 21 € à la vente, et 4 réflexes avant un ordre.",
+ "captions": {
+  "instagram": "Tu achètes une action : taxé. Tu la revends : encore taxé.\n\nEn Belgique, la taxe sur les opérations de bourse (TOB) est prélevée par ta banque ou ton courtier à chaque achat et à chaque vente de titres sur le marché. Pas lors de la souscription d'un titre neuf. Pour une action, le taux est de 0,35 %, avec un plafond de 1 600 € par opération.\n\nÀ retenir :\n\n • Exemple illustratif : 5 000 € d'actions achetées = 17,50 € de TOB, revendues 6 000 € = 21 €\n\n • Obligations et bons d'État : 0,12 % ; un ETF peut être à 0,12 %, 0,35 % ou 1,32 % selon sa forme\n\n • Courtier à l'étranger : en tant que contribuable belge, tu dois parfois verser la TOB toi-même\n\nTu savais que la TOB se paie aussi à la vente ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui passe son premier ordre.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nSource : Wikifin (wikifin.be), « Les taxes sur vos investissements belges » (mise à jour du 27/01/2026) et « Vos investissements à l'étranger ». Exemple illustratif, hors frais de courtage. Contenu éducatif, pas un conseil financier ni fiscal.\n\n#belgique #tob #bourse #fiscalite #investir",
+  "facebook": "Tu achètes une action : taxé. Tu la revends : encore taxé.\n\nEn Belgique, la taxe sur les opérations de bourse (TOB) est prélevée par ta banque ou ton courtier à chaque achat et à chaque vente de titres sur le marché. Pas lors de la souscription d'un titre neuf. Pour une action, le taux est de 0,35 %, avec un plafond de 1 600 € par opération.\n\nÀ retenir :\n\n • Exemple illustratif : 5 000 € d'actions achetées = 17,50 € de TOB, revendues 6 000 € = 21 €\n\n • Obligations et bons d'État : 0,12 % ; un ETF peut être à 0,12 %, 0,35 % ou 1,32 % selon sa forme\n\n • Courtier à l'étranger : en tant que contribuable belge, tu dois parfois verser la TOB toi-même\n\nTu savais que la TOB se paie aussi à la vente ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui passe son premier ordre.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nSource : Wikifin (wikifin.be), « Les taxes sur vos investissements belges » (mise à jour du 27/01/2026) et « Vos investissements à l'étranger ». Exemple illustratif, hors frais de courtage. Contenu éducatif, pas un conseil financier ni fiscal.\n\n#belgique #tob #bourse #fiscalite #investir",
+  "tiktok_title": "Achat taxé, vente encore taxée : la TOB en Belgique",
+  "tiktok": "Achat : taxé. Vente : encore taxé. La TOB belge se paie à chaque ordre : 0,35 % sur les actions (exemple : 17,50 € sur 5 000 €). Détails et 4 réflexes dans le carrousel. Source : Wikifin. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #belgique #tob #bourse #fiscalite #investir"
+ },
+ "sources": [
+  "Wikifin, « Les taxes sur vos investissements belges » : wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/vos-revenus-mobiliers/les-taxes-sur-vos (mise à jour du 27/01/2026, consulté le 13/11/2026)",
+  "Wikifin, « Vos investissements à l'étranger : impact fiscal » (mise à jour du 05/01/2026, consulté le 13/11/2026)",
+  "Calcul VALORISLAB en Python : 5 000 × 0,35 % = 17,50 € ; 6 000 × 0,35 % = 21 € ; total 38,50 €"
+ ],
+ "virality": {
+  "score": 72,
+  "detail": {
+   "accroche": 15,
+   "curiosite": 10,
+   "valeur": 12,
+   "partage": 6,
+   "belge": 10,
+   "clarte": 8,
+   "retention": 7,
+   "actualite": 4
+  },
+  "note": "Accroche à enjeu personnel (« encore taxé »), selon l'enseignement de la perf : les rappels réglementaires secs performent moins.",
+  "hook_variants": [
+   "Achat : taxé. Vente : *encore taxé.*",
+   "Tu revends ton action ? *La taxe revient.*",
+   "La taxe que tu paies *deux fois en Bourse.*",
+   "17,50 € à l'achat. *21 € à la vente.*",
+   "TOB : *la taxe cachée de ton ordre.*"
+  ]
+ },
+ "fb": {
+  "scene": "ia-tob-achat-vente-fb-v5"
+ }
+}

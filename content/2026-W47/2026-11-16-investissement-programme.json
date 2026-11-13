@@ -1,0 +1,121 @@
+{
+ "id": "2026-11-16-investissement-programme",
+ "date": "2026-11-16",
+ "pillar": "mecanisme",
+ "theme": "bourse",
+ "topic": "Investissement programmé : 100 € par mois, l'effet du prix moyen d'achat (exemple fictif 650 € vs 500 €)",
+ "keywords": [
+  "investissement programmé",
+  "prix moyen",
+  "montant fixe",
+  "volatilité",
+  "parts"
+ ],
+ "kicker": "Bourse · 16 novembre 2026",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Le prix revient au départ. *Toi, tu es à +30 %.*",
+   "subtitle": "Investir 100 € par mois au lieu de tout d'un coup : l'effet du prix moyen, expliqué simplement.",
+   "highlight": "Exemple fictif, pour comprendre.",
+   "scene": "ia-investissement-programme-v5"
+  },
+  {
+   "type": "compare",
+   "kicker": "Le point essentiel",
+   "title": "Quand le prix baisse, *tes 100 € achètent plus.*",
+   "body": "Avec un montant fixe chaque mois, le nombre de parts suit le prix. C'est l'investissement programmé.",
+   "left": {
+    "label": "Prix à 20 €",
+    "value": "5 parts",
+    "note": "pour tes 100 €"
+   },
+   "right": {
+    "label": "Prix à 10 €",
+    "value": "10 parts",
+    "note": "pour les mêmes 100 €"
+   }
+  },
+  {
+   "type": "compare",
+   "kicker": "Exemple fictif · pour comprendre",
+   "title": "5 mois, 500 € : *deux façons d'investir.*",
+   "left": {
+    "label": "100 € par mois",
+    "value": "650 €"
+   },
+   "right": {
+    "label": "500 € en une fois",
+    "value": "500 €"
+   },
+   "caption": "Prix de la part : 20, 16, 10, 16 puis 20 €. Tu finis avec 32,5 parts au lieu de 25.",
+   "note": "Chiffres illustratifs, avant frais et impôts. Si le prix monte sans arrêt, investir en une fois fait mieux."
+  },
+  {
+   "type": "list",
+   "kicker": "Ta méthode de débutant",
+   "title": "Ton plan en *4 étapes.*",
+   "items": [
+    {
+     "title": "Fixe un montant mensuel",
+     "sub": "Ce que tu peux bloquer longtemps"
+    },
+    {
+     "title": "Choisis une date fixe",
+     "sub": "Le lendemain du salaire"
+    },
+    {
+     "title": "Continue quand ça baisse",
+     "sub": "Tu achètes alors plus de parts"
+    },
+    {
+     "title": "Regarde les frais par achat",
+     "sub": "Ils pèsent sur les petits ordres"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "Pour aller plus loin",
+   "title": "20 erreurs de débutant *à éviter.*",
+   "subtitle": "Bourse & Crypto · Guide gratuit",
+   "button": "Lien en bio"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB en 5 slides sur l'investissement programmé : avec 100 € par mois pendant 5 mois et un prix qui passe de 20 € à 10 € puis revient à 20 €, on obtient 32,5 parts et 650 € contre 500 € en investissant tout d'un coup (exemple fictif).",
+ "captions": {
+  "instagram": "Le prix revient à son point de départ. Et pourtant, tu es à +30 %. Exemple fictif.\n\nTu investis 100 € par mois pendant 5 mois. Le prix de la part passe de 20 € à 10 €, puis remonte à 20 €. Quand le prix baisse, tes 100 € achètent plus de parts : 32,5 parts au total, contre 25 si tu avais tout investi d'un coup. À la fin, 650 € contre 500 €.\n\nÀ retenir :\n\n • Montant fixe chaque mois : tu achètes plus de parts quand le prix baisse\n\n • Ton prix moyen d'achat (15,38 €) est plus bas que le prix moyen affiché\n\n • Si le prix monte sans arrêt, investir en une fois aurait fait mieux\n\nTu préfères investir en une fois ou un peu chaque mois ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui hésite à commencer.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto : mon guide gratuit, lien en bio.\n\nExemple fictif : 100 € par mois pendant 5 mois, prix de la part 20, 16, 10, 16 puis 20 €, avant frais et impôts. Illustration hypothétique, rendement non garanti. Contenu éducatif, pas un conseil financier.\n\n#investir #bourse #etf #belgique #debutant",
+  "facebook": "Le prix revient à son point de départ. Et pourtant, tu es à +30 %. Exemple fictif.\n\nTu investis 100 € par mois pendant 5 mois. Le prix de la part passe de 20 € à 10 €, puis remonte à 20 €. Quand le prix baisse, tes 100 € achètent plus de parts : 32,5 parts au total, contre 25 si tu avais tout investi d'un coup. À la fin, 650 € contre 500 €.\n\nÀ retenir :\n\n • Montant fixe chaque mois : tu achètes plus de parts quand le prix baisse\n\n • Ton prix moyen d'achat (15,38 €) est plus bas que le prix moyen affiché\n\n • Si le prix monte sans arrêt, investir en une fois aurait fait mieux\n\nTu préfères investir en une fois ou un peu chaque mois ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui hésite à commencer.\n\nPour éviter les 20 erreurs du débutant en Bourse et en Crypto, mon guide gratuit : https://www.valorislab.be\n\nExemple fictif : 100 € par mois pendant 5 mois, prix de la part 20, 16, 10, 16 puis 20 €, avant frais et impôts. Illustration hypothétique, rendement non garanti. Contenu éducatif, pas un conseil financier.\n\n#investir #bourse #etf #belgique #debutant",
+  "tiktok_title": "Le prix revient au départ, toi tu es à +30 % (exemple fictif)",
+  "tiktok": "Le prix revient à son point de départ et pourtant tu es à +30 % : l'effet du prix moyen quand tu investis 100 € par mois. Exemple fictif, avant frais et impôts. Détails dans le carrousel. Guide gratuit : lien en bio. Contenu éducatif, pas un conseil financier. #investir #bourse #etf #belgique #debutant"
+ },
+ "sources": [
+  "Calcul VALORISLAB en Python (13/11/2026) : 100 € / 20, 16, 10, 16, 20 € = 32,5 parts ; 32,5 × 20 € = 650 € ; 500 € / 20 € = 25 parts = 500 €"
+ ],
+ "virality": {
+  "score": 74,
+  "detail": {
+   "accroche": 16,
+   "curiosite": 13,
+   "valeur": 12,
+   "partage": 6,
+   "belge": 3,
+   "clarte": 9,
+   "retention": 8,
+   "actualite": 7
+  },
+  "note": "Belgique faible (mécanisme universel) ; saison : fin d'année, bonnes résolutions d'épargne. Enseignement perf : contraste chiffré simple pour débutant (type « Épargner vs investir », meilleur post des 28 jours).",
+  "hook_variants": [
+   "Le prix revient au départ. *Toi, tu es à +30 %.*",
+   "Même prix au début et à la fin. *150 € de plus.*",
+   "100 € par mois : *pourquoi la baisse t'aide.*",
+   "Tout investir d'un coup ? *Pas toujours le mieux.*",
+   "Le marché baisse ? *Tes 100 € achètent plus.*"
+  ]
+ },
+ "fb": {
+  "title": "Le prix revient au départ. *Toi, tu es à +30 %.*",
+  "subtitle": "100 € par mois pendant 5 mois : l'effet du prix moyen.",
+  "scene": "ia-investissement-programme-fb-v5"
+ }
+}

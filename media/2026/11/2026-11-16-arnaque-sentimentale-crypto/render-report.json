@@ -1,0 +1,760 @@
+{
+ "id": "2026-11-16-arnaque-sentimentale-crypto",
+ "kit_version": "2026-11-06.1",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-arnaque-sentimentale-v5",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 190499,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "CRYPTO · 16 NOVEMBRE 2026"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 244.171875,
+     "font": 74,
+     "color": "rgb(246, 242, 234)",
+     "text": "TON MATCH PARLE DE CRYPTO ? MÉFIE-TOI."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 680.171875,
+     "w": 620,
+     "h": 150.46875,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "Arnaque sentimentale : un scénario qui commence par un « match » et fi"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 876.640625,
+     "w": 884,
+     "h": 34.796875,
+     "font": 24,
+     "color": "rgb(212, 175, 106)",
+     "text": "Mise en garde de la FSMA."
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "01 / 06"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 150783,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "LE POINT ESSENTIEL"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "LE PIÈGE : LA CONFIANCE D'ABORD."
+    },
+    {
+     "role": "body",
+     "x": 96,
+     "y": 564.625,
+     "w": 700,
+     "h": 150.46875,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "Le contact commence sur une appli de rencontre ou un réseau social. Pu"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 759.09375,
+     "w": 884,
+     "h": 132.375,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "On te montre une vie aisée et des gains faciles. Puis on te propose un"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 917.46875,
+     "w": 884,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Source · FSMA, 13/02/2026"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "02 / 06"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 149898,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "LE SCÉNARIO TYPE"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 216.9375,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "DU MATCH À LA FAUSSE PLATEFORME."
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 622.9375,
+     "w": 884,
+     "h": 283.1875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "CE QUE DÉCRIT LA FSMA Un match ou un message d'un inconnu La discussio"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 932.125,
+     "w": 884,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Source · FSMA, 13/02/2026"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "03 / 06"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "point",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 130879,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "DÉJÀ PIÉGÉ ?"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 72.3125,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "AGIS TOUT DE SUITE."
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 478.3125,
+     "w": 884,
+     "h": 283.1875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "LES CONSEILS DE LA FSMA Stoppe tout paiement et tout contact Préviens "
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 787.5,
+     "w": 884,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Source · FSMA, 13/02/2026"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "04 / 06"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 164024,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "TA MÉTHODE DE DÉBUTANT"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 72.3125,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "TES 4 RÉFLEXES."
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 499.3125,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "01"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 625.3125,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "02"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 751.3125,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "03"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 877.3125,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "04"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 998.3125,
+     "w": 884,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Source · FSMA, 13/02/2026"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 499.3125,
+     "w": 541.40625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "N'envoie jamais d'argent À quelqu'un vu seulement en ligne"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 625.3125,
+     "w": 454.25,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Vérifie l'agrément FSMA Et la date de création du site"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 751.3125,
+     "w": 503.1875,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Quitte les groupes de trading Où on t'a ajouté sans demander"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 877.3125,
+     "w": 462.953125,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Garde tes données pour toi Ni papiers, ni infos bancaires"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "05 / 06"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 146381,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "POUR ALLER PLUS LOIN"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 600,
+     "h": 237.28125,
+     "font": 70,
+     "color": "rgb(246, 242, 234)",
+     "text": "20 ERREURS DE DÉBUTANT À ÉVITER."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 629.28125,
+     "w": 700,
+     "h": 48.625,
+     "font": 32,
+     "color": "rgb(226, 221, 212)",
+     "text": "Bourse & Crypto · Guide gratuit"
+    },
+    {
+     "role": "button",
+     "x": 311.2265625,
+     "y": 969,
+     "w": 453.546875,
+     "h": 91,
+     "font": 42,
+     "color": "rgb(26, 22, 18)",
+     "text": "LIEN EN BIO →"
+    },
+    {
+     "role": "book",
+     "x": 283.0625,
+     "y": 693.90625,
+     "w": 509.875,
+     "h": 320.09375,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "06 / 06"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-arnaque-sentimentale-fb-v5",
+  "bytes": 194545,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 96,
+    "y": 290,
+    "w": 884,
+    "h": 28,
+    "font": 23,
+    "color": "rgb(212, 175, 106)",
+    "text": "CRYPTO · 16 NOVEMBRE 2026"
+   },
+   {
+    "role": "title",
+    "x": 96,
+    "y": 366,
+    "w": 860,
+    "h": 295.3125,
+    "font": 92,
+    "color": "rgb(246, 242, 234)",
+    "text": "TON MATCH PARLE DE CRYPTO ? MÉFIE-TOI."
+   },
+   {
+    "role": "lead",
+    "x": 96,
+    "y": 715.3125,
+    "w": 700,
+    "h": 164.15625,
+    "font": 36,
+    "color": "rgb(226, 221, 212)",
+    "text": "Arnaque sentimentale : un scénario qui commence par un « match » et fi"
+   },
+   {
+    "role": "note",
+    "x": 96,
+    "y": 925.46875,
+    "w": 884,
+    "h": 34.796875,
+    "font": 24,
+    "color": "rgb(212, 175, 106)",
+    "text": "Mise en garde de la FSMA."
+   },
+   {
+    "role": "brand",
+    "x": 100,
+    "y": 214,
+    "w": 264.296875,
+    "h": 52,
+    "font": 16,
+    "color": "rgb(246, 242, 234)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 96,
+    "y": 1103,
+    "w": 132.359375,
+    "h": 26,
+    "font": 22,
+    "color": "rgb(176, 170, 161)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 619.609375,
+    "y": 1107,
+    "w": 364.390625,
+    "h": 21,
+    "font": 18,
+    "color": "rgb(176, 170, 161)",
+    "text": "Contenu éducatif · Pas un conseil financier"
+   }
+  ]
+ }
+}
