@@ -33,7 +33,7 @@ Remplace la charte v4 (archivée sur la branche `sauvegarde-charte-v4`). **Rendu
 2. **Le point essentiel (`compare` sans valeur)** : surtitre « Le point essentiel », titre (fin en or), une phrase d'explication (`body`), puis une carte à 2 colonnes : libellé or + texte (`left{label, note}`, `right{label, note}`).
 3. **Exemple chiffré (`compare` avec valeurs)** : surtitre « Exemple fictif · pour comprendre » (ou « Exemple réel » avec source), titre, carte à 2 colonnes : libellé gris + grand chiffre (gauche or, droite blanc) + phrase de conclusion sous un filet (`caption`), puis une note grise (`note`, ex. « Chiffres illustratifs » ou la source).
 4. **Méthode (`list`)** : surtitre « Ta méthode de débutant », titre, 4 étapes en cartes numérotées 01 à 04 ; chaque étape = 1re ligne blanche (`title`) + 2e ligne grise (`sub`).
-5. **CTA (`cta`)** : surtitre « Pour aller plus loin », titre « 20 erreurs de débutant à éviter. », sous-titre « Bourse & Crypto · Guide gratuit », maquette du guide, bouton or « LIEN EN BIO → ».
+5. **CTA (`cta`)** (règle de Laurent, 13/11/2026) : surtitre « Pour aller plus loin », titre « 20 erreurs à éviter, gratuitement. », sous-titre « Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter. » (texte exact), maquette du guide, bouton or « COMMENTE GUIDE → ».
 
 Pour un sujet qui le demande, ajouter 1 à 3 slides du même type (`point`, `stat`, `compare`, `list`), sans dépasser 8.
 

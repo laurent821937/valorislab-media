@@ -540,7 +540,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 148874,
+   "bytes": 162501,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -562,34 +562,34 @@
      "h": 237.28125,
      "font": 70,
      "color": "rgb(246, 242, 234)",
-     "text": "20 ERREURS DE DÉBUTANT À ÉVITER."
+     "text": "20 ERREURS À ÉVITER, GRATUITEMENT."
     },
     {
      "role": "lead",
      "x": 96,
      "y": 629.28125,
      "w": 700,
-     "h": 48.625,
+     "h": 97.25,
      "font": 32,
      "color": "rgb(226, 221, 212)",
-     "text": "Bourse & Crypto · Guide gratuit"
+     "text": "Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter."
     },
     {
      "role": "button",
-     "x": 311.2265625,
+     "x": 235.5078125,
      "y": 969,
-     "w": 453.546875,
+     "w": 604.984375,
      "h": 91,
      "font": 42,
      "color": "rgb(26, 22, 18)",
-     "text": "LIEN EN BIO →"
+     "text": "COMMENTE GUIDE →"
     },
     {
      "role": "book",
-     "x": 283.0625,
-     "y": 693.90625,
-     "w": 509.875,
-     "h": 320.09375,
+     "x": 321.7890625,
+     "y": 742.53125,
+     "w": 432.421875,
+     "h": 271.46875,
      "font": 16,
      "color": "rgb(246, 242, 234)",
      "text": ""

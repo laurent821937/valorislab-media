@@ -38,9 +38,10 @@ Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au 
 3. « À retenir : » + 3 puces ( • ).
 4. Une question qui appelle un commentaire.
 5. Un appel à enregistrer ou à partager.
-6. CTA guide : Instagram et TikTok → « mon guide gratuit, lien en bio » ; Facebook → lien direct https://www.valorislab.be
+6. (supprimé le 13/11/2026 : remplacé par la phrase finale, point 9).
 7. « Contenu éducatif, pas un conseil financier. » (+ hypothèses chiffrées si un calcul est présenté, + « Performances passées… » si des performances historiques sont citées).
 8. 5 hashtags, dont toujours #belgique.
+9. **Dernière ligne, sur tous les réseaux, posts et vidéos (règle de Laurent, 13/11/2026)** : « Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter. » (texte exact). Elle remplace l'ancien appel « guide gratuit, lien en bio / valorislab.be ». Les scripts vidéo se terminent aussi par cette phrase.
 
 Limites : Instagram ≤ 2 200 caractères ; titre TikTok ≤ 90 caractères, description TikTok ≤ 500 caractères ; Facebook sans limite pratique (rester ≤ 1 500).
 Texte alternatif (alt) obligatoire pour chaque visuel.
