@@ -303,6 +303,95 @@
      "dueAt": "2026-11-13T08:45:00+01:00"
     }
    }
+  },
+  {
+   "id": "2026-11-16-investissement-programme",
+   "date": "2026-11-16",
+   "source": "auto",
+   "pillar": "mecanisme",
+   "theme": "bourse",
+   "topic": "Investissement programmé : 100 € par mois, l'effet du prix moyen d'achat (exemple fictif 650 € vs 500 €)",
+   "keywords": [
+    "investissement programmé",
+    "prix moyen",
+    "montant fixe",
+    "volatilité",
+    "parts"
+   ],
+   "buffer": {
+    "tiktok": {
+     "id": "6af6d0cb6d858908964dac15",
+     "dueAt": "2026-11-16T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6af6d0d86da77f9a46881f0a",
+     "dueAt": "2026-11-17T19:26:00+01:00"
+    },
+    "facebook": {
+     "id": "6af6d0e04b6fe5c4b6db59e5",
+     "dueAt": "2026-11-18T09:54:00+01:00"
+    }
+   }
+  },
+  {
+   "id": "2026-11-16-tob-achat-vente",
+   "date": "2026-11-16",
+   "source": "auto",
+   "pillar": "belgique",
+   "theme": "bourse",
+   "topic": "Taxe sur les opérations de bourse (TOB) : prélevée à l'achat et à la vente (actions 0,35 %, exemple 5 000 €)",
+   "keywords": [
+    "TOB",
+    "taxe sur les opérations de bourse",
+    "achat",
+    "vente",
+    "0,35 %",
+    "courtier étranger"
+   ],
+   "buffer": {
+    "instagram": {
+     "id": "6af6d0ecf66277c9ba437cd2",
+     "dueAt": "2026-11-18T18:06:00+01:00"
+    },
+    "facebook": {
+     "id": "6af6d0f4e99967e2bfd74ef6",
+     "dueAt": "2026-11-19T09:26:00+01:00"
+    },
+    "tiktok": {
+     "id": "6af6d1114b6fe5c4b6db684b",
+     "dueAt": "2026-11-21T08:36:00+01:00"
+    }
+   }
+  },
+  {
+   "id": "2026-11-16-arnaque-sentimentale-crypto",
+   "date": "2026-11-16",
+   "source": "auto",
+   "pillar": "erreur",
+   "theme": "crypto",
+   "topic": "Arnaque sentimentale crypto : du match à la fausse plateforme de trading (mise en garde FSMA)",
+   "keywords": [
+    "arnaque sentimentale",
+    "romance scam",
+    "appli de rencontre",
+    "crypto",
+    "FSMA",
+    "fausse plateforme"
+   ],
+   "buffer": {
+    "instagram": {
+     "id": "6af6d100e99967e2bfd7511d",
+     "dueAt": "2026-11-19T10:51:00+01:00"
+    },
+    "facebook": {
+     "id": "6af6d1086da77f9a46882ac6",
+     "dueAt": "2026-11-20T08:45:00+01:00"
+    },
+    "tiktok": {
+     "id": "6af6d11be99967e2bfd75f3a",
+     "dueAt": "2026-11-22T09:41:00+01:00"
+    }
+   }
   }
  ],
  "ai_decors": [
@@ -460,6 +549,48 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-faux-support-v5"
+  },
+  {
+   "date": "2026-11-13",
+   "slug": "investissement-programme-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-investissement-programme-v5"
+  },
+  {
+   "date": "2026-11-13",
+   "slug": "investissement-programme-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-investissement-programme-fb-v5"
+  },
+  {
+   "date": "2026-11-13",
+   "slug": "tob-achat-vente-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-tob-achat-vente-v5"
+  },
+  {
+   "date": "2026-11-13",
+   "slug": "tob-achat-vente-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-tob-achat-vente-fb-v5"
+  },
+  {
+   "date": "2026-11-13",
+   "slug": "arnaque-sentimentale-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-arnaque-sentimentale-v5"
+  },
+  {
+   "date": "2026-11-13",
+   "slug": "arnaque-sentimentale-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-arnaque-sentimentale-fb-v5"
   }
  ]
 }
