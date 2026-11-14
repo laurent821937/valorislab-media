@@ -1,6 +1,6 @@
 {
  "id": "2026-11-16-arnaque-sentimentale-crypto",
- "kit_version": "2026-11-06.1",
+ "kit_version": "2026-11-14.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-16-arnaque-sentimentale-crypto/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 190499,
+   "bytes": 217932,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -83,7 +83,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(176, 170, 161)",
+     "color": "rgb(210, 204, 194)",
      "text": "valorislab.be"
     },
     {
@@ -93,7 +93,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(176, 170, 161)",
+     "color": "rgb(210, 204, 194)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -681,7 +681,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-arnaque-sentimentale-fb-v5",
-  "bytes": 194545,
+  "bytes": 232210,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -742,7 +742,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(176, 170, 161)",
+    "color": "rgb(210, 204, 194)",
     "text": "valorislab.be"
    },
    {
@@ -752,7 +752,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(176, 170, 161)",
+    "color": "rgb(210, 204, 194)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]

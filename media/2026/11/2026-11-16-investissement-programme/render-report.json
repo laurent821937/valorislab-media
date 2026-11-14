@@ -1,6 +1,6 @@
 {
  "id": "2026-11-16-investissement-programme",
- "kit_version": "2026-11-06.1",
+ "kit_version": "2026-11-14.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-16-investissement-programme/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 199202,
+   "bytes": 240255,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -83,7 +83,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(176, 170, 161)",
+     "color": "rgb(210, 204, 194)",
      "text": "valorislab.be"
     },
     {
@@ -93,7 +93,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(176, 170, 161)",
+     "color": "rgb(210, 204, 194)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -644,7 +644,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-investissement-programme-fb-v5",
-  "bytes": 188759,
+  "bytes": 212470,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -705,7 +705,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(176, 170, 161)",
+    "color": "rgb(210, 204, 194)",
     "text": "valorislab.be"
    },
    {
@@ -715,7 +715,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(176, 170, 161)",
+    "color": "rgb(210, 204, 194)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]

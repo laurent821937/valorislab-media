@@ -1,6 +1,6 @@
 {
  "id": "2026-11-16-tob-achat-vente",
- "kit_version": "2026-11-06.1",
+ "kit_version": "2026-11-14.1",
  "files": [
   {
    "file": "media/2026/11/2026-11-16-tob-achat-vente/feed-01.jpg",
@@ -12,7 +12,7 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "bytes": 165024,
+   "bytes": 195551,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -73,7 +73,7 @@
      "w": 132.359375,
      "h": 26,
      "font": 22,
-     "color": "rgb(176, 170, 161)",
+     "color": "rgb(210, 204, 194)",
      "text": "valorislab.be"
     },
     {
@@ -83,7 +83,7 @@
      "w": 364.390625,
      "h": 21,
      "font": 18,
-     "color": "rgb(176, 170, 161)",
+     "color": "rgb(210, 204, 194)",
      "text": "Contenu éducatif · Pas un conseil financier"
     }
    ],
@@ -644,7 +644,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-tob-achat-vente-fb-v5",
-  "bytes": 198587,
+  "bytes": 237182,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -695,7 +695,7 @@
     "w": 132.359375,
     "h": 26,
     "font": 22,
-    "color": "rgb(176, 170, 161)",
+    "color": "rgb(210, 204, 194)",
     "text": "valorislab.be"
    },
    {
@@ -705,7 +705,7 @@
     "w": 364.390625,
     "h": 21,
     "font": 18,
-    "color": "rgb(176, 170, 161)",
+    "color": "rgb(210, 204, 194)",
     "text": "Contenu éducatif · Pas un conseil financier"
    }
   ]
