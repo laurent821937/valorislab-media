@@ -46,6 +46,33 @@ Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au 
 Limites : Instagram ≤ 2 200 caractères ; titre TikTok ≤ 90 caractères, description TikTok ≤ 500 caractères ; Facebook sans limite pratique (rester ≤ 1 500).
 Texte alternatif (alt) obligatoire pour chaque visuel.
 
+## Référencement (SEO social et Google, règle de Laurent, 14/11/2026)
+Instagram, TikTok et Facebook sont des moteurs de recherche : un post bien référencé continue d'être trouvé pendant des mois, alors qu'un post de fil disparaît en 48 h. Le levier, ce sont les **mots-clés**, pas les hashtags. Le contrôle `kit/seo_check.py` est bloquant.
+
+**1 contenu = 1 mot-clé principal**, formulé comme un débutant belge le tape dans la barre de recherche (« investir en bourse », « ETF », « TOB », « précompte mobilier », « compte d'épargne », « arnaque crypto »…), plus 2 à 3 mots-clés secondaires, dans `seo: {keyword, secondary[], cluster}`. Recherche sans invention : suggestions de la barre de recherche Instagram/TikTok/Google quand elles sont accessibles, vocabulaire de Wikifin et de la FSMA, questions des commentaires. Ne jamais citer de volume de recherche inventé.
+
+**Où le placer** (langage naturel, jamais de bourrage) :
+- **Texte à l'écran** (lu par TikTok et Instagram) : dans le titre, le sous-titre ou le surtitre de la couverture, ou dans le titre de la slide 2. L'accroche reste prioritaire : si le mot-clé casse l'accroche, le mettre dans le sous-titre.
+- **Légende Instagram** : dans les 125 premiers caractères (ligne visible avant « plus »), puis une seconde fois plus bas ; les secondaires une fois chacun ; phrase complète et naturelle, idéalement sous forme de question recherchée (« C'est quoi la TOB ? »).
+- **Légendes TikTok et Facebook** : dans les 150 premiers caractères.
+- **Titre TikTok** : contient le mot-clé, de préférence au début.
+- **Texte alternatif** (global et par slide) : description concrète qui contient le mot-clé (indexé par Instagram et Google).
+- **Hashtags** : 3 à 5 par légende (Instagram en limite 5) : 1 large (#bourse, #crypto, #investir), 1 à 2 de niche liés au mot-clé (#etf, #tob, #arnaquecrypto), toujours #belgique. Jamais de hashtags en masse ni sans rapport.
+- **Ancrage belge** : « en Belgique » ou « belge » dans la légende quand le sujet s'y prête (recherches locales).
+
+**Grappes thématiques** (devenir la référence sur un sujet ; chaque contenu en renforce une, noter `seo.cluster`) :
+- `investir-debutant` : investir en bourse, ETF, investir chaque mois, intérêts composés, diversification.
+- `frais-et-fiscalite` : frais bancaires, frais de fonds, TOB, précompte mobilier, compte-titres, taxe sur les comptes-titres.
+- `epargne-belgique` : compte d'épargne réglementé, garantie des dépôts, inflation, compte à vue.
+- `crypto-securite` : arnaque crypto, phrase de récupération, wallet, faux support, plateformes agréées.
+- `arnaques-finance` : faux courtier, clone FSMA, arnaque sentimentale, fraude à l'investissement.
+Alterner les grappes et, dans chaque grappe, couvrir les questions voisines au fil des semaines.
+
+**Profils (à régler à la main par Laurent, la routine n'y a pas accès)** : le champ **Nom** d'Instagram est indexé séparément du @ et pèse lourd dans la recherche.
+- Instagram, nom : « VALORISLAB · Bourse & Crypto Belgique ». Bio : « Investir en bourse et en crypto sans erreurs de débutant 🇧🇪 · ETF, frais, fiscalité belge, arnaques » + lien.
+- TikTok, nom : « Valorislab · Bourse Crypto Belgique » ; bio sur le même modèle.
+- Facebook, page : catégorie « Éducation » ou « Services financiers », section « À propos » avec les mêmes mots-clés.
+
 ## Règles de fiabilité (non négociables)
 - **Tout calcul est fait en Python** dans le run, jamais de tête. Hypothèses affichées (taux, durée, « avant frais et impôts », « rendement non garanti »).
 - **Données belges ou réglementaires** (taux, plafonds, montants d'exonération, fiscalité) : vérifier sur une source officielle de l'année en cours (SPF Finances, FSMA, BNB, Wikifin, FEBELFIN). Si une donnée ne peut pas être vérifiée → changer d'angle ; ne jamais publier un chiffre douteux.
