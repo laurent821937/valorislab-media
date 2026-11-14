@@ -591,6 +591,14 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-arnaque-sentimentale-fb-v5"
+  },
+  {
+   "date": "2026-11-14",
+   "slug": "bureau-clair-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-test-clair",
+   "note": "test du prompt lumineux"
   }
  ]
 }

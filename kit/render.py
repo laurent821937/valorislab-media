@@ -23,7 +23,7 @@ FORMATS = {
     # One 4:5 format for Instagram, Facebook and TikTok (TikTok shows 4:5 photos whole, letterboxed).
     # Text stays clear of the bottom 160 px and of the right edge, where TikTok draws its caption and buttons.
     # Charte v5 (docs/STYLE-CARROUSEL.md): content between y 290 and y 1060, footer rule at y 1084, nothing below.
-    "feed": dict(W=1080, H=1350, col_w=540, fig_h=880, scene_max=800),
+    "feed": dict(W=1080, H=1350, col_w=540, fig_h=880, scene_max=560),
 }
 # Protagonist poses (kit/assets/pose-<name>.webp, cut from Laurent's white-background renders).
 # side: where the figure stands; mirror: flip so the gesture points towards the text; crop: share of the

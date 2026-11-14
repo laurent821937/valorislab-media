@@ -437,5 +437,21 @@
   "source": "ia",
   "created": "2026-11-13",
   "style": "v5-sobre"
+ },
+ "ia-bureau-clair-v5": {
+  "file": "ia-bureau-clair-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 100%",
+  "mood": "bureau en bois clair lumineux, ordinateur et carnet (méthode, épargne, investir simplement)",
+  "pillars": [
+   "belgique",
+   "mecanisme",
+   "erreur"
+  ],
+  "source": "ia",
+  "style": "v5-sobre",
+  "created": "2026-11-14"
  }
 }

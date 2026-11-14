@@ -43,5 +43,5 @@ Pour un sujet qui le demande, ajouter 1 à 3 slides du même type (`point`, `sta
 - Étapes : `title` ≤ 32 caractères, `sub` ≤ 32 caractères.
 - Le moteur réduit le texte si besoin et le signale : raccourcir plutôt que forcer.
 
-## Décor de couverture (IA) : pureté, pas d'or
-Règle de Laurent (06/11/2026) : l'or est réservé aux accents typographiques du kit (fin des titres, libellés, bouton). Le décor photo est épuré et neutre : noirs, gris anthracite, blanc cassé, lumière naturelle douce, objets sobres et mats liés au sujet, beaucoup d'espace vide. Jamais d'objets dorés, pièces, lingots, clés anciennes, coffres, bokeh ni lumière dorée. Le décor occupe la partie basse de la couverture (y 550 à 1350), sous la grille, et le kit le désature encore légèrement. Contrôle automatique : `kit/decor_check.py`. Prompt : `docs/RUNBOOK.md`, étape 5.
+## Décor de couverture (IA) : clair, pur, sans or
+Règles de Laurent (06/11 et 14/11/2026) : l'or est réservé aux accents typographiques du kit. Le décor est une photo éditoriale lumineuse et épurée (lumière naturelle douce, tons clairs à moyens : pierre claire, bois clair, blanc cassé, quelques noirs mats), sans objets dorés, pièces, lingots, bokeh ni lumière dorée. Sur la couverture, il occupe le bas de la slide (y 790 à 1350), sous le texte, avec une ombre légère seulement en haut (fondu vers le titre) et sous le pied de page : il doit rester bien visible. Contrôle automatique : `kit/decor_check.py`. Prompt : `docs/RUNBOOK.md`, étape 5.
