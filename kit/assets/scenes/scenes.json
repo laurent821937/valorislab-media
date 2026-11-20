@@ -639,5 +639,37 @@
   "style": "v7-moderne-selfie",
   "face": true,
   "reference": "kit/assets/protagonist/ref-portrait.jpg"
+ },
+ "ia-cover-petites-depenses-v7": {
+  "file": "ia-cover-petites-depenses-v7.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 40%",
+  "mood": "le protagoniste en selfie dans une cuisine claire, main sur le front, grand sourire stupéfait (ça coûte autant ?)",
+  "pillars": [
+   "budget"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v7-moderne-selfie",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-portrait.jpg"
+ },
+ "ia-cta-mythe-action-v7": {
+  "file": "ia-cta-mythe-action-v7.jpg",
+  "role": "cta",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 30%",
+  "mood": "le protagoniste à une table en bois clair près d'une fenêtre, sourire franc et confiant (maintenant tu sais)",
+  "pillars": [
+   "bourse"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v7-moderne",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-portrait.jpg"
  }
 }

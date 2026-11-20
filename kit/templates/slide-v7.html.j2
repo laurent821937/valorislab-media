@@ -1,0 +1,187 @@
+<!doctype html>
+{# Charte v7 « moderne » (validée par Laurent le 20/11/2026) : titres très gras en capitales, mot fort dans une
+   étiquette en dégradé vert-or, écrans réalistes (téléphone, appli, ticket) annotés par des bulles noires,
+   bouton « la suite → » en dégradé, couverture photo façon selfie ou graphique, dernière slide photo + bandeau. #}
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:I;font-weight:400;src:url(../fonts/inter-latin-400-normal.woff2)}
+@font-face{font-family:I;font-weight:500;src:url(../fonts/inter-latin-500-normal.woff2)}
+@font-face{font-family:I;font-weight:600;src:url(../fonts/inter-latin-600-normal.woff2)}
+@font-face{font-family:I;font-weight:700;src:url(../fonts/inter-latin-700-normal.woff2)}
+@font-face{font-family:I;font-weight:800;src:url(../fonts/inter-latin-800-normal.woff2)}
+@font-face{font-family:I;font-weight:400;src:url(../fonts/inter-latin-ext-400-normal.woff2);unicode-range:U+0100-024F,U+20AC}
+@font-face{font-family:I;font-weight:800;src:url(../fonts/inter-latin-ext-800-normal.woff2);unicode-range:U+0100-024F,U+20AC}
+@font-face{font-family:J;font-weight:700;src:url(../fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(../fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+:root{--s:1;--bg:{{ "#EFE5D6" if bg == "champagne" else "#F7F2EC" }};--ink:#16130F;--mute:#5F574D;
+  --grad:linear-gradient(100deg,#1E8C78 0%,#5DA66A 50%,#C8963A 100%);--teal:#1E8C78;--gold:#C8963A;--gold-l:#EDB24A}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:{{ W }}px;height:{{ H }}px;overflow:hidden}
+body{font-family:I,sans-serif;color:var(--ink);position:relative;
+  background:radial-gradient(900px 700px at {{ halo_x }}% {{ halo_y }}%,rgba(255,255,255,.95) 0,transparent 70%),var(--bg)}
+.photo{position:absolute;inset:0}.photo img{width:100%;height:100%;object-fit:cover;object-position:{{ photo_pos or "50% 30%" }}}
+.fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(247,242,236,.94) 0,rgba(247,242,236,.62) 24%,rgba(247,242,236,0) 42%)}
+#main{position:absolute;left:72px;right:110px;top:84px;bottom:{{ 176 if s.type != "cta" else 450 }}px;display:flex;flex-direction:column;overflow:visible}
+body.t-cover #main,body.t-hook #main{right:72px}body.t-cover .stage,body.t-hook .stage{margin-right:38px}body.t-cover .title,body.t-hook .title{max-width:936px}
+.ftag{align-self:flex-start;display:inline-flex;align-items:center;gap:12px;background:rgba(22,19,15,.88);color:#fff;border-radius:999px;
+  padding:10px 24px 10px 12px;font-weight:700;font-size:calc(24px * var(--s));letter-spacing:.08em;text-transform:uppercase;margin-bottom:28px}
+.ftag i{width:30px;height:30px;border-radius:50%;background:var(--grad)}
+.count{position:absolute;top:84px;right:110px;background:rgba(22,19,15,.88);color:#fff;border-radius:999px;font-weight:700;font-size:24px;padding:10px 20px}
+.badge{align-self:flex-start;display:inline-flex;align-items:center;gap:16px;background:var(--ink);color:#fff;border-radius:999px;
+  padding:12px 30px 12px 12px;font-weight:700;font-size:calc(30px * var(--s));letter-spacing:.06em;text-transform:uppercase;margin-bottom:32px}
+.badge i{width:44px;height:44px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-style:normal;font-size:24px}
+.title{font-weight:800;text-transform:uppercase;font-size:calc({{ 116 if s.type in ["cover","hook"] else (84 if s.type == "cta" else 90) }}px * var(--s));line-height:1;letter-spacing:-.045em;max-width:898px}
+.title em,.hl{display:inline-block;font-family:J;font-style:normal;font-weight:800;text-transform:none;letter-spacing:-.02em;color:#fff;
+  background:var(--grad);border-radius:18px;padding:.02em .24em .1em;font-size:.72em;line-height:1.12;transform:rotate(-2deg);
+  box-shadow:0 10px 30px rgba(30,140,120,.25);vertical-align:.06em;margin-top:.12em}
+.big{font-weight:800;font-size:calc(170px * var(--s));letter-spacing:-.05em;line-height:.95;margin:6px 0 10px;white-space:nowrap}
+.sub{margin-top:28px;font-size:calc(38px * var(--s));line-height:1.3;color:var(--mute);letter-spacing:-.01em;max-width:920px}
+.sub strong{color:var(--ink);font-weight:700}.sub em{font-style:normal;color:var(--teal);font-weight:700}
+.stage{position:relative;flex:1;margin-top:44px;min-height:0}
+.stage.solo{display:flex;flex-direction:column;justify-content:center;padding-bottom:110px}
+.vis{position:relative}
+.anns{position:absolute;right:0;top:40px;bottom:150px;width:420px;display:flex;flex-direction:column;justify-content:space-around;align-items:flex-start;z-index:3}
+.ann{display:flex;align-items:center;gap:20px;background:var(--ink);color:#fff;border-radius:999px;padding:14px 32px 14px 14px;
+  font-weight:600;font-size:calc(30px * var(--s));line-height:1.15;box-shadow:0 16px 36px rgba(0,0,0,.18);max-width:440px}
+.ann i{flex:none;width:56px;height:56px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-style:normal;font-size:28px}
+/* téléphone */
+.phone{width:500px;height:600px;border-radius:68px;background:#111;padding:14px;box-shadow:0 40px 80px rgba(40,30,20,.25);position:relative}
+.screen{width:100%;height:100%;border-radius:56px;background:#F4F4F6;overflow:hidden;position:relative;padding:64px 22px 20px}
+.isl{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:130px;height:36px;border-radius:20px;background:#111}
+.tm{position:absolute;top:20px;left:44px;font-weight:700;font-size:22px}
+.chead{display:flex;align-items:center;gap:14px;padding:6px 6px 18px;border-bottom:1px solid #e3e3e8;margin-bottom:18px}
+.av{width:54px;height:54px;border-radius:50%;background:#cfd3da;display:grid;place-items:center;font-weight:700;color:#fff;font-size:24px}
+.chead b{display:block;font-size:27px}.chead span{font-size:18px;color:#55555c}
+.msg{max-width:82%;font-size:30px;line-height:1.3;padding:16px 22px;border-radius:26px;margin:0 6px 14px 4px;width:fit-content}
+.msg.them{background:#fff;border-bottom-left-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.msg.me{background:#17705F;color:#fff;margin-left:auto;border-bottom-right-radius:8px}
+.msg.flag{outline:4px solid var(--gold-l);outline-offset:3px}
+/* fenêtre d'appli */
+.win{width:600px;}.stage:not(.solo) .win{width:520px;}.win{background:#fff;border-radius:34px;box-shadow:0 30px 70px rgba(40,30,20,.16);overflow:hidden}
+.wbar{display:flex;gap:10px;align-items:center;padding:20px 26px;border-bottom:1px solid #eee;font-size:22px;color:#777}
+.wbar u{width:14px;height:14px;border-radius:50%;background:#e4dfd8}
+.wb{padding:30px 38px 36px}.wl{font-size:24px;color:#5f5f5f;width:fit-content}.wv{width:fit-content;font-weight:800;font-size:96px;letter-spacing:-.04em}
+.chip{display:inline-block;margin-top:8px;background:#E3F4EE;color:#135F51;font-weight:700;font-size:30px;border-radius:999px;padding:8px 22px}
+/* cartes */
+.cards{display:flex;flex-direction:column;gap:22px}
+.card{background:#fff;border-radius:30px;padding:28px 32px;display:flex;gap:26px;align-items:center;box-shadow:0 14px 34px rgba(40,30,20,.08)}
+.card .l{flex:none;width:68px;height:68px;border-radius:20px;background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:800;font-size:32px}
+.card .t{flex:1;min-width:0}.card .t b{display:block;font-size:calc(36px * var(--s));font-weight:700;line-height:1.2}
+.card .t span{display:block;margin-top:6px;font-size:calc(30px * var(--s));color:var(--mute)}
+.card .v{flex:none;font-weight:800;font-size:calc(46px * var(--s));letter-spacing:-.03em;white-space:nowrap}
+.card.out{opacity:.55}.card.out .v{text-decoration:line-through;text-decoration-thickness:4px}.card.out .l{background:#bdb6ad}
+.card.win{outline:5px solid var(--gold-l)}
+/* ticket */
+.receipt{width:620px;background:#fff;padding:36px 40px 54px;box-shadow:0 30px 70px rgba(40,30,20,.16);font-family:ui-monospace,Menlo,monospace;
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/34px 100%}
+.rh{font-family:I;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:24px;color:var(--mute);padding-bottom:18px;border-bottom:3px dashed #ddd}
+.rr,.rt{display:flex;justify-content:space-between;gap:20px;font-size:30px;padding:13px 0}.rr{border-bottom:1px dashed #e6e6e6}
+.rt{font-family:I;font-weight:800;font-size:44px;padding-top:22px}.rt span:last-child{background:var(--grad);color:#fff;border-radius:14px;padding:0 16px 4px}
+.rf{font-family:I;font-size:22px;color:var(--mute);margin-top:12px}
+/* tuiles d'appli */
+.tiles{display:flex;gap:24px}
+.tile{flex:1;background:#fff;border-radius:30px;padding:28px;box-shadow:0 14px 34px rgba(40,30,20,.08)}
+.tile .nm{font-weight:700;font-size:26px;display:flex;align-items:center;gap:10px}.tile .nm i{width:36px;height:36px;border-radius:10px;background:var(--grad)}
+.tile .px{font-size:24px;color:var(--mute);margin-top:8px}.tile .gn{font-weight:800;font-size:64px;letter-spacing:-.04em;margin-top:14px}
+.tile .chip{font-size:26px}.tile .sb{font-size:22px;color:var(--mute);margin-top:8px}
+.tile svg{width:100%;height:70px;margin-top:10px}
+/* verdict */
+.stamp{align-self:flex-start;display:inline-block;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:calc(64px * var(--s));
+  padding:10px 34px;border-radius:22px;color:var(--ink);background:#fff;border:6px solid transparent;
+  background-image:linear-gradient(#fff,#fff),var(--grad);background-origin:border-box;background-clip:padding-box,border-box;transform:rotate(-4deg);box-shadow:0 20px 44px rgba(0,0,0,.14)}
+.stamp.huge{font-size:calc(130px * var(--s));margin:10px 0 30px}
+.quote{font-family:J;font-weight:800;font-size:260px;line-height:.6;background:var(--grad);-webkit-background-clip:text;color:transparent;height:110px}
+.bubble{position:absolute;left:72px;bottom:330px;width:520px;background:#fff;border-radius:34px;border-bottom-left-radius:10px;padding:26px 30px;
+  font-size:32px;line-height:1.3;font-weight:500;box-shadow:0 24px 60px rgba(0,0,0,.22);transform:rotate(-3deg);z-index:4}
+.bubble small{display:block;font-size:20px;color:#888;margin-bottom:8px;font-weight:600}
+.fict{position:absolute;left:72px;bottom:270px;background:rgba(22,19,15,.86);color:#fff;border-radius:999px;font-size:22px;font-weight:600;padding:10px 22px;z-index:4}
+.cstamp{position:absolute;right:110px;bottom:320px;z-index:4}
+.note{margin-top:22px;font-size:calc(28px * var(--s));color:var(--mute);line-height:1.35}
+.source{margin-top:18px;font-size:22px;color:var(--mute)}
+.next{position:absolute;right:110px;bottom:176px;display:flex;align-items:center;gap:18px;background:var(--grad);color:#fff;z-index:5;
+  font-family:J;font-weight:800;font-size:36px;border-radius:999px;padding:14px 14px 14px 36px;box-shadow:0 14px 34px rgba(0,0,0,.14)}
+.next span{width:58px;height:58px;border-radius:50%;background:var(--ink);display:grid;place-items:center;font-size:30px}
+.mono{position:absolute;right:110px;top:96px;text-align:right;font-weight:800;font-size:20px;letter-spacing:.22em;color:var(--mute)}
+.mono small{display:block;margin-top:6px;font-weight:500;letter-spacing:0;font-size:18px}
+.band{position:absolute;left:0;right:0;bottom:0;height:430px;background:rgba(32,26,22,.95);color:#fff;text-align:center;padding:52px 60px 0}
+.band .bg{display:inline-flex;align-items:center;gap:22px;font-weight:800;font-size:62px;letter-spacing:-.03em}
+.band .bg span{background:#F7F2EC;color:var(--ink);border-radius:20px;padding:4px 22px 10px}
+.band p{margin-top:22px;font-size:32px;font-weight:500}.band small{display:block;margin-top:16px;font-size:22px;color:#d8cfc3}
+</style></head>
+{% set v = s.visual or {} %}
+<body class="t-{{ s.type }}">
+{% if photo_src and s.type in ["cover", "hook", "cta"] %}<div class="photo"><img src="{{ photo_src }}" alt=""></div><div class="fade"></div>{% endif %}
+{% if s.type in ["cover", "hook"] and s.type != "hook" %}<div class="count">{{ i }}/{{ n }}</div>{% endif %}
+<div id="main">
+{% if s.type in ["cover", "hook"] %}
+  {% if tag %}<div class="ftag"><i></i>{{ tag }}</div>{% endif %}
+  
+  {% if s.number %}<div class="big">{{ s.number }}</div>{% endif %}
+  <div class="title">{{ s.title|md }}</div>
+  {% if s.subtitle and not photo_src %}<div class="sub">{{ s.subtitle|md }}</div>{% endif %}
+  {% if v.tiles and not photo_src %}<div class="stage"><div class="tiles">{% for tl in v.tiles %}<div class="tile"><div class="nm"><i></i>{{ tl.name }}</div><div class="px">{{ tl.price }}</div><div class="gn">{{ tl.value }}</div></div>{% endfor %}</div></div>{% endif %}
+{% elif s.type == "cta" %}
+  <div class="title">{{ s.title|md }}</div>
+{% else %}
+  {% if s.kicker %}<div class="badge"><i>{{ s.icon or "→" }}</i>{{ s.kicker }}</div>{% endif %}
+  {% if s.type == "verdict" %}<div class="stamp huge">{{ s.stamp }}</div>{% endif %}
+  {% if s.title %}<div class="title">{{ s.title|md }}</div>{% endif %}
+  {% if s.body %}<div class="sub">{{ s.body|md }}</div>{% endif %}
+  {% set has_vis = s.phone or s.app or s.receipt or s.options or s.tiles or s.steps or s.big %}
+  {% if has_vis %}
+  <div class="stage{% if not s.ann %} solo{% endif %}">
+    <div class="vis">
+    {% if s.phone %}<div class="phone"><div class="screen"><div class="isl"></div><div class="tm">{{ s.phone.time or "21:47" }}</div>
+      <div class="chead"><div class="av">?</div><div><b>{{ s.phone.contact or "Inconnu" }}</b><span>{{ s.phone.status or "Conversation fictive" }}</span></div></div>
+      {% for m in s.messages %}<div class="msg {{ m.from or 'them' }}{% if m.flag %} flag{% endif %}">{{ m.text|md }}</div>{% endfor %}</div></div>{% endif %}
+    {% if s.app %}<div class="win"><div class="wbar"><u></u><u></u><u></u>&nbsp;{{ s.app.title or "appli fictive" }}</div><div class="wb">
+      <div class="wl">{{ s.app.label }}</div><div class="wv">{{ s.app.value }}</div>{% if s.app.chip %}<div class="chip">{{ s.app.chip }}</div>{% endif %}
+      {% if s.app.chart %}<svg viewBox="0 0 520 150" style="margin-top:22px;width:100%"><path d="M0 140 C80 130 120 120 170 100 S260 90 300 70 S420 30 520 12" fill="none" stroke="#1E8C78" stroke-width="7" stroke-linecap="round"/></svg>{% endif %}</div></div>{% endif %}
+    {% if s.receipt %}<div class="receipt"><div class="rh">{{ s.receipt.title }}</div>{% for r in s.receipt.rows %}<div class="rr"><span>{{ r[0] }}</span><span>{{ r[1] }}</span></div>{% endfor %}
+      <div class="rt"><span>{{ s.receipt.total[0] }}</span><span>{{ s.receipt.total[1] }}</span></div>{% if s.receipt.foot %}<div class="rf">{{ s.receipt.foot }}</div>{% endif %}</div>{% endif %}
+    {% if s.options %}<div class="cards">{% for o in s.options %}<div class="card{% if o.state == 'out' %} out{% endif %}{% if o.state == 'win' %} win{% endif %}"><div class="l">{{ o.letter }}</div><div class="t"><b>{{ o.label|md }}</b>{% if o.detail %}<span>{{ o.detail|md }}</span>{% endif %}</div>{% if o.value %}<div class="v">{{ o.value }}</div>{% endif %}</div>{% endfor %}</div>{% endif %}
+    {% if s.steps %}<div class="cards">{% for it in s.steps %}<div class="card"><div class="l">{{ loop.index }}</div><div class="t"><b>{{ it.title|md }}</b>{% if it.sub %}<span>{{ it.sub|md }}</span>{% endif %}</div></div>{% endfor %}</div>{% endif %}
+    {% if s.tiles %}<div class="tiles">{% for tl in s.tiles %}<div class="tile"><div class="nm"><i></i>{{ tl.name }}</div><div class="px">{{ tl.price }}</div>
+      <svg viewBox="0 0 300 70"><path d="M0 62 C50 58 80 50 120 44 S200 30 240 22 S280 12 300 8" fill="none" stroke="#1E8C78" stroke-width="6" stroke-linecap="round"/></svg>
+      <div class="chip">▲ {{ tl.change }}</div><div class="gn">{{ tl.gain }}</div><div class="sb">{{ tl.sub }}</div></div>{% endfor %}</div>{% endif %}
+    {% if s.big %}<div class="big">{{ s.big.value }}</div>{% if s.big.label %}<div class="note">{{ s.big.label|md }}</div>{% endif %}{% endif %}
+    {% if s.note %}<div class="note">{{ s.note|md }}</div>{% endif %}
+    {% if s.source %}<div class="source">Source : {{ s.source }}</div>{% endif %}
+    </div>
+    {% if s.ann %}<div class="anns">{% for t in s.ann %}<div class="ann"><i>←</i><span>{{ t|md }}</span></div>{% endfor %}</div>{% endif %}
+  </div>
+  {% else %}
+    {% if s.note %}<div class="note">{{ s.note|md }}</div>{% endif %}
+    {% if s.source %}<div class="source">Source : {{ s.source }}</div>{% endif %}
+  {% endif %}
+{% endif %}
+</div>
+{% if s.type in ["cover", "hook"] %}
+  {% if v.bubble %}<div class="bubble"><small>{{ v.bubble_head or "Inconnu · 21:47" }}</small>{{ v.bubble|md }}</div>{% endif %}
+  {% if v.stamp and photo_src %}<div class="cstamp"><div class="stamp" style="font-size:72px">{{ v.stamp }}</div></div>{% elif v.stamp %}<div class="cstamp"><div class="stamp" style="font-size:72px">{{ v.stamp }}</div></div>{% endif %}
+  {% if s.subtitle and photo_src %}<div class="fict">{{ s.subtitle }}</div>{% endif %}
+  {% if s.type == "cover" %}<div class="next">{{ s.next or "je te montre" }}<span>→</span></div>{% endif %}
+{% elif s.type == "cta" %}
+  <div class="band"><div class="bg">Guide gratuit <span>LIEN EN BIO</span></div>
+  <p>{{ s.body or "Les 20 erreurs à éviter quand on débute." }}</p><small>valorislab.be · Contenu éducatif, pas un conseil financier</small></div>
+{% else %}
+  <div class="mono">VALORISLAB<small>Contenu éducatif, pas un conseil financier</small></div>
+  {% if s.next %}<div class="next">{{ s.next }}<span>→</span></div>{% endif %}
+{% endif %}
+<script>
+window.__fit = async () => {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(im => im.complete ? 1 : new Promise(r => { im.onload = im.onerror = r; })));
+  const m = document.getElementById('main');
+  let s = 1;
+  const root = document.documentElement;
+  root.style.setProperty('--s', s);
+  const wide = () => [...m.querySelectorAll('.big,.card .v,.stamp:not(.huge),.title')].some(e => e.getBoundingClientRect().right > m.getBoundingClientRect().right + 1);
+  const over = () => m.scrollHeight > m.clientHeight + 1 || m.scrollWidth > m.clientWidth + 1 || wide();
+  while (over() && s > 0.6) { s = +(s - 0.02).toFixed(2); root.style.setProperty('--s', s); }
+  const t = document.querySelector('.title');
+  const lines = t ? Math.round(t.getBoundingClientRect().height / (parseFloat(getComputedStyle(t).fontSize) * 1.0)) : 0;
+  return {scale: s, overflow: over(), title_lines: lines};
+};
+</script>
+</body></html>

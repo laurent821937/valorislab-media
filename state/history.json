@@ -840,6 +840,22 @@
    "status": "ok",
    "content_id": "2026-11-23-message-suspect-crypto",
    "note": "maquette charte v7 moderne (selfie)"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "ia-cover-petites-depenses-v7",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-11-23-petites-depenses-10-ans",
+   "note": "couverture charte v7 (selfie)"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "ia-cta-mythe-action-v7",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-11-23-mythe-action-5-euros",
+   "note": "dernière slide charte v7"
   }
  ]
 }

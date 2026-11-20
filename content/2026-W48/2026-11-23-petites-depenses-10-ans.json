@@ -1,7 +1,7 @@
 {
  "id": "2026-11-23-petites-depenses-10-ans",
  "date": "2026-11-23",
- "charte": "v6",
+ "charte": "v7",
  "format": "F1",
  "bg": "light",
  "theme": "budget",
@@ -33,46 +33,54 @@
    "type": "cover",
    "number": "3 000 €",
    "title": "Une dépense. *Laquelle ?*",
+   "subtitle": "En 10 ans · exemple fictif",
    "visual": {
     "type": "photo",
-    "photo": "ia-cover-petites-depenses-v6b"
-   },
-   "subtitle": "En 10 ans · exemple fictif"
+    "photo": "ia-cover-petites-depenses-v7",
+    "pos": "50% 70%"
+   }
   },
   {
    "type": "options",
    "kicker": "Les 3 suspects",
-   "title": "Laquelle dépasse *3 000 €* ?",
+   "icon": "?",
+   "title": "Laquelle dépasse *3 000 € ?*",
    "options": [
     {
      "letter": "A",
      "label": "Café à emporter",
-     "detail": "2 € · 2 fois/semaine"
+     "detail": "2 €, 2 fois par semaine"
     },
     {
      "letter": "B",
      "label": "Abonnement streaming",
-     "detail": "13,99 €/mois"
+     "detail": "13,99 € par mois"
     },
     {
      "letter": "C",
      "label": "Frais de livraison",
-     "detail": "5,99 €/semaine"
+     "detail": "5,99 € par semaine"
     }
    ],
-   "next": "Fais ton choix, puis swipe"
+   "next": "fais ton choix"
   },
   {
    "type": "text",
    "kicker": "Un indice",
-   "title": "Ce n'est pas la plus chère *à l'unité.*",
-   "body": "C'est la ligne que tu ne regardes jamais sur le ticket.",
-   "next": "Deux suspects éliminés"
+   "icon": "!",
+   "title": "Pas la plus chère *à l'unité.*",
+   "body": "C'est la ligne que tu ne regardes jamais **sur le ticket**.",
+   "big": {
+    "value": "1 ligne",
+    "label": "en bas du ticket, chaque semaine."
+   },
+   "next": "2 suspects éliminés"
   },
   {
    "type": "options",
    "kicker": "Éliminés",
-   "title": "Ni A, ni B.",
+   "icon": "✕",
+   "title": "Ni A, *ni B.*",
    "options": [
     {
      "letter": "A",
@@ -89,20 +97,22 @@
      "state": "out"
     }
    ],
-   "next": "La réponse va te surprendre"
+   "next": "la réponse"
   },
   {
    "type": "text",
    "kicker": "La réponse : C",
+   "icon": "C",
+   "title": "Les frais *de livraison.*",
    "receipt": {
-    "title": "Ticket · 10 ans de livraison",
+    "title": "10 ans de livraison",
     "rows": [
      [
-      "Frais de livraison et de service",
+      "Frais par commande",
       "5,99 €"
      ],
      [
-      "Commandes par semaine",
+      "Par semaine",
       "× 1"
      ],
      [
@@ -117,17 +127,14 @@
     "total": [
      "Total",
      "3 115 €"
-    ],
-    "foot": "Pas le repas : juste les frais. Exemple fictif."
+    ]
    },
-   "next": "L'erreur derrière"
+   "note": "Pas le repas : juste les frais. Exemple fictif."
   },
   {
    "type": "cta",
-   "kicker": "Le guide gratuit",
-   "title": "C'est l'une des *20 erreurs* du guide.",
-   "body": "Guide gratuit, lien dans ma bio.",
-   "button": "Lien dans ma bio"
+   "title": "C'est l'une des 20 erreurs *du guide.*",
+   "body": "Les 20 erreurs à éviter quand on débute."
   }
  ],
  "alt": "Carrousel VALORISLAB sur le budget : quelle dépense du quotidien coûte plus de 3 000 € en 10 ans, entre café à emporter, abonnement streaming et frais de livraison ? Réponse : les frais de livraison, 3 115 € (exemple fictif).",
@@ -159,5 +166,6 @@
    "10 ans, 3 habitudes, *un gagnant.*"
   ]
  },
- "fb": {}
+ "fb": {},
+ "cta_photo": "ia-cover-petites-depenses-v6b"
 }

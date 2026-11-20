@@ -1,7 +1,7 @@
 {
  "id": "2026-11-23-mythe-action-5-euros",
  "date": "2026-11-23",
- "charte": "v6",
+ "charte": "v7",
  "format": "F2",
  "bg": "champagne",
  "theme": "bourse",
@@ -32,31 +32,66 @@
    "type": "cover",
    "title": "« Une action à 5 € monte *plus vite.* »",
    "visual": {
-    "type": "photo",
-    "photo": "ia-cover-mythe-action-v6",
-    "stamp": "Verdict ?"
+    "type": "stamp",
+    "stamp": "Verdict ?",
+    "tiles": [
+     {
+      "name": "Action A · fictive",
+      "price": "prix affiché",
+      "value": "5 €"
+     },
+     {
+      "name": "Action B · fictive",
+      "price": "prix affiché",
+      "value": "500 €"
+     }
+    ]
    }
   },
   {
-   "type": "text",
+   "type": "app",
    "kicker": "L'accusation",
-   "title": "« Elle ne coûte que 5 €, elle peut *vite doubler.* »",
-   "body": "C'est ce qu'on se dit en voyant le prix dans l'appli.",
-   "next": "La défense"
+   "icon": "1",
+   "title": "« Pas chère, *elle va doubler.* »",
+   "body": "C'est ce qu'on se dit en voyant **le prix dans l'appli**.",
+   "app": {
+    "title": "appli de bourse fictive",
+    "label": "Action A · fictive",
+    "value": "5,00 €",
+    "chip": "Acheter"
+   },
+   "ann": [
+    "« à ce prix,\nje ne risque rien »"
+   ],
+   "next": "la défense"
   },
   {
-   "type": "text",
+   "type": "options",
    "kicker": "La défense",
-   "title": "Le prix d'une action ne dit rien *de sa valeur.*",
-   "body": "C'est la valeur de l'entreprise divisée par son nombre d'actions.",
-   "next": "La preuve en chiffres"
+   "icon": "2",
+   "title": "Le prix ne dit rien *de la valeur.*",
+   "options": [
+    {
+     "letter": "A",
+     "label": "1 000 000 € ÷ 200 000 actions",
+     "detail": "Entreprise A",
+     "value": "5 €"
+    },
+    {
+     "letter": "B",
+     "label": "1 000 000 € ÷ 2 000 actions",
+     "detail": "Entreprise B",
+     "value": "500 €"
+    }
+   ],
+   "note": "Prix = valeur de l'entreprise ÷ nombre d'actions.",
+   "next": "la preuve"
   },
   {
    "type": "text",
-   "kicker": "La preuve · exemple fictif",
-   "title": "1 000 € investis, *+10 %* pour les deux.",
-   "note": "Même hausse, même gain. Exemple fictif, avant frais et impôts.",
-   "next": "Le verdict",
+   "kicker": "La preuve",
+   "icon": "3",
+   "title": "1 000 € investis, *+10 % chacun.*",
    "tiles": [
     {
      "name": "Action A · fictive",
@@ -72,20 +107,22 @@
      "gain": "+100 €",
      "sub": "sur 1 000 € investis"
     }
-   ]
+   ],
+   "note": "Même hausse, même gain. Exemple fictif, avant frais et impôts.",
+   "next": "le verdict"
   },
   {
    "type": "verdict",
+   "kicker": "Le verdict",
+   "icon": "⚖",
    "stamp": "Faux",
-   "title": "Une action pas chère n'est pas *plus rentable.*",
-   "body": "Regarde ce que vaut l'entreprise et tes frais, pas le prix affiché."
+   "title": "Pas chère ≠ *plus rentable.*",
+   "body": "Regarde ce que vaut l'entreprise et **tes frais**, pas le prix affiché."
   },
   {
    "type": "cta",
-   "kicker": "Le guide gratuit",
-   "title": "C'est l'une des *20 erreurs* du guide.",
-   "body": "Guide gratuit, lien dans ma bio.",
-   "button": "Lien dans ma bio"
+   "title": "C'est l'une des 20 erreurs *du guide.*",
+   "body": "Les 20 erreurs à éviter quand on débute."
   }
  ],
  "alt": "Carrousel VALORISLAB, le tribunal du mythe : une action à 5 € monte-t-elle plus vite qu'une action à 500 € ? Avec 1 000 €, 200 actions ou 2 actions, +10 % donne +100 € dans les deux cas. Verdict : faux (exemple fictif).",
@@ -117,5 +154,6 @@
    "Le prix d'une action *te ment.*"
   ]
  },
- "fb": {}
+ "fb": {},
+ "cta_photo": "ia-cta-mythe-action-v7"
 }

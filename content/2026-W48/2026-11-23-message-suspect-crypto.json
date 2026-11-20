@@ -1,7 +1,7 @@
 {
  "id": "2026-11-23-message-suspect-crypto",
  "date": "2026-11-23",
- "charte": "v6",
+ "charte": "v7",
  "format": "F7",
  "bg": "light",
  "theme": "arnaque",
@@ -31,86 +31,109 @@
  "slides": [
   {
    "type": "cover",
-   "title": "Tu vois *le piège ?*",
-   "subtitle": "Conversation fictive.",
+   "title": "Tu vois le piège *dans ce message ?*",
+   "subtitle": "Conversation fictive",
    "visual": {
     "type": "photo",
-    "photo": "ia-cover-message-suspect-v6b",
-    "bubble": "Salut ! J'ai doublé mon argent en 3 semaines, je te montre ?"
+    "photo": "ia-cover-message-suspect-v7",
+    "pos": "50% 40%",
+    "bubble": "Salut ! J'ai doublé mon argent en 3 semaines, je te montre ?",
+    "bubble_head": "Inconnu · 21:47"
    }
   },
   {
    "type": "chat",
-   "title": "Arnaque crypto : *3 signaux.*",
+   "kicker": "Signal 1",
+   "icon": "1",
+   "title": "Arnaque crypto : *un gain trop beau.*",
+   "body": "« +100 % en 3 semaines », puis on te propose de **commencer petit**.",
+   "phone": {
+    "time": "21:47"
+   },
    "messages": [
     {
      "from": "them",
      "text": "Je trade la crypto. +100 % en 3 semaines !",
-     "flag": "Signal 1 : un gain trop beau"
+     "flag": true
     },
     {
      "from": "them",
      "text": "Commence avec 250 €, je te guide."
     }
    ],
-   "next": "La suite",
-   "phone": {
-    "contact": "Inconnu",
-    "status": "Conversation fictive",
-    "time": "21:47"
-   }
+   "ann": [
+    "un gain promis,\net vite",
+    "une petite mise\npour te ferrer"
+   ],
+   "next": "la suite"
+  },
+  {
+   "type": "app",
+   "kicker": "Signal 2",
+   "icon": "2",
+   "title": "Des gains *affichés à l'écran.*",
+   "body": "Deux jours plus tard, ton compte montre **+40 %**. Ça rassure : c'est fait pour.",
+   "app": {
+    "title": "plateforme fictive",
+    "label": "Ton solde",
+    "value": "350 €",
+    "chip": "▲ +40 %",
+    "chart": true
+   },
+   "ann": [
+    "des chiffres\ntapés au clavier",
+    "un argent\nimpossible à retirer"
+   ],
+   "next": "et là…"
   },
   {
    "type": "chat",
+   "kicker": "Signal 3",
+   "icon": "3",
+   "title": "Payer pour *retirer ses gains.*",
+   "body": "Tu veux récupérer ton argent ? On te réclame **15 % de frais** d'abord.",
+   "phone": {
+    "time": "18:20"
+   },
    "messages": [
-    {
-     "from": "them",
-     "text": "Regarde ton compte : déjà +40 % !",
-     "flag": "Signal 2 : des gains affichés à l'écran"
-    },
     {
      "from": "me",
      "text": "Top, je retire mes gains."
-    }
-   ],
-   "next": "Et là…",
-   "phone": {
-    "contact": "Inconnu",
-    "status": "Conversation fictive",
-    "time": "18:12"
-   },
-   "title": "Deux jours plus tard…"
-  },
-  {
-   "type": "chat",
-   "messages": [
+    },
     {
      "from": "them",
      "text": "Pour retirer, paie d'abord 15 % de frais.",
-     "flag": "Signal 3 : payer pour retirer"
+     "flag": true
     }
    ],
-   "next": "Ce qu'en dit la FSMA",
-   "phone": {
-    "contact": "Inconnu",
-    "status": "Conversation fictive",
-    "time": "18:20"
-   },
-   "title": "Au moment de retirer…"
+   "ann": [
+    "le piège\nse referme ici"
+   ],
+   "next": "la réponse"
   },
   {
    "type": "text",
    "kicker": "Ce que dit la FSMA",
-   "title": "C'est le schéma des *fausses plateformes.*",
-   "body": "Gains affichés, retrait bloqué, frais réclamés. Ne paie rien : préviens ta banque et la police.",
-   "source": "FSMA, mises en garde sur les plateformes de trading crypto"
+   "icon": "✓",
+   "title": "C'est une fausse *plateforme.*",
+   "body": "Gains affichés, retrait bloqué, frais réclamés : **le schéma décrit par la FSMA**.",
+   "steps": [
+    {
+     "title": "Ne paie rien de plus."
+    },
+    {
+     "title": "Préviens tout de suite ta banque."
+    },
+    {
+     "title": "Porte plainte à la police."
+    }
+   ],
+   "source": "FSMA, mises en garde sur les plateformes de trading crypto."
   },
   {
    "type": "cta",
-   "kicker": "Le guide gratuit",
-   "title": "C'est l'une des *20 erreurs* du guide.",
-   "body": "Guide gratuit, lien dans ma bio.",
-   "button": "Lien dans ma bio"
+   "title": "C'est l'une des 20 erreurs *du guide.*",
+   "body": "Les 20 erreurs à éviter quand on débute."
   }
  ],
  "alt": "Carrousel VALORISLAB, le message suspect : conversation fictive d'arnaque crypto, un inconnu promet +100 % en 3 semaines, affiche des gains puis réclame des frais pour retirer, schéma décrit par la FSMA.",
@@ -143,5 +166,6 @@
    "Arnaque ou bon plan ? *À toi.*"
   ]
  },
- "fb": {}
+ "fb": {},
+ "cta_photo": "ia-cover-message-suspect-v6b"
 }

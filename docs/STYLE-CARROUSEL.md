@@ -1,4 +1,36 @@
-# Charte carrousel VALORISLAB v6 (brief de Laurent du 20/11/2026)
+# Charte carrousel VALORISLAB v7 « moderne » (validée par Laurent le 20/11/2026, en vigueur)
+
+Inspiration : style des carrousels « studio » modernes envoyés par Laurent (référence de STYLE uniquement : aucune de leurs images, aucun texte, aucune couleur de marque reprise). Gabarit `kit/templates/slide-v7.html.j2`, contenu `"charte": "v7"`, rendu par `kit/render.py` (même chaîne que la v6). Maquette de départ : `reports/maquettes/maquette-v7-moderne.jpg`, prototype `kit/prototypes/v7-moderne.py`. Le brief (`docs/brief-refonte-carrousels-2026-11.md`, sections 2 à 7) reste la règle éditoriale.
+
+## Identité
+- Fond ivoire chaud `#F7F2EC` (`bg: "light"`) ou champagne `#EFE5D6` (`bg: "champagne"`), halo blanc doux. Jamais de fond sombre en pleine page.
+- **Titre** : Inter 800, CAPITALES, interlettrage serré (−0,045 em), 116 px en couverture (110 px minimum, contrôlé), 90 px à l'intérieur, 84 px sur la dernière slide.
+- **Mot fort** : le passage entre `*…*` du titre devient une **étiquette en dégradé vert → or** (`#1E8C78 → #5DA66A → #C8963A`), Plus Jakarta Sans 800, texte blanc, légèrement penchée (−2°). Une seule par titre.
+- **Pastille de rubrique** (`kicker` + `icon`) : pastille noire arrondie, pastille ronde en dégradé à gauche (« 1 SIGNAL 1 », « ? LES 3 SUSPECTS », « ✓ CE QUE DIT LA FSMA »). C'est le fil rouge du carrousel.
+- **Sous-texte** (`body`) : Inter 38 px gris chaud, **gras** = noir pour le passage important.
+- **Bouton de swipe** (`next`) : pilule en dégradé « la suite → » avec rond noir et flèche, en bas à droite (au-dessus des 160 px TikTok, à gauche de la colonne de boutons TikTok). Couverture : « je te montre → ».
+- Monogramme « VALORISLAB » + « Contenu éducatif, pas un conseil financier » en petit, en haut à droite des slides intérieures. Couverture : étiquette de format en haut à gauche (« LE MESSAGE SUSPECT », « LE TRIBUNAL DU MYTHE »…), compteur « 1/6 » en haut à droite.
+
+## Visuels réalistes (un par slide intérieure, champ dédié)
+- `phone` + `messages[]` : téléphone avec conversation (bulle `flag: true` cerclée d'or = le piège). Toujours « Conversation fictive ».
+- `app` : fenêtre d'appli fictive (`title`, `label`, `value`, `chip`, `chart`).
+- `receipt` : ticket de caisse (lignes, total dans une étiquette en dégradé).
+- `options[]` (cartes A/B/C, `state: out|win`), `steps[]` (cartes numérotées), `tiles[]` (tuiles d'appli de bourse fictives), `big` (chiffre géant), verdict (`type: "verdict"`, tampon).
+- `ann[]` : **annotations** = pilules noires avec flèche en dégradé, posées à cheval sur le bord droit du visuel, jamais sur son texte (contrôlé). Saut de ligne : `\n`.
+
+## Couverture
+- **Photo façon selfie** du protagoniste (une couverture sur deux) : gros plan face caméra, mur clair en haut pour le titre, expression vivante (sourcil levé, main levée, sourire stupéfait). Image IA neuve via Make avec `reference_url` (RUNBOOK, étape 5), style `v7-moderne-selfie`. Bulle de message (`visual.bubble`), mention fictive (`subtitle` → pastille), chiffre clé (`number`) au-dessus du titre.
+- **Couverture graphique** (l'autre sur deux) : titre-mythe entre « », tuiles du format (`visual.tiles`), tampon « VERDICT ? » (`visual.stamp`).
+
+## Dernière slide
+- Photo lumineuse du protagoniste (`cta_photo`, différente de la couverture), titre « C'est l'une des 20 erreurs *du guide.* » (« l'erreur n° X » dès que la liste numérotée est fournie), bandeau sombre en bas : « Guide gratuit | LIEN EN BIO », phrase, « valorislab.be · Contenu éducatif, pas un conseil financier ».
+
+## Contrôles (bloquants)
+`render.py` (CLIP_JS_V7) : rien hors de la zone (40 px de marge, 160 px en bas), rien de coupé, bulles dans l'écran, rien sous le bouton de swipe, le monogramme ou la bulle de couverture, annotations jamais sur un texte, titre de couverture ≥ 110 px sur 4 lignes maximum, 25 mots maximum par slide (chiffres non comptés). Puis `text_check.py`, `seo_check.py`, `qa.py` (contraste, zones TikTok, grille Instagram), `validate.py`.
+
+---
+
+# Archive : charte v6 (brief de Laurent du 20/11/2026)
 
 Remplace la charte v5 pour tout nouveau contenu (`"charte": "v6"` dans le fichier de contenu). Source : sections 4 et 5 de `docs/brief-refonte-carrousels-2026-11.md`. **Rendu : `kit/render.py` + `kit/templates/slide-v6.html.j2`**, jamais d'image IA pour les slides. Les contenus v5 (sans champ `charte`) restent rendus avec `kit/templates/slide.html.j2` ; la charte v5 est archivée en fin de document.
 

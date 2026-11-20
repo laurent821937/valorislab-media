@@ -2,6 +2,8 @@
 """Render a VALORISLAB content JSON into carousel JPEGs.
 
 Charte v6 (contents with "charte": "v6", 20/11/2026): kit/templates/slide-v6.html.j2, see render_v6().
+Charte v7 « moderne » (contents with "charte": "v7", validated by Laurent on 20/11/2026): kit/templates/slide-v7.html.j2,
+same pipeline as v6 (render_v6(c, a, "v7")), CLIP_JS_V7 measures every block.
 Older contents (charte v5) keep kit/templates/slide.html.j2.
 
 Usage: python3 kit/render.py content/2026-W45/2026-11-03-frais-etf.json [--out media]
@@ -227,11 +229,65 @@ CLIP_JS = """() => {
 }"""
 
 
+# ---------------------------------------------------------------- charte v7 « moderne » (validée le 20/11/2026)
+LAYOUT_JS_V7 = """() => {
+  const roles = {kicker: '.ftag,.badge', title: '.title', lead: '.sub', body: '.ann span',
+    stat: '.big,.card .v,.stamp,.wv,.tile .gn,.rt span:last-child', statLabel: '.wl,.chip,.tile .nm,.tile .px,.tile .sb,.chead b,.chead span,.rh,.rt span:first-child',
+    card: '.card,.phone,.receipt,.tile,.win,.ann,.bubble', note: '.note,.source,.fict,.rf',
+    listItem: '.msg,.card .t b,.card .t span,.rr', button: '.band .bg,.next',
+    brand: '.mono', count: '.count', next: '.band small,.band p,.mono small'};
+  const boxes = [];
+  for (const [role, q] of Object.entries(roles)) {
+    document.querySelectorAll(q).forEach(e => {
+      const r = e.getBoundingClientRect(), cs = getComputedStyle(e);
+      boxes.push({role, x: r.x, y: r.y, w: r.width, h: r.height, font: parseFloat(cs.fontSize),
+                  color: cs.color, text: (e.innerText || '').replace(/\\s+/g, ' ').slice(0, 70)});
+    });
+  }
+  return {boxes, hero: null};
+}"""
+
+CLIP_JS_V7 = """() => {
+  // Framed elements inside the slide (40 px margin) and above the TikTok zone (160 px), bubbles inside the
+  // phone screen, no text cut, nothing hidden under the swipe button, the brand line or the cover bubble.
+  const out = [], W = innerWidth, H = innerHeight;
+  const lab = e => (e.innerText || e.className).replace(/\\s+/g, ' ').slice(0, 40);
+  document.querySelectorAll('.title,.sub,.ann,.phone,.win,.card,.receipt,.tile,.stamp,.big,.next,.bubble,.fict,.badge,.ftag,.note,.source,.band .bg,.band p,.band small').forEach(e => {
+    const r = e.getBoundingClientRect();
+    if (r.width < 2) return;
+    if (r.left < 40 || r.right > W - 40 || r.top < 40 || r.bottom > H - 160)
+      out.push(`élément « ${lab(e)} » hors zone (${Math.round(r.left)}–${Math.round(r.right)} × ${Math.round(r.top)}–${Math.round(r.bottom)} px)`);
+  });
+  const M = document.getElementById('main').getBoundingClientRect();
+  document.querySelectorAll('#main .phone,#main .win,#main .cards,#main .receipt,#main .tiles,#main .anns .ann,#main .big,#main .note,#main .source,#main .sub,#main .title').forEach(e => {
+    const r = e.getBoundingClientRect();
+    if (r.bottom > M.bottom + 0.5 || r.right > M.right + 0.5) out.push(`élément « ${lab(e)} » coupé en bas ou à droite`);
+  });
+  document.querySelectorAll('.screen').forEach(sc => { const S = sc.getBoundingClientRect();
+    sc.querySelectorAll('.msg').forEach(e => { const r = e.getBoundingClientRect();
+      if (r.left < S.left + 14 || r.right > S.right - 14 || r.bottom > S.bottom - 10) out.push(`bulle « ${lab(e)} » coupée ou collée au bord de l'écran`); }); });
+  document.querySelectorAll('.msg,.card .t b,.card .v,.tile .gn,.wv,.big,.rr span').forEach(e => {
+    if (e.scrollWidth > e.clientWidth + 1) out.push(`texte coupé dans « ${lab(e)} »`); });
+  const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
+  const blockers = [...document.querySelectorAll('.next,.mono,.bubble,.fict,.cstamp .stamp')];
+  document.querySelectorAll('#main .title,#main .sub,#main .big,.ann,.phone,.win,.card,.receipt,.tile,.note,.source,.stamp.huge').forEach(e => {
+    const r = e.getBoundingClientRect();
+    blockers.forEach(b => { if (b !== e && !b.contains(e) && !e.contains(b) && hit(r, b.getBoundingClientRect()))
+      out.push(`« ${lab(e)} » chevauche « ${lab(b)} »`); });
+  });
+  // annotations: on the edge of the mock-up, never over its text
+  document.querySelectorAll('.ann').forEach(a => { const r = a.getBoundingClientRect();
+    document.querySelectorAll('.msg,.wv,.wl,.chip,.card .t,.rr,.rt').forEach(t => { if (hit(r, t.getBoundingClientRect())) out.push(`annotation « ${lab(a)} » sur le texte « ${lab(t)} »`); }); });
+  return out;
+}"""
+
+
 def words(text):
-    return len(re.sub(r"[*«»\"?!.,:;]", " ", str(text or "")).split())
+    # words only: figures, symbols and units (2 080 €, ×, ÷, %) are not counted
+    return len([w for w in re.sub(r"[*«»\"?!.,:;]", " ", str(text or "")).split() if re.search(r"[^\W\d_]", w)])
 
 
-def render_v6(c, a):
+def render_v6(c, a, ver="v6"):
     """Charte v6: format tag, alternating dark/light background, big headline and key number, face photo
     (never cut out) or the format's own visual on the cover, swipe cue on every inner slide, guide slide last."""
     cid, date, slides = c["id"], c["date"], c["slides"]
@@ -251,14 +307,22 @@ def render_v6(c, a):
             print(f"photo du protagoniste introuvable : {cv.get('photo')}", file=sys.stderr)
             sys.exit(2)
         photo = dict(src=f"../assets/scenes/{src.name}", pos=cv.get("pos", meta.get("face_focus", meta.get("focus", "50% 0%"))), name=cv["photo"])
+    cta_photo = None
+    if ver == "v7" and c.get("cta_photo"):
+        meta = cat.get(c["cta_photo"], {})
+        src = KIT / "assets" / "scenes" / meta.get("file", "")
+        if not meta or not src.exists():
+            print(f"photo de la dernière slide introuvable : {c['cta_photo']}", file=sys.stderr)
+            sys.exit(2)
+        cta_photo = dict(src=f"../assets/scenes/{src.name}", pos=c.get("cta_photo_pos", meta.get("focus", "50% 20%")), name=c["cta_photo"])
     mock = next((KIT / "assets" / f"guide-mockup.{e}" for e in ("png", "webp", "jpg") if (KIT / "assets" / f"guide-mockup.{e}").exists()), None)
     out_dir = pathlib.Path(a.out) / date[:4] / date[5:7] / cid
     out_dir.mkdir(parents=True, exist_ok=True)
     env = Environment(loader=FileSystemLoader(str(KIT / "templates")), autoescape=True)
     env.filters["md"] = md
-    tpl = env.get_template("slide-v6.html.j2")
+    tpl = env.get_template(f"slide-{ver}.html.j2")
     kit_version = (KIT / "RENDER_VERSION").read_text().strip()
-    report = {"id": cid, "charte": "v6", "kit_version": kit_version, "format": fmt_code, "bg": bg,
+    report = {"id": cid, "charte": ver, "kit_version": kit_version, "format": fmt_code, "bg": bg,
               "cover_visual": cv.get("type"), "files": [], "errors": [], "warnings": []}
     # brief section 4 / 5 checks on the text itself
     if words(cover["title"]) + (1 if cover.get("number") else 0) > 12:
@@ -266,7 +330,7 @@ def render_v6(c, a):
     if cover.get("subtitle") and words(cover["subtitle"]) > 6:
         report["errors"].append(f"couverture : sous-titre de {words(cover['subtitle'])} mots, 6 au maximum")
     if not 5 <= n <= 7:
-        report["errors"].append(f"{n} slides : la charte v6 en demande 5 à 7")
+        report["errors"].append(f"{n} slides : la charte {ver} en demande 5 à 7")
     if slides[-1]["type"] != "cta":
         report["errors"].append("la dernière slide doit être la slide du guide (type cta)")
     for i, s in enumerate(slides[1:-1], 2):
@@ -282,13 +346,14 @@ def render_v6(c, a):
 
     def shoot(page, s, i, nn, name, visual):
         hx, hy = halo_for(f"{cid}-{name}")
+        ph = cta_photo if (s["type"] == "cta" and ver == "v7") else (photo if s["type"] in ("cover", "hook") or ver == "v6" else None)
         tmp_html.write_text(tpl.render(s=s, i=i, n=nn, bg=bg, tag=tag, visual=visual,
                                        guide_mockup=f"../assets/{mock.name}" if mock else None,
-                                       photo_src=photo["src"] if photo else None, photo_pos=photo["pos"] if photo else None,
+                                       photo_src=ph["src"] if ph else None, photo_pos=ph["pos"] if ph else None,
                                        halo_x=hx, halo_y=hy, **f), encoding="utf-8")
         page.goto(tmp_html.as_uri())
-        fit, layout = page.evaluate("window.__fit()"), page.evaluate(LAYOUT_JS_V6)
-        fit["clipped"] = page.evaluate(CLIP_JS)
+        fit, layout = page.evaluate("window.__fit()"), page.evaluate(LAYOUT_JS_V7 if ver == "v7" else LAYOUT_JS_V6)
+        fit["clipped"] = page.evaluate(CLIP_JS_V7 if ver == "v7" else CLIP_JS)
         png = tmp / f"{name}.png"
         page.screenshot(path=str(png), type="png")
         jpg = out_dir / f"{name}.jpg"
@@ -303,7 +368,7 @@ def render_v6(c, a):
             visual = cv.get("type") if s["type"] == "cover" else None
             fit, layout, jpg = shoot(page, s, i, n, f"feed-{i:02d}", visual)
             rec = {"file": str(jpg.relative_to(ROOT)), "format": "feed", "slide": i, "type": s["type"], "pose": None,
-                   "scene": photo["name"] if (photo and s["type"] == "cover") else None, "note": None,
+                   "scene": photo["name"] if (photo and s["type"] == "cover") else (cta_photo["name"] if (cta_photo and s["type"] == "cta") else None), "note": None,
                    "scale": fit["scale"], "overflow": fit["overflow"], "title_lines": fit["title_lines"],
                    "bytes": jpg.stat().st_size, "W": f["W"], "H": f["H"], "boxes": layout["boxes"], "hero": None}
             report["files"].append(rec)
@@ -328,13 +393,15 @@ def render_v6(c, a):
                         "W": f["W"], "H": f["H"], "boxes": layout["boxes"]}
         if fit["overflow"]:
             report["errors"].append(f"fb: text overflows even at scale {fit['scale']} -> shorten it")
+        for m in fit["clipped"]:
+            report["errors"].append(f"fb: {m}")
         browser.close()
     tmp_html.unlink(missing_ok=True)
     for x in tmp.iterdir():
         x.unlink()
     tmp.rmdir()
     (out_dir / "render-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(json.dumps({"out": str(out_dir.relative_to(ROOT)), "charte": "v6", "slides": n,
+    print(json.dumps({"out": str(out_dir.relative_to(ROOT)), "charte": ver, "slides": n,
                       "min_scale": min(r["scale"] for r in report["files"]),
                       "warnings": report["warnings"], "errors": report["errors"]}, ensure_ascii=False))
     sys.exit(1 if report["errors"] else 0)
@@ -348,8 +415,8 @@ def main():
     a = ap.parse_args()
 
     c = json.loads(pathlib.Path(a.content).read_text(encoding="utf-8"))
-    if c.get("charte") == "v6":
-        return render_v6(c, a)
+    if c.get("charte") in ("v6", "v7"):
+        return render_v6(c, a, c["charte"])
     cid, date = c["id"], c["date"]  # date: YYYY-MM-DD (planned publication week)
     theme = c.get("theme", "bourse")
     kicker = c["kicker"]

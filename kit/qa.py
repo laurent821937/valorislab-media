@@ -83,14 +83,14 @@ def main():
             err(f"{fmt}: aucune image")
         if len(recs) > max_n:
             err(f"{fmt}: {len(recs)} slides > {max_n}")
-        if rep.get("charte") == "v6":
+        if rep.get("charte") in ("v6", "v7"):
             if not 5 <= len(recs) <= 7:
-                err(f"{fmt}: {len(recs)} slides, la charte v6 en demande 5 à 7")
+                err(f"{fmt}: {len(recs)} slides, la charte {rep.get('charte')} en demande 5 à 7")
         elif len(recs) > 8:
             err(f"{fmt}: {len(recs)} slides, 8 au maximum (décision de Laurent)")
         elif len(recs) < 5:
             warn(f"{fmt}: {len(recs)} slides (charte v5 : 5 par défaut, 8 au maximum)")
-    if rep.get("charte") == "v6":
+    if rep.get("charte") in ("v6", "v7"):
         # brief checks made at render time (cover words, title >= 110 px on <= 4 lines, swipe cue, guide slide)
         for m in rep.get("errors", []):
             err(f"rendu : {m}")
