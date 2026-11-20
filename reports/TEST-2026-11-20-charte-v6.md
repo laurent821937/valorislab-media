@@ -51,3 +51,10 @@ Sources : FSMA (fausses plateformes de trading crypto, « Peut-on devenir riche 
 - Textes : `kit/text_check.py` (bloquant) ; légendes réécrites (une seule question, chiffres identiques aux slides, renvoi à la slide 5) ; slide F2 « défense » précisée (valeur de l'entreprise ÷ nombre d'actions) ; heures du téléphone F7 cohérentes avec « Deux jours plus tard ».
 - Contrôles finaux : text_check, seo_check, render, validate (URL publique), qa : 0 erreur, 0 avertissement ; relecture visuelle de chaque slide en grand.
 - Buffer : 9 brouillons mis à jour (textes + visuels, commit a66de71), rien de programmé.
+
+## Charte v7 « moderne » (validée par Laurent le 20/11/2026, soir)
+- Gabarit `kit/templates/slide-v7.html.j2`, contrôles CLIP_JS_V7 dans `render.py` (zones, coupes, chevauchements, annotations jamais sur un texte), `qa.py` accepte la v7, mots comptés sans les chiffres. `kit/VERSION` et `kit/RENDER_VERSION` = 2026-11-20.2. Docs : `STYLE-CARROUSEL.md` (v7 en tête, v6 en archive), `RUNBOOK.md`.
+- 3 carrousels W48 refaits en v7 : 2 couvertures selfie (message suspect, petites dépenses), 1 couverture graphique (mythe), 1 photo de dernière slide neuve. Budget IA novembre : 35/40.
+- Contrôles : render, text_check, seo_check, qa (0 erreur, 0 avertissement), validate avec URL publique (commit c8e191e) : OK.
+- Buffer : 9 brouillons mis à jour avec les visuels v7 (statut draft, aucune date). Rien de programmé.
+- Aperçu : `reports/maquettes/v7-semaine-48.jpg`.
