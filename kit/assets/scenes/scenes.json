@@ -591,5 +591,37 @@
   "style": "v6-premium",
   "face": false,
   "reference": null
+ },
+ "ia-cover-petites-depenses-v6b": {
+  "file": "ia-cover-petites-depenses-v6b.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "le protagoniste rieur un matin ensoleillé dans sa cuisine claire, téléphone, sac de livraison et café (dépenses du quotidien)",
+  "pillars": [
+   "budget"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v6-premium-lumineux",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-portrait.jpg"
+ },
+ "ia-cover-message-suspect-v6b": {
+  "file": "ia-cover-message-suspect-v6b.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "le protagoniste en chemise de lin dans un salon ensoleillé, sourire en coin et sourcil levé, téléphone (message suspect, on ne se fait pas avoir)",
+  "pillars": [
+   "arnaque"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v6-premium-lumineux",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-pensif.jpg"
  }
 }

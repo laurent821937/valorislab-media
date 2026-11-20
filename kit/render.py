@@ -192,8 +192,8 @@ FORMAT_TAGS = {"F1": "La boucle ouverte", "F2": "Le tribunal du mythe", "F3": "D
                "F5": "Le classement révélé", "F6": "La facture cachée", "F7": "Le message suspect", "F8": "Épisode"}
 LAYOUT_JS_V6 = """() => {
   const roles = {kicker: '.kicker,.tag', title: '.title', lead: '.sub,.next', body: '.body',
-    stat: '.big,.cols .val,.opt .v,.stamp', statLabel: '.big-lab,.cols .lab,.flagnote,.who', card: '.card', note: '.note,.source,.fict',
-    listItem: 'ol.steps .t,.opt .t b,.opt .t span,.msg,.ticket .row,.cols .txt', button: '.cta-btn,.url',
+    stat: '.big,.cols .val,.opt .v,.stamp,.receipt .rt span:last-child,.tile .gn', statLabel: '.big-lab,.cols .lab,.flagnote,.who,.chead b,.chead span,.receipt .rh,.receipt .rt span:first-child,.tile .ch', card: '.card,.phone,.receipt,.tile', note: '.note,.source,.fict',
+    listItem: 'ol.steps .t,.opt .t b,.opt .t span,.msg,.ticket .row,.cols .txt,.receipt .rr,.receipt .rf,.tile .nm,.tile .px,.tile .sb', button: '.cta-btn,.url',
     brand: '.mono', count: '.count', next: 'footer .disclaimer'};
   const boxes = [];
   for (const [role, q] of Object.entries(roles)) {
@@ -204,6 +204,26 @@ LAYOUT_JS_V6 = """() => {
     });
   }
   return {boxes, hero: null};
+}"""
+
+
+CLIP_JS = """() => {
+  // Every framed element must sit fully inside its container, with room for outlines/shadows (flag, win: 10 px).
+  const out = [];
+  const M = document.getElementById('main').getBoundingClientRect();
+  const check = (sel, box, label) => document.querySelectorAll(sel).forEach(e => {
+    const r = e.getBoundingClientRect();
+    const m = (e.classList.contains('flag') || e.classList.contains('win')) ? 10 : 0;
+    if (r.width < 2) return;
+    if (r.left < box.left + m - 0.5 || r.right > box.right - m + 0.5 || r.top < box.top - 0.5 || r.bottom > box.bottom + 0.5)
+      out.push(`${label} « ${(e.innerText || e.className).replace(/\\s+/g, ' ').slice(0, 40)} » coupé ou collé au bord (${Math.round(r.left)}–${Math.round(r.right)} px, zone ${Math.round(box.left + m)}–${Math.round(box.right - m)})`);
+  });
+  check('main .msg:not(.screen .msg),main .card,main .stamp,main .flagnote:not(.screen .flagnote),main .receipt,main .tile,main .phone,main .cta-btn,main .title,main .body,main .big', M, 'élément');
+  document.querySelectorAll('.screen').forEach(sc => { const S = sc.getBoundingClientRect(); check('.screen .msg,.screen .flagnote', {left: S.left + 14, right: S.right - 14, top: S.top, bottom: S.bottom}, 'bulle'); });
+  // text must never be cut inside its own box
+  document.querySelectorAll('main .msg,main .opt .t b,main .opt .t span,main .rr span,main .tile .gn,main .cols .val,main .big').forEach(e => {
+    if (e.scrollWidth > e.clientWidth + 1) out.push(`texte coupé dans « ${(e.innerText || '').slice(0, 40)} »`); });
+  return out;
 }"""
 
 
@@ -268,6 +288,7 @@ def render_v6(c, a):
                                        halo_x=hx, halo_y=hy, **f), encoding="utf-8")
         page.goto(tmp_html.as_uri())
         fit, layout = page.evaluate("window.__fit()"), page.evaluate(LAYOUT_JS_V6)
+        fit["clipped"] = page.evaluate(CLIP_JS)
         png = tmp / f"{name}.png"
         page.screenshot(path=str(png), type="png")
         jpg = out_dir / f"{name}.jpg"
@@ -288,6 +309,10 @@ def render_v6(c, a):
             report["files"].append(rec)
             if fit["overflow"]:
                 report["errors"].append(f"feed slide {i}: text overflows even at scale {fit['scale']} -> shorten it")
+            for m in fit["clipped"]:
+                report["errors"].append(f"feed slide {i}: {m}")
+            if fit["scale"] < 0.9:
+                report["warnings"].append(f"feed slide {i}: texte réduit à {int(fit['scale'] * 100)} % (raccourcir pour garder la taille de la charte)")
             if s["type"] == "cover":
                 tb = next((b for b in layout["boxes"] if b["role"] == "title"), None)
                 if tb and tb["font"] < 110:

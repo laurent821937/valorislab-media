@@ -3,7 +3,7 @@
  "charte": "v6",
  "kit_version": "2026-11-20.1",
  "format": "F7",
- "bg": "dark",
+ "bg": "light",
  "cover_visual": "photo",
  "files": [
   {
@@ -12,12 +12,12 @@
    "slide": 1,
    "type": "cover",
    "pose": null,
-   "scene": "ia-cover-message-suspect-v6",
+   "scene": "ia-cover-message-suspect-v6b",
    "note": null,
    "scale": 1,
    "overflow": false,
    "title_lines": 1,
-   "bytes": 236777,
+   "bytes": 233923,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -25,10 +25,10 @@
      "role": "kicker",
      "x": 72,
      "y": 72,
-     "w": 389.875,
-     "h": 26,
+     "w": 425.875,
+     "h": 50,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE MESSAGE SUSPECT"
     },
     {
@@ -38,7 +38,7 @@
      "w": 884,
      "h": 114.234375,
      "font": 112,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "Tu vois le piège ?"
     },
     {
@@ -48,7 +48,7 @@
      "w": 884,
      "h": 36,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "CONVERSATION FICTIVE."
     },
     {
@@ -58,7 +58,7 @@
      "w": 760.234375,
      "h": 159.59375,
      "font": 40,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "Salut ! J'ai doublé mon argent en 3 semaines, je te montre ?"
     },
     {
@@ -68,17 +68,17 @@
      "w": 237.125,
      "h": 50,
      "font": 16,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "VALORISLAB"
     },
     {
      "role": "count",
-     "x": 965.78125,
+     "x": 933.78125,
      "y": 68,
-     "w": 42.21875,
-     "h": 40,
+     "w": 74.21875,
+     "h": 52,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "1/6"
     }
    ],
@@ -95,7 +95,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 181023,
+   "bytes": 155864,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -106,18 +106,18 @@
      "w": 389.875,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE MESSAGE SUSPECT"
     },
     {
      "role": "title",
      "x": 84,
-     "y": 254.515625,
+     "y": 200.359375,
      "w": 884,
      "h": 172.78125,
      "font": 80,
-     "color": "rgb(246, 242, 234)",
-     "text": "Arnaque crypto : repère les signaux."
+     "color": "rgb(31, 29, 26)",
+     "text": "Arnaque crypto : 3 signaux."
     },
     {
      "role": "lead",
@@ -126,47 +126,67 @@
      "w": 884,
      "h": 66,
      "font": 30,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LA SUITE"
     },
     {
      "role": "statLabel",
-     "x": 84,
-     "y": 640.890625,
-     "w": 473.28125,
-     "h": 45,
-     "font": 24,
-     "color": "rgb(26, 22, 18)",
+     "x": 292,
+     "y": 500.140625,
+     "w": 207.1875,
+     "h": 34,
+     "font": 28,
+     "color": "rgb(31, 29, 26)",
+     "text": "Inconnu"
+    },
+    {
+     "role": "statLabel",
+     "x": 292,
+     "y": 534.140625,
+     "w": 207.1875,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(110, 103, 93)",
+     "text": "Conversation fictive"
+    },
+    {
+     "role": "statLabel",
+     "x": 208,
+     "y": 751.890625,
+     "w": 436.84375,
+     "h": 42,
+     "font": 22,
+     "color": "rgb(251, 248, 242)",
      "text": "SIGNAL 1 : UN GAIN TROP BEAU"
     },
     {
-     "role": "listItem",
-     "x": 84,
-     "y": 463.296875,
-     "w": 760.234375,
-     "h": 159.59375,
-     "font": 40,
-     "color": "rgb(246, 242, 234)",
-     "text": "Je trade la crypto sur une plateforme. +100 % en 3 semaines !"
+     "role": "card",
+     "x": 166,
+     "y": 407.140625,
+     "w": 720,
+     "h": 584.5,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": "21:47 Inconnu Conversation fictive Je trade la crypto. +100 % en 3 sem"
     },
     {
      "role": "listItem",
-     "x": 529.375,
-     "y": 705.890625,
-     "w": 438.625,
-     "h": 104.796875,
-     "font": 40,
-     "color": "rgb(26, 22, 18)",
-     "text": "Ah oui ? Comment ?"
+     "x": 208,
+     "y": 604.140625,
+     "w": 534.234375,
+     "h": 131.75,
+     "font": 34,
+     "color": "rgb(31, 29, 26)",
+     "text": "Je trade la crypto. +100 % en 3 semaines !"
     },
     {
      "role": "listItem",
-     "x": 84,
-     "y": 830.6875,
-     "w": 741.4375,
-     "h": 106.796875,
-     "font": 40,
-     "color": "rgb(246, 242, 234)",
+     "x": 208,
+     "y": 811.890625,
+     "w": 534.234375,
+     "h": 131.75,
+     "font": 34,
+     "color": "rgb(31, 29, 26)",
      "text": "Commence avec 250 €, je te guide."
     },
     {
@@ -176,7 +196,7 @@
      "w": 237.125,
      "h": 50,
      "font": 16,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "VALORISLAB"
     },
     {
@@ -186,7 +206,7 @@
      "w": 48.3125,
      "h": 40,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "2/6"
     },
     {
@@ -196,7 +216,7 @@
      "w": 388.25,
      "h": 21,
      "font": 18,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "Contenu éducatif, pas un conseil financier"
     }
    ],
@@ -212,8 +232,8 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "title_lines": 0,
-   "bytes": 120416,
+   "title_lines": 1,
+   "bytes": 144963,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -224,8 +244,18 @@
      "w": 389.875,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE MESSAGE SUSPECT"
+    },
+    {
+     "role": "title",
+     "x": 84,
+     "y": 267,
+     "w": 884,
+     "h": 86.390625,
+     "font": 80,
+     "color": "rgb(31, 29, 26)",
+     "text": "Deux jours plus tard…"
     },
     {
      "role": "lead",
@@ -234,37 +264,67 @@
      "w": 884,
      "h": 66,
      "font": 30,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "ET LÀ…"
     },
     {
      "role": "statLabel",
-     "x": 84,
-     "y": 573.5,
-     "w": 646.875,
-     "h": 45,
-     "font": 24,
-     "color": "rgb(26, 22, 18)",
+     "x": 292,
+     "y": 480.390625,
+     "w": 207.1875,
+     "h": 34,
+     "font": 28,
+     "color": "rgb(31, 29, 26)",
+     "text": "Inconnu"
+    },
+    {
+     "role": "statLabel",
+     "x": 292,
+     "y": 514.390625,
+     "w": 207.1875,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(110, 103, 93)",
+     "text": "Conversation fictive"
+    },
+    {
+     "role": "statLabel",
+     "x": 208,
+     "y": 732.140625,
+     "w": 595.96875,
+     "h": 42,
+     "font": 22,
+     "color": "rgb(251, 248, 242)",
      "text": "SIGNAL 2 : DES GAINS AFFICHÉS À L'ÉCRAN"
     },
     {
+     "role": "card",
+     "x": 166,
+     "y": 387.390625,
+     "w": 720,
+     "h": 537.625,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": "18:12 Inconnu Conversation fictive Regarde ton compte : déjà +40 % ! S"
+    },
+    {
      "role": "listItem",
-     "x": 84,
-     "y": 448.703125,
-     "w": 717.6875,
-     "h": 106.796875,
-     "font": 40,
-     "color": "rgb(246, 242, 234)",
+     "x": 208,
+     "y": 584.390625,
+     "w": 534.234375,
+     "h": 131.75,
+     "font": 34,
+     "color": "rgb(31, 29, 26)",
      "text": "Regarde ton compte : déjà +40 % !"
     },
     {
      "role": "listItem",
-     "x": 444.1875,
-     "y": 638.5,
-     "w": 523.8125,
-     "h": 104.796875,
-     "font": 40,
-     "color": "rgb(26, 22, 18)",
+     "x": 400.5625,
+     "y": 792.140625,
+     "w": 443.4375,
+     "h": 84.875,
+     "font": 34,
+     "color": "rgb(31, 29, 26)",
      "text": "Top, je retire mes gains."
     },
     {
@@ -274,7 +334,7 @@
      "w": 237.125,
      "h": 50,
      "font": 16,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "VALORISLAB"
     },
     {
@@ -284,7 +344,7 @@
      "w": 48,
      "h": 40,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "3/6"
     },
     {
@@ -294,7 +354,7 @@
      "w": 388.25,
      "h": 21,
      "font": 18,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "Contenu éducatif, pas un conseil financier"
     }
    ],
@@ -310,8 +370,8 @@
    "note": null,
    "scale": 1,
    "overflow": false,
-   "title_lines": 0,
-   "bytes": 110838,
+   "title_lines": 1,
+   "bytes": 138681,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -322,8 +382,18 @@
      "w": 389.875,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE MESSAGE SUSPECT"
+    },
+    {
+     "role": "title",
+     "x": 84,
+     "y": 318.4375,
+     "w": 884,
+     "h": 86.390625,
+     "font": 80,
+     "color": "rgb(31, 29, 26)",
+     "text": "Au moment de retirer…"
     },
     {
      "role": "lead",
@@ -332,27 +402,57 @@
      "w": 884,
      "h": 66,
      "font": 30,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "CE QU'EN DIT LA FSMA"
     },
     {
      "role": "statLabel",
-     "x": 84,
-     "y": 662.296875,
-     "w": 729.703125,
-     "h": 45,
-     "font": 24,
-     "color": "rgb(26, 22, 18)",
-     "text": "SIGNAL 3 : PAYER POUR RÉCUPÉRER TON ARGENT"
+     "x": 292,
+     "y": 531.828125,
+     "w": 207.1875,
+     "h": 34,
+     "font": 28,
+     "color": "rgb(31, 29, 26)",
+     "text": "Inconnu"
+    },
+    {
+     "role": "statLabel",
+     "x": 292,
+     "y": 565.828125,
+     "w": 207.1875,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(110, 103, 93)",
+     "text": "Conversation fictive"
+    },
+    {
+     "role": "statLabel",
+     "x": 208,
+     "y": 783.578125,
+     "w": 453.84375,
+     "h": 42,
+     "font": 22,
+     "color": "rgb(251, 248, 242)",
+     "text": "SIGNAL 3 : PAYER POUR RETIRER"
+    },
+    {
+     "role": "card",
+     "x": 166,
+     "y": 438.828125,
+     "w": 720,
+     "h": 434.75,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": "18:20 Inconnu Conversation fictive Pour retirer, paie d'abord 15 % de "
     },
     {
      "role": "listItem",
-     "x": 84,
-     "y": 484.703125,
-     "w": 760.234375,
-     "h": 159.59375,
-     "font": 40,
-     "color": "rgb(246, 242, 234)",
+     "x": 208,
+     "y": 635.828125,
+     "w": 534.234375,
+     "h": 131.75,
+     "font": 34,
+     "color": "rgb(31, 29, 26)",
      "text": "Pour retirer, paie d'abord 15 % de frais."
     },
     {
@@ -362,7 +462,7 @@
      "w": 237.125,
      "h": 50,
      "font": 16,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "VALORISLAB"
     },
     {
@@ -372,7 +472,7 @@
      "w": 47.5625,
      "h": 40,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "4/6"
     },
     {
@@ -382,7 +482,7 @@
      "w": 388.25,
      "h": 21,
      "font": 18,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "Contenu éducatif, pas un conseil financier"
     }
    ],
@@ -399,7 +499,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 164221,
+   "bytes": 146643,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -410,47 +510,47 @@
      "w": 389.875,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE MESSAGE SUSPECT"
     },
     {
      "role": "kicker",
      "x": 84,
-     "y": 648.421875,
+     "y": 409.21875,
      "w": 884,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "CE QUE DIT LA FSMA"
     },
     {
      "role": "title",
      "x": 84,
-     "y": 704.421875,
+     "y": 465.21875,
      "w": 884,
      "h": 172.78125,
      "font": 80,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "C'est le schéma des fausses plateformes."
     },
     {
      "role": "body",
      "x": 84,
-     "y": 911.203125,
+     "y": 672,
      "w": 884,
      "h": 116,
      "font": 40,
-     "color": "rgb(221, 215, 204)",
+     "color": "rgb(52, 48, 42)",
      "text": "Gains affichés, retrait bloqué, frais réclamés. Ne paie rien : prévien"
     },
     {
      "role": "note",
      "x": 84,
-     "y": 1053.203125,
+     "y": 814,
      "w": 884,
      "h": 34.796875,
      "font": 24,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "SOURCE · FSMA, mises en garde sur les plateformes de trading crypto"
     },
     {
@@ -460,7 +560,7 @@
      "w": 237.125,
      "h": 50,
      "font": 16,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "VALORISLAB"
     },
     {
@@ -470,7 +570,7 @@
      "w": 46.65625,
      "h": 40,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "5/6"
     },
     {
@@ -480,7 +580,7 @@
      "w": 388.25,
      "h": 21,
      "font": 18,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "Contenu éducatif, pas un conseil financier"
     }
    ],
@@ -497,7 +597,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 155422,
+   "bytes": 148511,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -508,7 +608,7 @@
      "w": 389.875,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE MESSAGE SUSPECT"
     },
     {
@@ -518,7 +618,7 @@
      "w": 884,
      "h": 26,
      "font": 22,
-     "color": "rgb(226, 190, 124)",
+     "color": "rgb(122, 92, 38)",
      "text": "LE GUIDE GRATUIT"
     },
     {
@@ -528,7 +628,7 @@
      "w": 884,
      "h": 185.75,
      "font": 86,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "C'est l'une des 20 erreurs du guide."
     },
     {
@@ -538,7 +638,7 @@
      "w": 884,
      "h": 58,
      "font": 40,
-     "color": "rgb(221, 215, 204)",
+     "color": "rgb(52, 48, 42)",
      "text": "Guide gratuit, lien dans ma bio."
     },
     {
@@ -548,7 +648,7 @@
      "w": 414.125,
      "h": 83,
      "font": 32,
-     "color": "rgb(26, 22, 18)",
+     "color": "rgb(251, 248, 242)",
      "text": "LIEN DANS MA BIO"
     },
     {
@@ -558,7 +658,7 @@
      "w": 414.125,
      "h": 53,
      "font": 40,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "valorislab.be"
     },
     {
@@ -568,7 +668,7 @@
      "w": 237.125,
      "h": 50,
      "font": 16,
-     "color": "rgb(246, 242, 234)",
+     "color": "rgb(31, 29, 26)",
      "text": "VALORISLAB"
     },
     {
@@ -578,7 +678,7 @@
      "w": 48.421875,
      "h": 40,
      "font": 30,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "6/6"
     },
     {
@@ -588,7 +688,7 @@
      "w": 388.25,
      "h": 21,
      "font": 18,
-     "color": "rgb(173, 166, 155)",
+     "color": "rgb(94, 87, 77)",
      "text": "Contenu éducatif, pas un conseil financier"
     }
    ],
@@ -601,8 +701,8 @@
   "file": "media/2026/11/2026-11-23-message-suspect-crypto/fb-01.jpg",
   "scale": 1,
   "overflow": false,
-  "scene": "ia-cover-message-suspect-v6",
-  "bytes": 235849,
+  "scene": "ia-cover-message-suspect-v6b",
+  "bytes": 233315,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -610,10 +710,10 @@
     "role": "kicker",
     "x": 72,
     "y": 72,
-    "w": 389.875,
-    "h": 26,
+    "w": 425.875,
+    "h": 50,
     "font": 22,
-    "color": "rgb(226, 190, 124)",
+    "color": "rgb(122, 92, 38)",
     "text": "LE MESSAGE SUSPECT"
    },
    {
@@ -623,7 +723,7 @@
     "w": 884,
     "h": 114.234375,
     "font": 112,
-    "color": "rgb(246, 242, 234)",
+    "color": "rgb(31, 29, 26)",
     "text": "Tu vois le piège ?"
    },
    {
@@ -633,7 +733,7 @@
     "w": 884,
     "h": 36,
     "font": 30,
-    "color": "rgb(173, 166, 155)",
+    "color": "rgb(94, 87, 77)",
     "text": "CONVERSATION FICTIVE."
    },
    {
@@ -643,7 +743,7 @@
     "w": 760.234375,
     "h": 159.59375,
     "font": 40,
-    "color": "rgb(246, 242, 234)",
+    "color": "rgb(31, 29, 26)",
     "text": "Salut ! J'ai doublé mon argent en 3 semaines, je te montre ?"
    },
    {
@@ -653,7 +753,7 @@
     "w": 237.125,
     "h": 50,
     "font": 16,
-    "color": "rgb(246, 242, 234)",
+    "color": "rgb(31, 29, 26)",
     "text": "VALORISLAB"
    }
   ]

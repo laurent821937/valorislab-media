@@ -3,7 +3,7 @@
  "date": "2026-11-23",
  "charte": "v6",
  "format": "F2",
- "bg": "light",
+ "bg": "champagne",
  "theme": "bourse",
  "pillar": "bourse",
  "topic": "Tribunal du mythe : « une action à 5 € peut monter plus facilement qu'une à 500 € », verdict FAUX (1 000 € : 200 actions ou 2 actions, +10 % = +100 € dans les deux cas)",
@@ -48,23 +48,31 @@
    "type": "text",
    "kicker": "La défense",
    "title": "Le prix d'une action ne dit rien *de sa valeur.*",
-   "body": "Il dépend surtout du nombre d'actions que l'entreprise a émises.",
+   "body": "C'est la valeur de l'entreprise divisée par son nombre d'actions.",
    "next": "La preuve en chiffres"
   },
   {
    "type": "text",
    "kicker": "La preuve · exemple fictif",
    "title": "1 000 € investis, *+10 %* pour les deux.",
-   "left": {
-    "label": "200 actions à 5 €",
-    "value": "+100 €"
-   },
-   "right": {
-    "label": "2 actions à 500 €",
-    "value": "+100 €"
-   },
    "note": "Même hausse, même gain. Exemple fictif, avant frais et impôts.",
-   "next": "Le verdict"
+   "next": "Le verdict",
+   "tiles": [
+    {
+     "name": "Action A · fictive",
+     "price": "200 actions à 5 €",
+     "change": "+10 %",
+     "gain": "+100 €",
+     "sub": "sur 1 000 € investis"
+    },
+    {
+     "name": "Action B · fictive",
+     "price": "2 actions à 500 €",
+     "change": "+10 %",
+     "gain": "+100 €",
+     "sub": "sur 1 000 € investis"
+    }
+   ]
   },
   {
    "type": "verdict",
@@ -80,12 +88,12 @@
    "button": "Lien dans ma bio"
   }
  ],
- "alt": "Carrousel VALORISLAB, le tribunal du mythe : une action à 5 € monte-t-elle plus facilement qu'une action à 500 € ? Avec 1 000 €, 200 actions ou 2 actions, +10 % donne +100 € dans les deux cas. Verdict : faux (exemple fictif).",
+ "alt": "Carrousel VALORISLAB, le tribunal du mythe : une action à 5 € monte-t-elle plus vite qu'une action à 500 € ? Avec 1 000 €, 200 actions ou 2 actions, +10 % donne +100 € dans les deux cas. Verdict : faux (exemple fictif).",
  "captions": {
-  "instagram": "« Une action à 5 € peut monter plus facilement qu'une à 500 €. » Vrai ou faux ?\nLe prix affiché ne dit rien de la valeur de l'entreprise ni de son potentiel. Le verdict est slide 5.\nTon verdict avant de swiper ?\n\nExemple fictif : 1 000 € investis à 5 € (200 titres) ou à 500 € (2 titres), hausse de 10 % dans les deux cas, avant frais et impôts. Avant d'investir en bourse, regarde ce que vaut l'entreprise et ce que tu paies en frais, pas le prix d'une action. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #action #belgique #debutant\n\nGuide gratuit : lien dans ma bio.",
-  "facebook": "« Une action à 5 € peut monter plus facilement qu'une à 500 €. » Vrai ou faux ?\nLe prix affiché ne dit rien de la valeur de l'entreprise ni de son potentiel. Le verdict est slide 5.\nTon verdict avant de swiper ?\n\nExemple fictif : 1 000 € investis à 5 € (200 titres) ou à 500 € (2 titres), hausse de 10 % dans les deux cas, avant frais et impôts. Avant d'investir en bourse, regarde ce que vaut l'entreprise et ce que tu paies en frais, pas le prix d'une action. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #action #belgique #debutant\n\nGuide gratuit : lien dans ma bio.",
-  "tiktok_title": "Une action à 5 € monte plus facilement ? Le verdict",
-  "tiktok": "« Une action à 5 € peut monter plus facilement qu'une à 500 €. » Vrai ou faux ? Le prix d'une action ne dit rien de sa valeur. Verdict slide 5. Ton verdict ? Exemple fictif. Contenu éducatif, pas un conseil financier. #bourse #investir #action #belgique #debutant Guide gratuit : lien dans ma bio."
+  "instagram": "« Une action à 5 € monte plus vite qu'une action à 500 €. » C'est l'idée reçue jugée dans ce carrousel.\nLe prix affiché ne dit rien de la valeur de l'entreprise : le verdict est en slide 5.\nTon verdict avant de swiper ?\n\nExemple fictif : 1 000 € investis à 5 € (200 titres) ou à 500 € (2 titres), hausse de 10 % dans les deux cas, avant frais et impôts. Avant d'investir en bourse, regarde ce que vaut l'entreprise et ce que tu paies en frais, pas le prix d'une action. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #action #belgique #debutant\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "« Une action à 5 € monte plus vite qu'une action à 500 €. » C'est l'idée reçue jugée dans ce carrousel.\nLe prix affiché ne dit rien de la valeur de l'entreprise : le verdict est en slide 5.\nTon verdict avant de swiper ?\n\nExemple fictif : 1 000 € investis à 5 € (200 titres) ou à 500 € (2 titres), hausse de 10 % dans les deux cas, avant frais et impôts. Avant d'investir en bourse, regarde ce que vaut l'entreprise et ce que tu paies en frais, pas le prix d'une action. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #action #belgique #debutant\n\nGuide gratuit : lien dans ma bio.",
+  "tiktok_title": "Une action à 5 € monte plus vite ? Le verdict",
+  "tiktok": "« Une action à 5 € monte plus vite qu'une action à 500 €. » Le prix d'une action ne dit rien de sa valeur : verdict en slide 5. Ton verdict ? Exemple fictif. Contenu éducatif, pas un conseil financier. #bourse #investir #action #belgique #debutant Guide gratuit : lien dans ma bio."
  },
  "sources": [
   "Calcul VALORISLAB en Python : 1 000 / 5 = 200 actions, 1 000 / 500 = 2 actions ; 200 × 0,50 = 100 € ; 2 × 50 = 100 €. Montants fictifs."

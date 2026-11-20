@@ -3,7 +3,7 @@
  "charte": "v6",
  "kit_version": "2026-11-20.1",
  "format": "F2",
- "bg": "light",
+ "bg": "champagne",
  "cover_visual": "photo",
  "files": [
   {
@@ -17,7 +17,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 223569,
+   "bytes": 195351,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -25,10 +25,10 @@
      "role": "kicker",
      "x": 72,
      "y": 72,
-     "w": 419.390625,
-     "h": 26,
+     "w": 455.390625,
+     "h": 50,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE TRIBUNAL DU MYTHE"
     },
     {
@@ -63,10 +63,10 @@
     },
     {
      "role": "count",
-     "x": 965.78125,
+     "x": 933.78125,
      "y": 68,
-     "w": 42.21875,
-     "h": 40,
+     "w": 74.21875,
+     "h": 52,
      "font": 30,
      "color": "rgb(94, 87, 77)",
      "text": "1/6"
@@ -85,7 +85,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 124209,
+   "bytes": 131283,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -96,7 +96,7 @@
      "w": 419.390625,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE TRIBUNAL DU MYTHE"
     },
     {
@@ -106,7 +106,7 @@
      "w": 884,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "L'ACCUSATION"
     },
     {
@@ -126,7 +126,7 @@
      "w": 884,
      "h": 66,
      "font": 30,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LA DÉFENSE"
     },
     {
@@ -183,7 +183,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 129609,
+   "bytes": 135966,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -194,7 +194,7 @@
      "w": 419.390625,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE TRIBUNAL DU MYTHE"
     },
     {
@@ -204,7 +204,7 @@
      "w": 884,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LA DÉFENSE"
     },
     {
@@ -224,7 +224,7 @@
      "w": 884,
      "h": 66,
      "font": 30,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LA PREUVE EN CHIFFRES"
     },
     {
@@ -235,7 +235,7 @@
      "h": 116,
      "font": 40,
      "color": "rgb(52, 48, 42)",
-     "text": "Il dépend surtout du nombre d'actions que l'entreprise a émises."
+     "text": "C'est la valeur de l'entreprise divisée par son nombre d'actions."
     },
     {
      "role": "brand",
@@ -281,7 +281,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 137307,
+   "bytes": 171561,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -292,23 +292,23 @@
      "w": 419.390625,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE TRIBUNAL DU MYTHE"
     },
     {
      "role": "kicker",
      "x": 84,
-     "y": 320.625,
+     "y": 188.375,
      "w": 884,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LA PREUVE · EXEMPLE FICTIF"
     },
     {
      "role": "title",
      "x": 84,
-     "y": 376.625,
+     "y": 244.375,
      "w": 884,
      "h": 172.78125,
      "font": 80,
@@ -322,68 +322,138 @@
      "w": 884,
      "h": 66,
      "font": 30,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE VERDICT"
     },
     {
      "role": "stat",
-     "x": 119,
-     "y": 666.40625,
-     "w": 373,
-     "h": 109.1875,
-     "font": 104,
-     "color": "rgb(122, 92, 38)",
+     "x": 123,
+     "y": 784.15625,
+     "w": 360,
+     "h": 77.6875,
+     "font": 74,
+     "color": "rgb(31, 107, 58)",
      "text": "+100 €"
     },
     {
      "role": "stat",
-     "x": 561,
-     "y": 666.40625,
-     "w": 372,
-     "h": 109.1875,
-     "font": 104,
-     "color": "rgb(31, 29, 26)",
+     "x": 569,
+     "y": 784.15625,
+     "w": 360,
+     "h": 77.6875,
+     "font": 74,
+     "color": "rgb(31, 107, 58)",
      "text": "+100 €"
     },
     {
      "role": "statLabel",
-     "x": 119,
-     "y": 622.40625,
-     "w": 373,
-     "h": 26,
-     "font": 22,
-     "color": "rgb(94, 87, 77)",
-     "text": "200 ACTIONS À 5 €"
+     "x": 123,
+     "y": 726.15625,
+     "w": 113.03125,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(31, 107, 58)",
+     "text": "+10 %"
     },
     {
      "role": "statLabel",
-     "x": 561,
-     "y": 622.40625,
-     "w": 372,
-     "h": 26,
-     "font": 22,
-     "color": "rgb(94, 87, 77)",
-     "text": "2 ACTIONS À 500 €"
+     "x": 569,
+     "y": 726.15625,
+     "w": 113.03125,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(31, 107, 58)",
+     "text": "+10 %"
     },
     {
      "role": "card",
-     "x": 84,
-     "y": 587.40625,
-     "w": 884,
-     "h": 223.1875,
+     "x": 92,
+     "y": 461.15625,
+     "w": 422,
+     "h": 473.6875,
      "font": 16,
      "color": "rgb(31, 29, 26)",
-     "text": "200 ACTIONS À 5 € +100 € 2 ACTIONS À 500 € +100 €"
+     "text": "Action A · fictive 200 actions à 5 € +10 % +100 € sur 1 000 € investis"
+    },
+    {
+     "role": "card",
+     "x": 538,
+     "y": 461.15625,
+     "w": 422,
+     "h": 473.6875,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": "Action B · fictive 2 actions à 500 € +10 % +100 € sur 1 000 € investis"
     },
     {
      "role": "note",
      "x": 84,
-     "y": 836.59375,
+     "y": 968.84375,
      "w": 884,
      "h": 34.796875,
      "font": 24,
      "color": "rgb(94, 87, 77)",
      "text": "Même hausse, même gain. Exemple fictif, avant frais et impôts."
+    },
+    {
+     "role": "listItem",
+     "x": 123,
+     "y": 492.15625,
+     "w": 360,
+     "h": 46,
+     "font": 30,
+     "color": "rgb(31, 29, 26)",
+     "text": "Action A · fictive"
+    },
+    {
+     "role": "listItem",
+     "x": 123,
+     "y": 552.15625,
+     "w": 360,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(94, 87, 77)",
+     "text": "200 actions à 5 €"
+    },
+    {
+     "role": "listItem",
+     "x": 123,
+     "y": 867.84375,
+     "w": 360,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(94, 87, 77)",
+     "text": "sur 1 000 € investis"
+    },
+    {
+     "role": "listItem",
+     "x": 569,
+     "y": 492.15625,
+     "w": 360,
+     "h": 46,
+     "font": 30,
+     "color": "rgb(31, 29, 26)",
+     "text": "Action B · fictive"
+    },
+    {
+     "role": "listItem",
+     "x": 569,
+     "y": 552.15625,
+     "w": 360,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(94, 87, 77)",
+     "text": "2 actions à 500 €"
+    },
+    {
+     "role": "listItem",
+     "x": 569,
+     "y": 867.84375,
+     "w": 360,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(94, 87, 77)",
+     "text": "sur 1 000 € investis"
     },
     {
      "role": "brand",
@@ -429,7 +499,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 145766,
+   "bytes": 155635,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -440,13 +510,13 @@
      "w": 419.390625,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE TRIBUNAL DU MYTHE"
     },
     {
      "role": "title",
      "x": 84,
-     "y": 406,
+     "y": 577.609375,
      "w": 884,
      "h": 172.78125,
      "font": 80,
@@ -456,7 +526,7 @@
     {
      "role": "body",
      "x": 84,
-     "y": 612.78125,
+     "y": 784.390625,
      "w": 884,
      "h": 116,
      "font": 40,
@@ -465,10 +535,10 @@
     },
     {
      "role": "stat",
-     "x": 86.08526611328125,
-     "y": 162.00820922851562,
+     "x": 102.08526611328125,
+     "y": 329.6175842285156,
      "w": 560.8450927734375,
-     "h": 235.98358154296875,
+     "h": 235.98361206054688,
      "font": 140,
      "color": "rgb(137, 105, 47)",
      "text": "FAUX"
@@ -517,7 +587,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 148616,
+   "bytes": 153858,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -528,7 +598,7 @@
      "w": 419.390625,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE TRIBUNAL DU MYTHE"
     },
     {
@@ -538,7 +608,7 @@
      "w": 884,
      "h": 26,
      "font": 22,
-     "color": "rgb(122, 92, 38)",
+     "color": "rgb(107, 80, 31)",
      "text": "LE GUIDE GRATUIT"
     },
     {
@@ -622,7 +692,7 @@
   "scale": 1,
   "overflow": false,
   "scene": "ia-cover-mythe-action-v6",
-  "bytes": 223092,
+  "bytes": 194569,
   "W": 1080,
   "H": 1350,
   "boxes": [
@@ -630,10 +700,10 @@
     "role": "kicker",
     "x": 72,
     "y": 72,
-    "w": 419.390625,
-    "h": 26,
+    "w": 455.390625,
+    "h": 50,
     "font": 22,
-    "color": "rgb(122, 92, 38)",
+    "color": "rgb(107, 80, 31)",
     "text": "LE TRIBUNAL DU MYTHE"
    },
    {

@@ -55,6 +55,13 @@ Le fil ne montre jamais deux couvertures identiques côte à côte : fond altern
 - `visual.stamp` (tampon) et `visual.bubble` (bulle) se combinent avec la photo.
 - Contrôle : relecture visuelle (aucun texte, logo, chiffre ni objet doré, visage fidèle) ; `decor_check.py` ne s'applique qu'aux décors sans personne (la peau et la lumière chaude le font échouer à tort).
 
+## Lumière, vie et réalisme (demande de Laurent, 20/11/2026, prime sur l'alternance sombre/clair du brief)
+- **Pas de post sombre** : les fonds alternent entre **ivoire** (`bg: "light"`, `#F3EEE4`) et **champagne** (`bg: "champagne"`, `#EDE2CF`, accent texte `#6B501F`). Le fond sombre (`dark`) reste disponible mais n'est plus utilisé par défaut.
+- **Images IA lumineuses et enthousiastes** : lumière naturelle du matin, tons crème, bois miel, vert sauge, protagoniste souriant, vif, confiant (jamais l'air sombre ou inquiet), scènes réalistes de la vie quotidienne liées au sujet ; moitié basse claire pour le titre.
+- **Éléments réalistes propres à la niche** dans les slides intérieures : téléphone avec conversation (`chat` + `phone: {contact, status, time}`), ticket de caisse (`receipt: {title, rows, total, foot}`), tuiles d'appli d'investissement fictives (`tiles: [{name, price, change, gain, sub}]`). Toujours marqués fictifs.
+- Bulle « moi » dorée, bulle reçue blanche ; signaux d'alerte surlignés d'or.
+- **Contrôles bloquants** : `kit/text_check.py` (cohérence slides ↔ légendes : chiffres, renvoi à la slide de révélation, une seule question, fin « Guide gratuit : lien dans ma bio. », mention), et dans `render.py` la mesure des éléments coupés ou collés au bord (bulles, cartes, tampon, ticket, tuiles, téléphone), du texte coupé et du texte réduit sous 90 %.
+
 ## Dernière slide (brief, section 6)
 « C'est l'erreur n° X des 20 erreurs du guide. » (« C'est l'une des 20 erreurs du guide. » tant que `state/guide-erreurs.json` n'a pas le numéro), « Guide gratuit, lien dans ma bio. », bouton « Lien dans ma bio → », valorislab.be, monogramme + VALORISLAB, mention « Contenu éducatif, pas un conseil financier ». Plus de « Commente GUIDE ».
 

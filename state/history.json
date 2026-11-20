@@ -816,6 +816,22 @@
    "status": "ok",
    "content_id": "cover-mythe-action-v6",
    "reference": false
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "cover-petites-depenses-v6b",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "cover-petites-depenses-v6b",
+   "reference": true
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "cover-message-suspect-v6b",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "cover-message-suspect-v6b",
+   "reference": true
   }
  ]
 }
