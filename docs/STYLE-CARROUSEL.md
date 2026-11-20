@@ -16,6 +16,9 @@ Inspiration : style des carrousels « studio » modernes envoyés par Laurent (r
 - `app` : fenêtre d'appli fictive (`title`, `label`, `value`, `chip`, `chart`).
 - `receipt` : ticket de caisse (lignes, total dans une étiquette en dégradé).
 - `options[]` (cartes A/B/C, `state: out|win`), `steps[]` (cartes numérotées), `tiles[]` (tuiles d'appli de bourse fictives), `big` (chiffre géant), verdict (`type: "verdict"`, tampon).
+- `dots` `{count, on, cols, label}` : grille de pastilles (objets du quotidien rendus visibles, `on` en dégradé).
+- `script` `{head, lines[]}` : la phrase exacte à se dire ou à dire, entre guillemets.
+- `recap` `{head, items[]}` : « À enregistrer », 3 lignes maximum (incite à sauvegarder).
 - `ann[]` : **annotations** = pilules noires avec flèche en dégradé, posées à cheval sur le bord droit du visuel, jamais sur son texte (contrôlé). Saut de ligne : `\n`.
 
 ## Protagoniste : ne jamais le modifier (Laurent, 20/11/2026)

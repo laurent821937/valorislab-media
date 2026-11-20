@@ -234,7 +234,7 @@ LAYOUT_JS_V7 = """() => {
   const roles = {kicker: '.ftag,.badge', title: '.title', lead: '.sub', body: '.ann span',
     stat: '.big,.card .v,.stamp,.wv,.tile .gn,.rt span:last-child', statLabel: '.wl,.chip,.tile .nm,.tile .px,.tile .sb,.chead b,.chead span,.rh,.rt span:first-child',
     card: '.card,.phone,.receipt,.tile,.win,.ann,.bubble', note: '.note,.source,.fict,.rf',
-    listItem: '.msg,.card .t b,.card .t span,.rr', button: '.band .bg,.next',
+    listItem: '.msg,.card .t b,.card .t span,.rr,.script p,.recap .r,.dots-lab', button: '.band .bg,.next',
     brand: '.mono', count: '.count', next: '.band small,.band p,.mono small'};
   const boxes = [];
   for (const [role, q] of Object.entries(roles)) {
@@ -252,14 +252,14 @@ CLIP_JS_V7 = """() => {
   // phone screen, no text cut, nothing hidden under the swipe button, the brand line or the cover bubble.
   const out = [], W = innerWidth, H = innerHeight;
   const lab = e => (e.innerText || e.className).replace(/\\s+/g, ' ').slice(0, 40);
-  document.querySelectorAll('.title,.sub,.ann,.phone,.win,.card,.receipt,.tile,.stamp,.big,.next,.bubble,.fict,.badge,.ftag,.note,.source,.band .bg,.band p,.band small').forEach(e => {
+  document.querySelectorAll('.title,.sub,.ann,.phone,.win,.card,.receipt,.tile,.stamp,.big,.next,.bubble,.fict,.badge,.ftag,.note,.source,.band .bg,.band p,.band small,.dots,.script,.recap').forEach(e => {
     const r = e.getBoundingClientRect();
     if (r.width < 2) return;
     if (r.left < 40 || r.right > W - 40 || r.top < 40 || r.bottom > H - 160)
       out.push(`élément « ${lab(e)} » hors zone (${Math.round(r.left)}–${Math.round(r.right)} × ${Math.round(r.top)}–${Math.round(r.bottom)} px)`);
   });
   const M = document.getElementById('main').getBoundingClientRect();
-  document.querySelectorAll('#main .phone,#main .win,#main .cards,#main .receipt,#main .tiles,#main .anns .ann,#main .big,#main .note,#main .source,#main .sub,#main .title').forEach(e => {
+  document.querySelectorAll('#main .phone,#main .win,#main .cards,#main .receipt,#main .tiles,#main .anns .ann,#main .big,#main .note,#main .source,#main .sub,#main .title,#main .dots,#main .dots-lab,#main .script,#main .recap').forEach(e => {
     const r = e.getBoundingClientRect();
     if (r.bottom > M.bottom + 0.5 || r.right > M.right + 0.5) out.push(`élément « ${lab(e)} » coupé en bas ou à droite`);
   });
@@ -270,7 +270,7 @@ CLIP_JS_V7 = """() => {
     if (e.scrollWidth > e.clientWidth + 1) out.push(`texte coupé dans « ${lab(e)} »`); });
   const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
   const blockers = [...document.querySelectorAll('.next,.mono,.bubble,.fict,.cstamp .stamp')];
-  document.querySelectorAll('#main .title,#main .sub,#main .big,.ann,.phone,.win,.card,.receipt,.tile,.note,.source,.stamp.huge').forEach(e => {
+  document.querySelectorAll('#main .title,#main .sub,#main .big,.ann,.phone,.win,.card,.receipt,.tile,.note,.source,.stamp.huge,.dots,.script,.recap').forEach(e => {
     const r = e.getBoundingClientRect();
     blockers.forEach(b => { if (b !== e && !b.contains(e) && !e.contains(b) && hit(r, b.getBoundingClientRect()))
       out.push(`« ${lab(e)} » chevauche « ${lab(b)} »`); });

@@ -49,7 +49,7 @@ Chaque semaine, la routine choisit **3 formats différents** parmi ces 8. Jamais
 
 **5. Des personnages fictifs auxquels on s'identifie**, en rotation, toujours marqués « cas fictif » : Sarah, 26 ans, premier CDI à 1 900 € net ; Mehdi, 34 ans, deux enfants, ménage serré ; Julie, 41 ans, reprend ses finances après une séparation ; Tom, 22 ans, étudiant avec un job ; Inès et Lucas, 30 ans, qui préparent un achat ; Karim, 38 ans, indépendant. Le protagoniste VALORISLAB reste le héros des épisodes (F8).
 
-**6. Accroches : 12 styles, en rotation.** Chaque contenu porte son style dans `hook_style` ; ses 5 variantes (`hook_variants`) couvrent au moins 3 styles différents, puis on garde la meilleure. Jamais deux fois le même style dans la même semaine (contrôlé par `text_check.py`), et on évite de reprendre le style des 3 derniers posts publiés.
+**6. Accroches : 14 styles, en rotation.** Chaque contenu porte son style dans `hook_style` ; ses 5 variantes (`hook_variants`) couvrent au moins 3 styles différents, puis on garde la meilleure. Jamais deux fois le même style dans la même semaine (contrôlé par `text_check.py`), et on évite de reprendre le style des 3 derniers posts publiés.
 
 | `hook_style` | Style | Exemple |
 |---|---|---|
@@ -65,10 +65,29 @@ Chaque semaine, la routine choisit **3 formats différents** parmi ces 8. Jamais
 | `liste` | Liste avec tension | « 3 lignes que personne ne lit sur son relevé. » |
 | `personnage` | Cas fictif auquel on s'identifie | « Sarah, 26 ans, premier salaire. Elle fait l'erreur n° 1. » |
 | `episode` | Épisode du protagoniste | « Épisode 4 · Il vient de toucher sa prime. Mauvaise idée. » |
+| `pov` | Point de vue (on se met dans la scène) | « POV : ton 13e mois vient de tomber. » |
+| `objet` | Un montant rendu visible avec des objets du quotidien | « 52 cafés. Voilà ce que coûte ton lundi. » |
 
 **7. Légende humaine** : ligne 1 = la scène ou l'émotion (pas la leçon) avec le mot-clé ; ligne 2 = la tension ou ce qu'on va découvrir ; ligne 3 = une seule question, personnelle (« Et toi, tu fais comment ? »). Puis la source, la mention et « Guide gratuit : lien dans ma bio. ».
 
 **8. Stratégie réseaux sociaux (rappel)** : 1 sujet = 1 situation = 1 émotion = 1 réflexe. Couverture lisible en 1 seconde, mécanisme de rétention jusqu'à l'avant-dernière slide, réponse surprenante mais vraie, sortie positive, mot-clé recherché (référencement), une seule question pour les commentaires. Le critère « Situation » du score (20 points) ne donne le maximum que si le test « je me sens concerné » est passé et que l'émotion est claire.
+
+## Ce que font les meilleurs comptes finance, version VALORISLAB (20/11/2026)
+Inspiration de mécanismes seulement (jamais leurs visuels, leurs textes ni leurs personnages). Comptes étudiés : Humphrey Yang, Vivian Tu (Your Rich BFF), Ramit Sethi, Tiffany Aliche (The Budgetnista), Visual Capitalist, Finary, Graham Stephan. Les chiffres de performance publiés en ligne sur les carrousels ne sont pas vérifiables : on se fie à nos propres mesures (section « Mesure »).
+
+| Mécanisme | Vu chez | Notre version (charte v7) | Où |
+|---|---|---|---|
+| Rendre un montant visible avec des objets | Humphrey Yang | Grille de pastilles `dots` (52 cafés, 12 abonnements dont 3 jamais ouverts), toujours « exemple fictif » ou chiffre sourcé | Slide 2 ou 3, accroche `objet` |
+| Parler comme une amie qui s'y connaît, avec humour | Vivian Tu | Tutoiement, phrases courtes, une pointe d'humour sur la scène, jamais sur la personne ; accroche `pov` | Couverture et légende |
+| Dépenser sans culpabilité, couper ce qu'on ne remarque plus | Ramit Sethi | Fin positive : on garde ce qu'on aime, on coupe le reste ; jamais de honte | Slide de méthode |
+| Des scripts mot à mot | Ramit Sethi | Bloc `script` : la phrase exacte à se dire ou à dire (à sa banque, à un vendeur, à un inconnu qui propose un « plan ») | Avant-dernière ou slide de méthode |
+| Un plan en étapes, à enregistrer | The Budgetnista | Bloc `recap` « À enregistrer » (3 lignes maximum) : c'est ce qui fait sauvegarder le post | Slide de méthode ou de révélation |
+| Un seul graphique, un seul message | Visual Capitalist | Tuiles, ticket, pastilles : une donnée par slide, lisible en 1 seconde | Slides intérieures |
+| Montrer l'écran réel (appli, relevé) | Finary | Fenêtre d'appli, téléphone et ticket fictifs, annotés | Formats F4, F6, F7 |
+| Décortiquer un document ou une pub | Graham Stephan | Format F4 « Trouve l'erreur » et F6 « La facture cachée » | Sujets du mois |
+| Un rendez-vous récurrent | Comptes en séries | Épisodes numérotés du protagoniste (F8), même jour chaque semaine | `state/series.json` |
+
+**Règle d'adaptation** : chaque mécanisme passe par le test « je me sens concerné », le ton humain, la conformité (sources, mention, aucune promesse) et le style v7. Au moins **un mécanisme de ce tableau par carrousel**, noté dans `virality` (`mecanismes: [...]`).
 
 ## Format visuel
 **Charte v7 « moderne » (validée le 20/11/2026) : `docs/STYLE-CARROUSEL.md`**, rendue par le kit (`kit/render.py`, gabarit `kit/templates/slide-v7.html.j2`), 5 à 7 slides. Les chartes v5 et antérieures ne servent plus qu'à re-rendre d'anciens contenus.

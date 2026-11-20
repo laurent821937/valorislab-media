@@ -20,7 +20,7 @@ import json, pathlib, re, sys, unicodedata
 
 END = "Guide gratuit : lien dans ma bio."
 HOOK_STYLES = {"scene", "miroir", "chiffre-choc", "mythe", "defi", "avant-apres", "moment", "message",
-               "contre-intuitif", "liste", "personnage", "episode"}
+               "contre-intuitif", "liste", "personnage", "episode", "pov", "objet"}
 JARGON = ["etf", "tob", "taeg", "ter", "précompte", "capitalisant", "distribuant", "cfd", "levier", "reynders",
           "domiciliation", "staking", "wallet", "dividende", "obligation", "tracker", "plus-value"]
 

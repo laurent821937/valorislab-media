@@ -96,6 +96,15 @@ body.t-cover #main,body.t-hook #main{right:72px}body.t-cover .stage,body.t-hook 
 .bubble small{display:block;font-size:20px;color:#888;margin-bottom:8px;font-weight:600}
 .fict{position:absolute;left:72px;bottom:270px;background:rgba(22,19,15,.86);color:#fff;border-radius:999px;font-size:22px;font-weight:600;padding:10px 22px;z-index:4}
 .cstamp{position:absolute;right:110px;bottom:320px;z-index:4}
+.dots{display:grid;grid-template-columns:repeat(var(--cols,13),1fr);gap:10px;max-width:760px}
+.dots i{aspect-ratio:1;border-radius:30%;background:#E3DBCF}.dots i.on{background:var(--grad)}
+.dots-lab{margin-top:18px;font-weight:700;font-size:calc(32px * var(--s))}.dots-lab span{color:var(--mute);font-weight:500}
+.script{background:#fff;border-radius:34px;padding:38px 42px;box-shadow:0 14px 34px rgba(40,30,20,.08);border-left:0;position:relative;max-width:820px}
+.script .sh{font-size:22px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+.script p{margin:0 0 14px;font-size:calc(42px * var(--s));line-height:1.25;font-weight:700;letter-spacing:-.01em}
+.recap{background:#fff;border-radius:34px;padding:36px 42px;gap:18px;box-shadow:0 14px 34px rgba(40,30,20,.08);display:flex;flex-direction:column;gap:12px;max-width:860px}
+.recap .sh{font-size:22px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.recap div.r{display:flex;gap:16px;align-items:baseline;font-size:calc(40px * var(--s));font-weight:600;line-height:1.25}.recap div.r b{color:var(--teal)}
 .note{margin-top:22px;font-size:calc(28px * var(--s));color:var(--mute);line-height:1.35}
 .source{margin-top:18px;font-size:22px;color:var(--mute)}
 .next{position:absolute;right:110px;bottom:176px;display:flex;align-items:center;gap:18px;background:var(--grad);color:#fff;z-index:5;
@@ -127,7 +136,7 @@ body.t-cover #main,body.t-hook #main{right:72px}body.t-cover .stage,body.t-hook 
   {% if s.type == "verdict" %}<div class="stamp huge">{{ s.stamp }}</div>{% endif %}
   {% if s.title %}<div class="title">{{ s.title|md }}</div>{% endif %}
   {% if s.body %}<div class="sub">{{ s.body|md }}</div>{% endif %}
-  {% set has_vis = s.phone or s.app or s.receipt or s.options or s.tiles or s.steps or s.big %}
+  {% set has_vis = s.phone or s.app or s.receipt or s.options or s.tiles or s.steps or s.big or s.dots or s.script or s.recap %}
   {% if has_vis %}
   <div class="stage{% if not s.ann %} solo{% endif %}">
     <div class="vis">
@@ -144,6 +153,9 @@ body.t-cover #main,body.t-hook #main{right:72px}body.t-cover .stage,body.t-hook 
     {% if s.tiles %}<div class="tiles">{% for tl in s.tiles %}<div class="tile"><div class="nm"><i></i>{{ tl.name }}</div><div class="px">{{ tl.price }}</div>
       <svg viewBox="0 0 300 70"><path d="M0 62 C50 58 80 50 120 44 S200 30 240 22 S280 12 300 8" fill="none" stroke="#1E8C78" stroke-width="6" stroke-linecap="round"/></svg>
       <div class="chip">▲ {{ tl.change }}</div><div class="gn">{{ tl.gain }}</div><div class="sb">{{ tl.sub }}</div></div>{% endfor %}</div>{% endif %}
+    {% if s.dots %}<div class="dots" style="--cols:{{ s.dots.cols or 13 }}">{% for k in range(s.dots.count) %}<i{% if k < (s.dots.on or 0) %} class="on"{% endif %}></i>{% endfor %}</div>{% if s.dots.label %}<div class="dots-lab">{{ s.dots.label|md }}</div>{% endif %}{% endif %}
+    {% if s.script %}<div class="script"><div class="sh">{{ s.script.head or "Ce que tu peux dire" }}</div>{% for l in s.script.lines %}<p>« {{ l|md }} »</p>{% endfor %}</div>{% endif %}
+    {% if s.recap %}<div class="recap"><div class="sh">{{ s.recap.head or "À enregistrer" }}</div>{% for r in s.recap['items'] %}<div class="r"><b>✓</b><span>{{ r|md }}</span></div>{% endfor %}</div>{% endif %}
     {% if s.big %}<div class="big">{{ s.big.value }}</div>{% if s.big.label %}<div class="note">{{ s.big.label|md }}</div>{% endif %}{% endif %}
     {% if s.note %}<div class="note">{{ s.note|md }}</div>{% endif %}
     {% if s.source %}<div class="source">Source : {{ s.source }}</div>{% endif %}
