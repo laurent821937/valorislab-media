@@ -1,4 +1,4 @@
-# Charte carrousel VALORISLAB v7 « moderne » (validée par Laurent le 20/11/2026, en vigueur)
+# Charte carrousel VALORISLAB v7 « moderne » (validée définitivement par Laurent le 20/11/2026, en vigueur pour tous les posts)
 
 Inspiration : style des carrousels « studio » modernes envoyés par Laurent (référence de STYLE uniquement : aucune de leurs images, aucun texte, aucune couleur de marque reprise). Gabarit `kit/templates/slide-v7.html.j2`, contenu `"charte": "v7"`, rendu par `kit/render.py` (même chaîne que la v6). Maquette de départ : `reports/maquettes/maquette-v7-moderne.jpg`, prototype `kit/prototypes/v7-moderne.py`. Le brief (`docs/brief-refonte-carrousels-2026-11.md`, sections 2 à 7) reste la règle éditoriale.
 
@@ -27,6 +27,10 @@ Référence unique `kit/assets/protagonist/ref-sweat-noir.jpg` (voir `kit/assets
 
 ## Dernière slide
 - Photo lumineuse du protagoniste (`cta_photo`, différente de la couverture), titre « C'est l'une des 20 erreurs *du guide.* » (« l'erreur n° X » dès que la liste numérotée est fournie), bandeau sombre en bas : « Guide gratuit | LIEN EN BIO », phrase, « valorislab.be · Contenu éducatif, pas un conseil financier ».
+
+## Légendes
+- Instagram et TikTok : une question, renvoi à la slide de la réponse (avant-dernière), dernière ligne « Guide gratuit : lien dans ma bio. ».
+- Facebook ne reçoit qu'une image (`fb-01.jpg`) : la légende donne la réponse, sans « slide », « swipe » ni « carrousel » (contrôlé par `text_check.py`).
 
 ## Contrôles (bloquants)
 `render.py` (CLIP_JS_V7) : rien hors de la zone (40 px de marge, 160 px en bas), rien de coupé, bulles dans l'écran, rien sous le bouton de swipe, le monogramme ou la bulle de couverture, annotations jamais sur un texte, titre de couverture ≥ 110 px sur 4 lignes maximum, 25 mots maximum par slide (chiffres non comptés). Puis `text_check.py`, `seo_check.py`, `qa.py` (contraste, zones TikTok, grille Instagram), `validate.py`.

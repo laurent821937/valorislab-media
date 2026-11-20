@@ -62,9 +62,11 @@ def check(path):
         missing = sorted(x for x in numbers(re.sub(r"(#\w+|slide \d+)", " ", cap, flags=re.I)) if x not in pool)
         if missing:
             errors.append(f"{net} : chiffres absents du carrousel et des sources : {', '.join(missing)}")
-        for ref in re.findall(r"slide (\d+)", norm(cap), flags=re.I):
+        for ref in ([] if net == "facebook" else re.findall(r"slide (\d+)", norm(cap), flags=re.I)):
             if int(ref) != n - 1:
                 errors.append(f"{net} : renvoie à la slide {ref}, la révélation est en slide {n - 1}")
+        if net == "facebook" and re.search(r"slide \d|swip|carrousel", norm(cap), flags=re.I):
+            errors.append("facebook : une seule image est publiée sur Facebook, pas de renvoi à une slide")
         if "commente guide" in norm(cap).lower():
             errors.append(f"{net} : « Commente GUIDE » est supprimé (brief, section 6)")
         if net == "tiktok_title":

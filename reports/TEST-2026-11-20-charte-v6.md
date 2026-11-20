@@ -58,3 +58,8 @@ Sources : FSMA (fausses plateformes de trading crypto, « Peut-on devenir riche 
 - Contrôles : render, text_check, seo_check, qa (0 erreur, 0 avertissement), validate avec URL publique (commit c8e191e) : OK.
 - Buffer : 9 brouillons mis à jour avec les visuels v7 (statut draft, aucune date). Rien de programmé.
 - Aperçu : `reports/maquettes/v7-semaine-48.jpg`.
+
+## Validation définitive (Laurent, 20/11/2026)
+- « Je valide tout » : style v7, protagoniste figé (`kit/assets/protagonist/ref-sweat-noir.jpg`), alternance selfie / couverture graphique, dernière slide commune, légendes Facebook corrigées, fusion dans `main`.
+- Légendes Facebook W48 réécrites (réponse donnée, plus de renvoi à une slide) et mises à jour dans Buffer (brouillons). `text_check.py` bloque désormais « slide », « swipe » et « carrousel » sur Facebook.
+- Dates W48 : non fournies, rien de programmé. Liste des 20 erreurs du guide : toujours attendue.
