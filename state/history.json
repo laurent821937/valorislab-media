@@ -841,6 +841,30 @@
    "generations": 1,
    "status": "ok",
    "content_id": "decor-effet-de-levier-fb-v5"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "cover-petites-depenses-v6",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "cover-petites-depenses-v6",
+   "reference": true
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "cover-message-suspect-v6",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "cover-message-suspect-v6",
+   "reference": true
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "cover-mythe-action-v6",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "cover-mythe-action-v6",
+   "reference": false
   }
  ]
 }

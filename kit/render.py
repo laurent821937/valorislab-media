@@ -224,13 +224,14 @@ def render_v6(c, a):
     cv = cover.get("visual") or {}
     cat = scene_catalog()
     photo = None
-    if cv.get("type") == "face":
+    if cv.get("type") in ("face", "photo"):
         meta = cat.get(cv.get("photo", ""), {})
         src = KIT / "assets" / "scenes" / meta.get("file", "")
         if not meta or not src.exists():
             print(f"photo du protagoniste introuvable : {cv.get('photo')}", file=sys.stderr)
             sys.exit(2)
-        photo = dict(src=f"../assets/scenes/{src.name}", pos=cv.get("pos", meta.get("face_focus", "60% 22%")), name=cv["photo"])
+        photo = dict(src=f"../assets/scenes/{src.name}", pos=cv.get("pos", meta.get("face_focus", meta.get("focus", "50% 0%"))), name=cv["photo"])
+    mock = next((KIT / "assets" / f"guide-mockup.{e}" for e in ("png", "webp", "jpg") if (KIT / "assets" / f"guide-mockup.{e}").exists()), None)
     out_dir = pathlib.Path(a.out) / date[:4] / date[5:7] / cid
     out_dir.mkdir(parents=True, exist_ok=True)
     env = Environment(loader=FileSystemLoader(str(KIT / "templates")), autoescape=True)
@@ -262,6 +263,7 @@ def render_v6(c, a):
     def shoot(page, s, i, nn, name, visual):
         hx, hy = halo_for(f"{cid}-{name}")
         tmp_html.write_text(tpl.render(s=s, i=i, n=nn, bg=bg, tag=tag, visual=visual,
+                                       guide_mockup=f"../assets/{mock.name}" if mock else None,
                                        photo_src=photo["src"] if photo else None, photo_pos=photo["pos"] if photo else None,
                                        halo_x=hx, halo_y=hy, **f), encoding="utf-8")
         page.goto(tmp_html.as_uri())

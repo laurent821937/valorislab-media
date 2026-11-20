@@ -42,6 +42,19 @@ Le fil ne montre jamais deux couvertures identiques côte à côte : fond altern
 - Types de slide (`type`) : `text` (`kicker`, `title`, `body`, `big{value,label}`, `left`/`right` pour deux colonnes chiffrées, `ticket`, `steps`, `note`, `source`), `options` (A/B/C ; `state: "out"` = éliminée, `"win"` = gagnante), `chat` (`messages[{from: "them"|"me", text, flag}]`, le `flag` surligne le signal d'alerte), `verdict` (`stamp` VRAI / FAUX / ÇA DÉPEND), `cta`.
 - Corps : titres 82 px, texte 44 px, cartes 32 à 40 px ; minimum 30 px partout (`qa.py`).
 
+## Finition premium (demande de Laurent, 20/11/2026)
+- **Titres en Playfair Display** (600, casse de phrase, fin en *italique* accent or) ; texte, étiquettes et chiffres de carte en Inter ; grands chiffres en Playfair.
+- **Filets or fins** : cadre intérieur de 1 px (à 36 px du bord, il s'arrête au-dessus de la zone TikTok), trait devant l'étiquette de format et les surtitres, trait après la raison de swiper.
+- Étiquette de format et surtitres en petites capitales espacées (0,24 em) ; compteur « 1/6 » en Playfair italique ; monogramme + VALORISLAB en bas à gauche sur toutes les slides.
+- Cartes sobres : bord fin, coins de 18 px, ombre diffuse ; lettres d'option et numéros en Playfair italique cerclés d'or.
+- Dernière slide : maquette du guide (`kit/assets/guide-mockup.jpg`), bouton « Lien dans ma bio », valorislab.be en italique.
+
+## Couverture photo IA (`visual.type: "photo"`, 20/11/2026)
+- Image pleine page 1080 × 1350 générée pour le contenu (Make 8230680, entrée `reference_url`) : **le protagoniste à partir de sa photo de référence** (`kit/assets/protagonist/ref-portrait.jpg` ou `ref-pensif.jpg`, même visage, nouvelle scène liée au sujet), ou une nature morte premium pour les couvertures sans visage (alternance du brief : visage une couverture sur deux).
+- Le sujet occupe la moitié haute ; un dégradé vers le fond (sombre ou ivoire) porte le titre dans la moitié basse (contenu de y 500 à y 1088).
+- `visual.stamp` (tampon) et `visual.bubble` (bulle) se combinent avec la photo.
+- Contrôle : relecture visuelle (aucun texte, logo, chiffre ni objet doré, visage fidèle) ; `decor_check.py` ne s'applique qu'aux décors sans personne (la peau et la lumière chaude le font échouer à tort).
+
 ## Dernière slide (brief, section 6)
 « C'est l'erreur n° X des 20 erreurs du guide. » (« C'est l'une des 20 erreurs du guide. » tant que `state/guide-erreurs.json` n'a pas le numéro), « Guide gratuit, lien dans ma bio. », bouton « Lien dans ma bio → », valorislab.be, monogramme + VALORISLAB, mention « Contenu éducatif, pas un conseil financier ». Plus de « Commente GUIDE ».
 

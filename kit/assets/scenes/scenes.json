@@ -543,5 +543,53 @@
   "source": "ia",
   "created": "2026-11-20",
   "style": "v5-sobre"
+ },
+ "ia-cover-petites-depenses-v6": {
+  "file": "ia-cover-petites-depenses-v6.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "le protagoniste le soir dans sa cuisine, regarde son téléphone, sac de livraison et café à emporter (dépenses du quotidien)",
+  "pillars": [
+   "budget"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v6-premium",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-portrait.jpg"
+ },
+ "ia-cover-message-suspect-v6": {
+  "file": "ia-cover-message-suspect-v6.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "le protagoniste la nuit, visage éclairé par son téléphone, regard méfiant (message suspect, arnaque)",
+  "pillars": [
+   "arnaque"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v6-premium",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-pensif.jpg"
+ },
+ "ia-cover-mythe-action-v6": {
+  "file": "ia-cover-mythe-action-v6.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 0%",
+  "mood": "maillet de juge en noyer sur lin ivoire, lumière du matin (verdict, mythe)",
+  "pillars": [
+   "bourse"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v6-premium",
+  "face": false,
+  "reference": null
  }
 }

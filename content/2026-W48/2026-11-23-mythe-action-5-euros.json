@@ -30,10 +30,11 @@
  "slides": [
   {
    "type": "cover",
-   "title": "Une action à 5 € peut monter *plus facilement.*",
+   "title": "« Une action à 5 € monte *plus vite.* »",
    "visual": {
-    "type": "stamp",
-    "text": "Verdict ?"
+    "type": "photo",
+    "photo": "ia-cover-mythe-action-v6",
+    "stamp": "Verdict ?"
    }
   },
   {
@@ -101,7 +102,7 @@
   },
   "note": "Mythe courant chez les débutants (prix affiché dans l'appli), verdict sur l'avant-dernière slide. Verdict FAUX et non « ça dépend » : le prix unitaire n'a pas d'effet sur le rendement.",
   "hook_variants": [
-   "Une action à 5 € peut monter *plus facilement.*",
+   "« Une action à 5 € monte *plus vite.* »",
    "5 € ou 500 € : *laquelle rapporte plus ?*",
    "Une action pas chère, *une bonne affaire ?*",
    "« Elle ne coûte que 5 €. » *Et alors ?*",

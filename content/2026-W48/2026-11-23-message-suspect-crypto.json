@@ -34,8 +34,8 @@
    "title": "Tu vois *le piège ?*",
    "subtitle": "Conversation fictive.",
    "visual": {
-    "type": "face",
-    "photo": "bureau-document",
+    "type": "photo",
+    "photo": "ia-cover-message-suspect-v6",
     "bubble": "Salut ! J'ai doublé mon argent en 3 semaines, je te montre ?"
    }
   },

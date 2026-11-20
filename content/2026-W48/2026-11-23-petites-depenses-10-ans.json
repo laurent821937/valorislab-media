@@ -32,11 +32,12 @@
   {
    "type": "cover",
    "number": "3 000 €",
-   "title": "En 10 ans, une seule dépense. *Laquelle ?*",
+   "title": "Une dépense. *Laquelle ?*",
    "visual": {
-    "type": "face",
-    "photo": "portrait-bureau"
-   }
+    "type": "photo",
+    "photo": "ia-cover-petites-depenses-v6"
+   },
+   "subtitle": "En 10 ans · exemple fictif"
   },
   {
    "type": "options",
@@ -130,7 +131,7 @@
   },
   "note": "Boucle ouverte tenue jusqu'à la slide 5 (réponse non devinable : la livraison n'est pas la plus chère à l'unité). Guide : numéro d'erreur inconnu (state/guide-erreurs.json vide).",
   "hook_variants": [
-   "En 10 ans, une seule dépense. *Laquelle ?*",
+   "3 000 € · Une dépense. *Laquelle ?*",
    "3 dépenses. Une seule dépasse *3 000 €.*",
    "Café, streaming ou livraison : *qui coûte le plus ?*",
    "Ta pire dépense *n'est pas la plus chère.*",
