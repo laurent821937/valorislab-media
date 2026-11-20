@@ -392,6 +392,92 @@
      "dueAt": "2026-11-22T09:41:00+01:00"
     }
    }
+  },
+  {
+   "id": "2026-11-23-credit-black-friday",
+   "date": "2026-11-23",
+   "source": "auto",
+   "pillar": "mecanisme",
+   "theme": "finance",
+   "topic": "Black Friday à crédit : 1 000 € en 24 mensualités, TAEG fictif 12 % = 1 123 € (123 € d'intérêts)",
+   "keywords": [
+    "crédit à la consommation",
+    "Black Friday",
+    "TAEG",
+    "mensualité",
+    "SECCI"
+   ],
+   "buffer": {
+    "tiktok": {
+     "id": "6b000b16738ce4635f9e384b",
+     "dueAt": "2026-11-23T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6b000b21ca85ebefb00d046c",
+     "dueAt": "2026-11-24T19:26:00+01:00"
+    },
+    "facebook": {
+     "id": "6b000b264c1afd05de074b7a",
+     "dueAt": "2026-11-25T09:54:00+01:00"
+    }
+   }
+  },
+  {
+   "id": "2026-11-23-epargne-pension-plafond",
+   "date": "2026-11-23",
+   "source": "auto",
+   "pillar": "belgique",
+   "theme": "finance",
+   "topic": "Épargne-pension revenus 2026 : plafonds 1 050 € (30 %) / 1 350 € (25 %), piège de l'entre-deux (1 100 € = 275 € contre 315 €)",
+   "keywords": [
+    "épargne-pension",
+    "plafond",
+    "réduction d'impôt",
+    "1 050 €",
+    "1 350 €"
+   ],
+   "buffer": {
+    "instagram": {
+     "id": "6b000b377b0a126cebbfc083",
+     "dueAt": "2026-11-25T18:06:00+01:00"
+    },
+    "facebook": {
+     "id": "6b000b3d738ce4635f9e4533",
+     "dueAt": "2026-11-26T09:26:00+01:00"
+    },
+    "tiktok": {
+     "id": "6b000b46738ce4635f9e470c",
+     "dueAt": "2026-11-28T08:36:00+01:00"
+    }
+   }
+  },
+  {
+   "id": "2026-11-23-effet-de-levier",
+   "date": "2026-11-23",
+   "source": "auto",
+   "pillar": "erreur",
+   "theme": "bourse",
+   "topic": "Effet de levier x10 : -10 % = -100 % de la mise (exemple fictif 1 000 €), interdiction FSMA de certains CFD",
+   "keywords": [
+    "effet de levier",
+    "trading",
+    "CFD",
+    "FSMA"
+   ],
+   "buffer": {
+    "instagram": {
+     "id": "6b000b500f5eda1a57d64a32",
+     "dueAt": "2026-11-26T10:51:00+01:00"
+    },
+    "facebook": {
+     "id": "6b000b567b0a126cebbfc950",
+     "dueAt": "2026-11-27T08:45:00+01:00"
+    },
+    "tiktok": {
+     "id": "6b000b5e738ce4635f9e4bfa",
+     "dueAt": "2026-11-29T09:41:00+01:00"
+    }
+   }
   }
  ],
  "ai_decors": [
