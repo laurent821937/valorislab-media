@@ -1,7 +1,7 @@
 {
  "id": "2026-11-23-mythe-action-5-euros",
  "charte": "v7",
- "kit_version": "2026-11-20.1",
+ "kit_version": "2026-11-20.2",
  "format": "F2",
  "bg": "champagne",
  "cover_visual": "stamp",
@@ -732,12 +732,12 @@
    "slide": 6,
    "type": "cta",
    "pose": null,
-   "scene": "ia-cta-mythe-action-v7",
+   "scene": "ia-cta-guide-v7b",
    "note": null,
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 286924,
+   "bytes": 254271,
    "W": 1080,
    "H": 1350,
    "boxes": [

@@ -18,6 +18,9 @@ Inspiration : style des carrousels « studio » modernes envoyés par Laurent (r
 - `options[]` (cartes A/B/C, `state: out|win`), `steps[]` (cartes numérotées), `tiles[]` (tuiles d'appli de bourse fictives), `big` (chiffre géant), verdict (`type: "verdict"`, tampon).
 - `ann[]` : **annotations** = pilules noires avec flèche en dégradé, posées à cheval sur le bord droit du visuel, jamais sur son texte (contrôlé). Saut de ligne : `\n`.
 
+## Protagoniste : ne jamais le modifier (Laurent, 20/11/2026)
+Référence unique `kit/assets/protagonist/ref-sweat-noir.jpg` (voir `kit/assets/protagonist/README.md`) : carrure athlétique et musclée, cheveux courts texturés en pointes avec reflets blonds, dégradé très court, barbe courte, yeux bleu-gris, regard intense, tenue noire (sweat à capuche ou chemise) et montre noire. Le prompt commence par « EXACTEMENT le MÊME homme que sur l'image de référence, sans rien changer à son physique » et décrit ces traits ; seule la scène change (lumineuse). Image qui dérive (visage plus doux, carrure plus fine, autre tenue) = rejetée. Les vraies photos de Laurent ne servent jamais de référence IA.
+
 ## Couverture
 - **Photo façon selfie** du protagoniste (une couverture sur deux) : gros plan face caméra, mur clair en haut pour le titre, expression vivante (sourcil levé, main levée, sourire stupéfait). Image IA neuve via Make avec `reference_url` (RUNBOOK, étape 5), style `v7-moderne-selfie`. Bulle de message (`visual.bubble`), mention fictive (`subtitle` → pastille), chiffre clé (`number`) au-dessus du titre.
 - **Couverture graphique** (l'autre sur deux) : titre-mythe entre « », tuiles du format (`visual.tiles`), tampon « VERDICT ? » (`visual.stamp`).

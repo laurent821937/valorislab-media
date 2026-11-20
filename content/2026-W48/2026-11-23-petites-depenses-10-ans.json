@@ -36,8 +36,8 @@
    "subtitle": "En 10 ans · exemple fictif",
    "visual": {
     "type": "photo",
-    "photo": "ia-cover-petites-depenses-v7",
-    "pos": "50% 70%"
+    "photo": "ia-cover-petites-depenses-v7b",
+    "pos": "50% 60%"
    }
   },
   {
@@ -167,5 +167,5 @@
   ]
  },
  "fb": {},
- "cta_photo": "ia-cover-petites-depenses-v6b"
+ "cta_photo": "ia-cta-guide-v7b"
 }

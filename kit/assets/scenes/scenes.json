@@ -638,7 +638,8 @@
   "created": "2026-11-20",
   "style": "v7-moderne-selfie",
   "face": true,
-  "reference": "kit/assets/protagonist/ref-portrait.jpg"
+  "reference": "kit/assets/protagonist/ref-portrait.jpg",
+  "rejected": "visage ou carrure qui dérivent du protagoniste (Laurent, 20/11/2026) : ne plus utiliser"
  },
  "ia-cover-petites-depenses-v7": {
   "file": "ia-cover-petites-depenses-v7.jpg",
@@ -654,7 +655,8 @@
   "created": "2026-11-20",
   "style": "v7-moderne-selfie",
   "face": true,
-  "reference": "kit/assets/protagonist/ref-portrait.jpg"
+  "reference": "kit/assets/protagonist/ref-portrait.jpg",
+  "rejected": "visage ou carrure qui dérivent du protagoniste (Laurent, 20/11/2026) : ne plus utiliser"
  },
  "ia-cta-mythe-action-v7": {
   "file": "ia-cta-mythe-action-v7.jpg",
@@ -670,6 +672,57 @@
   "created": "2026-11-20",
   "style": "v7-moderne",
   "face": true,
-  "reference": "kit/assets/protagonist/ref-portrait.jpg"
+  "reference": "kit/assets/protagonist/ref-portrait.jpg",
+  "rejected": "visage ou carrure qui dérivent du protagoniste (Laurent, 20/11/2026) : ne plus utiliser"
+ },
+ "ia-cover-message-suspect-v7b": {
+  "file": "ia-cover-message-suspect-v7b.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 35%",
+  "mood": "le protagoniste en selfie, sweat à capuche noir, mur clair, sourcil levé et main ouverte (tu vois le piège ?)",
+  "pillars": [
+   "arnaque"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v7-moderne-selfie",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-sweat-noir.jpg"
+ },
+ "ia-cover-petites-depenses-v7b": {
+  "file": "ia-cover-petites-depenses-v7b.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 35%",
+  "mood": "le protagoniste en selfie, sweat noir et montre, cuisine claire, main sur le front, sourire stupéfait (ça coûte autant ?)",
+  "pillars": [
+   "budget"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v7-moderne-selfie",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-sweat-noir.jpg"
+ },
+ "ia-cta-guide-v7b": {
+  "file": "ia-cta-guide-v7b.jpg",
+  "role": "cta",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 35%",
+  "mood": "le protagoniste en chemise noire, bras croisés, appartement lumineux, sourire confiant (maintenant tu sais) : dernière slide commune",
+  "pillars": [
+   "bourse",
+   "budget",
+   "arnaque"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v7-moderne",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-sweat-noir.jpg"
  }
 }

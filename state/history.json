@@ -856,6 +856,30 @@
    "status": "ok",
    "content_id": "2026-11-23-mythe-action-5-euros",
    "note": "dernière slide charte v7"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "ia-cover-message-suspect-v7b",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-W48",
+   "note": "protagoniste fidèle à la référence de Laurent"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "ia-cover-petites-depenses-v7b",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-W48",
+   "note": "protagoniste fidèle à la référence de Laurent"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "ia-cta-guide-v7b",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-W48",
+   "note": "protagoniste fidèle à la référence de Laurent"
   }
  ]
 }

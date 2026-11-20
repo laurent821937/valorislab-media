@@ -35,8 +35,8 @@
    "subtitle": "Conversation fictive",
    "visual": {
     "type": "photo",
-    "photo": "ia-cover-message-suspect-v7",
-    "pos": "50% 40%",
+    "photo": "ia-cover-message-suspect-v7b",
+    "pos": "50% 60%",
     "bubble": "Salut ! J'ai doublé mon argent en 3 semaines, je te montre ?",
     "bubble_head": "Inconnu · 21:47"
    }
@@ -167,5 +167,5 @@
   ]
  },
  "fb": {},
- "cta_photo": "ia-cover-message-suspect-v6b"
+ "cta_photo": "ia-cta-guide-v7b"
 }
