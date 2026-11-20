@@ -1,0 +1,671 @@
+{
+ "id": "2026-11-23-mythe-action-5-euros",
+ "charte": "v6",
+ "kit_version": "2026-11-14.1",
+ "format": "F2",
+ "bg": "light",
+ "cover_visual": "stamp",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-23-mythe-action-5-euros/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 3,
+   "bytes": 132920,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 376.890625,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE TRIBUNAL DU MYTHE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 444,
+     "w": 904,
+     "h": 336,
+     "font": 112,
+     "color": "rgb(31, 29, 26)",
+     "text": "Une action à 5 € peut monter plus facilement."
+    },
+    {
+     "role": "stat",
+     "x": 74.2531509399414,
+     "y": 790.9291381835938,
+     "w": 594.99365234375,
+     "h": 200.1417236328125,
+     "font": 86,
+     "color": "rgb(137, 105, 47)",
+     "text": "VERDICT ?"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "1/6"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-mythe-action-5-euros/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 118259,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 376.890625,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE TRIBUNAL DU MYTHE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 402.765625,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(137, 105, 47)",
+     "text": "L'ACCUSATION"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 459.765625,
+     "w": 904,
+     "h": 173.8125,
+     "font": 82,
+     "color": "rgb(31, 29, 26)",
+     "text": "« Elle ne coûte que 5 €, elle peut vite doubler. »"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(137, 105, 47)",
+     "text": "La défense"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 667.578125,
+     "w": 904,
+     "h": 119.65625,
+     "font": 44,
+     "color": "rgb(46, 43, 39)",
+     "text": "C'est ce qu'on se dit en voyant le prix dans l'appli."
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "2/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(94, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-mythe-action-5-euros/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 123686,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 376.890625,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE TRIBUNAL DU MYTHE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 402.765625,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(137, 105, 47)",
+     "text": "LA DÉFENSE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 459.765625,
+     "w": 904,
+     "h": 173.8125,
+     "font": 82,
+     "color": "rgb(31, 29, 26)",
+     "text": "Le prix d'une action ne dit rien de sa valeur."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(137, 105, 47)",
+     "text": "La preuve en chiffres"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 667.578125,
+     "w": 904,
+     "h": 119.65625,
+     "font": 44,
+     "color": "rgb(46, 43, 39)",
+     "text": "Il dépend surtout du nombre d'actions que l'entreprise a émises."
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "3/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(94, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-mythe-action-5-euros/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 134454,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 376.890625,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE TRIBUNAL DU MYTHE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 325.796875,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(137, 105, 47)",
+     "text": "LA PREUVE · EXEMPLE FICTIF"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 382.796875,
+     "w": 904,
+     "h": 173.8125,
+     "font": 82,
+     "color": "rgb(31, 29, 26)",
+     "text": "1 000 € investis, +10 % pour les deux."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(137, 105, 47)",
+     "text": "Le verdict"
+    },
+    {
+     "role": "stat",
+     "x": 103,
+     "y": 670.609375,
+     "w": 391,
+     "h": 105,
+     "font": 100,
+     "color": "rgb(137, 105, 47)",
+     "text": "+100 €"
+    },
+    {
+     "role": "stat",
+     "x": 555,
+     "y": 670.609375,
+     "w": 390,
+     "h": 105,
+     "font": 100,
+     "color": "rgb(31, 29, 26)",
+     "text": "+100 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 103,
+     "y": 621.609375,
+     "w": 391,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(94, 87, 77)",
+     "text": "200 ACTIONS À 5 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 555,
+     "y": 621.609375,
+     "w": 390,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(94, 87, 77)",
+     "text": "2 ACTIONS À 500 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 590.609375,
+     "w": 904,
+     "h": 216,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": "200 ACTIONS À 5 € +100 € 2 ACTIONS À 500 € +100 €"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 830.609375,
+     "w": 904,
+     "h": 33.59375,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "Même hausse, même gain. Exemple fictif, avant frais et impôts."
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "4/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(94, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-mythe-action-5-euros/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "verdict",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 3,
+   "bytes": 142723,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 376.890625,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE TRIBUNAL DU MYTHE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 414,
+     "w": 904,
+     "h": 260.71875,
+     "font": 82,
+     "color": "rgb(31, 29, 26)",
+     "text": "Une action pas chère n'est pas plus rentable."
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 708.71875,
+     "w": 904,
+     "h": 119.65625,
+     "font": 44,
+     "color": "rgb(46, 43, 39)",
+     "text": "Regarde ce que vaut l'entreprise et tes frais, pas le prix affiché."
+    },
+    {
+     "role": "stat",
+     "x": 72.1537094116211,
+     "y": 168.43145751953125,
+     "w": 549.630126953125,
+     "h": 257.1370849609375,
+     "font": 150,
+     "color": "rgb(137, 105, 47)",
+     "text": "FAUX"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "5/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(94, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-mythe-action-5-euros/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 114122,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 376.890625,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE TRIBUNAL DU MYTHE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 361.78125,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(137, 105, 47)",
+     "text": "LE GUIDE GRATUIT"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 418.78125,
+     "w": 904,
+     "h": 178.0625,
+     "font": 84,
+     "color": "rgb(31, 29, 26)",
+     "text": "C'est l'une des 20 erreurs du guide."
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 630.84375,
+     "w": 904,
+     "h": 54.390625,
+     "font": 40,
+     "color": "rgb(46, 43, 39)",
+     "text": "Guide gratuit, lien dans ma bio."
+    },
+    {
+     "role": "button",
+     "x": 72,
+     "y": 731.234375,
+     "w": 471.359375,
+     "h": 93,
+     "font": 40,
+     "color": "rgb(255, 253, 248)",
+     "text": "Lien dans ma bio →"
+    },
+    {
+     "role": "button",
+     "x": 72,
+     "y": 864.234375,
+     "w": 904,
+     "h": 44,
+     "font": 36,
+     "color": "rgb(31, 29, 26)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 254.359375,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(31, 29, 26)",
+     "text": "VALORISLAB"
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(94, 87, 77)",
+     "text": "6/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(94, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "warnings": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-23-mythe-action-5-euros/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": null,
+  "bytes": 131691,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 64,
+    "w": 376.890625,
+    "h": 57,
+    "font": 24,
+    "color": "rgb(137, 105, 47)",
+    "text": "LE TRIBUNAL DU MYTHE"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 444,
+    "w": 904,
+    "h": 336,
+    "font": 112,
+    "color": "rgb(31, 29, 26)",
+    "text": "Une action à 5 € peut monter plus facilement."
+   },
+   {
+    "role": "stat",
+    "x": 74.2531509399414,
+    "y": 790.9291381835938,
+    "w": 594.99365234375,
+    "h": 200.1417236328125,
+    "font": 86,
+    "color": "rgb(137, 105, 47)",
+    "text": "VERDICT ?"
+   },
+   {
+    "role": "brand",
+    "x": 72,
+    "y": 1114,
+    "w": 56,
+    "h": 56,
+    "font": 16,
+    "color": "rgb(31, 29, 26)",
+    "text": ""
+   }
+  ]
+ }
+}

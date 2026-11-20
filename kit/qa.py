@@ -14,6 +14,8 @@ Reads render-report.json (text-block geometry captured at render time) and the J
   fonts       body text >= 30 px (feed) / 34 px (TikTok), titles >= 56 px after auto-fit
   contrast    WCAG contrast of each text colour against the sampled background >= 4.5 (>= 3 for large text)
   duplicate   cover not visually near-identical to an earlier cover (average hash)
+  v6          charte v6 (20/11/2026): 5 to 7 slides, plus the brief checks recorded by render.py
+              (cover title <= 12 words, >= 110 px, <= 4 lines; subtitle <= 6 words; swipe cue; guide slide last)
 Writes qa-report.json next to the images and review sheets (TikTok safe-zone overlay, grid crop)
 to --sheets for a visual check with the Read tool. Exits 1 if any error.
 """
@@ -81,10 +83,19 @@ def main():
             err(f"{fmt}: aucune image")
         if len(recs) > max_n:
             err(f"{fmt}: {len(recs)} slides > {max_n}")
-        if len(recs) > 8:
+        if rep.get("charte") == "v6":
+            if not 5 <= len(recs) <= 7:
+                err(f"{fmt}: {len(recs)} slides, la charte v6 en demande 5 à 7")
+        elif len(recs) > 8:
             err(f"{fmt}: {len(recs)} slides, 8 au maximum (décision de Laurent)")
         elif len(recs) < 5:
             warn(f"{fmt}: {len(recs)} slides (charte v5 : 5 par défaut, 8 au maximum)")
+    if rep.get("charte") == "v6":
+        # brief checks made at render time (cover words, title >= 110 px on <= 4 lines, swipe cue, guide slide)
+        for m in rep.get("errors", []):
+            err(f"rendu : {m}")
+        for m in rep.get("warnings", []):
+            warn(f"rendu : {m}")
 
     overlay_tiles, grid_tile = [], None
     for r in files:
@@ -129,8 +140,12 @@ def main():
             if col and b["role"] in {"lead", "body", "listItem", "note", "disclaimer", "title", "statLabel"}:
                 reg = px[max(0, int(y0)):min(H, int(y1)), max(0, int(x0)):min(W, int(x1))]
                 if reg.size:
-                    bg = np.percentile(lum(reg.reshape(-1, 3)), 20)
-                    ratio = contrast(float(lum(col)), float(bg))
+                    L = lum(reg.reshape(-1, 3))
+                    # background = the side of the distribution opposite to the text colour (light text: darker
+                    # pixels, dark text on an ivory card or a light page: lighter pixels), so glyphs are not taken as background
+                    tl = float(lum(col))
+                    bg = np.percentile(L, 20) if tl >= np.median(L) else np.percentile(L, 80)
+                    ratio = contrast(tl, float(bg))
                     need = 3.0 if (b["role"] in LARGE_ROLES or b["font"] >= 40) else 4.5
                     if ratio < need:
                         err(f"{tag}: contraste {ratio:.1f}:1 < {need}:1 pour « {b['text'][:40]} »")

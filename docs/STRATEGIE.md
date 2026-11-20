@@ -1,7 +1,8 @@
-# Stratégie éditoriale VALORISLAB (validée par Laurent le 27/10/2026)
+# Stratégie éditoriale VALORISLAB (validée par Laurent le 27/10/2026, ligne éditoriale refondue le 20/11/2026)
 
 Ce document est la référence pour toute génération automatique de contenu.
 Toute modification de la stratégie passe par Laurent.
+**Refonte du 20/11/2026** : la ligne éditoriale (formats, sujets, dernière slide, légende, score) vient des sections 2, 3, 6 et 7 du brief de Laurent, `docs/brief-refonte-carrousels-2026-11.md` (qui explique aussi le pourquoi, section 1, et la mesure, section 8). La charte visuelle (sections 4 et 5) est dans `docs/STYLE-CARROUSEL.md` (charte v6). Les règles de conformité restent inchangées.
 
 ## Positionnement
 - Plateforme éducative belge francophone : Bourse, ETF, Crypto, finances personnelles.
@@ -9,42 +10,42 @@ Toute modification de la stratégie passe par Laurent.
 - Promesse : « comprendre avant d'agir ». Ton direct, pédagogique, chiffré, sans hype ni promesse de gain.
 - Tutoiement. Phrases courtes. Pas de jargon non expliqué. Zéro émoji dans les visuels ; 0 à 2 émojis maximum dans une légende (de préférence aucun).
 - Offre : guide gratuit « Les 20 erreurs du débutant en Bourse et en Crypto » (valorislab.be, lien en bio), puis formations Bourse et Crypto à 149 €. Le pack IA n'est plus mis en avant.
+- Objectif des carrousels (brief, section 1) : faire swiper jusqu'à la dernière slide (rétention) et rendre chaque post reconnaissable comme du VALORISLAB (marque).
 
-## Rythme et mix (3 contenus par semaine, chacun décliné sur Facebook, Instagram, TikTok)
-1. **Mécanisme chiffré** : intérêts composés, inflation, frais, ETF, diversification, volatilité, coût d'attendre…
-2. **Belgique pratique** : banques, épargne réglementée, précompte mobilier, TOB, épargne-pension, garantie des dépôts, déclaration des comptes étrangers, FSMA…
-3. **Erreur ou arnaque à éviter** (Bourse ou Crypto), avec un appel à l'action vers le guide gratuit.
+## Les 8 formats de rétention (brief, section 2)
+Chaque semaine, la routine choisit **3 formats différents** parmi ces 8. Jamais deux fois le même format dans la même semaine. Chaque format repose sur un mécanisme qui oblige à swiper. Le format est noté dans le contenu (`format: "F1"` à `"F8"`) et affiché sur la couverture dans l'étiquette de format.
 
-Alternance des thèmes : au moins 1 contenu Crypto toutes les 2 semaines, et au moins 1 contenu Bourse/ETF par semaine.
+| Code | Format | Mécanisme | Couverture | Slides | Règle |
+|---|---|---|---|---|---|
+| F1 | La boucle ouverte | La couverture pose une question, la réponse n'arrive qu'à l'avant-dernière slide | « Une seule de ces 3 dépenses te coûte 4 000 € sur 10 ans. Laquelle ? » | Les 3 options, un indice, la révélation chiffrée, la leçon | La réponse n'est jamais devinable sur la couverture |
+| F2 | Le tribunal du mythe | Une idée reçue est « jugée » : VRAI, FAUX ou ÇA DÉPEND | Tampon « VERDICT ? » et la phrase-mythe entre guillemets | L'accusation, la défense, la preuve chiffrée, le verdict (tampon), ce qu'il faut retenir | Privilégier « ÇA DÉPEND » quand c'est la réalité (expliquer des différences de démarche plutôt qu'une opposition absolue) |
+| F3 | Le dossier | Un cas fictif comme un dossier d'enquête : le lecteur se demande ce qu'il ferait | « DOSSIER n° 07 · Sarah, 26 ans, 1 900 € net. Elle veut commencer à investir. Par quoi commencer ? » | La situation, les 3 options, ce qui coince dans chacune, la méthode (pas une recommandation personnelle) | Profil explicitement fictif, « Cas fictif » visible sur la couverture ; numérotation continue des dossiers (`state/series.json`) |
+| F4 | Trouve l'erreur | Un document du quotidien contient une erreur coûteuse, le lecteur la cherche | « Ce relevé cache une erreur qui coûte 300 €/an. Tu la vois ? » | Le document, un indice, l'erreur entourée, le calcul, le réflexe | Document visiblement fictif : aucun logo, nom ou numéro réel, « Document fictif » sur le visuel |
+| F5 | Le classement révélé | Un classement dévoilé de la dernière à la première place | « 6 façons de laisser dormir 5 000 € en Belgique. Classées de la pire à la meilleure. » | Place 6 à place 1, chacune avec le chiffre de l'année | Critère unique et explicite (ex. pouvoir d'achat après 5 ans), données officielles datées, jamais de rendements futurs |
+| F6 | La facture cachée | Prix affiché contre prix réel, ligne par ligne, comme un ticket qui s'allonge | Un ticket « Prix affiché : 999 € », « Prix réel : ? » | Chaque ligne ajoutée (intérêts, frais, assurance, taxe), le total, la question à poser avant de signer | Sujets : crédit à la consommation, leasing, paiement fractionné, frais d'un fonds bancaire, carte de crédit |
+| F7 | Le message suspect | Une conversation fictive façon messagerie, le lecteur repère le piège | Une bulle : « Salut ! J'ai doublé mon argent en 3 semaines, je te montre ? » | La conversation qui avance, chaque signal d'alerte surligné, ce que dit la FSMA, quoi faire | Conversation fictive, aucun nom ni plateforme réels, source FSMA citée |
+| F8 | L'épisode du protagoniste | Une série : le protagoniste VALORISLAB fait une erreur que le lecteur voit venir | « Épisode 4 · Il vient de toucher sa prime de fin d'année. Il a déjà une idée. Mauvaise idée. » | La situation, la décision, la conséquence chiffrée, ce qu'il aurait dû faire, l'annonce de l'épisode suivant | Récit à la 3e personne, tiré des 20 erreurs du guide (citée sur la dernière slide) ; numérotation continue (`state/series.json`) |
+
+## Règles de choix des sujets (brief, section 3)
+1. Le sujet part d'une **situation vécue**, jamais d'une notion. « Tu viens de recevoir ta prime » plutôt que « Qu'est-ce que le précompte mobilier ».
+2. Le **calendrier** compte : primes de décembre, soldes, déclaration fiscale (mai-juin), rentrée, Black Friday, 13e mois, pécule de vacances.
+3. Chaque sujet est rattaché à **l'une des 20 erreurs du guide**. La dernière slide la nomme : « C'est l'erreur n° X du guide gratuit. » Numéros et intitulés : `state/guide-erreurs.json` (à remplir par Laurent ; tant qu'un numéro manque, la slide dit « C'est l'une des 20 erreurs du guide » et le rapport le signale : ne jamais inventer un numéro).
+4. **Interdit** : les sujets déjà publiés (contrôle `state/history.json`), et les sujets purement techniques sans enjeu personnel (TOB seule, domiciliation d'ETF seule, taxe Reynders seule). Ces notions peuvent apparaître à l'intérieur d'un format, jamais comme sujet principal.
+5. **Répartition par semaine** : 1 sujet Bourse, 1 sujet Crypto ou arnaque, 1 sujet budget du quotidien (champ `theme` : `bourse`, `crypto` ou `arnaque`, `budget`).
 
 ## Format visuel
-**Charte v5 (02/11/2026) : `docs/STYLE-CARROUSEL.md` et les 5 slides de référence `kit/assets/references/carrousel-v5/` (style uniquement : jamais leur sujet ni leurs chiffres), rendue par le kit (`kit/render.py`). 5 slides par défaut, 8 au maximum.** Elle remplace la charte v4 (branche `sauvegarde-avant-charte-v5`). La charte v3 ci-dessous n'est gardée qu'en archive.
+**Charte v6 (20/11/2026) : `docs/STYLE-CARROUSEL.md`** (sections 4 et 5 du brief), rendue par le kit (`kit/render.py`, gabarit `kit/templates/slide-v6.html.j2`), 5 à 7 slides. Les chartes v5 et antérieures ne servent plus qu'à re-rendre d'anciens contenus.
 
-### Charte v3 (27/10/2026, archive)
-- **Un seul format : 1080×1350 (4:5), pour Instagram, Facebook ET TikTok** (choix de Laurent : en 9:16, TikTok masquait une partie de l'image). TikTok affiche la photo 4:5 entière ; sa légende recouvre les 160 px du bas et ses boutons le bord droit : aucun texte à ces endroits (vérifié par `qa.py`).
-- Carrousel de 6 à 8 slides, gabarit `kit/templates/slide.html.j2`. Style premium noir et or : fond noir chaud, lumière dorée et bokeh, typographie **Plus Jakarta Sans**, titres blancs, mots d'accent en dégradé or (bleu électrique pour la Crypto). Logo officiel complet centré en haut, compteur « 01 / 07 » avec barre de progression et flèche en bas. Pour le pilier Belgique, filet aux couleurs du drapeau belge sous le surtitre.
-- **Couverture et dernière slide = photo premium** (rendus photoréalistes du protagoniste fournis par Laurent, `kit/assets/scenes/`, catalogue `scenes.json`) : la photo occupe le haut ou le bas de la slide et se fond dans le noir, le texte est posé sur la partie sombre. Champ `scene` de la slide `cover` (et de la `cta`) : choisir dans le catalogue la scène dont l'ambiance (`mood`) colle au sujet, et ne pas réutiliser la scène des 2 dernières couvertures (voir `history.json`). Sans champ `scene`, le moteur fait tourner les scènes automatiquement (jamais deux fois la même dans une semaine). La dernière slide utilise la scène `role: "cta"` (portrait de Laurent).
-- **Couverture courte** : titre ≤ 55 caractères (3 lignes maximum), sous-titre ≤ 90 caractères. Si la place manque, le moteur supprime le sous-titre plutôt que de réduire le titre.
-- **Poses du protagoniste dans les slides de fond** (`kit/assets/pose-*.webp`, illustrations de Laurent détourées, teinte chaude et halo doré) : champ `pose` sur une slide `point`, `stat`, `compare`, `list` ou `cta` sans scène, ou `"none"`. Poses : `reflexion` (comprendre, principe), `pointe` (expliquer, montrer un chiffre), `graphique-hausse` (croissance, bonne nouvelle), `checklist` (liste, règles), `pouce` (bon réflexe), `stress-tablette` (mauvaise surprise, frais), `stress-baisse` (perte, krach), `choc-polo` (erreur grave), `doute-telephone` (message suspect), `doute-telephone-hoodie` (arnaque crypto). Jamais deux fois la même pose dans un carrousel ; 2 à 3 slides avec pose maximum.
-- Une slide avec pose a une colonne de texte étroite (520 px) : titre ≤ 30 caractères, corps ≤ 160 caractères. Si le texte est plus long ou touche le protagoniste, le moteur retire la pose automatiquement (le rapport le signale) : écrire court pour la garder.
-- Structure type : `cover` (scène + accroche) → 3 à 5 slides de fond (`point`, `stat`, `compare`, `list`) → `cta` (scène portrait + bouton).
-- Limites de texte (slides sans pose) : titre ≤ 60 caractères, corps ≤ 260 caractères, liste ≤ 4 éléments de ≤ 90 caractères, valeur chiffrée ≤ 10 caractères. Le moteur réduit le texte si besoin et signale tout débordement : raccourcir, ne jamais forcer.
-- Balises : `*mot*` = accent (1 à 2 mots par titre), `**mot**` = gras.
-- Le champ `character` des anciens contenus est ignoré.
-
-## Structure des légendes (style actuel de Laurent)
-1. Accroche en 1 ligne (question, contraste chiffré ou citation).
-2. 2 à 4 phrases d'explication.
-3. « À retenir : » + 3 puces ( • ).
-4. Une question qui appelle un commentaire.
-5. Un appel à enregistrer ou à partager.
-6. (supprimé le 13/11/2026 : remplacé par la phrase finale, point 9).
-7. « Contenu éducatif, pas un conseil financier. » (+ hypothèses chiffrées si un calcul est présenté, + « Performances passées… » si des performances historiques sont citées).
-8. 5 hashtags, dont toujours #belgique.
-9. **Dernière ligne, sur tous les réseaux, posts et vidéos (règle de Laurent, 13/11/2026)** : « Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter. » (texte exact). Elle remplace l'ancien appel « guide gratuit, lien en bio / valorislab.be ». Les scripts vidéo se terminent aussi par cette phrase.
+## Dernière slide et légende (brief, section 6)
+- **Dernière slide** : « C'est l'erreur n° X des 20 erreurs du guide. Guide gratuit, lien dans ma bio. » Puis valorislab.be et la mention « Contenu éducatif, pas un conseil financier ».
+- **Légende** : 3 lignes maximum avant le « … plus », puis la source et la mention. **Dernière ligne : « Guide gratuit : lien dans ma bio. »**
+- **Supprimé** : « Commente GUIDE » et toute demande de commentaire liée à l'envoi d'un lien, tant qu'aucun envoi automatique en message privé n'est en place (la règle du 13/11/2026 est abrogée).
+- **Une seule question d'engagement** par légende, liée au format (« Tu avais trouvé l'erreur ? », « Ton verdict ? »).
+- Inchangé : « Contenu éducatif, pas un conseil financier. » (+ hypothèses si un calcul est présenté, + « Performances passées… » si des performances historiques sont citées) ; 3 à 5 hashtags dont #belgique (voir « Référencement »).
 
 Limites : Instagram ≤ 2 200 caractères ; titre TikTok ≤ 90 caractères, description TikTok ≤ 500 caractères ; Facebook sans limite pratique (rester ≤ 1 500).
 Texte alternatif (alt) obligatoire pour chaque visuel.
+
 
 ## Référencement (SEO social et Google, règle de Laurent, 14/11/2026)
 Instagram, TikTok et Facebook sont des moteurs de recherche : un post bien référencé continue d'être trouvé pendant des mois, alors qu'un post de fil disparaît en 48 h. Le levier, ce sont les **mots-clés**, pas les hashtags. Le contrôle `kit/seo_check.py` est bloquant.
@@ -77,29 +78,29 @@ Alterner les grappes et, dans chaque grappe, couvrir les questions voisines au f
 - **Tout calcul est fait en Python** dans le run, jamais de tête. Hypothèses affichées (taux, durée, « avant frais et impôts », « rendement non garanti »).
 - **Données belges ou réglementaires** (taux, plafonds, montants d'exonération, fiscalité) : vérifier sur une source officielle de l'année en cours (SPF Finances, FSMA, BNB, Wikifin, FEBELFIN). Si une donnée ne peut pas être vérifiée → changer d'angle ; ne jamais publier un chiffre douteux.
 - Pas de recommandation d'achat ou de vente d'un titre, d'une crypto ou d'un produit nommé ; pas de prédiction de prix ; pas de promesse de rendement ; pas de « rendement garanti ».
-- **Images générées par IA (décision de Laurent, 29/10/2026)** : les slides sont rendues par le kit (texte et chiffres exacts), jamais générées par IA. L'IA (OpenAI via le scénario Make 8230680) ne sert qu'à créer, par défaut pour chaque contenu, un décor de couverture propre au sujet, sans personne ni texte, dans le style de la charte, pour que les couvertures varient (`RUNBOOK.md` : 1 par contenu plus 1 nouvel essai, 4 par exécution, 16 par mois ; repli sur le catalogue si le budget, Make ou Cloudinary l'empêchent). Pas de logo de marque tierce, pas de capture d'écran d'un produit tiers.
+- **Images (décision de Laurent du 29/10/2026, adaptée à la charte v6 le 20/11/2026)** : les slides sont rendues par le kit (texte et chiffres exacts), jamais générées par IA. Charte v6 : une couverture sur deux montre le visage du protagoniste (photos photo-réalistes de Laurent, `kit/assets/scenes/`, jamais détourées), l'autre l'élément visuel du format, dessiné par le kit (tampon, ticket, bulle, dossier, document). Le décor IA (OpenAI via Make 8230680) n'est plus généré par défaut : seulement si un format en a vraiment besoin, dans les budgets du RUNBOOK. Pas de logo de marque tierce, pas de capture d'écran d'un produit tiers.
 - Les sources sont listées dans le fichier de contenu (`sources`) et mentionnées en légende quand un chiffre externe est cité.
 - Si un contenu ne passe pas ces règles → le remplacer par un autre sujet de la banque ci-dessous.
 
-## Score de viralité (avant publication, obligatoire)
-Chaque contenu reçoit une note sur 100, calculée et justifiée dans le champ `virality` du fichier de contenu :
-| Critère | Poids | Ce qui donne 10/10 |
+## Score de viralité (avant publication, obligatoire ; brief, section 7)
+Chaque contenu reçoit une note sur 100, calculée et justifiée dans le champ `virality` du fichier de contenu. **Seuil : 70/100.** Sous 70 : retravailler (couverture, mécanisme) puis renoter ; le critère conformité est éliminatoire.
+| Critère | Poids | Ce qui donne le maximum |
 |---|---|---|
-| Accroche (couverture + 1re ligne) | 20 | Arrête le scroll en moins d'une seconde : chiffre choc, contraste, citation ou question ; 12 mots maximum |
-| Boucle de curiosité | 15 | La couverture promet une réponse qu'on n'obtient qu'en glissant |
-| Valeur à enregistrer | 15 | Calcul, checklist ou règles qu'on veut garder (déclenche les enregistrements) |
-| Partage | 10 | Donne une raison d'envoyer le post à quelqu'un (protéger un proche, débutant, injustice) |
-| Ancrage belge | 10 | Exemple, règle ou chiffre propre à la Belgique |
-| Clarté débutant | 10 | Une idée par slide, aucun jargon non expliqué |
-| Rétention du carrousel | 10 | Chaque slide donne envie de la suivante ; la dernière récompense et appelle à l'action |
-| Actualité / saison | 10 | Lié à un moment (déclaration fiscale, fin d'année, krach, arnaque du moment…) |
-- Note ≥ 70 : publiable. Entre 55 et 69 : retravailler l'accroche (écrire 5 variantes, garder la meilleure) et la couverture, puis renoter. Sous 55 : changer de sujet.
-- Les enseignements de l'analyse de performance (ci-dessous) priment sur ces poids : ce qui marche chez l'audience VALORISLAB l'emporte sur la théorie.
+| Rétention (`retention`) | 25 | Mécanisme de rétention clair et tenu jusqu'à l'avant-dernière slide |
+| Couverture (`couverture`) | 20 | Lisible en 1 seconde sur un téléphone : titre ≤ 12 mots, chiffre visible |
+| Situation (`situation`) | 20 | Situation vécue par un débutant, et non une notion |
+| Différence (`difference`) | 15 | Différent des 3 derniers posts publiés (format, fond, visuel) |
+| Erreur du guide (`guide`) | 10 | Lien explicite avec une erreur du guide |
+| Conformité (`conformite`) | 10 | Sources, mention, pas de promesse. **Éliminatoire si absent** (0 = contenu refusé) |
+
+## Mesure (brief, section 8)
+- Toutes les 2 semaines : portée moyenne et taux de swipe jusqu'à la dernière slide par format (via Buffer), clics sur le lien en bio par réseau. Rapport `reports/perf-formats-<AAAA>-W<ss>.md`.
+- Après 4 semaines (vers le 18/12/2026) : on garde les 4 formats les plus performants et on retire les autres (décision de Laurent).
 
 ## Analyse de performance (après publication, à chaque exécution)
 - Récupérer les statistiques Buffer des posts publiés depuis 28 jours, posts natifs compris (vues, portée, taux d'engagement, enregistrements, partages, commentaires ; temps de visionnage pour les vidéos). Ignorer les posts de moins de 48 h (statistiques incomplètes).
-- Comparer chaque post à la médiane de son réseau. Identifier le top 3 et le flop 3, puis ce qui les distingue : pilier, thème, type d'accroche (chiffre, question, citation, contraste), pose du protagoniste, jour et heure, carrousel automatique ou vidéo native.
-- Appliquer les enseignements à la semaine suivante : favoriser le pilier et le type d'accroche gagnants, mais garder au moins 1 contenu sur 3 en exploration pour continuer à apprendre.
+- Comparer chaque post à la médiane de son réseau. Identifier le top 3 et le flop 3, puis ce qui les distingue : format (F1 à F8), thème, fond de couverture (sombre ou clair), visage ou élément de format, jour et heure, carrousel automatique ou vidéo native.
+- Appliquer les enseignements à la semaine suivante : favoriser les formats et les couvertures gagnants, mais garder au moins 1 contenu sur 3 en exploration pour continuer à apprendre.
 - Repère connu (oct. 2026) : la vidéo explicative animée sur l'inflation a dépassé 70 000 vues sur TikTok ; les vidéos natives tournent autour de 150 à 300 vues. Les explications chiffrées et visuelles pour débutants sont le meilleur filon.
 
 ## Sons et musique
@@ -123,10 +124,10 @@ Un même exemple chiffré, une même comparaison ou une même statistique qu'un 
 ### Contenus supprimés avant publication (disponibles, à reprogrammer en priorité)
 - `2026-11-02-perdre-50-pour-cent` et `2026-11-02-faux-support-crypto` : programmés le 27/10/2026 puis supprimés de Buffer par Laurent avant publication (27/10, 19 h). Jamais publiés : ils ne comptent pas comme doublons.
 
-## Sources officielles belges (pilier « Belgique pratique »)
-FSMA (fsma.be), Wikifin (wikifin.be), SPF Finances (finances.belgium.be), Banque nationale (nbb.be), Statbel (statbel.fgov.be), SPF Économie (economie.fgov.be), Febelfin (febelfin.be). Utiliser WebFetch sur ces sites ; si l'accès est bloqué, WebSearch avec `allowed_domains` limité à ces domaines. Si aucun chiffre n'est vérifiable, garder le pilier Belgique avec un sujet sans chiffre volatil (obligation, procédure, mécanisme de protection : déclaration d'un compte étranger au Point de contact central de la BNB, liste d'avertissements de la FSMA, garantie des dépôts…), plutôt que de le remplacer par un autre pilier.
+## Sources officielles belges
+FSMA (fsma.be), Wikifin (wikifin.be), SPF Finances (finances.belgium.be), Banque nationale (nbb.be), Statbel (statbel.fgov.be), SPF Économie (economie.fgov.be), Febelfin (febelfin.be). Utiliser WebFetch sur ces sites ; si l'accès est bloqué, WebSearch avec `allowed_domains` limité à ces domaines. Si aucun chiffre n'est vérifiable, garder l'ancrage belge avec un sujet sans chiffre volatil (obligation, procédure, mécanisme de protection : déclaration d'un compte étranger au Point de contact central de la BNB, liste d'avertissements de la FSMA, garantie des dépôts…), plutôt que de le remplacer par un autre pilier.
 
-## Banque de sujets (point de départ, à enrichir)
-**Mécanisme chiffré** : coût de 1,8 % de frais par an sur 30 ans (fonds vs ETF) · perdre 50 % exige +100 % pour revenir · rendement nominal vs réel · le coût d'attendre 5 ans pour commencer · intérêts composés à l'envers (crédit à la consommation) · investissement programmé vs investissement en une fois (illustration hypothétique) · diversification : 1 titre vs 500 · volatilité ≠ risque de perte définitive · frais d'entrée et de sortie · rééquilibrer un portefeuille · capitalisant vs distribuant (principe) · épargne de précaution : combien de mois ?
-**Belgique pratique** : compte d'épargne réglementé (taux de base + prime de fidélité, exonération) · précompte mobilier et exonération des dividendes · TOB : comment elle s'applique · épargne-pension (3e pilier) · garantie des dépôts 100 000 € · déclarer un compte-titres étranger au Point de contact central de la BNB · liste d'avertissements de la FSMA · bons d'État · taxe sur les comptes-titres (seuil) · fiscalité crypto en Belgique : ce qui est flou et ce qui est clair · comparer les frais de courtage
-**Erreurs et arnaques** : faux support crypto · empoisonnement d'adresse (address poisoning) · pump & dump · faux courtiers clonés (FSMA) · romance scam crypto · trading à effet de levier · tout miser sur une seule crypto · investir sans épargne de précaution · vendre dans la panique · acheter ce dont tout le monde parle (FOMO) · ignorer les frais · copier un influenceur · confondre spéculer et investir
+## Banque de sujets (situations vécues, point de départ, à enrichir)
+**Budget du quotidien** : la prime de fin d'année qui arrive · payer en 3 ou 4 fois pendant les soldes · le leasing de la voiture neuve · la carte de crédit et son solde reporté · l'abonnement oublié · le 13e mois · le pécule de vacances · le premier salaire · emménager seul(e) · épargne de précaution : combien de mois ?
+**Bourse** : premier achat d'ETF avec 50 € par mois · le prix d'une action « pas chère » · vendre dans la panique après une baisse · le fonds proposé par le conseiller de la banque · copier un ami qui a « tout gagné » · attendre le « bon moment » pour commencer · l'épargne-pension de fin d'année
+**Crypto ou arnaque** : le message d'un inconnu qui a « doublé son argent » · le faux support · la plateforme non agréée · l'adresse de portefeuille copiée-collée · le « match » qui parle de crypto · le placement « garanti » à 12 % · l'influenceur qui vend une formation trading

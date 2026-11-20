@@ -1,0 +1,141 @@
+{
+ "id": "2026-11-23-petites-depenses-10-ans",
+ "date": "2026-11-23",
+ "charte": "v6",
+ "format": "F1",
+ "bg": "dark",
+ "theme": "budget",
+ "pillar": "budget",
+ "topic": "Boucle ouverte : café, streaming ou frais de livraison, laquelle coûte plus de 3 000 € en 10 ans ? (exemple fictif, livraison 3 115 €)",
+ "keywords": [
+  "petite dépense",
+  "budget",
+  "frais de livraison",
+  "abonnement",
+  "10 ans"
+ ],
+ "seo": {
+  "keyword": "dépense",
+  "secondary": [
+   "budget",
+   "petite dépense",
+   "frais de livraison"
+  ],
+  "cluster": "epargne-belgique"
+ },
+ "guide_error": {
+  "n": null,
+  "theme": "laisser filer les petites dépenses récurrentes"
+ },
+ "kicker": "Budget",
+ "slides": [
+  {
+   "type": "cover",
+   "number": "3 000 €",
+   "title": "En 10 ans, une seule dépense. *Laquelle ?*",
+   "visual": {
+    "type": "face",
+    "photo": "portrait-bureau"
+   }
+  },
+  {
+   "type": "options",
+   "kicker": "Les 3 suspects",
+   "title": "Laquelle dépasse *3 000 €* ?",
+   "options": [
+    {
+     "letter": "A",
+     "label": "Café à emporter",
+     "detail": "2 € · 2 fois/semaine"
+    },
+    {
+     "letter": "B",
+     "label": "Abonnement streaming",
+     "detail": "13,99 €/mois"
+    },
+    {
+     "letter": "C",
+     "label": "Frais de livraison",
+     "detail": "5,99 €/semaine"
+    }
+   ],
+   "next": "Fais ton choix, puis swipe"
+  },
+  {
+   "type": "text",
+   "kicker": "Un indice",
+   "title": "Ce n'est pas la plus chère *à l'unité.*",
+   "body": "C'est la ligne que tu ne regardes jamais sur le ticket.",
+   "next": "Deux suspects éliminés"
+  },
+  {
+   "type": "options",
+   "kicker": "Éliminés",
+   "title": "Ni A, ni B.",
+   "options": [
+    {
+     "letter": "A",
+     "label": "Café à emporter",
+     "detail": "2 € × 2 × 52 × 10 ans",
+     "value": "2 080 €",
+     "state": "out"
+    },
+    {
+     "letter": "B",
+     "label": "Streaming",
+     "detail": "13,99 € × 12 × 10 ans",
+     "value": "1 679 €",
+     "state": "out"
+    }
+   ],
+   "next": "La réponse va te surprendre"
+  },
+  {
+   "type": "text",
+   "kicker": "La réponse",
+   "big": {
+    "value": "3 115 €",
+    "label": "C : les frais de livraison et de service. Pas le repas, juste les frais."
+   },
+   "note": "Calcul : 5,99 € × 52 semaines × 10 ans. Exemple fictif, sans inflation.",
+   "next": "L'erreur derrière"
+  },
+  {
+   "type": "cta",
+   "kicker": "Le guide gratuit",
+   "title": "C'est l'une des *20 erreurs* du guide.",
+   "body": "Guide gratuit, lien dans ma bio.",
+   "button": "Lien dans ma bio"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB sur le budget : quelle dépense du quotidien coûte plus de 3 000 € en 10 ans, entre café à emporter, abonnement streaming et frais de livraison ? Réponse : les frais de livraison, 3 115 € (exemple fictif).",
+ "captions": {
+  "instagram": "Une petite dépense du quotidien peut te coûter plus de 3 000 € en 10 ans. Café, streaming ou livraison : laquelle ?\nLa réponse est dans le carrousel, slide 5.\nTu avais deviné avant de swiper ?\n\nExemple fictif : café à emporter 2 € deux fois par semaine, abonnement streaming 13,99 € par mois, frais de livraison et de service 5,99 € une fois par semaine, sur 10 ans, sans inflation ni hausse de prix. Une petite dépense qui revient chaque semaine pèse plus lourd qu'on ne le pense dans un budget. Contenu éducatif, pas un conseil financier.\n\n#budget #epargne #argent #belgique #financepersonnelle\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "Une petite dépense du quotidien peut te coûter plus de 3 000 € en 10 ans. Café, streaming ou livraison : laquelle ?\nLa réponse est dans le carrousel, slide 5.\nTu avais deviné avant de swiper ?\n\nExemple fictif : café à emporter 2 € deux fois par semaine, abonnement streaming 13,99 € par mois, frais de livraison et de service 5,99 € une fois par semaine, sur 10 ans, sans inflation ni hausse de prix. Une petite dépense qui revient chaque semaine pèse plus lourd qu'on ne le pense dans un budget. Contenu éducatif, pas un conseil financier.\n\n#budget #epargne #argent #belgique #financepersonnelle\n\nGuide gratuit : lien dans ma bio.",
+  "tiktok_title": "Petite dépense : laquelle te coûte 3 000 € en 10 ans ?",
+  "tiktok": "Une petite dépense du quotidien peut te coûter plus de 3 000 € en 10 ans. Café, streaming ou livraison : laquelle ? Réponse slide 5. Tu avais deviné ? Exemple fictif, sans inflation. Contenu éducatif, pas un conseil financier. #budget #epargne #argent #belgique #financepersonnelle Guide gratuit : lien dans ma bio."
+ },
+ "sources": [
+  "Calcul VALORISLAB en Python : 2 × 2 × 52 × 10 = 2 080 € ; 13,99 × 12 × 10 = 1 678,80 € ; 5,99 × 52 × 10 = 3 114,80 € ≈ 3 115 €. Montants fictifs."
+ ],
+ "virality": {
+  "score": 82,
+  "detail": {
+   "retention": 22,
+   "couverture": 17,
+   "situation": 19,
+   "difference": 13,
+   "guide": 6,
+   "conformite": 10
+  },
+  "note": "Boucle ouverte tenue jusqu'à la slide 5 (réponse non devinable : la livraison n'est pas la plus chère à l'unité). Guide : numéro d'erreur inconnu (state/guide-erreurs.json vide).",
+  "hook_variants": [
+   "En 10 ans, une seule dépense. *Laquelle ?*",
+   "3 dépenses. Une seule dépasse *3 000 €.*",
+   "Café, streaming ou livraison : *qui coûte le plus ?*",
+   "Ta pire dépense *n'est pas la plus chère.*",
+   "10 ans, 3 habitudes, *un gagnant.*"
+  ]
+ },
+ "fb": {}
+}

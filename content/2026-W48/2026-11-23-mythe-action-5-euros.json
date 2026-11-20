@@ -1,0 +1,112 @@
+{
+ "id": "2026-11-23-mythe-action-5-euros",
+ "date": "2026-11-23",
+ "charte": "v6",
+ "format": "F2",
+ "bg": "light",
+ "theme": "bourse",
+ "pillar": "bourse",
+ "topic": "Tribunal du mythe : « une action à 5 € peut monter plus facilement qu'une à 500 € », verdict FAUX (1 000 € : 200 actions ou 2 actions, +10 % = +100 € dans les deux cas)",
+ "keywords": [
+  "action",
+  "prix d'une action",
+  "investir en bourse",
+  "mythe",
+  "débutant"
+ ],
+ "seo": {
+  "keyword": "action",
+  "secondary": [
+   "investir en bourse",
+   "prix d'une action"
+  ],
+  "cluster": "investir-debutant"
+ },
+ "guide_error": {
+  "n": null,
+  "theme": "croire qu'une action pas chère est une bonne affaire"
+ },
+ "kicker": "Bourse",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Une action à 5 € peut monter *plus facilement.*",
+   "visual": {
+    "type": "stamp",
+    "text": "Verdict ?"
+   }
+  },
+  {
+   "type": "text",
+   "kicker": "L'accusation",
+   "title": "« Elle ne coûte que 5 €, elle peut *vite doubler.* »",
+   "body": "C'est ce qu'on se dit en voyant le prix dans l'appli.",
+   "next": "La défense"
+  },
+  {
+   "type": "text",
+   "kicker": "La défense",
+   "title": "Le prix d'une action ne dit rien *de sa valeur.*",
+   "body": "Il dépend surtout du nombre d'actions que l'entreprise a émises.",
+   "next": "La preuve en chiffres"
+  },
+  {
+   "type": "text",
+   "kicker": "La preuve · exemple fictif",
+   "title": "1 000 € investis, *+10 %* pour les deux.",
+   "left": {
+    "label": "200 actions à 5 €",
+    "value": "+100 €"
+   },
+   "right": {
+    "label": "2 actions à 500 €",
+    "value": "+100 €"
+   },
+   "note": "Même hausse, même gain. Exemple fictif, avant frais et impôts.",
+   "next": "Le verdict"
+  },
+  {
+   "type": "verdict",
+   "stamp": "Faux",
+   "title": "Une action pas chère n'est pas *plus rentable.*",
+   "body": "Regarde ce que vaut l'entreprise et tes frais, pas le prix affiché."
+  },
+  {
+   "type": "cta",
+   "kicker": "Le guide gratuit",
+   "title": "C'est l'une des *20 erreurs* du guide.",
+   "body": "Guide gratuit, lien dans ma bio.",
+   "button": "Lien dans ma bio"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB, le tribunal du mythe : une action à 5 € monte-t-elle plus facilement qu'une action à 500 € ? Avec 1 000 €, 200 actions ou 2 actions, +10 % donne +100 € dans les deux cas. Verdict : faux (exemple fictif).",
+ "captions": {
+  "instagram": "« Une action à 5 € peut monter plus facilement qu'une à 500 €. » Vrai ou faux ?\nLe prix affiché ne dit rien de la valeur de l'entreprise ni de son potentiel. Le verdict est slide 5.\nTon verdict avant de swiper ?\n\nExemple fictif : 1 000 € investis à 5 € (200 titres) ou à 500 € (2 titres), hausse de 10 % dans les deux cas, avant frais et impôts. Avant d'investir en bourse, regarde ce que vaut l'entreprise et ce que tu paies en frais, pas le prix d'une action. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #action #belgique #debutant\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "« Une action à 5 € peut monter plus facilement qu'une à 500 €. » Vrai ou faux ?\nLe prix affiché ne dit rien de la valeur de l'entreprise ni de son potentiel. Le verdict est slide 5.\nTon verdict avant de swiper ?\n\nExemple fictif : 1 000 € investis à 5 € (200 titres) ou à 500 € (2 titres), hausse de 10 % dans les deux cas, avant frais et impôts. Avant d'investir en bourse, regarde ce que vaut l'entreprise et ce que tu paies en frais, pas le prix d'une action. Contenu éducatif, pas un conseil financier.\n\n#bourse #investir #action #belgique #debutant\n\nGuide gratuit : lien dans ma bio.",
+  "tiktok_title": "Une action à 5 € monte plus facilement ? Le verdict",
+  "tiktok": "« Une action à 5 € peut monter plus facilement qu'une à 500 €. » Vrai ou faux ? Le prix d'une action ne dit rien de sa valeur. Verdict slide 5. Ton verdict ? Exemple fictif. Contenu éducatif, pas un conseil financier. #bourse #investir #action #belgique #debutant Guide gratuit : lien dans ma bio."
+ },
+ "sources": [
+  "Calcul VALORISLAB en Python : 1 000 / 5 = 200 actions, 1 000 / 500 = 2 actions ; 200 × 0,50 = 100 € ; 2 × 50 = 100 €. Montants fictifs."
+ ],
+ "virality": {
+  "score": 80,
+  "detail": {
+   "retention": 21,
+   "couverture": 18,
+   "situation": 17,
+   "difference": 14,
+   "guide": 6,
+   "conformite": 10
+  },
+  "note": "Mythe courant chez les débutants (prix affiché dans l'appli), verdict sur l'avant-dernière slide. Verdict FAUX et non « ça dépend » : le prix unitaire n'a pas d'effet sur le rendement.",
+  "hook_variants": [
+   "Une action à 5 € peut monter *plus facilement.*",
+   "5 € ou 500 € : *laquelle rapporte plus ?*",
+   "Une action pas chère, *une bonne affaire ?*",
+   "« Elle ne coûte que 5 €. » *Et alors ?*",
+   "Le prix d'une action *te ment.*"
+  ]
+ },
+ "fb": {}
+}

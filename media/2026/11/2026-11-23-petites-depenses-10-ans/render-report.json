@@ -1,0 +1,791 @@
+{
+ "id": "2026-11-23-petites-depenses-10-ans",
+ "charte": "v6",
+ "kit_version": "2026-11-14.1",
+ "format": "F1",
+ "bg": "dark",
+ "cover_visual": "face",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "portrait-bureau",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 3,
+   "bytes": 263793,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 336.25,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA BOUCLE OUVERTE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 747,
+     "w": 904,
+     "h": 336,
+     "font": 112,
+     "color": "rgb(246, 242, 234)",
+     "text": "En 10 ans, une seule dépense. Laquelle ?"
+    },
+    {
+     "role": "stat",
+     "x": 72,
+     "y": 520,
+     "w": 904,
+     "h": 209,
+     "font": 220,
+     "color": "rgb(229, 192, 123)",
+     "text": "3 000 €"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(185, 178, 167)",
+     "text": "1/6"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "options",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 159194,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 336.25,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA BOUCLE OUVERTE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 229.203125,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(229, 192, 123)",
+     "text": "LES 3 SUSPECTS"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 286.203125,
+     "w": 904,
+     "h": 173.8125,
+     "font": 82,
+     "color": "rgb(246, 242, 234)",
+     "text": "Laquelle dépasse 3 000 € ?"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(229, 192, 123)",
+     "text": "Fais ton choix, puis swipe"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 494.015625,
+     "w": 904,
+     "h": 143.59375,
+     "font": 16,
+     "color": "rgb(28, 26, 23)",
+     "text": "A Café à emporter 2 € · 2 fois/semaine"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 655.609375,
+     "w": 904,
+     "h": 143.59375,
+     "font": 16,
+     "color": "rgb(28, 26, 23)",
+     "text": "B Abonnement streaming 13,99 €/mois"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 817.203125,
+     "w": 904,
+     "h": 143.59375,
+     "font": 16,
+     "color": "rgb(28, 26, 23)",
+     "text": "C Frais de livraison 5,99 €/semaine"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 519.015625,
+     "w": 315.390625,
+     "h": 48,
+     "font": 40,
+     "color": "rgb(28, 26, 23)",
+     "text": "Café à emporter"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 571.015625,
+     "w": 315.390625,
+     "h": 41.59375,
+     "font": 32,
+     "color": "rgb(94, 87, 77)",
+     "text": "2 € · 2 fois/semaine"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 680.609375,
+     "w": 459.921875,
+     "h": 48,
+     "font": 40,
+     "color": "rgb(28, 26, 23)",
+     "text": "Abonnement streaming"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 732.609375,
+     "w": 459.921875,
+     "h": 41.59375,
+     "font": 32,
+     "color": "rgb(94, 87, 77)",
+     "text": "13,99 €/mois"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 842.203125,
+     "w": 330.203125,
+     "h": 48,
+     "font": 40,
+     "color": "rgb(28, 26, 23)",
+     "text": "Frais de livraison"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 894.203125,
+     "w": 330.203125,
+     "h": 41.59375,
+     "font": 32,
+     "color": "rgb(94, 87, 77)",
+     "text": "5,99 €/semaine"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(185, 178, 167)",
+     "text": "2/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(185, 178, 167)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 122777,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 336.25,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA BOUCLE OUVERTE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 402.765625,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(229, 192, 123)",
+     "text": "UN INDICE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 459.765625,
+     "w": 904,
+     "h": 173.8125,
+     "font": 82,
+     "color": "rgb(246, 242, 234)",
+     "text": "Ce n'est pas la plus chère à l'unité."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(229, 192, 123)",
+     "text": "Deux suspects éliminés"
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 667.578125,
+     "w": 904,
+     "h": 119.65625,
+     "font": 44,
+     "color": "rgb(226, 221, 212)",
+     "text": "C'est la ligne que tu ne regardes jamais sur le ticket."
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(185, 178, 167)",
+     "text": "3/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(185, 178, 167)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "options",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 1,
+   "bytes": 118516,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 336.25,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA BOUCLE OUVERTE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 353.453125,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(229, 192, 123)",
+     "text": "ÉLIMINÉS"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 410.453125,
+     "w": 904,
+     "h": 86.90625,
+     "font": 82,
+     "color": "rgb(246, 242, 234)",
+     "text": "Ni A, ni B."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(229, 192, 123)",
+     "text": "La réponse va te surprendre"
+    },
+    {
+     "role": "stat",
+     "x": 777.140625,
+     "y": 576.15625,
+     "w": 167.859375,
+     "h": 54,
+     "font": 44,
+     "color": "rgb(138, 106, 46)",
+     "text": "2 080 €"
+    },
+    {
+     "role": "stat",
+     "x": 792.21875,
+     "y": 737.75,
+     "w": 152.78125,
+     "h": 54,
+     "font": 44,
+     "color": "rgb(138, 106, 46)",
+     "text": "1 679 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 531.359375,
+     "w": 904,
+     "h": 143.59375,
+     "font": 16,
+     "color": "rgb(28, 26, 23)",
+     "text": "A Café à emporter 2 € × 2 × 52 × 10 ans 2 080 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 692.953125,
+     "w": 904,
+     "h": 143.59375,
+     "font": 16,
+     "color": "rgb(28, 26, 23)",
+     "text": "B Streaming 13,99 € × 12 × 10 ans 1 679 €"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 556.359375,
+     "w": 321.34375,
+     "h": 48,
+     "font": 40,
+     "color": "rgb(28, 26, 23)",
+     "text": "Café à emporter"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 608.359375,
+     "w": 321.34375,
+     "h": 41.59375,
+     "font": 32,
+     "color": "rgb(94, 87, 77)",
+     "text": "2 € × 2 × 52 × 10 ans"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 717.953125,
+     "w": 317.921875,
+     "h": 48,
+     "font": 40,
+     "color": "rgb(28, 26, 23)",
+     "text": "Streaming"
+    },
+    {
+     "role": "listItem",
+     "x": 215,
+     "y": 769.953125,
+     "w": 317.921875,
+     "h": 41.59375,
+     "font": 32,
+     "color": "rgb(94, 87, 77)",
+     "text": "13,99 € × 12 × 10 ans"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(185, 178, 167)",
+     "text": "4/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(185, 178, 167)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 0,
+   "bytes": 118081,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 336.25,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA BOUCLE OUVERTE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 377.65625,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA RÉPONSE"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 1020,
+     "w": 904,
+     "h": 80,
+     "font": 40,
+     "color": "rgb(229, 192, 123)",
+     "text": "L'erreur derrière"
+    },
+    {
+     "role": "stat",
+     "x": 72,
+     "y": 464.65625,
+     "w": 904,
+     "h": 180.5,
+     "font": 190,
+     "color": "rgb(229, 192, 123)",
+     "text": "3 115 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 72,
+     "y": 661.15625,
+     "w": 904,
+     "h": 93.59375,
+     "font": 36,
+     "color": "rgb(246, 242, 234)",
+     "text": "C : les frais de livraison et de service. Pas le repas, juste les frai"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 778.75,
+     "w": 904,
+     "h": 33.59375,
+     "font": 24,
+     "color": "rgb(185, 178, 167)",
+     "text": "Calcul : 5,99 € × 52 semaines × 10 ans. Exemple fictif, sans inflation"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 56,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(185, 178, 167)",
+     "text": "5/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(185, 178, 167)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 122169,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 64,
+     "w": 336.25,
+     "h": 57,
+     "font": 24,
+     "color": "rgb(229, 192, 123)",
+     "text": "LA BOUCLE OUVERTE"
+    },
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 361.78125,
+     "w": 904,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(229, 192, 123)",
+     "text": "LE GUIDE GRATUIT"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 418.78125,
+     "w": 904,
+     "h": 178.0625,
+     "font": 84,
+     "color": "rgb(246, 242, 234)",
+     "text": "C'est l'une des 20 erreurs du guide."
+    },
+    {
+     "role": "body",
+     "x": 72,
+     "y": 630.84375,
+     "w": 904,
+     "h": 54.390625,
+     "font": 40,
+     "color": "rgb(226, 221, 212)",
+     "text": "Guide gratuit, lien dans ma bio."
+    },
+    {
+     "role": "button",
+     "x": 72,
+     "y": 731.234375,
+     "w": 471.359375,
+     "h": 93,
+     "font": 40,
+     "color": "rgb(26, 22, 18)",
+     "text": "Lien dans ma bio →"
+    },
+    {
+     "role": "button",
+     "x": 72,
+     "y": 864.234375,
+     "w": 904,
+     "h": 44,
+     "font": 36,
+     "color": "rgb(246, 242, 234)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "brand",
+     "x": 72,
+     "y": 1114,
+     "w": 254.359375,
+     "h": 56,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB"
+    },
+    {
+     "role": "count",
+     "x": 933.15625,
+     "y": 72,
+     "w": 74.84375,
+     "h": 46,
+     "font": 28,
+     "color": "rgb(185, 178, 167)",
+     "text": "6/6"
+    },
+    {
+     "role": "next",
+     "x": 610.21875,
+     "y": 1130,
+     "w": 397.78125,
+     "h": 24,
+     "font": 20,
+     "color": "rgb(185, 178, 167)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "warnings": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-23-petites-depenses-10-ans/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "portrait-bureau",
+  "bytes": 264167,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 64,
+    "w": 336.25,
+    "h": 57,
+    "font": 24,
+    "color": "rgb(229, 192, 123)",
+    "text": "LA BOUCLE OUVERTE"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 747,
+    "w": 904,
+    "h": 336,
+    "font": 112,
+    "color": "rgb(246, 242, 234)",
+    "text": "En 10 ans, une seule dépense. Laquelle ?"
+   },
+   {
+    "role": "stat",
+    "x": 72,
+    "y": 520,
+    "w": 904,
+    "h": 209,
+    "font": 220,
+    "color": "rgb(229, 192, 123)",
+    "text": "3 000 €"
+   },
+   {
+    "role": "brand",
+    "x": 72,
+    "y": 1114,
+    "w": 56,
+    "h": 56,
+    "font": 16,
+    "color": "rgb(246, 242, 234)",
+    "text": ""
+   }
+  ]
+ }
+}

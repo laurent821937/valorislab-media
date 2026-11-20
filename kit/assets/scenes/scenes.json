@@ -12,7 +12,9 @@
    "erreur"
   ],
   "text_from": 0.7,
-  "hide_header": true
+  "hide_header": true,
+  "face_focus": "35% 0%",
+  "face": true
  },
  "bureau-document": {
   "file": "bureau-document.jpg",
@@ -26,7 +28,9 @@
    "belgique",
    "mecanisme"
   ],
-  "text_into": 0.03
+  "text_into": 0.03,
+  "face_focus": "50% 0%",
+  "face": true
  },
  "bruxelles-ecran": {
   "file": "bruxelles-ecran.jpg",
@@ -54,7 +58,9 @@
    "mecanisme",
    "erreur"
   ],
-  "text_from": 0.68
+  "text_from": 0.68,
+  "face_focus": "55% 0%",
+  "face": true
  },
  "ia-contrat-stylo": {
   "file": "ia-contrat-stylo.jpg",

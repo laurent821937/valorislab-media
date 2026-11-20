@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Render a VALORISLAB content JSON into carousel JPEGs.
 
+Charte v6 (contents with "charte": "v6", 20/11/2026): kit/templates/slide-v6.html.j2, see render_v6().
+Older contents (charte v5) keep kit/templates/slide.html.j2.
+
 Usage: python3 kit/render.py content/2026-W45/2026-11-03-frais-etf.json [--out media]
 
 Produces, for each slide i:
@@ -184,6 +187,132 @@ def load_scene(name, f):
                 pos=meta.get("focus", "50% 0%"), h=h, upscale=round(max(f["W"] / w0, h / h0), 2))
 
 
+# ---------------------------------------------------------------- charte v6 (20/11/2026)
+FORMAT_TAGS = {"F1": "La boucle ouverte", "F2": "Le tribunal du mythe", "F3": "Dossier", "F4": "Trouve l'erreur",
+               "F5": "Le classement révélé", "F6": "La facture cachée", "F7": "Le message suspect", "F8": "Épisode"}
+LAYOUT_JS_V6 = """() => {
+  const roles = {kicker: '.kicker,.tag', title: '.title', lead: '.sub,.next', body: '.body',
+    stat: '.big,.cols .val,.opt .v,.stamp', statLabel: '.big-lab,.cols .lab,.flagnote,.who', card: '.card', note: '.note,.source,.fict',
+    listItem: 'ol.steps .t,.opt .t b,.opt .t span,.msg,.ticket .row,.cols .txt', button: '.cta-btn,.url',
+    brand: '.mono', count: '.count', next: 'footer .disclaimer'};
+  const boxes = [];
+  for (const [role, q] of Object.entries(roles)) {
+    document.querySelectorAll(q).forEach(e => {
+      const r = e.getBoundingClientRect(), cs = getComputedStyle(e);
+      boxes.push({role, x: r.x, y: r.y, w: r.width, h: r.height, font: parseFloat(cs.fontSize),
+                  color: cs.color, text: (e.innerText || '').replace(/\\s+/g, ' ').slice(0, 70)});
+    });
+  }
+  return {boxes, hero: null};
+}"""
+
+
+def words(text):
+    return len(re.sub(r"[*«»\"?!.,:;]", " ", str(text or "")).split())
+
+
+def render_v6(c, a):
+    """Charte v6: format tag, alternating dark/light background, big headline and key number, face photo
+    (never cut out) or the format's own visual on the cover, swipe cue on every inner slide, guide slide last."""
+    cid, date, slides = c["id"], c["date"], c["slides"]
+    n = len(slides)
+    f = FORMATS["feed"]
+    bg = c.get("bg", "dark")
+    fmt_code = c.get("format", "")
+    tag = c.get("tag") or FORMAT_TAGS.get(fmt_code, "")
+    cover = next(s for s in slides if s["type"] == "cover")
+    cv = cover.get("visual") or {}
+    cat = scene_catalog()
+    photo = None
+    if cv.get("type") == "face":
+        meta = cat.get(cv.get("photo", ""), {})
+        src = KIT / "assets" / "scenes" / meta.get("file", "")
+        if not meta or not src.exists():
+            print(f"photo du protagoniste introuvable : {cv.get('photo')}", file=sys.stderr)
+            sys.exit(2)
+        photo = dict(src=f"../assets/scenes/{src.name}", pos=cv.get("pos", meta.get("face_focus", "60% 22%")), name=cv["photo"])
+    out_dir = pathlib.Path(a.out) / date[:4] / date[5:7] / cid
+    out_dir.mkdir(parents=True, exist_ok=True)
+    env = Environment(loader=FileSystemLoader(str(KIT / "templates")), autoescape=True)
+    env.filters["md"] = md
+    tpl = env.get_template("slide-v6.html.j2")
+    kit_version = (KIT / "RENDER_VERSION").read_text().strip()
+    report = {"id": cid, "charte": "v6", "kit_version": kit_version, "format": fmt_code, "bg": bg,
+              "cover_visual": cv.get("type"), "files": [], "errors": [], "warnings": []}
+    # brief section 4 / 5 checks on the text itself
+    if words(cover["title"]) + (1 if cover.get("number") else 0) > 12:
+        report["errors"].append(f"couverture : titre de {words(cover['title'])} mots (+ chiffre), 12 au maximum")
+    if cover.get("subtitle") and words(cover["subtitle"]) > 6:
+        report["errors"].append(f"couverture : sous-titre de {words(cover['subtitle'])} mots, 6 au maximum")
+    if not 5 <= n <= 7:
+        report["errors"].append(f"{n} slides : la charte v6 en demande 5 à 7")
+    if slides[-1]["type"] != "cta":
+        report["errors"].append("la dernière slide doit être la slide du guide (type cta)")
+    for i, s in enumerate(slides[1:-1], 2):
+        txt = " ".join(str(s.get(k) or "") for k in ("title", "body", "note"))
+        txt += " " + " ".join(m.get("text", "") for m in s.get("messages", []))
+        txt += " " + " ".join(f"{o.get('label', '')} {o.get('detail', '')}" for o in s.get("options", []))
+        if words(txt) > 25 + 6 * len(s.get("messages", [])):
+            report["warnings"].append(f"slide {i} : {words(txt)} mots (une idée, 25 mots maximum hors bulles)")
+        if not s.get("next") and i < n - 1:
+            report["errors"].append(f"slide {i} : pas de raison de swiper (`next`)")
+    tmp = pathlib.Path(tempfile.mkdtemp(dir=KIT / "templates"))
+    tmp_html = KIT / "templates" / "_render.html"
+
+    def shoot(page, s, i, nn, name, visual):
+        hx, hy = halo_for(f"{cid}-{name}")
+        tmp_html.write_text(tpl.render(s=s, i=i, n=nn, bg=bg, tag=tag, visual=visual,
+                                       photo_src=photo["src"] if photo else None, photo_pos=photo["pos"] if photo else None,
+                                       halo_x=hx, halo_y=hy, **f), encoding="utf-8")
+        page.goto(tmp_html.as_uri())
+        fit, layout = page.evaluate("window.__fit()"), page.evaluate(LAYOUT_JS_V6)
+        png = tmp / f"{name}.png"
+        page.screenshot(path=str(png), type="png")
+        jpg = out_dir / f"{name}.jpg"
+        Image.open(png).convert("RGB").resize((f["W"], f["H"]), Image.LANCZOS).save(
+            jpg, "JPEG", quality=a.quality, optimize=True, progressive=False, subsampling=0)
+        return fit, layout, jpg
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page(viewport={"width": f["W"], "height": f["H"]}, device_scale_factor=SS)
+        for i, s in enumerate(slides, 1):
+            visual = cv.get("type") if s["type"] == "cover" else None
+            fit, layout, jpg = shoot(page, s, i, n, f"feed-{i:02d}", visual)
+            rec = {"file": str(jpg.relative_to(ROOT)), "format": "feed", "slide": i, "type": s["type"], "pose": None,
+                   "scene": photo["name"] if (photo and s["type"] == "cover") else None, "note": None,
+                   "scale": fit["scale"], "overflow": fit["overflow"], "title_lines": fit["title_lines"],
+                   "bytes": jpg.stat().st_size, "W": f["W"], "H": f["H"], "boxes": layout["boxes"], "hero": None}
+            report["files"].append(rec)
+            if fit["overflow"]:
+                report["errors"].append(f"feed slide {i}: text overflows even at scale {fit['scale']} -> shorten it")
+            if s["type"] == "cover":
+                tb = next((b for b in layout["boxes"] if b["role"] == "title"), None)
+                if tb and tb["font"] < 110:
+                    report["errors"].append(f"couverture : titre à {tb['font']:.0f} px après ajustement (110 px minimum) -> raccourcir")
+                if fit["title_lines"] > 4:
+                    report["errors"].append(f"couverture : titre sur {fit['title_lines']} lignes (4 au maximum)")
+        fb = c.get("fb") or {}
+        hook = dict(cover, type="hook", title=fb.get("title", cover["title"]),
+                    subtitle=fb.get("subtitle", cover.get("subtitle")), number=fb.get("number", cover.get("number")))
+        fit, layout, jpg = shoot(page, hook, 1, 1, "fb-01", cv.get("type"))
+        report["fb"] = {"file": str(jpg.relative_to(ROOT)), "scale": fit["scale"], "overflow": fit["overflow"],
+                        "scene": photo["name"] if photo else None, "bytes": jpg.stat().st_size,
+                        "W": f["W"], "H": f["H"], "boxes": layout["boxes"]}
+        if fit["overflow"]:
+            report["errors"].append(f"fb: text overflows even at scale {fit['scale']} -> shorten it")
+        browser.close()
+    tmp_html.unlink(missing_ok=True)
+    for x in tmp.iterdir():
+        x.unlink()
+    tmp.rmdir()
+    (out_dir / "render-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(json.dumps({"out": str(out_dir.relative_to(ROOT)), "charte": "v6", "slides": n,
+                      "min_scale": min(r["scale"] for r in report["files"]),
+                      "warnings": report["warnings"], "errors": report["errors"]}, ensure_ascii=False))
+    sys.exit(1 if report["errors"] else 0)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("content")
@@ -192,6 +321,8 @@ def main():
     a = ap.parse_args()
 
     c = json.loads(pathlib.Path(a.content).read_text(encoding="utf-8"))
+    if c.get("charte") == "v6":
+        return render_v6(c, a)
     cid, date = c["id"], c["date"]  # date: YYYY-MM-DD (planned publication week)
     theme = c.get("theme", "bourse")
     kicker = c["kicker"]
