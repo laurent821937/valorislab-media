@@ -4,7 +4,7 @@
 set -euo pipefail
 KIT="$(cd "$(dirname "$0")" && pwd)"
 TMP="$(mktemp -d)"
-( cd "$TMP" && npm init -y >/dev/null 2>&1 && npm install --silent @fontsource/plus-jakarta-sans@5.3.0 @fontsource/inter@5.2.8 )
+( cd "$TMP" && npm init -y >/dev/null 2>&1 && npm install --silent @fontsource/plus-jakarta-sans@5.3.0 @fontsource/inter@5.2.8 @fontsource/playfair-display@5.2.8 )
 mkdir -p "$KIT/fonts"
 for w in 400 500 600 700 800; do
   cp "$TMP/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-$w-normal.woff2" "$KIT/fonts/"
@@ -12,6 +12,9 @@ for w in 400 500 600 700 800; do
   cp "$TMP/node_modules/@fontsource/inter/files/inter-latin-$w-normal.woff2" "$KIT/fonts/"      # charte v5
   cp "$TMP/node_modules/@fontsource/inter/files/inter-latin-ext-$w-normal.woff2" "$KIT/fonts/"
 done
+for w in 500 600 700; do for s in normal italic; do for r in latin latin-ext; do  # charte v6 premium: serif titles
+  cp "$TMP/node_modules/@fontsource/playfair-display/files/playfair-display-$r-$w-$s.woff2" "$KIT/fonts/"
+done; done; done
 rm -rf "$TMP"
 # Python Playwright is not always preinstalled: install the version matching the preinstalled Chromium
 # (same version as the Node package, which ships with the browser in /opt/pw-browsers).

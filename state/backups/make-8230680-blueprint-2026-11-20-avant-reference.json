@@ -1,0 +1,1919 @@
+{
+ "flow": [
+  {
+   "id": 1,
+   "module": "scenario-service:StartSubscenario",
+   "version": 2,
+   "metadata": {
+    "designer": {
+     "x": 0,
+     "y": 300,
+     "name": "Start scenario"
+    },
+    "interface": [
+     {
+      "help": "Prompt complet de l'image, envoyé tel quel à OpenAI (décor photo sans texte, ou slide avec « TEXTE EXACT : … »).",
+      "name": "image_prompt",
+      "type": "text",
+      "required": true
+     },
+     {
+      "help": "Identifiant du contenu. Lettres, chiffres, tirets et underscores uniquement (public_id Cloudinary).",
+      "name": "content_id",
+      "type": "text",
+      "required": true
+     },
+     {
+      "help": "Numéro de l'image dans le contenu, de 1 à 8.",
+      "name": "slide_index",
+      "type": "number",
+      "required": true
+     },
+     {
+      "help": "Numéro de génération du contenu, de 1 à 10 : plafond de 10 images par contenu. Chaque numéro ne peut servir qu'une fois.",
+      "name": "generation_no",
+      "type": "number",
+      "required": true
+     },
+     {
+      "help": "false (par défaut) : génère réellement. true : simulation, aucune génération ni écriture.",
+      "name": "dry_run",
+      "type": "boolean",
+      "default": false,
+      "required": false
+     },
+     {
+      "help": "Usage interne, laisser vide : URL d'un actif de marque à téléverser dans Cloudinary (non fiable : téléverser à la main).",
+      "name": "asset_url",
+      "type": "text",
+      "required": false
+     }
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "filter": null,
+   "mapper": null,
+   "module": "builtin:BasicIfElse",
+   "version": 1,
+   "branches": [
+    {
+     "flow": [
+      {
+       "id": 41,
+       "mapper": {
+        "file": "{{1.asset_url}}",
+        "folder": "valorislab/brand",
+        "file_type": "url",
+        "mime_type": "image/webp",
+        "public_id": "{{lower(1.content_id)}}",
+        "resourceType": "image"
+       },
+       "module": "cloudinary:UploadResource",
+       "onerror": [
+        {
+         "id": 44,
+         "mapper": {
+          "key": "brand::asset_upload_error",
+          "data": {
+           "status": "error",
+           "content_id": "{{1.content_id}}",
+           "last_error": "{{41.error.message}}",
+           "updated_at": "{{now}}"
+          },
+          "upsert": true,
+          "overwriteArrays": false
+         },
+         "module": "datastore:UpdateRecord",
+         "version": 1,
+         "metadata": {
+          "expect": [
+           {
+            "name": "key",
+            "type": "text",
+            "label": "Key",
+            "required": true
+           },
+           {
+            "name": "upsert",
+            "type": "boolean",
+            "label": "Insert missing record",
+            "default": true,
+            "required": true
+           },
+           {
+            "name": "overwriteArrays",
+            "type": "boolean",
+            "label": "Overwrite an existing array in the record",
+            "default": false,
+            "required": true,
+            "validate": false
+           },
+           {
+            "name": "data",
+            "spec": [
+             {
+              "name": "content_id",
+              "type": "text",
+              "label": "Content ID",
+              "required": false
+             },
+             {
+              "name": "profile_id",
+              "type": "text",
+              "label": "Profile ID",
+              "required": false
+             },
+             {
+              "name": "approval_status",
+              "type": "text",
+              "label": "Approval status",
+              "required": false
+             },
+             {
+              "name": "status",
+              "type": "text",
+              "label": "Status",
+              "required": false
+             },
+             {
+              "name": "caption",
+              "type": "text",
+              "label": "Caption",
+              "required": false
+             },
+             {
+              "name": "image_url",
+              "type": "text",
+              "label": "Image URL",
+              "required": false
+             },
+             {
+              "name": "scheduled_at",
+              "type": "text",
+              "label": "Scheduled at",
+              "required": false
+             },
+             {
+              "name": "buffer_post_id",
+              "type": "text",
+              "label": "Buffer post ID",
+              "required": false
+             },
+             {
+              "name": "last_error",
+              "type": "text",
+              "label": "Last error",
+              "required": false
+             },
+             {
+              "name": "updated_at",
+              "type": "text",
+              "label": "Updated at",
+              "required": false
+             },
+             {
+              "name": "slide_index",
+              "type": "number",
+              "label": "Slide index",
+              "required": false
+             },
+             {
+              "name": "generation_no",
+              "type": "number",
+              "label": "Generation no",
+              "required": false
+             }
+            ],
+            "type": "collection",
+            "label": "Record"
+           }
+          ],
+          "restore": {
+           "parameters": {
+            "datastore": {
+             "label": "VALORISLAB_CONTENT_REGISTRY"
+            }
+           }
+          },
+          "designer": {
+           "x": 1100,
+           "y": -200,
+           "name": "Log asset upload error"
+          },
+          "parameters": [
+           {
+            "name": "datastore",
+            "type": "datastore",
+            "label": "Data store",
+            "required": true
+           }
+          ]
+         },
+         "parameters": {
+          "datastore": 236861
+         }
+        },
+        {
+         "id": 43,
+         "mapper": {
+          "format": "",
+          "status": "error",
+          "image_url": "{{emptystring}}",
+          "content_id": "{{1.content_id}}",
+          "dimensions": "{{emptystring}}"
+         },
+         "module": "scenario-service:ReturnData",
+         "version": 2,
+         "metadata": {
+          "restore": {},
+          "designer": {
+           "x": 1300,
+           "y": -100,
+           "name": "Return asset error"
+          }
+         },
+         "parameters": {}
+        }
+       ],
+       "version": 1,
+       "metadata": {
+        "expect": [
+         {
+          "name": "file_type",
+          "type": "select",
+          "label": "File Type",
+          "mappable": false,
+          "required": true,
+          "validate": {
+           "enum": [
+            "data",
+            "url"
+           ]
+          }
+         },
+         {
+          "name": "file",
+          "type": "buffer",
+          "label": "File",
+          "required": true,
+          "semantic": "file:data"
+         },
+         {
+          "name": "mime_type",
+          "type": "text",
+          "label": "MIME Type",
+          "required": true
+         },
+         {
+          "name": "resourceType",
+          "type": "select",
+          "label": "Resource Type",
+          "required": true
+         },
+         {
+          "name": "upload_preset",
+          "type": "select",
+          "label": "Upload Preset"
+         },
+         {
+          "name": "public_id",
+          "type": "text",
+          "label": "Public ID"
+         },
+         {
+          "name": "folder",
+          "type": "select",
+          "label": "Folder"
+         },
+         {
+          "name": "use_filename",
+          "type": "boolean",
+          "label": "Use Filename"
+         },
+         {
+          "name": "type",
+          "type": "select",
+          "label": "Type",
+          "default": "upload",
+          "validate": {
+           "enum": [
+            "private",
+            "upload",
+            "authenticated"
+           ]
+          }
+         }
+        ],
+        "restore": {
+         "expect": {
+          "folder": {
+           "mode": "edit"
+          },
+          "file_type": {
+           "mode": "chose",
+           "label": "Base64 Encoded Data URI (~60MB)",
+           "nested": [
+            {
+             "help": "The file to upload. It can be:\n- the Data URI (Base64 encoded), max 60 MB (62,910,000 chars)\nFor details and examples, see: [file source options](https: //cloudinary.com/documentation/upload_images#file_source_options).",
+             "name": "file",
+             "type": "buffer",
+             "label": "File",
+             "required": true,
+             "semantic": "file:data"
+            },
+            {
+             "help": "[Here](https://en.wikipedia.org/wiki/Media_type) can be found examples of most frequently used MIME types.\n[Here](https://www.iana.org/assignments/media-types/media-types.xhtml) can be found all known MIME types.",
+             "name": "mime_type",
+             "type": "text",
+             "label": "MIME Type",
+             "required": true
+            }
+           ]
+          }
+         },
+         "parameters": {
+          "__IMTCONN__": {
+           "label": "Laurent's Cloudinary connection"
+          }
+         }
+        },
+        "designer": {
+         "x": 900,
+         "y": -300,
+         "name": "Upload brand asset"
+        },
+        "parameters": [
+         {
+          "name": "__IMTCONN__",
+          "type": "account:cloudinary",
+          "label": "Connection",
+          "required": true
+         }
+        ]
+       },
+       "parameters": {
+        "__IMTCONN__": 12454504
+       }
+      },
+      {
+       "id": 42,
+       "mapper": {
+        "format": "",
+        "status": "asset_uploaded",
+        "image_url": "{{41.secure_url}}",
+        "content_id": "{{1.content_id}}",
+        "dimensions": "{{41.width}}x{{41.height}}"
+       },
+       "module": "scenario-service:ReturnData",
+       "version": 2,
+       "metadata": {
+        "restore": {},
+        "designer": {
+         "x": 1200,
+         "y": -300,
+         "name": "Return asset uploaded"
+        }
+       },
+       "parameters": {}
+      }
+     ],
+     "type": "condition",
+     "label": "Brand asset upload",
+     "merge": false,
+     "conditions": [
+      [
+       {
+        "a": "{{trim(ifempty(1.asset_url; emptystring))}}",
+        "b": "{{emptystring}}",
+        "o": "text:notequal"
+       },
+       {
+        "a": "{{1.content_id}}",
+        "b": "^[A-Za-z0-9_-]+$",
+        "o": "text:pattern"
+       }
+      ]
+     ]
+    },
+    {
+     "flow": [
+      {
+       "id": 20,
+       "filter": null,
+       "mapper": null,
+       "module": "builtin:BasicIfElse",
+       "version": 1,
+       "branches": [
+        {
+         "flow": [
+          {
+           "id": 22,
+           "filter": null,
+           "mapper": null,
+           "module": "builtin:BasicIfElse",
+           "version": 1,
+           "branches": [
+            {
+             "flow": [
+              {
+               "id": 23,
+               "mapper": {
+                "key": "{{1.content_id}}::gen::{{1.generation_no}}"
+               },
+               "module": "datastore:ExistRecord",
+               "version": 1,
+               "metadata": {
+                "expect": [
+                 {
+                  "name": "key",
+                  "type": "text",
+                  "label": "Key",
+                  "required": true
+                 }
+                ],
+                "restore": {
+                 "parameters": {
+                  "datastore": {
+                   "label": "VALORISLAB_CONTENT_REGISTRY"
+                  }
+                 }
+                },
+                "designer": {
+                 "x": 900,
+                 "y": 0,
+                 "name": "Check generation number"
+                },
+                "parameters": [
+                 {
+                  "name": "datastore",
+                  "type": "datastore",
+                  "label": "Data store",
+                  "required": true
+                 }
+                ]
+               },
+               "parameters": {
+                "datastore": 236861
+               }
+              },
+              {
+               "id": 24,
+               "filter": null,
+               "mapper": null,
+               "module": "builtin:BasicIfElse",
+               "version": 1,
+               "branches": [
+                {
+                 "flow": [
+                  {
+                   "id": 25,
+                   "mapper": {
+                    "format": "4:5",
+                    "status": "refused_generation_used",
+                    "image_url": "{{emptystring}}",
+                    "content_id": "{{1.content_id}}",
+                    "dimensions": "{{emptystring}}"
+                   },
+                   "module": "scenario-service:ReturnData",
+                   "version": 2,
+                   "metadata": {
+                    "restore": {},
+                    "designer": {
+                     "x": 1300,
+                     "y": 300,
+                     "name": "Return refused"
+                    }
+                   },
+                   "parameters": {}
+                  }
+                 ],
+                 "type": "condition",
+                 "label": "Generation number already used",
+                 "merge": false,
+                 "conditions": [
+                  [
+                   {
+                    "a": "{{23.exist}}",
+                    "b": "true",
+                    "o": "boolean:equal"
+                   }
+                  ]
+                 ]
+                },
+                {
+                 "flow": [
+                  {
+                   "id": 26,
+                   "mapper": {
+                    "key": "{{1.content_id}}::gen::{{1.generation_no}}",
+                    "data": {
+                     "status": "reserved",
+                     "content_id": "{{1.content_id}}",
+                     "updated_at": "{{now}}",
+                     "slide_index": "{{1.slide_index}}",
+                     "generation_no": "{{1.generation_no}}",
+                     "approval_status": "pending_review"
+                    },
+                    "overwrite": false
+                   },
+                   "module": "datastore:AddRecord",
+                   "version": 1,
+                   "metadata": {
+                    "expect": [
+                     {
+                      "name": "key",
+                      "type": "text",
+                      "label": "Key"
+                     },
+                     {
+                      "name": "overwrite",
+                      "type": "boolean",
+                      "label": "Overwrite an existing record",
+                      "default": false,
+                      "required": true
+                     },
+                     {
+                      "name": "data",
+                      "spec": [
+                       {
+                        "name": "content_id",
+                        "type": "text",
+                        "label": "Content ID",
+                        "required": false
+                       },
+                       {
+                        "name": "profile_id",
+                        "type": "text",
+                        "label": "Profile ID",
+                        "required": false
+                       },
+                       {
+                        "name": "approval_status",
+                        "type": "text",
+                        "label": "Approval status",
+                        "required": false
+                       },
+                       {
+                        "name": "status",
+                        "type": "text",
+                        "label": "Status",
+                        "required": false
+                       },
+                       {
+                        "name": "caption",
+                        "type": "text",
+                        "label": "Caption",
+                        "required": false
+                       },
+                       {
+                        "name": "image_url",
+                        "type": "text",
+                        "label": "Image URL",
+                        "required": false
+                       },
+                       {
+                        "name": "scheduled_at",
+                        "type": "text",
+                        "label": "Scheduled at",
+                        "required": false
+                       },
+                       {
+                        "name": "buffer_post_id",
+                        "type": "text",
+                        "label": "Buffer post ID",
+                        "required": false
+                       },
+                       {
+                        "name": "last_error",
+                        "type": "text",
+                        "label": "Last error",
+                        "required": false
+                       },
+                       {
+                        "name": "updated_at",
+                        "type": "text",
+                        "label": "Updated at",
+                        "required": false
+                       },
+                       {
+                        "name": "slide_index",
+                        "type": "number",
+                        "label": "Slide index",
+                        "required": false
+                       },
+                       {
+                        "name": "generation_no",
+                        "type": "number",
+                        "label": "Generation no",
+                        "required": false
+                       }
+                      ],
+                      "type": "collection",
+                      "label": "Record"
+                     }
+                    ],
+                    "restore": {
+                     "parameters": {
+                      "datastore": {
+                       "label": "VALORISLAB_CONTENT_REGISTRY"
+                      }
+                     }
+                    },
+                    "designer": {
+                     "x": 1300,
+                     "y": 0,
+                     "name": "Reserve generation"
+                    },
+                    "parameters": [
+                     {
+                      "name": "datastore",
+                      "type": "datastore",
+                      "label": "Data store",
+                      "required": true
+                     }
+                    ]
+                   },
+                   "parameters": {
+                    "datastore": 236861
+                   }
+                  },
+                  {
+                   "id": 2,
+                   "filter": null,
+                   "mapper": {
+                    "n": 1,
+                    "size": "1088x1360",
+                    "model": "gpt-image-2.5-flare",
+                    "prompt": "{{1.image_prompt}}",
+                    "quality": "medium"
+                   },
+                   "module": "openai-gpt-3:GenerateImage",
+                   "onerror": [
+                    {
+                     "id": 27,
+                     "mapper": {
+                      "key": "{{1.content_id}}::gen::{{1.generation_no}}",
+                      "data": {
+                       "status": "error",
+                       "last_error": "{{2.error.message}}",
+                       "updated_at": "{{now}}"
+                      },
+                      "upsert": false,
+                      "overwriteArrays": false
+                     },
+                     "module": "datastore:UpdateRecord",
+                     "version": 1,
+                     "metadata": {
+                      "expect": [
+                       {
+                        "name": "key",
+                        "type": "text",
+                        "label": "Key",
+                        "required": true
+                       },
+                       {
+                        "name": "upsert",
+                        "type": "boolean",
+                        "label": "Insert missing record",
+                        "default": true,
+                        "required": true
+                       },
+                       {
+                        "name": "overwriteArrays",
+                        "type": "boolean",
+                        "label": "Overwrite an existing array in the record",
+                        "default": false,
+                        "required": true,
+                        "validate": false
+                       },
+                       {
+                        "name": "data",
+                        "spec": [
+                         {
+                          "name": "content_id",
+                          "type": "text",
+                          "label": "Content ID",
+                          "required": false
+                         },
+                         {
+                          "name": "profile_id",
+                          "type": "text",
+                          "label": "Profile ID",
+                          "required": false
+                         },
+                         {
+                          "name": "approval_status",
+                          "type": "text",
+                          "label": "Approval status",
+                          "required": false
+                         },
+                         {
+                          "name": "status",
+                          "type": "text",
+                          "label": "Status",
+                          "required": false
+                         },
+                         {
+                          "name": "caption",
+                          "type": "text",
+                          "label": "Caption",
+                          "required": false
+                         },
+                         {
+                          "name": "image_url",
+                          "type": "text",
+                          "label": "Image URL",
+                          "required": false
+                         },
+                         {
+                          "name": "scheduled_at",
+                          "type": "text",
+                          "label": "Scheduled at",
+                          "required": false
+                         },
+                         {
+                          "name": "buffer_post_id",
+                          "type": "text",
+                          "label": "Buffer post ID",
+                          "required": false
+                         },
+                         {
+                          "name": "last_error",
+                          "type": "text",
+                          "label": "Last error",
+                          "required": false
+                         },
+                         {
+                          "name": "updated_at",
+                          "type": "text",
+                          "label": "Updated at",
+                          "required": false
+                         },
+                         {
+                          "name": "slide_index",
+                          "type": "number",
+                          "label": "Slide index",
+                          "required": false
+                         },
+                         {
+                          "name": "generation_no",
+                          "type": "number",
+                          "label": "Generation no",
+                          "required": false
+                         }
+                        ],
+                        "type": "collection",
+                        "label": "Record"
+                       }
+                      ],
+                      "restore": {
+                       "parameters": {
+                        "datastore": {
+                         "label": "VALORISLAB_CONTENT_REGISTRY"
+                        }
+                       }
+                      },
+                      "designer": {
+                       "x": 1500,
+                       "y": 600,
+                       "name": "Gen OpenAI en erreur"
+                      },
+                      "parameters": [
+                       {
+                        "name": "datastore",
+                        "type": "datastore",
+                        "label": "Data store",
+                        "required": true
+                       }
+                      ]
+                     },
+                     "parameters": {
+                      "datastore": 236861
+                     }
+                    },
+                    {
+                     "id": 5,
+                     "mapper": {
+                      "format": "4:5",
+                      "status": "error",
+                      "image_url": "{{emptystring}}",
+                      "content_id": "{{1.content_id}}",
+                      "dimensions": "{{emptystring}}"
+                     },
+                     "module": "scenario-service:ReturnData",
+                     "version": 2,
+                     "metadata": {
+                      "restore": {},
+                      "designer": {
+                       "x": 1700,
+                       "y": 600,
+                       "name": "Return OpenAI error"
+                      }
+                     },
+                     "parameters": {}
+                    }
+                   ],
+                   "version": 1,
+                   "metadata": {
+                    "expect": [
+                     {
+                      "name": "model",
+                      "type": "select",
+                      "label": "Model",
+                      "grouped": true,
+                      "mappable": {
+                       "help": "ID of the GPT model to use."
+                      },
+                      "required": true
+                     },
+                     {
+                      "name": "prompt",
+                      "type": "text",
+                      "label": "Prompt",
+                      "required": true,
+                      "validate": {
+                       "max": 32000,
+                       "min": 1
+                      }
+                     },
+                     {
+                      "name": "size",
+                      "type": "text",
+                      "label": "Size",
+                      "advanced": true
+                     },
+                     {
+                      "name": "quality",
+                      "type": "select",
+                      "label": "Quality",
+                      "advanced": true,
+                      "validate": {
+                       "enum": [
+                        "auto",
+                        "high",
+                        "medium",
+                        "low",
+                        "xhigh",
+                        "max"
+                       ]
+                      }
+                     },
+                     {
+                      "name": "background",
+                      "type": "select",
+                      "label": "Background",
+                      "advanced": true,
+                      "validate": {
+                       "enum": [
+                        "auto",
+                        "transparent",
+                        "opaque"
+                       ]
+                      }
+                     },
+                     {
+                      "name": "output_format",
+                      "type": "select",
+                      "label": "Output Format",
+                      "advanced": true,
+                      "validate": {
+                       "enum": [
+                        "png",
+                        "jpeg",
+                        "webp"
+                       ]
+                      }
+                     },
+                     {
+                      "name": "n",
+                      "type": "integer",
+                      "label": "Number",
+                      "default": 1,
+                      "advanced": true,
+                      "validate": {
+                       "max": 10,
+                       "min": 1
+                      }
+                     },
+                     {
+                      "name": "moderation",
+                      "type": "select",
+                      "label": "Moderation",
+                      "advanced": true,
+                      "validate": {
+                       "enum": [
+                        "auto",
+                        "low"
+                       ]
+                      }
+                     }
+                    ],
+                    "restore": {
+                     "expect": {
+                      "model": {
+                       "mode": "chose",
+                       "label": "gpt-image-2.5-flare (system)"
+                      },
+                      "quality": {
+                       "mode": "chose",
+                       "label": "Medium"
+                      }
+                     },
+                     "parameters": {
+                      "__IMTCONN__": {
+                       "label": "VALORISLAB - OpenAI"
+                      }
+                     }
+                    },
+                    "designer": {
+                     "x": 1500,
+                     "y": 300,
+                     "name": "Generate slide"
+                    },
+                    "interface": [
+                     {
+                      "name": "created",
+                      "type": "date",
+                      "label": "Created"
+                     },
+                     {
+                      "name": "data",
+                      "spec": [
+                       {
+                        "name": "fileName",
+                        "type": "text",
+                        "label": "File Name",
+                        "semantic": "file:name"
+                       },
+                       {
+                        "name": "fileData",
+                        "type": "buffer",
+                        "label": "File Data",
+                        "semantic": "file:data"
+                       }
+                      ],
+                      "type": "array",
+                      "label": "Images"
+                     },
+                     {
+                      "name": "resImgName",
+                      "type": "text",
+                      "label": "Response Image Name",
+                      "semantic": "file:name"
+                     },
+                     {
+                      "name": "resImgData",
+                      "type": "buffer",
+                      "label": "Response Image Data",
+                      "semantic": "file:data"
+                     },
+                     {
+                      "name": "background",
+                      "type": "text",
+                      "label": "Background"
+                     },
+                     {
+                      "name": "output_format",
+                      "type": "text",
+                      "label": "Output Format"
+                     },
+                     {
+                      "name": "quality",
+                      "type": "text",
+                      "label": "Quality"
+                     },
+                     {
+                      "name": "size",
+                      "type": "text",
+                      "label": "Size"
+                     },
+                     {
+                      "name": "usage",
+                      "spec": [
+                       {
+                        "name": "input_tokens",
+                        "type": "uinteger",
+                        "label": "Input Tokens"
+                       },
+                       {
+                        "name": "input_tokens_details",
+                        "spec": [
+                         {
+                          "name": "image_tokens",
+                          "type": "uinteger",
+                          "label": "Image Tokens"
+                         },
+                         {
+                          "name": "text_tokens",
+                          "type": "uinteger",
+                          "label": "Text Tokens"
+                         }
+                        ],
+                        "type": "collection",
+                        "label": "Input Tokens Details"
+                       },
+                       {
+                        "name": "output_tokens",
+                        "type": "uinteger",
+                        "label": "Output Tokens"
+                       },
+                       {
+                        "name": "output_tokens_details",
+                        "spec": [
+                         {
+                          "name": "image_tokens",
+                          "type": "uinteger",
+                          "label": "Image Tokens"
+                         },
+                         {
+                          "name": "text_tokens",
+                          "type": "uinteger",
+                          "label": "Text Tokens"
+                         }
+                        ],
+                        "type": "collection",
+                        "label": "Output Tokens Details"
+                       },
+                       {
+                        "name": "total_tokens",
+                        "type": "uinteger",
+                        "label": "Total Tokens"
+                       }
+                      ],
+                      "type": "collection",
+                      "label": "Usage"
+                     }
+                    ],
+                    "parameters": [
+                     {
+                      "name": "__IMTCONN__",
+                      "type": "account:openai-gpt-3",
+                      "label": "Connection",
+                      "required": true
+                     }
+                    ]
+                   },
+                   "parameters": {
+                    "__IMTCONN__": 12454143
+                   }
+                  },
+                  {
+                   "id": 3,
+                   "mapper": {
+                    "file": "{{2.data[1].fileData}}",
+                    "folder": "valorislab/posts",
+                    "file_type": "data",
+                    "mime_type": "image/png",
+                    "public_id": "{{lower(1.content_id)}}_s{{1.slide_index}}_g{{1.generation_no}}",
+                    "resourceType": "image"
+                   },
+                   "module": "cloudinary:UploadResource",
+                   "onerror": [
+                    {
+                     "id": 28,
+                     "mapper": {
+                      "key": "{{1.content_id}}::gen::{{1.generation_no}}",
+                      "data": {
+                       "status": "error",
+                       "last_error": "{{3.error.message}}",
+                       "updated_at": "{{now}}"
+                      },
+                      "upsert": false,
+                      "overwriteArrays": false
+                     },
+                     "module": "datastore:UpdateRecord",
+                     "version": 1,
+                     "metadata": {
+                      "expect": [
+                       {
+                        "name": "key",
+                        "type": "text",
+                        "label": "Key",
+                        "required": true
+                       },
+                       {
+                        "name": "upsert",
+                        "type": "boolean",
+                        "label": "Insert missing record",
+                        "default": true,
+                        "required": true
+                       },
+                       {
+                        "name": "overwriteArrays",
+                        "type": "boolean",
+                        "label": "Overwrite an existing array in the record",
+                        "default": false,
+                        "required": true,
+                        "validate": false
+                       },
+                       {
+                        "name": "data",
+                        "spec": [
+                         {
+                          "name": "content_id",
+                          "type": "text",
+                          "label": "Content ID",
+                          "required": false
+                         },
+                         {
+                          "name": "profile_id",
+                          "type": "text",
+                          "label": "Profile ID",
+                          "required": false
+                         },
+                         {
+                          "name": "approval_status",
+                          "type": "text",
+                          "label": "Approval status",
+                          "required": false
+                         },
+                         {
+                          "name": "status",
+                          "type": "text",
+                          "label": "Status",
+                          "required": false
+                         },
+                         {
+                          "name": "caption",
+                          "type": "text",
+                          "label": "Caption",
+                          "required": false
+                         },
+                         {
+                          "name": "image_url",
+                          "type": "text",
+                          "label": "Image URL",
+                          "required": false
+                         },
+                         {
+                          "name": "scheduled_at",
+                          "type": "text",
+                          "label": "Scheduled at",
+                          "required": false
+                         },
+                         {
+                          "name": "buffer_post_id",
+                          "type": "text",
+                          "label": "Buffer post ID",
+                          "required": false
+                         },
+                         {
+                          "name": "last_error",
+                          "type": "text",
+                          "label": "Last error",
+                          "required": false
+                         },
+                         {
+                          "name": "updated_at",
+                          "type": "text",
+                          "label": "Updated at",
+                          "required": false
+                         },
+                         {
+                          "name": "slide_index",
+                          "type": "number",
+                          "label": "Slide index",
+                          "required": false
+                         },
+                         {
+                          "name": "generation_no",
+                          "type": "number",
+                          "label": "Generation no",
+                          "required": false
+                         }
+                        ],
+                        "type": "collection",
+                        "label": "Record"
+                       }
+                      ],
+                      "restore": {
+                       "parameters": {
+                        "datastore": {
+                         "label": "VALORISLAB_CONTENT_REGISTRY"
+                        }
+                       }
+                      },
+                      "designer": {
+                       "x": 1800,
+                       "y": 600,
+                       "name": "Gen Cloudinary en erreur"
+                      },
+                      "parameters": [
+                       {
+                        "name": "datastore",
+                        "type": "datastore",
+                        "label": "Data store",
+                        "required": true
+                       }
+                      ]
+                     },
+                     "parameters": {
+                      "datastore": 236861
+                     }
+                    },
+                    {
+                     "id": 6,
+                     "mapper": {
+                      "format": "4:5",
+                      "status": "error",
+                      "image_url": "{{emptystring}}",
+                      "content_id": "{{1.content_id}}",
+                      "dimensions": "{{emptystring}}"
+                     },
+                     "module": "scenario-service:ReturnData",
+                     "version": 2,
+                     "metadata": {
+                      "restore": {},
+                      "designer": {
+                       "x": 2000,
+                       "y": 600,
+                       "name": "Return Cloudinary error"
+                      }
+                     },
+                     "parameters": {}
+                    }
+                   ],
+                   "version": 1,
+                   "metadata": {
+                    "expect": [
+                     {
+                      "name": "file_type",
+                      "type": "select",
+                      "label": "File Type",
+                      "mappable": false,
+                      "required": true,
+                      "validate": {
+                       "enum": [
+                        "data",
+                        "url"
+                       ]
+                      }
+                     },
+                     {
+                      "name": "file",
+                      "type": "buffer",
+                      "label": "File",
+                      "required": true,
+                      "semantic": "file:data"
+                     },
+                     {
+                      "name": "mime_type",
+                      "type": "text",
+                      "label": "MIME Type",
+                      "required": true
+                     },
+                     {
+                      "name": "resourceType",
+                      "type": "select",
+                      "label": "Resource Type",
+                      "required": true
+                     },
+                     {
+                      "name": "upload_preset",
+                      "type": "select",
+                      "label": "Upload Preset"
+                     },
+                     {
+                      "name": "public_id",
+                      "type": "text",
+                      "label": "Public ID"
+                     },
+                     {
+                      "name": "folder",
+                      "type": "select",
+                      "label": "Folder"
+                     },
+                     {
+                      "name": "use_filename",
+                      "type": "boolean",
+                      "label": "Use Filename"
+                     },
+                     {
+                      "name": "type",
+                      "type": "select",
+                      "label": "Type",
+                      "default": "upload",
+                      "validate": {
+                       "enum": [
+                        "private",
+                        "upload",
+                        "authenticated"
+                       ]
+                      }
+                     }
+                    ],
+                    "restore": {
+                     "expect": {
+                      "folder": {
+                       "mode": "edit"
+                      },
+                      "file_type": {
+                       "mode": "chose",
+                       "label": "Base64 Encoded Data URI (~60MB)",
+                       "nested": [
+                        {
+                         "help": "The file to upload. It can be:\n- the Data URI (Base64 encoded), max 60 MB (62,910,000 chars)\nFor details and examples, see: [file source options](https: //cloudinary.com/documentation/upload_images#file_source_options).",
+                         "name": "file",
+                         "type": "buffer",
+                         "label": "File",
+                         "required": true,
+                         "semantic": "file:data"
+                        },
+                        {
+                         "help": "[Here](https://en.wikipedia.org/wiki/Media_type) can be found examples of most frequently used MIME types.\n[Here](https://www.iana.org/assignments/media-types/media-types.xhtml) can be found all known MIME types.",
+                         "name": "mime_type",
+                         "type": "text",
+                         "label": "MIME Type",
+                         "required": true
+                        }
+                       ]
+                      }
+                     },
+                     "parameters": {
+                      "__IMTCONN__": {
+                       "label": "Laurent's Cloudinary connection"
+                      }
+                     }
+                    },
+                    "designer": {
+                     "x": 1800,
+                     "y": 300,
+                     "name": "Upload Cloudinary"
+                    },
+                    "parameters": [
+                     {
+                      "name": "__IMTCONN__",
+                      "type": "account:cloudinary",
+                      "label": "Connection",
+                      "required": true
+                     }
+                    ]
+                   },
+                   "parameters": {
+                    "__IMTCONN__": 12454504
+                   }
+                  },
+                  {
+                   "id": 29,
+                   "mapper": {
+                    "key": "{{1.content_id}}::slide::{{1.slide_index}}",
+                    "data": {
+                     "status": "generated",
+                     "image_url": "{{3.secure_url}}",
+                     "content_id": "{{1.content_id}}",
+                     "updated_at": "{{now}}",
+                     "slide_index": "{{1.slide_index}}",
+                     "generation_no": "{{1.generation_no}}",
+                     "approval_status": "pending_review"
+                    },
+                    "upsert": true,
+                    "overwriteArrays": false
+                   },
+                   "module": "datastore:UpdateRecord",
+                   "version": 1,
+                   "metadata": {
+                    "expect": [
+                     {
+                      "name": "key",
+                      "type": "text",
+                      "label": "Key",
+                      "required": true
+                     },
+                     {
+                      "name": "upsert",
+                      "type": "boolean",
+                      "label": "Insert missing record",
+                      "default": true,
+                      "required": true
+                     },
+                     {
+                      "name": "overwriteArrays",
+                      "type": "boolean",
+                      "label": "Overwrite an existing array in the record",
+                      "default": false,
+                      "required": true,
+                      "validate": false
+                     },
+                     {
+                      "name": "data",
+                      "spec": [
+                       {
+                        "name": "content_id",
+                        "type": "text",
+                        "label": "Content ID",
+                        "required": false
+                       },
+                       {
+                        "name": "profile_id",
+                        "type": "text",
+                        "label": "Profile ID",
+                        "required": false
+                       },
+                       {
+                        "name": "approval_status",
+                        "type": "text",
+                        "label": "Approval status",
+                        "required": false
+                       },
+                       {
+                        "name": "status",
+                        "type": "text",
+                        "label": "Status",
+                        "required": false
+                       },
+                       {
+                        "name": "caption",
+                        "type": "text",
+                        "label": "Caption",
+                        "required": false
+                       },
+                       {
+                        "name": "image_url",
+                        "type": "text",
+                        "label": "Image URL",
+                        "required": false
+                       },
+                       {
+                        "name": "scheduled_at",
+                        "type": "text",
+                        "label": "Scheduled at",
+                        "required": false
+                       },
+                       {
+                        "name": "buffer_post_id",
+                        "type": "text",
+                        "label": "Buffer post ID",
+                        "required": false
+                       },
+                       {
+                        "name": "last_error",
+                        "type": "text",
+                        "label": "Last error",
+                        "required": false
+                       },
+                       {
+                        "name": "updated_at",
+                        "type": "text",
+                        "label": "Updated at",
+                        "required": false
+                       },
+                       {
+                        "name": "slide_index",
+                        "type": "number",
+                        "label": "Slide index",
+                        "required": false
+                       },
+                       {
+                        "name": "generation_no",
+                        "type": "number",
+                        "label": "Generation no",
+                        "required": false
+                       }
+                      ],
+                      "type": "collection",
+                      "label": "Record"
+                     }
+                    ],
+                    "restore": {
+                     "parameters": {
+                      "datastore": {
+                       "label": "VALORISLAB_CONTENT_REGISTRY"
+                      }
+                     }
+                    },
+                    "designer": {
+                     "x": 2100,
+                     "y": 0,
+                     "name": "Save slide record"
+                    },
+                    "parameters": [
+                     {
+                      "name": "datastore",
+                      "type": "datastore",
+                      "label": "Data store",
+                      "required": true
+                     }
+                    ]
+                   },
+                   "parameters": {
+                    "datastore": 236861
+                   }
+                  },
+                  {
+                   "id": 30,
+                   "mapper": {
+                    "key": "{{1.content_id}}::gen::{{1.generation_no}}",
+                    "data": {
+                     "status": "generated",
+                     "image_url": "{{3.secure_url}}",
+                     "updated_at": "{{now}}"
+                    },
+                    "upsert": false,
+                    "overwriteArrays": false
+                   },
+                   "module": "datastore:UpdateRecord",
+                   "version": 1,
+                   "metadata": {
+                    "expect": [
+                     {
+                      "name": "key",
+                      "type": "text",
+                      "label": "Key",
+                      "required": true
+                     },
+                     {
+                      "name": "upsert",
+                      "type": "boolean",
+                      "label": "Insert missing record",
+                      "default": true,
+                      "required": true
+                     },
+                     {
+                      "name": "overwriteArrays",
+                      "type": "boolean",
+                      "label": "Overwrite an existing array in the record",
+                      "default": false,
+                      "required": true,
+                      "validate": false
+                     },
+                     {
+                      "name": "data",
+                      "spec": [
+                       {
+                        "name": "content_id",
+                        "type": "text",
+                        "label": "Content ID",
+                        "required": false
+                       },
+                       {
+                        "name": "profile_id",
+                        "type": "text",
+                        "label": "Profile ID",
+                        "required": false
+                       },
+                       {
+                        "name": "approval_status",
+                        "type": "text",
+                        "label": "Approval status",
+                        "required": false
+                       },
+                       {
+                        "name": "status",
+                        "type": "text",
+                        "label": "Status",
+                        "required": false
+                       },
+                       {
+                        "name": "caption",
+                        "type": "text",
+                        "label": "Caption",
+                        "required": false
+                       },
+                       {
+                        "name": "image_url",
+                        "type": "text",
+                        "label": "Image URL",
+                        "required": false
+                       },
+                       {
+                        "name": "scheduled_at",
+                        "type": "text",
+                        "label": "Scheduled at",
+                        "required": false
+                       },
+                       {
+                        "name": "buffer_post_id",
+                        "type": "text",
+                        "label": "Buffer post ID",
+                        "required": false
+                       },
+                       {
+                        "name": "last_error",
+                        "type": "text",
+                        "label": "Last error",
+                        "required": false
+                       },
+                       {
+                        "name": "updated_at",
+                        "type": "text",
+                        "label": "Updated at",
+                        "required": false
+                       },
+                       {
+                        "name": "slide_index",
+                        "type": "number",
+                        "label": "Slide index",
+                        "required": false
+                       },
+                       {
+                        "name": "generation_no",
+                        "type": "number",
+                        "label": "Generation no",
+                        "required": false
+                       }
+                      ],
+                      "type": "collection",
+                      "label": "Record"
+                     }
+                    ],
+                    "restore": {
+                     "parameters": {
+                      "datastore": {
+                       "label": "VALORISLAB_CONTENT_REGISTRY"
+                      }
+                     }
+                    },
+                    "designer": {
+                     "x": 2400,
+                     "y": 0,
+                     "name": "Close generation"
+                    },
+                    "parameters": [
+                     {
+                      "name": "datastore",
+                      "type": "datastore",
+                      "label": "Data store",
+                      "required": true
+                     }
+                    ]
+                   },
+                   "parameters": {
+                    "datastore": 236861
+                   }
+                  },
+                  {
+                   "id": 4,
+                   "mapper": {
+                    "format": "4:5",
+                    "status": "success",
+                    "image_url": "{{3.secure_url}}",
+                    "content_id": "{{1.content_id}}",
+                    "dimensions": "{{3.width}}x{{3.height}}"
+                   },
+                   "module": "scenario-service:ReturnData",
+                   "version": 2,
+                   "metadata": {
+                    "restore": {},
+                    "designer": {
+                     "x": 2700,
+                     "y": 0,
+                     "name": "Return success"
+                    }
+                   },
+                   "parameters": {}
+                  }
+                 ],
+                 "type": "else",
+                 "label": "",
+                 "merge": false,
+                 "disabled": false
+                }
+               ],
+               "metadata": {
+                "designer": {
+                 "x": 1100,
+                 "y": 0
+                }
+               }
+              }
+             ],
+             "type": "condition",
+             "label": "Valid input",
+             "merge": false,
+             "conditions": [
+              [
+               {
+                "a": "{{1.content_id}}",
+                "b": "^[A-Za-z0-9_-]+$",
+                "o": "text:pattern"
+               },
+               {
+                "a": "{{1.slide_index}}",
+                "b": "0",
+                "o": "number:greater"
+               },
+               {
+                "a": "{{1.slide_index}}",
+                "b": "9",
+                "o": "number:less"
+               },
+               {
+                "a": "{{1.generation_no}}",
+                "b": "0",
+                "o": "number:greater"
+               },
+               {
+                "a": "{{1.generation_no}}",
+                "b": "11",
+                "o": "number:less"
+               },
+               {
+                "a": "{{trim(ifempty(1.image_prompt; emptystring))}}",
+                "b": "{{emptystring}}",
+                "o": "text:notequal"
+               }
+              ]
+             ]
+            },
+            {
+             "flow": [
+              {
+               "id": 31,
+               "mapper": {
+                "format": "4:5",
+                "status": "invalid_input",
+                "image_url": "{{emptystring}}",
+                "content_id": "{{1.content_id}}",
+                "dimensions": "{{emptystring}}"
+               },
+               "module": "scenario-service:ReturnData",
+               "version": 2,
+               "metadata": {
+                "restore": {},
+                "designer": {
+                 "x": 900,
+                 "y": 300,
+                 "name": "Return invalid input"
+                }
+               },
+               "parameters": {}
+              }
+             ],
+             "type": "else",
+             "label": "",
+             "merge": false,
+             "disabled": false
+            }
+           ],
+           "metadata": {
+            "designer": {
+             "x": 700,
+             "y": 0
+            }
+           }
+          }
+         ],
+         "type": "condition",
+         "label": "Live (dry_run = false)",
+         "merge": false,
+         "conditions": [
+          [
+           {
+            "a": "{{1.dry_run}}",
+            "b": "false",
+            "o": "boolean:equal"
+           }
+          ]
+         ]
+        },
+        {
+         "flow": [
+          {
+           "id": 21,
+           "mapper": {
+            "format": "4:5",
+            "status": "dry_run",
+            "image_url": "{{emptystring}}",
+            "content_id": "{{1.content_id}}",
+            "dimensions": "{{emptystring}}"
+           },
+           "module": "scenario-service:ReturnData",
+           "version": 2,
+           "metadata": {
+            "restore": {},
+            "designer": {
+             "x": 700,
+             "y": 500,
+             "name": "Return dry run"
+            }
+           },
+           "parameters": {}
+          }
+         ],
+         "type": "else",
+         "label": "",
+         "merge": false,
+         "disabled": false
+        }
+       ],
+       "metadata": {
+        "designer": {
+         "x": 500,
+         "y": 0
+        }
+       }
+      }
+     ],
+     "type": "else",
+     "label": "",
+     "merge": false,
+     "disabled": false
+    }
+   ],
+   "metadata": {
+    "designer": {
+     "x": 300,
+     "y": 0
+    }
+   }
+  }
+ ],
+ "name": "VALORISLAB - AI Visual Generator",
+ "metadata": {
+  "instant": false,
+  "version": 1,
+  "designer": {
+   "orphans": []
+  },
+  "scenario": {
+   "dlq": true,
+   "slots": null,
+   "dataloss": false,
+   "maxErrors": 3,
+   "autoCommit": true,
+   "roundtrips": 1,
+   "sequential": false,
+   "confidential": false,
+   "freshVariables": false,
+   "autoCommitTriggerLast": true
+  }
+ },
+ "scheduling": {
+  "type": "on-demand"
+ },
+ "interface": {
+  "input": [
+   {
+    "help": "Instructions de la slide, avec le texte à afficher après « TEXTE EXACT : » (recopié mot pour mot) et la description du visuel.",
+    "name": "image_prompt",
+    "type": "text",
+    "required": true
+   },
+   {
+    "help": "Identifiant du contenu. Lettres, chiffres, tirets et underscores uniquement (public_id Cloudinary).",
+    "name": "content_id",
+    "type": "text",
+    "required": true
+   },
+   {
+    "help": "Numéro de la slide dans le carrousel, de 1 à 8.",
+    "name": "slide_index",
+    "type": "number",
+    "required": true
+   },
+   {
+    "help": "Numéro de génération du contenu, de 1 à 10 : plafond de 10 images par contenu. Chaque numéro ne peut servir qu'une fois.",
+    "name": "generation_no",
+    "type": "number",
+    "required": true
+   },
+   {
+    "help": "false (par défaut) : génère réellement. true : simulation, aucune génération ni écriture.",
+    "name": "dry_run",
+    "type": "boolean",
+    "default": false,
+    "required": false
+   },
+   {
+    "help": "Usage interne, laisser vide pour une slide : URL d'un actif de marque (logo) à téléverser dans Cloudinary sous valorislab/brand/<content_id>.",
+    "name": "asset_url",
+    "type": "text",
+    "required": false
+   }
+  ],
+  "output": [
+   {
+    "help": "URL HTTPS publique du visuel",
+    "name": "image_url",
+    "type": "text",
+    "required": false
+   },
+   {
+    "help": "Statut : success, error, dry_run, invalid_input, refused_generation_used ou asset_uploaded",
+    "name": "status",
+    "type": "text",
+    "required": true
+   },
+   {
+    "help": "Identifiant initial de la publication",
+    "name": "content_id",
+    "type": "text",
+    "required": false
+   },
+   {
+    "help": "Format appliqué : 4:5, 9:16 ou 1:1",
+    "name": "format",
+    "type": "text",
+    "required": false
+   },
+   {
+    "help": "Dimensions réelles mesurées par Cloudinary (largeur x hauteur)",
+    "name": "dimensions",
+    "type": "text",
+    "required": false
+   }
+  ]
+ }
+}
