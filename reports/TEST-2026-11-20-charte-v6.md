@@ -32,3 +32,14 @@ Sources : FSMA (fausses plateformes de trading crypto, « Peut-on devenir riche 
 1. Valider le rendu des 3 carrousels (brouillons Buffer ou liens ci-dessus).
 2. Donner la liste numérotée des 20 erreurs du guide (`state/guide-erreurs.json`) : sans elle, la dernière slide dit « l'une des 20 erreurs » (valorislab.be inaccessible depuis la session).
 3. Après validation : fusion de la branche dans `main` (sinon la routine du prochain run applique encore la v5) et choix des dates de la semaine 48.
+
+## Mise à jour du 20/11 (soir) : finition premium et couvertures IA du protagoniste (demande de Laurent)
+- Gabarit v6 premium : titres Playfair Display, filets or fins, cadre intérieur, cartes sobres, maquette du guide sur la dernière slide.
+- Couvertures pleine image générées par IA (Make 8230680) : **2 avec le protagoniste à partir de sa photo de référence** (`kit/assets/protagonist/`), F1 cuisine le soir, F7 message suspect la nuit ; 1 nature morte (maillet de juge sur lin ivoire) pour F2. Budget IA : 3 générations, 30/40 en novembre.
+- Make 8230680 : nouvelle entrée facultative `reference_url` → branche OpenAI « Edit images » (même modèle, format, qualité). Sans référence, le scénario fonctionne comme avant. Sauvegarde : `state/backups/make-8230680-blueprint-2026-11-20-avant-reference.json`.
+- Contrôles : render, validate (URL publique), qa, seo_check : 0 erreur, 0 avertissement. `decor_check.py` non applicable aux photos avec visage (relecture visuelle faite : aucun texte, logo ni objet doré).
+- Buffer : les 9 brouillons v6 mis à jour avec les nouveaux visuels (commit 8ba855b) ; **8 anciens posts v5 de W48 supprimés** (ils étaient en brouillon) ; TikTok crédit Black Friday déjà « sent » (non supprimé) ; 2 TikTok W47 conservés.
+- Visuels :
+  - https://raw.githubusercontent.com/laurent821937/valorislab-media/8ba855bb7ffa0f407675ed43305322de100c652a/media/2026/11/2026-11-23-petites-depenses-10-ans/
+  - https://raw.githubusercontent.com/laurent821937/valorislab-media/8ba855bb7ffa0f407675ed43305322de100c652a/media/2026/11/2026-11-23-mythe-action-5-euros/
+  - https://raw.githubusercontent.com/laurent821937/valorislab-media/8ba855bb7ffa0f407675ed43305322de100c652a/media/2026/11/2026-11-23-message-suspect-crypto/

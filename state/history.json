@@ -413,20 +413,9 @@
      "dueAt": "2026-11-23T09:34:00+01:00",
      "status": "sent",
      "note": "partagé depuis Buffer le 20/11/2026 à 10:26 (sharedNow, rappel TikTok), non modifiable"
-    },
-    "instagram": {
-     "id": "6b000b21ca85ebefb00d046c",
-     "dueAt": "2026-11-24T19:26:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    },
-    "facebook": {
-     "id": "6b000b264c1afd05de074b7a",
-     "dueAt": "2026-11-25T09:54:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     }
-   }
+   },
+   "note": "anciens posts v5 supprimés de Buffer le 20/11/2026 (demande de Laurent), jamais publiés sauf mention sent"
   },
   {
    "id": "2026-11-23-epargne-pension-plafond",
@@ -442,26 +431,7 @@
     "1 050 €",
     "1 350 €"
    ],
-   "buffer": {
-    "instagram": {
-     "id": "6b000b377b0a126cebbfc083",
-     "dueAt": "2026-11-25T18:06:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    },
-    "facebook": {
-     "id": "6b000b3d738ce4635f9e4533",
-     "dueAt": "2026-11-26T09:26:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    },
-    "tiktok": {
-     "id": "6b000b46738ce4635f9e470c",
-     "dueAt": "2026-11-28T08:36:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    }
-   }
+   "note": "anciens posts v5 supprimés de Buffer le 20/11/2026 (demande de Laurent), jamais publiés sauf mention sent"
   },
   {
    "id": "2026-11-23-effet-de-levier",
@@ -476,26 +446,7 @@
     "CFD",
     "FSMA"
    ],
-   "buffer": {
-    "instagram": {
-     "id": "6b000b500f5eda1a57d64a32",
-     "dueAt": "2026-11-26T10:51:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    },
-    "facebook": {
-     "id": "6b000b567b0a126cebbfc950",
-     "dueAt": "2026-11-27T08:45:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    },
-    "tiktok": {
-     "id": "6b000b5e738ce4635f9e4bfa",
-     "dueAt": "2026-11-29T09:41:00+01:00",
-     "status": "draft",
-     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
-    }
-   }
+   "note": "anciens posts v5 supprimés de Buffer le 20/11/2026 (demande de Laurent), jamais publiés sauf mention sent"
   },
   {
    "id": "2026-11-23-petites-depenses-10-ans",
