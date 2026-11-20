@@ -1,0 +1,733 @@
+{
+ "id": "2026-11-23-epargne-pension-plafond",
+ "kit_version": "2026-11-14.1",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-23-epargne-pension-plafond/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-epargne-pension-v5",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 199832,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "BELGIQUE · 23 NOVEMBRE 2026"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 244.171875,
+     "font": 74,
+     "color": "rgb(246, 242, 234)",
+     "text": "VERSE 50 € DE PLUS. PERDS 40 € D'AVANTAGE."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 680.171875,
+     "w": 620,
+     "h": 150.46875,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "Épargne-pension : le piège entre les deux plafonds, avant ton versemen"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 876.640625,
+     "w": 884,
+     "h": 34.796875,
+     "font": 24,
+     "color": "rgb(212, 175, 106)",
+     "text": "Plafonds pour les revenus 2026."
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "01 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(210, 204, 194)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(210, 204, 194)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-epargne-pension-plafond/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 0.98,
+   "overflow": false,
+   "bytes": 166837,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 27,
+     "font": 22.54,
+     "color": "rgb(212, 175, 106)",
+     "text": "LE POINT ESSENTIEL"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 364.03125,
+     "w": 700,
+     "h": 141.71875,
+     "font": 62.72,
+     "color": "rgb(246, 242, 234)",
+     "text": "ÉPARGNE-PENSION : DEUX PLAFONDS."
+    },
+    {
+     "role": "body",
+     "x": 96,
+     "y": 558.65625,
+     "w": 700,
+     "h": 147.46875,
+     "font": 32.34,
+     "color": "rgb(226, 221, 212)",
+     "text": "Revenus 2026 : le plafond supérieur se signale chaque année à ta banqu"
+    },
+    {
+     "role": "stat",
+     "x": 126.390625,
+     "y": 834.09375,
+     "w": 382.21875,
+     "h": 78.203125,
+     "font": 74.48,
+     "color": "rgb(138, 106, 46)",
+     "text": "1 050 €"
+    },
+    {
+     "role": "stat",
+     "x": 568.390625,
+     "y": 834.09375,
+     "w": 381.21875,
+     "h": 78.203125,
+     "font": 74.48,
+     "color": "rgb(28, 26, 23)",
+     "text": "1 350 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 126.390625,
+     "y": 779.625,
+     "w": 382.21875,
+     "h": 29,
+     "font": 23.52,
+     "color": "rgb(94, 87, 77)",
+     "text": "PLAFOND DE BASE"
+    },
+    {
+     "role": "statLabel",
+     "x": 568.390625,
+     "y": 779.625,
+     "w": 381.21875,
+     "h": 29,
+     "font": 23.52,
+     "color": "rgb(94, 87, 77)",
+     "text": "PLAFOND SUPÉRIEUR"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 749.234375,
+     "w": 884,
+     "h": 245.578125,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "PLAFOND DE BASE 1 050 € réduction de 30 % PLAFOND SUPÉRIEUR 1 350 € 25"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 1020.28125,
+     "w": 884,
+     "h": 29.828125,
+     "font": 20.58,
+     "color": "rgb(176, 170, 161)",
+     "text": "Source · Wikifin, mise à jour du 08/01/2026"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "02 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-epargne-pension-plafond/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 147581,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "EXEMPLE · PLAFOND SUPÉRIEUR CHOISI"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "PLUS VERSÉ, MOINS RÉCUPÉRÉ."
+    },
+    {
+     "role": "stat",
+     "x": 127,
+     "y": 640.625,
+     "w": 381,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(138, 106, 46)",
+     "text": "315 €"
+    },
+    {
+     "role": "stat",
+     "x": 569,
+     "y": 640.625,
+     "w": 380,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(28, 26, 23)",
+     "text": "275 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 127,
+     "y": 585.625,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "1 050 € VERSÉS"
+    },
+    {
+     "role": "statLabel",
+     "x": 569,
+     "y": 585.625,
+     "w": 380,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "1 100 € VERSÉS"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 554.625,
+     "w": 884,
+     "h": 284.1875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "1 050 € VERSÉS 315 € 1 100 € VERSÉS 275 € 50 € versés en plus, 40 € de"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 864.8125,
+     "w": 884,
+     "h": 60.875,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Calcul : 1 050 × 30 % et 1 100 × 25 %. Hors taxes communales. Source :"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "03 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-epargne-pension-plafond/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 150110,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "TA MÉTHODE DE DÉBUTANT"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "AVANT LE 31/12 : 4 RÉFLEXES."
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 571.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "01"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 697.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "02"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 823.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "03"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 949.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "04"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 571.625,
+     "w": 315.828125,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Vérifie ton plafond 1 050 € ou 1 350 €"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 697.625,
+     "w": 336.890625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Évite l'entre-deux De 1 051 € à 1 349 €"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 823.625,
+     "w": 370.59375,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Plafond supérieur ? Signale-le à ta banque"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 949.625,
+     "w": 398.90625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Lis la fiche du fonds Frais et niveau de risque"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "04 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-epargne-pension-plafond/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 160722,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "POUR ALLER PLUS LOIN"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 600,
+     "h": 237.28125,
+     "font": 70,
+     "color": "rgb(246, 242, 234)",
+     "text": "20 ERREURS À ÉVITER, GRATUITEMENT."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 629.28125,
+     "w": 700,
+     "h": 97.25,
+     "font": 32,
+     "color": "rgb(226, 221, 212)",
+     "text": "Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter."
+    },
+    {
+     "role": "button",
+     "x": 235.5078125,
+     "y": 969,
+     "w": 604.984375,
+     "h": 91,
+     "font": 42,
+     "color": "rgb(26, 22, 18)",
+     "text": "COMMENTE GUIDE →"
+    },
+    {
+     "role": "book",
+     "x": 321.7890625,
+     "y": 742.53125,
+     "w": 432.421875,
+     "h": 271.46875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "05 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-23-epargne-pension-plafond/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-epargne-pension-fb-v5",
+  "bytes": 201415,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 96,
+    "y": 290,
+    "w": 884,
+    "h": 28,
+    "font": 23,
+    "color": "rgb(212, 175, 106)",
+    "text": "BELGIQUE · 23 NOVEMBRE 2026"
+   },
+   {
+    "role": "title",
+    "x": 96,
+    "y": 366,
+    "w": 860,
+    "h": 295.3125,
+    "font": 92,
+    "color": "rgb(246, 242, 234)",
+    "text": "VERSE 50 € DE PLUS. PERDS 40 € D'AVANTAGE."
+   },
+   {
+    "role": "lead",
+    "x": 96,
+    "y": 715.3125,
+    "w": 700,
+    "h": 109.4375,
+    "font": 36,
+    "color": "rgb(226, 221, 212)",
+    "text": "Épargne-pension : le piège des deux plafonds."
+   },
+   {
+    "role": "note",
+    "x": 96,
+    "y": 870.75,
+    "w": 884,
+    "h": 34.796875,
+    "font": 24,
+    "color": "rgb(212, 175, 106)",
+    "text": "Plafonds pour les revenus 2026."
+   },
+   {
+    "role": "brand",
+    "x": 100,
+    "y": 214,
+    "w": 264.296875,
+    "h": 52,
+    "font": 16,
+    "color": "rgb(246, 242, 234)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 96,
+    "y": 1103,
+    "w": 132.359375,
+    "h": 26,
+    "font": 22,
+    "color": "rgb(210, 204, 194)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 619.609375,
+    "y": 1107,
+    "w": 364.390625,
+    "h": 21,
+    "font": 18,
+    "color": "rgb(210, 204, 194)",
+    "text": "Contenu éducatif · Pas un conseil financier"
+   }
+  ]
+ }
+}

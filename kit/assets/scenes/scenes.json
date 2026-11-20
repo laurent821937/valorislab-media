@@ -453,5 +453,89 @@
   "source": "ia",
   "style": "v5-sobre",
   "created": "2026-11-14"
+ },
+ "ia-credit-black-friday-v5": {
+  "file": "ia-credit-black-friday-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 72%",
+  "mood": "sac kraft vide et carte bancaire noire sur béton clair (achat, crédit)",
+  "pillars": [
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v5-sobre"
+ },
+ "ia-credit-black-friday-fb-v5": {
+  "file": "ia-credit-black-friday-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 69%",
+  "mood": "colis en carton et carte bancaire noire sur pierre claire (achat en ligne)",
+  "pillars": [
+   "mecanisme"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v5-sobre"
+ },
+ "ia-epargne-pension-v5": {
+  "file": "ia-epargne-pension-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 58%",
+  "mood": "jeune plante en pot blanc sur carnet noir, étagère bois clair (épargne long terme)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v5-sobre"
+ },
+ "ia-epargne-pension-fb-v5": {
+  "file": "ia-epargne-pension-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 72%",
+  "mood": "sablier bois clair et sable blanc sur pierre (échéance, temps)",
+  "pillars": [
+   "belgique"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v5-sobre"
+ },
+ "ia-effet-de-levier-v5": {
+  "file": "ia-effet-de-levier-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 55%",
+  "mood": "planche en bois en levier sur cylindre de pierre (effet de levier)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v5-sobre"
+ },
+ "ia-effet-de-levier-fb-v5": {
+  "file": "ia-effet-de-levier-fb-v5.jpg",
+  "role": "cover",
+  "place": "bottom",
+  "logo": false,
+  "focus": "50% 72%",
+  "mood": "pile de galets en équilibre instable (risque)",
+  "pillars": [
+   "erreur"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v5-sobre"
  }
 }

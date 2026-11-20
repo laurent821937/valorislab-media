@@ -599,6 +599,48 @@
    "status": "ok",
    "content_id": "decor-test-clair",
    "note": "test du prompt lumineux"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "credit-black-friday-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-credit-black-friday-v5"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "credit-black-friday-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-credit-black-friday-fb-v5"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "epargne-pension-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-epargne-pension-v5"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "epargne-pension-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-epargne-pension-fb-v5"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "effet-de-levier-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-effet-de-levier-v5"
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "effet-de-levier-fb-v5",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "decor-effet-de-levier-fb-v5"
   }
  ]
 }

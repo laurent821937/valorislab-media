@@ -1,0 +1,132 @@
+{
+ "id": "2026-11-23-effet-de-levier",
+ "date": "2026-11-23",
+ "pillar": "erreur",
+ "theme": "bourse",
+ "topic": "Effet de levier x10 : -10 % sur le marché = -100 % de la mise (exemple fictif 1 000 €), interdiction FSMA de certains CFD",
+ "keywords": [
+  "effet de levier",
+  "trading",
+  "CFD",
+  "FSMA",
+  "perte de la mise"
+ ],
+ "seo": {
+  "keyword": "effet de levier",
+  "secondary": [
+   "trading",
+   "CFD",
+   "FSMA"
+  ],
+  "cluster": "arnaques-finance"
+ },
+ "kicker": "Bourse · 23 novembre 2026",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Le marché baisse de 10 %. *Tu perds tout.*",
+   "subtitle": "L'effet de levier en trading, expliqué avec un exemple simple.",
+   "highlight": "Exemple fictif, pour comprendre.",
+   "scene": "ia-effet-de-levier-v5"
+  },
+  {
+   "type": "compare",
+   "kicker": "Le point essentiel",
+   "title": "L'effet de levier *multiplie tout.*",
+   "body": "Avec un levier de 10, tu mises 1 000 € mais tu joues sur 10 000 €. Gains et pertes sont multipliés par 10.",
+   "left": {
+    "label": "Ta mise",
+    "value": "1 000 €",
+    "note": "l'argent que tu verses"
+   },
+   "right": {
+    "label": "Ta position",
+    "value": "10 000 €",
+    "note": "ce que tu contrôles"
+   }
+  },
+  {
+   "type": "compare",
+   "kicker": "Exemple fictif · pour comprendre",
+   "title": "Le prix baisse de 10 % : *ce que tu perds.*",
+   "left": {
+    "label": "Avec levier x10",
+    "value": "-1 000 €"
+   },
+   "right": {
+    "label": "Sans levier",
+    "value": "-100 €"
+   },
+   "caption": "Avec le levier, une baisse de 10 % efface toute ta mise.",
+   "note": "Chiffres illustratifs, avant frais. Avec certains produits, la perte peut dépasser la mise (FSMA)."
+  },
+  {
+   "type": "list",
+   "kicker": "Ta méthode de débutant",
+   "title": "Face au trading à levier : *4 réflexes.*",
+   "items": [
+    {
+     "title": "Calcule la baisse fatale",
+     "sub": "Levier 10 : -10 % suffit"
+    },
+    {
+     "title": "Vérifie l'agrément FSMA",
+     "sub": "Avant tout versement"
+    },
+    {
+     "title": "Méfie-toi des pubs",
+     "sub": "« Gains rapides, sans risque »"
+    },
+    {
+     "title": "Commence sans levier",
+     "sub": "Et sur le long terme"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "kicker": "Pour aller plus loin",
+   "title": "20 erreurs à éviter, *gratuitement.*",
+   "subtitle": "Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter.",
+   "button": "Commente GUIDE"
+  }
+ ],
+ "alt": "Carrousel VALORISLAB sur l'effet de levier en trading : avec 1 000 € et un levier de 10, une position de 10 000 € ; une baisse de 10 % fait perdre toute la mise contre 100 € sans levier, la FSMA interdit certains CFD aux particuliers en Belgique, et 4 réflexes.",
+ "captions": {
+  "instagram": "Effet de levier x10 : le marché baisse de 10 %, ta mise disparaît.\n\nExemple fictif : tu mets 1 000 € avec un effet de levier de 10. Tu contrôles une position de 10 000 €. Si le prix baisse de 10 %, tu perds 1 000 € : toute ta mise. Sans levier, la même baisse te coûte 100 €. Avec certains produits, la perte peut même dépasser la mise.\n\nÀ retenir :\n\n • Le levier multiplie les gains, mais aussi les pertes\n\n • En Belgique, la FSMA interdit la distribution aux particuliers de certains CFD et autres dérivés à effet de levier\n\n • Une pub pour du trading à levier « sans risque » est un signal d'alerte\n\nTu as déjà vu passer une pub pour du trading avec levier ? Dis-le en commentaire.\n\nEnregistre ce post et envoie-le à quelqu'un qui veut se lancer dans le trading.\n\nExemple fictif, avant frais. Source : FSMA (fsma.be), page « CFD » et FAQ du règlement sur les produits dérivés. Contenu éducatif, pas un conseil financier.\n\n#trading #bourse #fsma #belgique #investir\n\nCommente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter.",
+  "facebook": "Effet de levier x10 : le marché baisse de 10 %, ta mise disparaît.\n\nExemple fictif : tu mets 1 000 € avec un effet de levier de 10. Tu contrôles une position de 10 000 €. Si le prix baisse de 10 %, tu perds 1 000 € : toute ta mise. Sans levier, la même baisse te coûte 100 €. Avec certains produits, la perte peut même dépasser la mise.\n\nÀ retenir :\n\n • Le levier multiplie les gains, mais aussi les pertes\n\n • En Belgique, la FSMA interdit la distribution aux particuliers de certains CFD et autres dérivés à effet de levier\n\n • Une pub pour du trading à levier « sans risque » est un signal d'alerte\n\nTu as déjà vu passer une pub pour du trading avec levier ? Dis-le en commentaire.\n\nPartage ce post à quelqu'un qui veut se lancer dans le trading.\n\nExemple fictif, avant frais. Source : FSMA (fsma.be), page « CFD » et FAQ du règlement sur les produits dérivés. Contenu éducatif, pas un conseil financier.\n\n#trading #bourse #fsma #belgique #investir\n\nCommente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter.",
+  "tiktok_title": "Effet de levier x10 : -10 % et ta mise disparaît",
+  "tiktok": "Effet de levier x10 : le marché baisse de 10 %, ta mise de 1 000 € disparaît (exemple fictif). Sans levier, tu perds 100 €. La FSMA interdit certains CFD aux particuliers en Belgique. Détails dans le carrousel. Contenu éducatif, pas un conseil financier. #trading #bourse #fsma #belgique #investir Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter."
+ },
+ "sources": [
+  "FSMA, page « CFD » : fsma.be/en/cfd (distribution de certains CFD et autres dérivés OTC interdite aux clients de détail en Belgique), consultée le 20/11/2026",
+  "FSMA, FAQ du règlement sur la distribution de certains produits dérivés (avec l'effet de levier, la perte peut dépasser la mise) : fsma.be/en/faq/5-why-distribution-derivative-products-leverage-such-cfds-and-forex-products-prohibited",
+  "Calcul VALORISLAB en Python : 1 000 × 10 = 10 000 € ; 10 000 × -10 % = -1 000 € (-100 % de la mise) ; 1 000 × -10 % = -100 €"
+ ],
+ "virality": {
+  "score": 78,
+  "detail": {
+   "accroche": 17,
+   "curiosite": 12,
+   "valeur": 10,
+   "partage": 8,
+   "belge": 8,
+   "clarte": 9,
+   "retention": 8,
+   "actualite": 6
+  },
+  "note": "Contraste chiffré brutal (-10 % → -100 %), mise en garde pour protéger un débutant, ancrage FSMA.",
+  "hook_variants": [
+   "Le marché baisse de 10 %. *Tu perds tout.*",
+   "Levier x10 : *-10 % suffit.*",
+   "1 000 € misés. *0 € après une baisse.*",
+   "Le trading à levier *efface ta mise.*",
+   "-10 % pour le marché. *-100 % pour toi.*"
+  ]
+ },
+ "fb": {
+  "title": "-10 % pour le marché. *-100 % pour toi.*",
+  "subtitle": "L'effet de levier, exemple fictif.",
+  "scene": "ia-effet-de-levier-fb-v5"
+ }
+}

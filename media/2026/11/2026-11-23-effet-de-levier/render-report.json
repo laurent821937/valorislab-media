@@ -1,0 +1,723 @@
+{
+ "id": "2026-11-23-effet-de-levier",
+ "kit_version": "2026-11-14.1",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-23-effet-de-levier/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-effet-de-levier-v5",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 176322,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "BOURSE · 23 NOVEMBRE 2026"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 244.171875,
+     "font": 74,
+     "color": "rgb(246, 242, 234)",
+     "text": "LE MARCHÉ BAISSE DE 10 %. TU PERDS TOUT."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 680.171875,
+     "w": 620,
+     "h": 100.3125,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "L'effet de levier en trading, expliqué avec un exemple simple."
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 826.484375,
+     "w": 884,
+     "h": 34.796875,
+     "font": 24,
+     "color": "rgb(212, 175, 106)",
+     "text": "Exemple fictif, pour comprendre."
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "01 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(210, 204, 194)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(210, 204, 194)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-effet-de-levier/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 149850,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "LE POINT ESSENTIEL"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "L'EFFET DE LEVIER MULTIPLIE TOUT."
+    },
+    {
+     "role": "body",
+     "x": 96,
+     "y": 564.625,
+     "w": 700,
+     "h": 150.46875,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "Avec un levier de 10, tu mises 1 000 € mais tu joues sur 10 000 €. Gai"
+    },
+    {
+     "role": "stat",
+     "x": 127,
+     "y": 845.09375,
+     "w": 381,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(138, 106, 46)",
+     "text": "1 000 €"
+    },
+    {
+     "role": "stat",
+     "x": 569,
+     "y": 845.09375,
+     "w": 380,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(28, 26, 23)",
+     "text": "10 000 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 127,
+     "y": 790.09375,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "TA MISE"
+    },
+    {
+     "role": "statLabel",
+     "x": 569,
+     "y": 790.09375,
+     "w": 380,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "TA POSITION"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 759.09375,
+     "w": 884,
+     "h": 249.984375,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "TA MISE 1 000 € l'argent que tu verses TA POSITION 10 000 € ce que tu "
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "02 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-effet-de-levier/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 153765,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "EXEMPLE FICTIF · POUR COMPRENDRE"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 216.9375,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "LE PRIX BAISSE DE 10 % : CE QUE TU PERDS."
+    },
+    {
+     "role": "stat",
+     "x": 127,
+     "y": 712.9375,
+     "w": 381,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(138, 106, 46)",
+     "text": "-1 000 €"
+    },
+    {
+     "role": "stat",
+     "x": 569,
+     "y": 712.9375,
+     "w": 380,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(28, 26, 23)",
+     "text": "-100 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 127,
+     "y": 657.9375,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "AVEC LEVIER X10"
+    },
+    {
+     "role": "statLabel",
+     "x": 569,
+     "y": 657.9375,
+     "w": 380,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "SANS LEVIER"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 626.9375,
+     "w": 884,
+     "h": 284.1875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "AVEC LEVIER X10 -1 000 € SANS LEVIER -100 € Avec le levier, une baisse"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 937.125,
+     "w": 884,
+     "h": 60.875,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Chiffres illustratifs, avant frais. Avec certains produits, la perte p"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "03 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-effet-de-levier/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 162621,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "TA MÉTHODE DE DÉBUTANT"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "FACE AU TRADING À LEVIER : 4 RÉFLEXES."
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 571.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "01"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 697.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "02"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 823.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "03"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 949.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "04"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 571.625,
+     "w": 381.578125,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Calcule la baisse fatale Levier 10 : -10 % suffit"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 697.625,
+     "w": 400.765625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Vérifie l'agrément FSMA Avant tout versement"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 823.625,
+     "w": 473.625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Méfie-toi des pubs « Gains rapides, sans risque »"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 949.625,
+     "w": 378.046875,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Commence sans levier Et sur le long terme"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "04 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-effet-de-levier/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 161560,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "POUR ALLER PLUS LOIN"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 600,
+     "h": 237.28125,
+     "font": 70,
+     "color": "rgb(246, 242, 234)",
+     "text": "20 ERREURS À ÉVITER, GRATUITEMENT."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 629.28125,
+     "w": 700,
+     "h": 97.25,
+     "font": 32,
+     "color": "rgb(226, 221, 212)",
+     "text": "Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter."
+    },
+    {
+     "role": "button",
+     "x": 235.5078125,
+     "y": 969,
+     "w": 604.984375,
+     "h": 91,
+     "font": 42,
+     "color": "rgb(26, 22, 18)",
+     "text": "COMMENTE GUIDE →"
+    },
+    {
+     "role": "book",
+     "x": 321.7890625,
+     "y": 742.53125,
+     "w": 432.421875,
+     "h": 271.46875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "05 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-23-effet-de-levier/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-effet-de-levier-fb-v5",
+  "bytes": 193717,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 96,
+    "y": 290,
+    "w": 884,
+    "h": 28,
+    "font": 23,
+    "color": "rgb(212, 175, 106)",
+    "text": "BOURSE · 23 NOVEMBRE 2026"
+   },
+   {
+    "role": "title",
+    "x": 96,
+    "y": 366,
+    "w": 860,
+    "h": 295.3125,
+    "font": 92,
+    "color": "rgb(246, 242, 234)",
+    "text": "-10 % POUR LE MARCHÉ. -100 % POUR TOI."
+   },
+   {
+    "role": "lead",
+    "x": 96,
+    "y": 715.3125,
+    "w": 700,
+    "h": 54.71875,
+    "font": 36,
+    "color": "rgb(226, 221, 212)",
+    "text": "L'effet de levier, exemple fictif."
+   },
+   {
+    "role": "note",
+    "x": 96,
+    "y": 816.03125,
+    "w": 884,
+    "h": 34.796875,
+    "font": 24,
+    "color": "rgb(212, 175, 106)",
+    "text": "Exemple fictif, pour comprendre."
+   },
+   {
+    "role": "brand",
+    "x": 100,
+    "y": 214,
+    "w": 264.296875,
+    "h": 52,
+    "font": 16,
+    "color": "rgb(246, 242, 234)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 96,
+    "y": 1103,
+    "w": 132.359375,
+    "h": 26,
+    "font": 22,
+    "color": "rgb(210, 204, 194)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 619.609375,
+    "y": 1107,
+    "w": 364.390625,
+    "h": 21,
+    "font": 18,
+    "color": "rgb(210, 204, 194)",
+    "text": "Contenu éducatif · Pas un conseil financier"
+   }
+  ]
+ }
+}

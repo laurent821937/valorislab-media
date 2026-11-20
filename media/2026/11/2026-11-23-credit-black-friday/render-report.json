@@ -1,0 +1,723 @@
+{
+ "id": "2026-11-23-credit-black-friday",
+ "kit_version": "2026-11-14.1",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-23-credit-black-friday/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-credit-black-friday-v5",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 199185,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "BUDGET · 23 NOVEMBRE 2026"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 162.78125,
+     "font": 74,
+     "color": "rgb(246, 242, 234)",
+     "text": "PROMO À 1 000 €. TU PAIES 1 123 €."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 598.78125,
+     "w": 620,
+     "h": 150.46875,
+     "font": 33,
+     "color": "rgb(226, 221, 212)",
+     "text": "Black Friday payé avec un crédit à la consommation : ce que coûte vrai"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 795.25,
+     "w": 884,
+     "h": 34.796875,
+     "font": 24,
+     "color": "rgb(212, 175, 106)",
+     "text": "Black Friday : vendredi 27 novembre."
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "01 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(210, 204, 194)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(210, 204, 194)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-credit-black-friday/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 0.96,
+   "overflow": false,
+   "bytes": 158568,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 26,
+     "font": 22.08,
+     "color": "rgb(212, 175, 106)",
+     "text": "LE POINT ESSENTIEL"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 362.078125,
+     "w": 700,
+     "h": 208.265625,
+     "font": 61.44,
+     "color": "rgb(246, 242, 234)",
+     "text": "UN CRÉDIT À LA CONSOMMATION A UN PRIX."
+    },
+    {
+     "role": "body",
+     "x": 96,
+     "y": 622.171875,
+     "w": 700,
+     "h": 144.46875,
+     "font": 31.68,
+     "color": "rgb(226, 221, 212)",
+     "text": "Le TAEG reprend les intérêts et les frais du crédit. C'est lui, et le "
+    },
+    {
+     "role": "stat",
+     "x": 125.796875,
+     "y": 891.625,
+     "w": 383.40625,
+     "h": 76.59375,
+     "font": 72.96,
+     "color": "rgb(138, 106, 46)",
+     "text": "46,79 €"
+    },
+    {
+     "role": "stat",
+     "x": 567.796875,
+     "y": 891.625,
+     "w": 382.40625,
+     "h": 76.59375,
+     "font": 72.96,
+     "color": "rgb(28, 26, 23)",
+     "text": "1 123 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 125.796875,
+     "y": 838.671875,
+     "w": 383.40625,
+     "h": 28,
+     "font": 23.04,
+     "color": "rgb(94, 87, 77)",
+     "text": "CE QU'ON VOIT"
+    },
+    {
+     "role": "statLabel",
+     "x": 567.796875,
+     "y": 838.671875,
+     "w": 382.40625,
+     "h": 28,
+     "font": 23.04,
+     "color": "rgb(94, 87, 77)",
+     "text": "CE QU'ON PAIE"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 808.875,
+     "w": 884,
+     "h": 240.203125,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "CE QU'ON VOIT 46,79 € la mensualité CE QU'ON PAIE 1 123 € le total rem"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "02 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-credit-black-friday/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "compare",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 166110,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "EXEMPLE FICTIF · POUR COMPRENDRE"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 216.9375,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "1 000 € SUR 24 MOIS : DEUX FAÇONS DE PAYER."
+    },
+    {
+     "role": "stat",
+     "x": 127,
+     "y": 712.9375,
+     "w": 381,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(138, 106, 46)",
+     "text": "1 123 €"
+    },
+    {
+     "role": "stat",
+     "x": 569,
+     "y": 712.9375,
+     "w": 380,
+     "h": 79.796875,
+     "font": 76,
+     "color": "rgb(28, 26, 23)",
+     "text": "1 000 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 127,
+     "y": 657.9375,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "À CRÉDIT (TAEG 12 %)"
+    },
+    {
+     "role": "statLabel",
+     "x": 569,
+     "y": 657.9375,
+     "w": 380,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(94, 87, 77)",
+     "text": "ÉPARGNÉ AVANT"
+    },
+    {
+     "role": "card",
+     "x": 96,
+     "y": 626.9375,
+     "w": 884,
+     "h": 320.578125,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "À CRÉDIT (TAEG 12 %) 1 123 € ÉPARGNÉ AVANT 1 000 € Le crédit coûte 123"
+    },
+    {
+     "role": "note",
+     "x": 96,
+     "y": 973.515625,
+     "w": 884,
+     "h": 30.4375,
+     "font": 21,
+     "color": "rgb(176, 170, 161)",
+     "text": "Chiffres illustratifs : TAEG fictif de 12 %, 24 mensualités constantes"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "03 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-credit-black-friday/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "list",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 167695,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "TA MÉTHODE DE DÉBUTANT"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 700,
+     "h": 144.625,
+     "font": 64,
+     "color": "rgb(246, 242, 234)",
+     "text": "AVANT DE PAYER À CRÉDIT : 4 RÉFLEXES."
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 571.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "01"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 697.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "02"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 823.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "03"
+    },
+    {
+     "role": "index",
+     "x": 97,
+     "y": 949.625,
+     "w": 102,
+     "h": 78,
+     "font": 32,
+     "color": "rgb(138, 106, 46)",
+     "text": "04"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 571.625,
+     "w": 463.8125,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Demande la fiche SECCI Elle est gratuite et obligatoire"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 697.625,
+     "w": 453.859375,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Compare le TAEG Pas seulement la mensualité"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 823.625,
+     "w": 471.765625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Calcule le total remboursé Mensualité × nombre de mois"
+    },
+    {
+     "role": "listItem",
+     "x": 199,
+     "y": 949.625,
+     "w": 493.890625,
+     "h": 78,
+     "font": 30,
+     "color": "rgb(28, 26, 23)",
+     "text": "Peux-tu attendre ? Épargner d'abord ne coûte rien"
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "04 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-23-credit-black-friday/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "cta",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "bytes": 159135,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 96,
+     "y": 290,
+     "w": 884,
+     "h": 28,
+     "font": 23,
+     "color": "rgb(212, 175, 106)",
+     "text": "POUR ALLER PLUS LOIN"
+    },
+    {
+     "role": "title",
+     "x": 96,
+     "y": 366,
+     "w": 600,
+     "h": 237.28125,
+     "font": 70,
+     "color": "rgb(246, 242, 234)",
+     "text": "20 ERREURS À ÉVITER, GRATUITEMENT."
+    },
+    {
+     "role": "lead",
+     "x": 96,
+     "y": 629.28125,
+     "w": 700,
+     "h": 97.25,
+     "font": 32,
+     "color": "rgb(226, 221, 212)",
+     "text": "Commente GUIDE et je t’envoie gratuitement les 20 erreurs à éviter."
+    },
+    {
+     "role": "button",
+     "x": 235.5078125,
+     "y": 969,
+     "w": 604.984375,
+     "h": 91,
+     "font": 42,
+     "color": "rgb(26, 22, 18)",
+     "text": "COMMENTE GUIDE →"
+    },
+    {
+     "role": "book",
+     "x": 321.7890625,
+     "y": 742.53125,
+     "w": 432.421875,
+     "h": 271.46875,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": ""
+    },
+    {
+     "role": "brand",
+     "x": 100,
+     "y": 214,
+     "w": 264.296875,
+     "h": 52,
+     "font": 16,
+     "color": "rgb(246, 242, 234)",
+     "text": "VALORISLAB FINANCE BELGIQUE"
+    },
+    {
+     "role": "count",
+     "x": 885.390625,
+     "y": 226,
+     "w": 94.609375,
+     "h": 31,
+     "font": 26,
+     "color": "rgb(176, 170, 161)",
+     "text": "05 / 05"
+    },
+    {
+     "role": "next",
+     "x": 96,
+     "y": 1103,
+     "w": 132.359375,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(176, 170, 161)",
+     "text": "valorislab.be"
+    },
+    {
+     "role": "next",
+     "x": 619.609375,
+     "y": 1107,
+     "w": 364.390625,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(176, 170, 161)",
+     "text": "Contenu éducatif · Pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-23-credit-black-friday/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-credit-black-friday-fb-v5",
+  "bytes": 222631,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 96,
+    "y": 290,
+    "w": 884,
+    "h": 28,
+    "font": 23,
+    "color": "rgb(212, 175, 106)",
+    "text": "BUDGET · 23 NOVEMBRE 2026"
+   },
+   {
+    "role": "title",
+    "x": 96,
+    "y": 366,
+    "w": 860,
+    "h": 196.875,
+    "font": 92,
+    "color": "rgb(246, 242, 234)",
+    "text": "PROMO À 1 000 €. TU PAIES 1 123 €."
+   },
+   {
+    "role": "lead",
+    "x": 96,
+    "y": 616.875,
+    "w": 700,
+    "h": 109.4375,
+    "font": 36,
+    "color": "rgb(226, 221, 212)",
+    "text": "Black Friday à crédit : le vrai prix (exemple fictif)."
+   },
+   {
+    "role": "note",
+    "x": 96,
+    "y": 772.3125,
+    "w": 884,
+    "h": 34.796875,
+    "font": 24,
+    "color": "rgb(212, 175, 106)",
+    "text": "Black Friday : vendredi 27 novembre."
+   },
+   {
+    "role": "brand",
+    "x": 100,
+    "y": 214,
+    "w": 264.296875,
+    "h": 52,
+    "font": 16,
+    "color": "rgb(246, 242, 234)",
+    "text": "VALORISLAB FINANCE BELGIQUE"
+   },
+   {
+    "role": "next",
+    "x": 96,
+    "y": 1103,
+    "w": 132.359375,
+    "h": 26,
+    "font": 22,
+    "color": "rgb(210, 204, 194)",
+    "text": "valorislab.be"
+   },
+   {
+    "role": "next",
+    "x": 619.609375,
+    "y": 1107,
+    "w": 364.390625,
+    "h": 21,
+    "font": 18,
+    "color": "rgb(210, 204, 194)",
+    "text": "Contenu éducatif · Pas un conseil financier"
+   }
+  ]
+ }
+}
