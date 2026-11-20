@@ -12,11 +12,17 @@ Blocking errors:
   mention     « Contenu éducatif, pas un conseil financier » in every caption
   lines       at most 3 lines before the first blank line (what Instagram shows before « … plus »)
   cover       the cover's key number (if any) is in the Instagram caption
+  hook (v7)   hook_style is one of the 12 styles of STRATEGIE.md and not reused in the same week folder
+  jargon (v7) no technical word on the cover (ETF, TOB, TAEG, précompte…); warning in the slide 2 title
 Prints one JSON line per file; exits 1 on any error.
 """
-import json, re, sys, unicodedata
+import json, pathlib, re, sys, unicodedata
 
 END = "Guide gratuit : lien dans ma bio."
+HOOK_STYLES = {"scene", "miroir", "chiffre-choc", "mythe", "defi", "avant-apres", "moment", "message",
+               "contre-intuitif", "liste", "personnage", "episode"}
+JARGON = ["etf", "tob", "taeg", "ter", "précompte", "capitalisant", "distribuant", "cfd", "levier", "reynders",
+          "domiciliation", "staking", "wallet", "dividende", "obligation", "tracker", "plus-value"]
 
 
 def norm(t):
@@ -83,6 +89,29 @@ def check(path):
             if len(first.split("\n")) > 3:
                 errors.append(f"{net} : {len(first.splitlines())} lignes avant la première ligne vide (3 au maximum)")
     cover = next((s for s in slides if s.get("type") == "cover"), {})
+    if c.get("charte") == "v7":
+        # human tone (Laurent, 20/11/2026): hook style in rotation, no jargon on the cover
+        hs = c.get("hook_style")
+        if hs not in HOOK_STYLES:
+            errors.append(f"hook_style « {hs} » absent ou inconnu ({', '.join(sorted(HOOK_STYLES))})")
+        else:
+            for other in sorted(pathlib.Path(path).parent.glob("*.json")):
+                if other.resolve() == pathlib.Path(path).resolve():
+                    continue
+                try:
+                    o = json.load(open(other, encoding="utf-8"))
+                except Exception:
+                    continue
+                if o.get("hook_style") == hs:
+                    errors.append(f"hook_style « {hs} » déjà utilisé cette semaine ({other.name}) : varier les accroches")
+        cov_txt = norm(" ".join(str(cover.get(k) or "") for k in ("title", "subtitle", "number"))).lower()
+        for w in JARGON:
+            if re.search(r"(?<![\w-])" + re.escape(w) + r"(?![\w-])", cov_txt):
+                errors.append(f"jargon « {w} » sur la couverture : parler de la situation, expliquer le mot en slide 2")
+        s2 = norm(str(slides[1].get("title") or "")).lower() if len(slides) > 1 else ""
+        for w in JARGON:
+            if re.search(r"(?<![\w-])" + re.escape(w) + r"(?![\w-])", s2):
+                warnings.append(f"jargon « {w} » dans le titre de la slide 2 : l'expliquer en mots simples sur la slide")
     if cover.get("number"):
         if not numbers(cover["number"]) <= numbers(caps.get("instagram", "")):
             errors.append("le chiffre clé de la couverture n'apparaît pas dans la légende Instagram")

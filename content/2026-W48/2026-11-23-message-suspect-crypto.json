@@ -167,5 +167,6 @@
   ]
  },
  "fb": {},
- "cta_photo": "ia-cta-guide-v7b"
+ "cta_photo": "ia-cta-guide-v7b",
+ "hook_style": "message"
 }

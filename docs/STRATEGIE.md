@@ -2,7 +2,7 @@
 
 Ce document est la référence pour toute génération automatique de contenu.
 Toute modification de la stratégie passe par Laurent.
-**Refonte du 20/11/2026** : la ligne éditoriale (formats, sujets, dernière slide, légende, score) vient des sections 2, 3, 6 et 7 du brief de Laurent, `docs/brief-refonte-carrousels-2026-11.md` (qui explique aussi le pourquoi, section 1, et la mesure, section 8). La charte visuelle (sections 4 et 5) est dans `docs/STYLE-CARROUSEL.md` (charte v6). Les règles de conformité restent inchangées.
+**Refonte du 20/11/2026** : la ligne éditoriale (formats, sujets, dernière slide, légende, score) vient des sections 2, 3, 6 et 7 du brief de Laurent, `docs/brief-refonte-carrousels-2026-11.md` (qui explique aussi le pourquoi, section 1, et la mesure, section 8). La charte visuelle est dans `docs/STYLE-CARROUSEL.md` (charte v7 « moderne », validée le 20/11/2026). Les règles de conformité restent inchangées.
 
 ## Positionnement
 - Plateforme éducative belge francophone : Bourse, ETF, Crypto, finances personnelles.
@@ -33,8 +33,45 @@ Chaque semaine, la routine choisit **3 formats différents** parmi ces 8. Jamais
 4. **Interdit** : les sujets déjà publiés (contrôle `state/history.json`), et les sujets purement techniques sans enjeu personnel (TOB seule, domiciliation d'ETF seule, taxe Reynders seule). Ces notions peuvent apparaître à l'intérieur d'un format, jamais comme sujet principal.
 5. **Répartition par semaine** : 1 sujet Bourse, 1 sujet Crypto ou arnaque, 1 sujet budget du quotidien (champ `theme` : `bourse`, `crypto` ou `arnaque`, `budget`).
 
+## Ton humain, sujets qui concernent, accroches variées (demande de Laurent, 20/11/2026)
+**But** : que chaque personne qui voit la couverture se dise « ça, c'est moi ». On parle à une personne, pas à « les investisseurs ». On explique avec des scènes de vie, pas avec des notions.
+
+**1. Partir d'une scène de vie, jamais d'une notion.** Un moment précis (vendredi soir, jour de paie, fin du mois, Black Friday, prime de décembre, premier CDI, colocation, premier enfant, achat d'une voiture), un lieu, un montant du quotidien (un café, une livraison, un abonnement, un loyer). La notion technique (TOB, ETF, TAEG, précompte…) n'arrive qu'à l'intérieur, au moment où elle sert, traduite tout de suite en mots simples.
+
+**2. Le test « je me sens concerné »** (les 3 réponses doivent être oui, sinon on change d'angle) :
+- Un débutant belge de 20 à 45 ans se reconnaît en 1 seconde sur la couverture.
+- Il a déjà vécu, pensé ou entendu ça (pas une situation rare ou réservée aux riches).
+- Il repart avec un réflexe faisable en 1 minute (vérifier, comparer, refuser, noter), sans conseil personnalisé.
+
+**3. Une émotion par post**, assumée et positive à la fin : surprise, gêne qui fait sourire, peur de rater, fierté, soulagement, « ah, je ne savais pas ». Jamais la honte ni la peur gratuite : on finit toujours sur une solution simple et de l'énergie.
+
+**4. Zéro jargon sur la couverture.** Interdits sur la couverture (contrôlé par `kit/text_check.py`) : ETF, TOB, TAEG, TER, précompte, capitalisant, distribuant, CFD, levier, Reynders, domiciliation, staking, wallet, dividende, obligation, tracker, plus-value. Si la notion est le cœur du sujet, la couverture parle de la situation (« Tu achètes ta première action ? Une taxe t'attend ») et le mot arrive en slide 2, expliqué.
+
+**5. Des personnages fictifs auxquels on s'identifie**, en rotation, toujours marqués « cas fictif » : Sarah, 26 ans, premier CDI à 1 900 € net ; Mehdi, 34 ans, deux enfants, ménage serré ; Julie, 41 ans, reprend ses finances après une séparation ; Tom, 22 ans, étudiant avec un job ; Inès et Lucas, 30 ans, qui préparent un achat ; Karim, 38 ans, indépendant. Le protagoniste VALORISLAB reste le héros des épisodes (F8).
+
+**6. Accroches : 12 styles, en rotation.** Chaque contenu porte son style dans `hook_style` ; ses 5 variantes (`hook_variants`) couvrent au moins 3 styles différents, puis on garde la meilleure. Jamais deux fois le même style dans la même semaine (contrôlé par `text_check.py`), et on évite de reprendre le style des 3 derniers posts publiés.
+
+| `hook_style` | Style | Exemple |
+|---|---|---|
+| `scene` | Scène vécue | « Vendredi, 23 h. Tu commandes encore à manger. » |
+| `miroir` | Question miroir | « Toi aussi, ta prime disparaît en une semaine ? » |
+| `chiffre-choc` | Chiffre concret qui surprend | « 3 000 € en 10 ans. Pour une seule dépense. » |
+| `mythe` | Phrase entendue partout, à juger | « « Il faut beaucoup d'argent pour investir. » Vrai ? » |
+| `defi` | Défi ou quiz | « Trouve l'erreur sur ce ticket en 5 secondes. » |
+| `avant-apres` | Comparaison de deux vies | « Même salaire. Deux fins de mois très différentes. » |
+| `moment` | Interpellation d'un moment du calendrier | « Ton 13e mois vient de tomber ? Lis ça avant de dépenser. » |
+| `message` | Conversation ou notification | « « Je te montre comment j'ai doublé mon argent ? » » |
+| `contre-intuitif` | Vérité qui va contre l'intuition (sourcée) | « Ton argent qui dort perd de la valeur chaque mois. » |
+| `liste` | Liste avec tension | « 3 lignes que personne ne lit sur son relevé. » |
+| `personnage` | Cas fictif auquel on s'identifie | « Sarah, 26 ans, premier salaire. Elle fait l'erreur n° 1. » |
+| `episode` | Épisode du protagoniste | « Épisode 4 · Il vient de toucher sa prime. Mauvaise idée. » |
+
+**7. Légende humaine** : ligne 1 = la scène ou l'émotion (pas la leçon) avec le mot-clé ; ligne 2 = la tension ou ce qu'on va découvrir ; ligne 3 = une seule question, personnelle (« Et toi, tu fais comment ? »). Puis la source, la mention et « Guide gratuit : lien dans ma bio. ».
+
+**8. Stratégie réseaux sociaux (rappel)** : 1 sujet = 1 situation = 1 émotion = 1 réflexe. Couverture lisible en 1 seconde, mécanisme de rétention jusqu'à l'avant-dernière slide, réponse surprenante mais vraie, sortie positive, mot-clé recherché (référencement), une seule question pour les commentaires. Le critère « Situation » du score (20 points) ne donne le maximum que si le test « je me sens concerné » est passé et que l'émotion est claire.
+
 ## Format visuel
-**Charte v6 (20/11/2026) : `docs/STYLE-CARROUSEL.md`** (sections 4 et 5 du brief), rendue par le kit (`kit/render.py`, gabarit `kit/templates/slide-v6.html.j2`), 5 à 7 slides. Les chartes v5 et antérieures ne servent plus qu'à re-rendre d'anciens contenus.
+**Charte v7 « moderne » (validée le 20/11/2026) : `docs/STYLE-CARROUSEL.md`**, rendue par le kit (`kit/render.py`, gabarit `kit/templates/slide-v7.html.j2`), 5 à 7 slides. Les chartes v5 et antérieures ne servent plus qu'à re-rendre d'anciens contenus.
 
 ## Dernière slide et légende (brief, section 6)
 - **Dernière slide** : « C'est l'erreur n° X des 20 erreurs du guide. Guide gratuit, lien dans ma bio. » Puis valorislab.be et la mention « Contenu éducatif, pas un conseil financier ».
@@ -88,7 +125,7 @@ Chaque contenu reçoit une note sur 100, calculée et justifiée dans le champ `
 |---|---|---|
 | Rétention (`retention`) | 25 | Mécanisme de rétention clair et tenu jusqu'à l'avant-dernière slide |
 | Couverture (`couverture`) | 20 | Lisible en 1 seconde sur un téléphone : titre ≤ 12 mots, chiffre visible |
-| Situation (`situation`) | 20 | Situation vécue par un débutant, et non une notion |
+| Situation (`situation`) | 20 | Situation vécue par un débutant, et non une notion ; test « je me sens concerné » passé, émotion claire, zéro jargon en couverture |
 | Différence (`difference`) | 15 | Différent des 3 derniers posts publiés (format, fond, visuel) |
 | Erreur du guide (`guide`) | 10 | Lien explicite avec une erreur du guide |
 | Conformité (`conformite`) | 10 | Sources, mention, pas de promesse. **Éliminatoire si absent** (0 = contenu refusé) |
