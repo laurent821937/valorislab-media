@@ -832,6 +832,14 @@
    "status": "ok",
    "content_id": "cover-message-suspect-v6b",
    "reference": true
+  },
+  {
+   "date": "2026-11-20",
+   "slug": "ia-cover-message-suspect-v7",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-11-23-message-suspect-crypto",
+   "note": "maquette charte v7 moderne (selfie)"
   }
  ]
 }

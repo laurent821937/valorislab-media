@@ -623,5 +623,21 @@
   "style": "v6-premium-lumineux",
   "face": true,
   "reference": "kit/assets/protagonist/ref-pensif.jpg"
+ },
+ "ia-cover-message-suspect-v7": {
+  "file": "ia-cover-message-suspect-v7.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 40%",
+  "mood": "le protagoniste en selfie face caméra, t-shirt noir, mur clair, sourcil levé et main ouverte (tu vois le piège ?)",
+  "pillars": [
+   "arnaque"
+  ],
+  "source": "ia",
+  "created": "2026-11-20",
+  "style": "v7-moderne-selfie",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-portrait.jpg"
  }
 }
