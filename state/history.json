@@ -410,15 +410,21 @@
    "buffer": {
     "tiktok": {
      "id": "6b000b16738ce4635f9e384b",
-     "dueAt": "2026-11-23T09:34:00+01:00"
+     "dueAt": "2026-11-23T09:34:00+01:00",
+     "status": "sent",
+     "note": "partagé depuis Buffer le 20/11/2026 à 10:26 (sharedNow, rappel TikTok), non modifiable"
     },
     "instagram": {
      "id": "6b000b21ca85ebefb00d046c",
-     "dueAt": "2026-11-24T19:26:00+01:00"
+     "dueAt": "2026-11-24T19:26:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     },
     "facebook": {
      "id": "6b000b264c1afd05de074b7a",
-     "dueAt": "2026-11-25T09:54:00+01:00"
+     "dueAt": "2026-11-25T09:54:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     }
    }
   },
@@ -439,15 +445,21 @@
    "buffer": {
     "instagram": {
      "id": "6b000b377b0a126cebbfc083",
-     "dueAt": "2026-11-25T18:06:00+01:00"
+     "dueAt": "2026-11-25T18:06:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     },
     "facebook": {
      "id": "6b000b3d738ce4635f9e4533",
-     "dueAt": "2026-11-26T09:26:00+01:00"
+     "dueAt": "2026-11-26T09:26:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     },
     "tiktok": {
      "id": "6b000b46738ce4635f9e470c",
-     "dueAt": "2026-11-28T08:36:00+01:00"
+     "dueAt": "2026-11-28T08:36:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     }
    }
   },
@@ -467,17 +479,119 @@
    "buffer": {
     "instagram": {
      "id": "6b000b500f5eda1a57d64a32",
-     "dueAt": "2026-11-26T10:51:00+01:00"
+     "dueAt": "2026-11-26T10:51:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     },
     "facebook": {
      "id": "6b000b567b0a126cebbfc950",
-     "dueAt": "2026-11-27T08:45:00+01:00"
+     "dueAt": "2026-11-27T08:45:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     },
     "tiktok": {
      "id": "6b000b5e738ce4635f9e4bfa",
-     "dueAt": "2026-11-29T09:41:00+01:00"
+     "dueAt": "2026-11-29T09:41:00+01:00",
+     "status": "draft",
+     "note": "repassé en brouillon le 20/11/2026 (refonte charte v6, demande de Laurent)"
     }
    }
+  },
+  {
+   "id": "2026-11-23-petites-depenses-10-ans",
+   "date": "2026-11-23",
+   "source": "auto",
+   "charte": "v6",
+   "format": "F1",
+   "pillar": "budget",
+   "theme": "budget",
+   "topic": "Boucle ouverte : café, streaming ou frais de livraison, laquelle coûte plus de 3 000 € en 10 ans ? (exemple fictif, livraison 3 115 €)",
+   "keywords": [
+    "petite dépense",
+    "budget",
+    "frais de livraison",
+    "abonnement",
+    "10 ans"
+   ],
+   "buffer_drafts": {
+    "instagram": {
+     "id": "6b003c1a5d9549971ca38d8d",
+     "status": "draft"
+    },
+    "tiktok": {
+     "id": "6b003c245d9549971ca394f5",
+     "status": "draft"
+    },
+    "facebook": {
+     "id": "6b003c29234b6bb6ee9401c6",
+     "status": "draft"
+    }
+   },
+   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation"
+  },
+  {
+   "id": "2026-11-23-mythe-action-5-euros",
+   "date": "2026-11-23",
+   "source": "auto",
+   "charte": "v6",
+   "format": "F2",
+   "pillar": "bourse",
+   "theme": "bourse",
+   "topic": "Tribunal du mythe : « une action à 5 € peut monter plus facilement qu'une à 500 € », verdict FAUX (1 000 € : 200 actions ou 2 actions, +10 % = +100 € dans les deux cas)",
+   "keywords": [
+    "action",
+    "prix d'une action",
+    "investir en bourse",
+    "mythe",
+    "débutant"
+   ],
+   "buffer_drafts": {
+    "instagram": {
+     "id": "6b003c34fc5b97f0f804512c",
+     "status": "draft"
+    },
+    "tiktok": {
+     "id": "6b003c3d234b6bb6ee94084f",
+     "status": "draft"
+    },
+    "facebook": {
+     "id": "6b003c42234b6bb6ee940982",
+     "status": "draft"
+    }
+   },
+   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation"
+  },
+  {
+   "id": "2026-11-23-message-suspect-crypto",
+   "date": "2026-11-23",
+   "source": "auto",
+   "charte": "v6",
+   "format": "F7",
+   "pillar": "arnaque",
+   "theme": "arnaque",
+   "topic": "Message suspect : inconnu qui a « doublé son argent », fausse plateforme crypto, gains affichés puis frais pour retirer (schéma décrit par la FSMA)",
+   "keywords": [
+    "arnaque crypto",
+    "fausse plateforme",
+    "FSMA",
+    "retrait bloqué",
+    "frais"
+   ],
+   "buffer_drafts": {
+    "instagram": {
+     "id": "6b003c4c8f4d50958cc19550",
+     "status": "draft"
+    },
+    "tiktok": {
+     "id": "6b003c568f4d50958cc197a9",
+     "status": "draft"
+    },
+    "facebook": {
+     "id": "6b003c5bfc5b97f0f80461c0",
+     "status": "draft"
+    }
+   },
+   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation"
   }
  ],
  "ai_decors": [
