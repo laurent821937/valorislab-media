@@ -63,3 +63,11 @@ Sources : FSMA (fausses plateformes de trading crypto, « Peut-on devenir riche 
 - « Je valide tout » : style v7, protagoniste figé (`kit/assets/protagonist/ref-sweat-noir.jpg`), alternance selfie / couverture graphique, dernière slide commune, légendes Facebook corrigées, fusion dans `main`.
 - Légendes Facebook W48 réécrites (réponse donnée, plus de renvoi à une slide) et mises à jour dans Buffer (brouillons). `text_check.py` bloque désormais « slide », « swipe » et « carrousel » sur Facebook.
 - Dates W48 : non fournies, rien de programmé. Liste des 20 erreurs du guide : toujours attendue.
+
+## Programmation W48 (Laurent : « on garde les mêmes paramètres qu'avant »)
+Mêmes créneaux que le run du 20/11 (rapport 2026-W48.md), même mode (Facebook automatique, Instagram et TikTok en rappel), tag auto-valorislab, statut `scheduled` confirmé par Buffer pour les 9 posts :
+| Contenu | TikTok (rappel) | Instagram (rappel) | Facebook (auto) |
+|---|---|---|---|
+| Petites dépenses (F1) | lun. 23/11 09:34 | mar. 24/11 19:26 | mer. 25/11 09:54 |
+| Mythe action à 5 € (F2) | sam. 28/11 08:36 | mer. 25/11 18:06 | jeu. 26/11 09:26 |
+| Message suspect (F7) | dim. 29/11 09:41 | jeu. 26/11 10:51 | ven. 27/11 08:45 |

@@ -452,7 +452,7 @@
    "id": "2026-11-23-petites-depenses-10-ans",
    "date": "2026-11-23",
    "source": "auto",
-   "charte": "v6",
+   "charte": "v7",
    "format": "F1",
    "pillar": "budget",
    "theme": "budget",
@@ -464,27 +464,27 @@
     "abonnement",
     "10 ans"
    ],
-   "buffer_drafts": {
-    "instagram": {
-     "id": "6b003c1a5d9549971ca38d8d",
-     "status": "draft"
-    },
+   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation",
+   "buffer": {
     "tiktok": {
      "id": "6b003c245d9549971ca394f5",
-     "status": "draft"
+     "dueAt": "2026-11-23T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6b003c1a5d9549971ca38d8d",
+     "dueAt": "2026-11-24T19:26:00+01:00"
     },
     "facebook": {
      "id": "6b003c29234b6bb6ee9401c6",
-     "status": "draft"
+     "dueAt": "2026-11-25T09:54:00+01:00"
     }
-   },
-   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation"
+   }
   },
   {
    "id": "2026-11-23-mythe-action-5-euros",
    "date": "2026-11-23",
    "source": "auto",
-   "charte": "v6",
+   "charte": "v7",
    "format": "F2",
    "pillar": "bourse",
    "theme": "bourse",
@@ -496,27 +496,27 @@
     "mythe",
     "débutant"
    ],
-   "buffer_drafts": {
+   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation",
+   "buffer": {
     "instagram": {
      "id": "6b003c34fc5b97f0f804512c",
-     "status": "draft"
-    },
-    "tiktok": {
-     "id": "6b003c3d234b6bb6ee94084f",
-     "status": "draft"
+     "dueAt": "2026-11-25T18:06:00+01:00"
     },
     "facebook": {
      "id": "6b003c42234b6bb6ee940982",
-     "status": "draft"
+     "dueAt": "2026-11-26T09:26:00+01:00"
+    },
+    "tiktok": {
+     "id": "6b003c3d234b6bb6ee94084f",
+     "dueAt": "2026-11-28T08:36:00+01:00"
     }
-   },
-   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation"
+   }
   },
   {
    "id": "2026-11-23-message-suspect-crypto",
    "date": "2026-11-23",
    "source": "auto",
-   "charte": "v6",
+   "charte": "v7",
    "format": "F7",
    "pillar": "arnaque",
    "theme": "arnaque",
@@ -528,21 +528,21 @@
     "retrait bloqué",
     "frais"
    ],
-   "buffer_drafts": {
+   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation",
+   "buffer": {
     "instagram": {
      "id": "6b003c4c8f4d50958cc19550",
-     "status": "draft"
-    },
-    "tiktok": {
-     "id": "6b003c568f4d50958cc197a9",
-     "status": "draft"
+     "dueAt": "2026-11-26T10:51:00+01:00"
     },
     "facebook": {
      "id": "6b003c5bfc5b97f0f80461c0",
-     "status": "draft"
+     "dueAt": "2026-11-27T08:45:00+01:00"
+    },
+    "tiktok": {
+     "id": "6b003c568f4d50958cc197a9",
+     "dueAt": "2026-11-29T09:41:00+01:00"
     }
-   },
-   "note": "brouillons de test charte v6 (20/11/2026), à valider par Laurent avant toute programmation"
+   }
   }
  ],
  "ai_decors": [
