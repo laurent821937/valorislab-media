@@ -43,3 +43,11 @@ Sources : FSMA (fausses plateformes de trading crypto, « Peut-on devenir riche 
   - https://raw.githubusercontent.com/laurent821937/valorislab-media/8ba855bb7ffa0f407675ed43305322de100c652a/media/2026/11/2026-11-23-petites-depenses-10-ans/
   - https://raw.githubusercontent.com/laurent821937/valorislab-media/8ba855bb7ffa0f407675ed43305322de100c652a/media/2026/11/2026-11-23-mythe-action-5-euros/
   - https://raw.githubusercontent.com/laurent821937/valorislab-media/8ba855bb7ffa0f407675ed43305322de100c652a/media/2026/11/2026-11-23-message-suspect-crypto/
+
+## Mise à jour du 20/11 (fin de journée) : lumineux, réaliste, contrôles renforcés (demande de Laurent)
+- Plus aucun post sombre : fonds ivoire (F1, F7) et champagne (F2). Deux nouvelles couvertures IA du protagoniste, lumineuses et enthousiastes (cuisine ensoleillée, salon en lin) ; budget IA 32/40 en novembre.
+- Créativité niche, réaliste : conversation dans un téléphone (F7), ticket de caisse sur 10 ans (F1), tuiles d'appli d'investissement fictives (F2).
+- Bulles coupées à gauche : corrigé (marge intérieure) et désormais **mesuré automatiquement** par `render.py` (élément coupé ou collé au bord = blocage, texte réduit < 90 % = avertissement).
+- Textes : `kit/text_check.py` (bloquant) ; légendes réécrites (une seule question, chiffres identiques aux slides, renvoi à la slide 5) ; slide F2 « défense » précisée (valeur de l'entreprise ÷ nombre d'actions) ; heures du téléphone F7 cohérentes avec « Deux jours plus tard ».
+- Contrôles finaux : text_check, seo_check, render, validate (URL publique), qa : 0 erreur, 0 avertissement ; relecture visuelle de chaque slide en grand.
+- Buffer : 9 brouillons mis à jour (textes + visuels, commit a66de71), rien de programmé.
