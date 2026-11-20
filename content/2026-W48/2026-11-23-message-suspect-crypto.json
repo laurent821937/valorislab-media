@@ -24,8 +24,9 @@
   "cluster": "crypto-securite"
  },
  "guide_error": {
-  "n": null,
-  "theme": "faire confiance à un inconnu qui promet des gains rapides"
+  "chapter": "crypto",
+  "n": 10,
+  "title": "Croire aux rendements garantis"
  },
  "kicker": "Crypto",
  "slides": [
@@ -132,8 +133,8 @@
   },
   {
    "type": "cta",
-   "title": "C'est l'une des 20 erreurs *du guide.*",
-   "body": "Les 20 erreurs à éviter quand on débute."
+   "title": "C'est l'erreur Crypto *n° 10 du guide.*",
+   "body": "Croire aux rendements garantis."
   }
  ],
  "alt": "Carrousel VALORISLAB, le message suspect : conversation fictive d'arnaque crypto, un inconnu promet +100 % en 3 semaines, affiche des gains puis réclame des frais pour retirer, schéma décrit par la FSMA.",

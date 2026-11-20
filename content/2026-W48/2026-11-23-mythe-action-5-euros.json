@@ -23,8 +23,9 @@
   "cluster": "investir-debutant"
  },
  "guide_error": {
-  "n": null,
-  "theme": "croire qu'une action pas chère est une bonne affaire"
+  "chapter": "bourse",
+  "n": 4,
+  "title": "Acheter une entreprise incomprise"
  },
  "kicker": "Bourse",
  "slides": [
@@ -121,8 +122,8 @@
   },
   {
    "type": "cta",
-   "title": "C'est l'une des 20 erreurs *du guide.*",
-   "body": "Les 20 erreurs à éviter quand on débute."
+   "title": "C'est l'erreur Bourse *n° 4 du guide.*",
+   "body": "Acheter une entreprise sans la comprendre."
   }
  ],
  "alt": "Carrousel VALORISLAB, le tribunal du mythe : une action à 5 € monte-t-elle plus vite qu'une action à 500 € ? Avec 1 000 €, 200 actions ou 2 actions, +10 % donne +100 € dans les deux cas. Verdict : faux (exemple fictif).",

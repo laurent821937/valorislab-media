@@ -29,7 +29,7 @@ Chaque semaine, la routine choisit **3 formats différents** parmi ces 8. Jamais
 ## Règles de choix des sujets (brief, section 3)
 1. Le sujet part d'une **situation vécue**, jamais d'une notion. « Tu viens de recevoir ta prime » plutôt que « Qu'est-ce que le précompte mobilier ».
 2. Le **calendrier** compte : primes de décembre, soldes, déclaration fiscale (mai-juin), rentrée, Black Friday, 13e mois, pécule de vacances.
-3. Chaque sujet est rattaché à **l'une des 20 erreurs du guide**. La dernière slide la nomme : « C'est l'erreur n° X du guide gratuit. » Numéros et intitulés : `state/guide-erreurs.json` (à remplir par Laurent ; tant qu'un numéro manque, la slide dit « C'est l'une des 20 erreurs du guide » et le rapport le signale : ne jamais inventer un numéro).
+3. Chaque sujet est rattaché à **l'une des 20 erreurs du guide**. La dernière slide la nomme : « C'est l'erreur n° X du guide gratuit. » Numéros et intitulés : `state/guide-erreurs.json` (relevés dans le guide de Laurent le 20/11/2026 : Bourse 1 à 10, Crypto 1 à 10, bonus finances personnelles). Formulation : « C'est l'erreur Bourse n° X du guide. », « C'est l'erreur Crypto n° X du guide. », et pour un sujet budget « l'étape X du guide gratuit » (bonus finances). Champ `guide_error: {chapter, n, title}`. Ne jamais inventer un numéro.
 4. **Interdit** : les sujets déjà publiés (contrôle `state/history.json`), et les sujets purement techniques sans enjeu personnel (TOB seule, domiciliation d'ETF seule, taxe Reynders seule). Ces notions peuvent apparaître à l'intérieur d'un format, jamais comme sujet principal.
 5. **Répartition par semaine** : 1 sujet Bourse, 1 sujet Crypto ou arnaque, 1 sujet budget du quotidien (champ `theme` : `bourse`, `crypto` ou `arnaque`, `budget`).
 

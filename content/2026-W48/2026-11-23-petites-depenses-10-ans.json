@@ -24,8 +24,9 @@
   "cluster": "epargne-belgique"
  },
  "guide_error": {
-  "n": null,
-  "theme": "laisser filer les petites dépenses récurrentes"
+  "chapter": "bonus_finances",
+  "n": 1,
+  "title": "Budget et flux d’argent"
  },
  "kicker": "Budget",
  "slides": [
@@ -133,8 +134,8 @@
   },
   {
    "type": "cta",
-   "title": "C'est l'une des 20 erreurs *du guide.*",
-   "body": "Les 20 erreurs à éviter quand on débute."
+   "title": "Ton budget, *étape 1 du guide.*",
+   "body": "Le bonus finances : budget, épargne, objectifs."
   }
  ],
  "alt": "Carrousel VALORISLAB sur le budget : quelle dépense du quotidien coûte plus de 3 000 € en 10 ans, entre café à emporter, abonnement streaming et frais de livraison ? Réponse : les frais de livraison, 3 115 € (exemple fictif).",

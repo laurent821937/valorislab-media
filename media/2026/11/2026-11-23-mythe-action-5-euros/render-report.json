@@ -737,7 +737,7 @@
    "scale": 1,
    "overflow": false,
    "title_lines": 2,
-   "bytes": 254271,
+   "bytes": 253688,
    "W": 1080,
    "H": 1350,
    "boxes": [
@@ -749,7 +749,7 @@
      "h": 168.15625,
      "font": 84,
      "color": "rgb(22, 19, 15)",
-     "text": "C'EST L'UNE DES 20 ERREURS du guide."
+     "text": "C'EST L'ERREUR BOURSE n° 4 du guide."
     },
     {
      "role": "button",
@@ -769,7 +769,7 @@
      "h": 39,
      "font": 32,
      "color": "rgb(255, 255, 255)",
-     "text": "Les 20 erreurs à éviter quand on débute."
+     "text": "Acheter une entreprise sans la comprendre."
     },
     {
      "role": "next",

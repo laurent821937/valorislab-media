@@ -1,25 +1,33 @@
 {
- "note": "Liste numérotée des 20 erreurs du guide gratuit « Les 20 erreurs du débutant en Bourse et en Crypto ». À remplir par Laurent (numéro -> intitulé exact). Tant qu'un numéro manque, la dernière slide dit « C'est l'une des 20 erreurs du guide » : ne jamais inventer un numéro.",
- "erreurs": {
-  "1": null,
-  "2": null,
-  "3": null,
-  "4": null,
-  "5": null,
-  "6": null,
-  "7": null,
-  "8": null,
-  "9": null,
-  "10": null,
-  "11": null,
-  "12": null,
-  "13": null,
-  "14": null,
-  "15": null,
-  "16": null,
-  "17": null,
-  "18": null,
-  "19": null,
-  "20": null
+ "note": "Guide gratuit « Les 20 erreurs du débutant en Bourse et en Crypto », d'après la page « Guide PDF VALORISLAB » de Laurent (version du 22/10/2026). Le guide numérote par chapitre : Bourse 01 à 10, Crypto 01 à 10, plus un bonus « Guide finances personnelles » en 4 étapes (la 4e n'est pas encore relevée). Dernière slide : « C'est l'erreur Bourse n° X du guide. », « C'est l'erreur Crypto n° X du guide. » ou, pour un sujet budget, « C'est l'étape X du bonus finances du guide. ». Ne jamais inventer un numéro.",
+ "source": "https://claude.ai/artifact/QAceSKoSzDYxfRVcC6dZsi",
+ "bourse": {
+  "1": "Investir sans objectif précis",
+  "2": "Confondre investir et trader",
+  "3": "Concentrer son portefeuille",
+  "4": "Acheter une entreprise incomprise",
+  "5": "Acheter après une forte hausse",
+  "6": "Changer de stratégie sans critères",
+  "7": "Réagir à chaque actualité",
+  "8": "Sous-estimer les frais et la fiscalité",
+  "9": "Investir sans règles écrites",
+  "10": "Vendre uniquement par peur"
+ },
+ "crypto": {
+  "1": "Acheter sans comprendre l’actif",
+  "2": "Acheter parce que le prix monte vite",
+  "3": "Confondre prix unitaire et valorisation",
+  "4": "Investir de l’argent nécessaire à court terme",
+  "5": "Laisser toutes ses cryptos sur une plateforme",
+  "6": "Mal sauvegarder sa phrase de récupération",
+  "7": "Envoyer des fonds sans vérifier le réseau",
+  "8": "Ignorer les frais et le coût réel",
+  "9": "Trop concentrer sur un seul projet",
+  "10": "Croire aux rendements garantis"
+ },
+ "bonus_finances": {
+  "1": "Budget et flux d’argent",
+  "2": "Épargne de précaution",
+  "3": "Objectifs, horizon et risque"
  }
 }
