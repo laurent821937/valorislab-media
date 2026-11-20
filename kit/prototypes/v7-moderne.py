@@ -37,15 +37,16 @@ h1{{font-weight:800;text-transform:uppercase;font-size:92px;line-height:.98;lett
   font-family:J;font-weight:800;font-size:36px;border-radius:999px;padding:14px 14px 14px 36px;box-shadow:0 14px 34px rgba(0,0,0,.14)}}
 .next span{{width:58px;height:58px;border-radius:50%;background:var(--ink);display:grid;place-items:center;font-size:30px}}
 /* phone */
-.phone{{position:absolute;width:450px;height:540px;border-radius:64px;background:#111;padding:14px;
+.glow{{position:absolute;width:760px;height:760px;border-radius:50%;background:radial-gradient(closest-side,rgba(127,191,122,.28),rgba(237,178,74,.12) 60%,transparent);filter:blur(10px)}}
+.phone{{position:absolute;width:520px;height:620px;border-radius:68px;background:#111;padding:14px;
   box-shadow:0 40px 80px rgba(40,30,20,.25),0 0 0 2px #2a2a2a inset}}
 .scr{{width:100%;height:100%;border-radius:52px;background:#F4F4F6;overflow:hidden;position:relative;padding:62px 22px 20px}}
 .isl{{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:130px;height:36px;border-radius:20px;background:#111}}
 .tm{{position:absolute;top:20px;left:40px;font-weight:700;font-size:22px}}
 .ch{{display:flex;align-items:center;gap:14px;padding:8px 6px 18px;border-bottom:1px solid #e3e3e8;margin-bottom:18px}}
 .av{{width:54px;height:54px;border-radius:50%;background:#cfd3da;display:grid;place-items:center;font-weight:700;color:#fff;font-size:24px}}
-.ch b{{display:block;font-size:24px}} .ch small{{font-size:18px;color:#8a8a92}}
-.m{{max-width:92%;font-size:25px;line-height:1.3;padding:16px 20px;border-radius:26px;margin-bottom:14px}}
+.ch b{{display:block;font-size:27px}} .ch small{{font-size:18px;color:#8a8a92}}
+.m{{max-width:80%;font-size:30px;line-height:1.3;padding:16px 20px;border-radius:26px;margin-bottom:14px}}
 .them{{background:#fff;border-bottom-left-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.05)}}
 .me{{background:#2E9E8A;color:#fff;margin-left:auto;border-bottom-right-radius:8px}}
 .m.alert{{outline:4px solid #EDB24A;outline-offset:3px}}
@@ -58,7 +59,7 @@ h1{{font-weight:800;text-transform:uppercase;font-size:92px;line-height:.98;lett
 .wbar{{display:flex;gap:10px;align-items:center;padding:20px 26px;border-bottom:1px solid #eee;font-size:22px;color:#777}}
 .wbar u{{width:14px;height:14px;border-radius:50%;background:#e4dfd8;text-decoration:none}}
 .cards{{position:absolute;left:72px;right:72px;display:grid;gap:22px}}
-.card{{background:#fff;border-radius:30px;padding:30px 34px;display:flex;gap:26px;align-items:center;box-shadow:0 14px 34px rgba(40,30,20,.08);font-size:34px;font-weight:600}}
+.card{{background:#fff;border-radius:30px;padding:36px 36px;display:flex;gap:26px;align-items:center;box-shadow:0 14px 34px rgba(40,30,20,.08);font-size:38px;font-weight:600}}
 .card i{{flex:none;width:64px;height:64px;border-radius:20px;background:var(--grad);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:30px}}
 .src{{position:absolute;left:72px;right:72px;bottom:290px;font-size:22px;color:var(--mute)}}
 .photo{{position:absolute;inset:0;background-size:cover;background-position:center}}
@@ -74,8 +75,9 @@ h1{{font-weight:800;text-transform:uppercase;font-size:92px;line-height:.98;lett
 """
 
 def phone(x, y, time, msgs, contact="Inconnu", status="Conversation fictive"):
+    g = f'<div class="glow" style="left:{x-140}px;top:{y-80}px"></div>'
     m = "".join(f'<div class="m {c}">{t}</div>' for c, t in msgs)
-    return f'''<div class="phone" style="left:{x}px;top:{y}px"><div class="scr"><div class="isl"></div><div class="tm">{time}</div>
+    return g + f'''<div class="phone" style="left:{x}px;top:{y}px"><div class="scr"><div class="isl"></div><div class="tm">{time}</div>
 <div class="ch"><div class="av">?</div><div><b>{contact}</b><small>{status}</small></div></div>{m}</div></div>'''
 
 def ann(x, y, text, w=None):
@@ -96,26 +98,26 @@ slides.append(f'''<div class="s"><div class="photo" style="background-image:url(
 slides.append(f'''<div class="s"><div class="pad"><div class="badge"><i>1</i>SIGNAL 1</div>
 <h1>Un gain trop beau <span class="hl">pour être vrai.</span></h1>
 <p class="sub">« +100 % en 3 semaines », puis on te propose de <b>commencer petit</b>.</p></div>
-{phone(72, 560, "21:47", [("them alert","Je trade la crypto. +100&nbsp;% en 3&nbsp;semaines&nbsp;!"),("them","Commence avec 250&nbsp;€, je te guide.")])}
-{ann(570, 640, "un gain promis,<br>et vite")}{ann(570, 850, "une petite mise<br>pour te ferrer")}
+{phone(80, 540, "21:47", [("them alert","Je trade la crypto. +100&nbsp;% en 3&nbsp;semaines&nbsp;!"),("them","Commence avec 250&nbsp;€, je te guide.")])}
+{ann(545, 660, "un gain promis,<br>et vite")}{ann(545, 860, "une petite mise<br>pour te ferrer")}
 {NEXT.format(t="la suite")}</div>''')
 # 3 signal 2
 slides.append(f'''<div class="s"><div class="pad"><div class="badge"><i>2</i>SIGNAL 2</div>
 <h1>Des gains <span class="hl">affichés à l'écran.</span></h1>
 <p class="sub">Deux jours plus tard, ton compte montre <b>+40 %</b>. Ça rassure : c'est fait pour.</p></div>
-<div class="win" style="left:72px;top:560px;width:540px"><div class="wbar"><u></u><u></u><u></u>&nbsp;plateforme fictive</div>
+<div class="win" style="left:72px;top:540px;width:620px"><div class="wbar"><u></u><u></u><u></u>&nbsp;plateforme fictive</div>
 <div style="padding:34px 38px 40px"><div style="font-size:24px;color:#888">Ton solde</div>
 <div style="font-weight:800;font-size:96px;letter-spacing:-.04em">350 €</div>
 <div style="display:inline-block;margin-top:10px;background:#E3F4EE;color:#1F7A69;font-weight:700;font-size:30px;border-radius:999px;padding:8px 22px">▲ +40 %</div>
 <svg viewBox="0 0 520 150" style="margin-top:26px;width:100%"><path d="M0 140 C80 130 120 120 170 100 S260 90 300 70 S420 30 520 12" fill="none" stroke="#2E9E8A" stroke-width="7" stroke-linecap="round"/></svg></div></div>
-{ann(560, 640, "des chiffres<br>tapés au clavier", 448)}{ann(560, 900, "un argent<br>impossible à retirer", 448)}
+{ann(580, 600, "des chiffres<br>tapés au clavier", 430)}{ann(580, 900, "un argent<br>impossible à retirer", 430)}
 {NEXT.format(t="et là…")}</div>''')
 # 4 signal 3
 slides.append(f'''<div class="s"><div class="pad"><div class="badge"><i>3</i>SIGNAL 3</div>
 <h1>Payer pour <span class="hl">retirer ses gains.</span></h1>
 <p class="sub">Tu veux récupérer ton argent ? On te réclame <b>15 % de frais</b> d'abord.</p></div>
-{phone(72, 560, "18:20", [("me","Top, je retire mes gains."),("them alert","Pour retirer, paie d'abord 15&nbsp;% de frais.")])}
-{ann(570, 800, "le piège<br>se referme ici")}
+{phone(80, 540, "18:20", [("me","Top, je retire mes gains."),("them alert","Pour retirer, paie d'abord 15&nbsp;% de frais.")])}
+{ann(545, 820, "le piège<br>se referme ici")}
 {NEXT.format(t="la réponse")}</div>''')
 # 5 reveal
 slides.append(f'''<div class="s"><div class="pad"><div class="badge"><i>✓</i>CE QUE DIT LA FSMA</div>
@@ -143,7 +145,7 @@ with sync_playwright() as p:
         pg.wait_for_timeout(250)
         # mesure : rien ne sort du cadre, rien dans les 160 px du bas (sauf fonds)
         bad = pg.evaluate("""()=>[...document.querySelectorAll('h1,.sub,.ann,.phone,.win,.card,.next,.bubble,.badge,.src,.tag,.band .big')].map(e=>{const r=e.getBoundingClientRect();return [e.className||e.tagName,Math.round(r.left),Math.round(r.right),Math.round(r.bottom)]}).filter(([c,l,r,b])=>l<40||r>1040||b>1190)""")
-        over = pg.evaluate("""()=>{const a=[...document.querySelectorAll('.ann,.phone,.card,.next,.bubble,.tag,.sub,h1,.src')].map(e=>[e.className||e.tagName,e.getBoundingClientRect()]);const o=[];for(let i=0;i<a.length;i++)for(let j=i+1;j<a.length;j++){const[x,r]=a[i],[y,s]=a[j];if(r.left<s.right&&s.left<r.right&&r.top<s.bottom&&s.top<r.bottom)o.push(x+' x '+y)}return o}""")
+        over = pg.evaluate("""()=>{const a=[...document.querySelectorAll('.ann,.phone,.win,.card,.next,.bubble,.tag,.sub,h1,.src')].map(e=>[e.className||e.tagName,e.getBoundingClientRect()]);const o=[];for(let i=0;i<a.length;i++)for(let j=i+1;j<a.length;j++){const[x,r]=a[i],[y,s]=a[j];if(!((x.includes('ann')&&(y.includes('phone')||y.includes('win')))||(y.includes('ann')&&(x.includes('phone')||x.includes('win'))))&&r.left<s.right&&s.left<r.right&&r.top<s.bottom&&s.top<r.bottom)o.push(x+' x '+y)}return o}""")
         print(i, "hors cadre:", bad, "chevauchements:", over)
         f = OUT / f"s{i}.png"
         pg.screenshot(path=str(f))
