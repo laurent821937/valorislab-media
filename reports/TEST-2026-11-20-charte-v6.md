@@ -71,3 +71,8 @@ Mêmes créneaux que le run du 20/11 (rapport 2026-W48.md), même mode (Facebook
 | Petites dépenses (F1) | lun. 23/11 09:34 | mar. 24/11 19:26 | mer. 25/11 09:54 |
 | Mythe action à 5 € (F2) | sam. 28/11 08:36 | mer. 25/11 18:06 | jeu. 26/11 09:26 |
 | Message suspect (F7) | dim. 29/11 09:41 | jeu. 26/11 10:51 | ven. 27/11 08:45 |
+
+## Facebook en carrousel multi-images (Laurent, 23/11/2026)
+- Règle : Facebook publie toutes les slides (`feed-*.jpg`), comme Instagram ; aucune légende ne révèle la réponse, le verdict ou la première place (`spoilers`, contrôlé par `text_check.py`, bloquant sur Facebook). RUNBOOK, STRATEGIE, STYLE-CARROUSEL et config à jour.
+- Les 3 posts Facebook W48 remplacés par `edit_post` (texte + 6 images, commit cf3f444), statut `scheduled`, horaires inchangés : 25/11 09:54, 26/11 09:26, 27/11 08:45, publication automatique. Instagram et TikTok non touchés.
+- À signaler : les légendes Instagram et TikTok déjà programmées du mythe (« Le prix … ne dit rien de la valeur ») laissent deviner le verdict ; non modifiées (consigne de Laurent).
