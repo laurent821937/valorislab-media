@@ -1,6 +1,6 @@
 # Vidéo « Mission : le braquage du siècle » (GTA 6 x éducation financière)
 
-Rédigé le 23/11/2026. Format vertical 9:16, 60 à 70 s. TikTok, Reels, Shorts. Série possible « Les missions VALORISLAB ».
+Rédigé le 23/11/2026. Format vertical 9:16, 60 à 85 s. TikTok, Reels, Shorts. Série possible « Les missions VALORISLAB ».
 
 ## Le concept en une phrase
 
@@ -75,7 +75,7 @@ Légende des colonnes : **VO** = ce que tu dis. **ÉCRAN** = texte affiché faç
 - VO : « Tout miser sur une seule action, c'est l'erreur n° 3 de mon guide gratuit, les 20 erreurs du débutant. Lien dans ma bio. Et toi, tu as acheté le jeu, ou l'action ? »
 - ÉCRAN, en bas, petit, 3 s minimum : `Contenu éducatif, pas un conseil financier. Calcul hors frais, taxes et change. Les performances passées ne préjugent pas des performances futures.`
 
-Durée parlée : environ 190 mots, soit 65 à 70 s à rythme TikTok. Si tu dépasses 70 s, coupe la phrase sur l'édition Ultimate.
+Durée parlée : environ 270 mots, soit 80 à 85 s à rythme TikTok. Version longue OK pour YouTube Shorts (jusqu'à 3 min) et TikTok. Pour Reels, vise 60 s en coupant dans cet ordre : « Certains 100 pour l'édition Ultimate », « Jason et Lucia braquent des banques dans le jeu », « Personne ne te montre ceux qui ont misé sur un jeu qui a fait un flop », « Un bon produit ne fait pas forcément une bonne action au bon prix ».
 
 ## 3 accroches à tester (même vidéo, 3 premières secondes différentes)
 
