@@ -6,11 +6,11 @@ Ne pas modifier `kit/VERSION` sans demande de Laurent (dernière : 20/11/2026, c
 ## Principes (décidés par Laurent, non négociables)
 - **Charte en vigueur : v7 « moderne »** (validée par Laurent le 20/11/2026 ; ligne éditoriale du brief `docs/brief-refonte-carrousels-2026-11.md` dans `docs/STRATEGIE.md`, rendu dans `docs/STYLE-CARROUSEL.md`). Si le prompt de la routine cite une autre version (« charte v4 », « v5 », « v6 »…), c'est un texte périmé : appliquer la v7 de ce RUNBOOK. Les étapes marquées « v6 » ci-dessous valent pour la v7 (mêmes outils, mêmes contrôles), sauf le gabarit et les visuels décrits dans `STYLE-CARROUSEL.md`. **Ne jamais restaurer une branche `sauvegarde-*` ni appliquer `RETOUR-ARRIERE.md` sans demande explicite de Laurent dans une conversation** (rétablissement non demandé du 06/11/2026, annulé le jour même).
 - **Texte et chiffres : Claude.** Calculs en Python, données belges vérifiées le jour même sur source officielle (`STRATEGIE.md`). Doute sur un chiffre → changer de sujet. Jamais de texte généré par OpenAI.
-- **Visuels : le kit** (`kit/render.py`, contenu `"charte": "v7"`, gabarit `kit/templates/slide-v7.html.j2`), **5 à 7 slides** pour le carrousel (Instagram, TikTok) et **une image unique d'accroche** `fb-01.jpg` pour Facebook (Facebook gère mal les carrousels). Les slides de `kit/assets/references/` sont un modèle de STYLE uniquement : jamais leur sujet, leurs textes ni leurs chiffres.
+- **Visuels : le kit** (`kit/render.py`, contenu `"charte": "v7"`, gabarit `kit/templates/slide-v7.html.j2`), **5 à 7 slides**, le même carrousel multi-images sur Instagram, TikTok et Facebook (décision de Laurent du 23/11/2026 ; `fb-01.jpg` est encore rendu mais n'est plus publié). Les slides de `kit/assets/references/` sont un modèle de STYLE uniquement : jamais leur sujet, leurs textes ni leurs chiffres.
 - **OpenAI : plus de décor par défaut** (charte v6) : la couverture montre le visage du protagoniste une fois sur deux (photos du catalogue, jamais détourées) ou l'élément visuel du format dessiné par le kit. Décor IA seulement si un format en a besoin (sans personne, sans texte, sans logo), dans les budgets ci-dessous.
 - **Contrôle qualité bloquant** : `validate.py` + `qa.py` + relecture visuelle. Un contenu qui échoue n'est pas programmé.
 - **Programmation directe dans Buffer** (`create_post`), sans validation préalable en LIVE. Make « Social Publisher » n'est pas utilisé.
-- **Publication par réseau (décidé le 30/10/2026)** : Facebook = publication automatique, image unique. **Instagram et TikTok = `schedulingType: "notification"`** (rappel Buffer à l'heure prévue) : Laurent publie lui-même le carrousel depuis l'app pour ajouter la musique ; rien ne part sans lui. Un rappel manqué ne publie rien (le signaler dans le rapport s'il y a des posts `notification` échus non publiés).
+- **Publication par réseau (décidé le 30/10/2026)** : Facebook = publication automatique, carrousel multi-images (toutes les slides, comme Instagram, depuis le 23/11/2026). **Instagram et TikTok = `schedulingType: "notification"`** (rappel Buffer à l'heure prévue) : Laurent publie lui-même le carrousel depuis l'app pour ajouter la musique ; rien ne part sans lui. Un rappel manqué ne publie rien (le signaler dans le rapport s'il y a des posts `notification` échus non publiés).
 
 ## Règles de sécurité (absolues)
 - Jamais `shareNow` ni `shareNext` : seulement `customScheduled` (LIVE) ou `saveToDraft: true` (TEST).
@@ -102,8 +102,8 @@ SHA=$(git rev-parse HEAD)
 URL publique : `https://raw.githubusercontent.com/laurent821937/valorislab-media/<SHA>/media/<AAAA>/<MM>/<id>/<fichier>.jpg` (`feed-NN.jpg` et `fb-01.jpg`). Échec : 3 essais à 20 s d'intervalle, puis « INTERVENTION REQUISE : accès GitHub » sans aucun post.
 
 ### 8. Programmation Buffer
-`create_post` par réseau et créneau : `schedulingType` = `buffer.schedulingType[réseau]` (Facebook `automatic`, Instagram et TikTok `notification`), `tagIds: [tagId]`. Instagram et TikTok : `assets` = `feed-*.jpg` dans l'ordre avec `metadata.altText` (alt de la slide, sinon alt global + « (slide k/n) »). Facebook : un seul asset `fb-01.jpg`, `altText` = alt global.
-- Facebook : `text = captions.facebook`, `metadata.facebook.type = "post"`, image unique `fb-01.jpg`.
+`create_post` par réseau et créneau : `schedulingType` = `buffer.schedulingType[réseau]` (Facebook `automatic`, Instagram et TikTok `notification`), `tagIds: [tagId]`. Instagram et TikTok : `assets` = `feed-*.jpg` dans l'ordre avec `metadata.altText` (alt de la slide, sinon alt global + « (slide k/n) »). Facebook (depuis le 23/11/2026) : les mêmes `feed-*.jpg` dans l'ordre, avec le même `altText` qu'Instagram.
+- Facebook : `text = captions.facebook`, `metadata.facebook.type = "post"`, toutes les slides `feed-*.jpg` (multi-images). La légende ne révèle jamais la réponse, le verdict ni la première place (contrôlé par `text_check.py` via `spoilers`).
 - Instagram : `text = captions.instagram`, `metadata.instagram = {type: "post", shouldShareToFeed: true}`.
 - TikTok : `text = captions.tiktok`, `metadata.tiktok = {title: captions.tiktok_title}`.
 - LIVE : `mode: "customScheduled"`, `dueAt` (aussi pour `notification`, qui exige une date). TEST : `saveToDraft: true`, `mode: "addToQueue"`, sans tag ni date.
@@ -111,7 +111,7 @@ URL publique : `https://raw.githubusercontent.com/laurent821937/valorislab-media
 
 ### 8 bis. Mise à niveau (après changement de `kit/RENDER_VERSION` seulement)
 Jamais de conversion automatique d'un contenu v5 en v6 : un post v5 en attente se re-rend avec sa propre charte (gabarit v5), ou reste tel quel.
-Pour chaque post `scheduled` taggué, `dueAt` dans plus de 2 h, rendu avec une autre version : re-rendre, valider, pousser, puis `edit_post` en ne remplaçant que `assets` (`fb-01.jpg` pour Facebook ; jamais `mode`, `dueAt` ni `schedulingType`). TEST : seulement lister.
+Pour chaque post `scheduled` taggué, `dueAt` dans plus de 2 h, rendu avec une autre version : re-rendre, valider, pousser, puis `edit_post` en ne remplaçant que `assets` (`feed-*.jpg` pour les 3 réseaux ; jamais `mode`, `dueAt` ni `schedulingType`). TEST : seulement lister.
 
 ### 9. Mémoire et rapport
 - `state/history.json` : une entrée par contenu (`id, date, source: "auto", pillar, theme, topic, keywords, buffer{réseau: {id, dueAt}}`). Supprimer un post Buffer sans qu'il soit `sent` → retirer la clé `buffer` de l'entrée (le contenu redevient réutilisable).
@@ -119,7 +119,7 @@ Pour chaque post `scheduled` taggué, `dueAt` dans plus de 2 h, rendu avec une a
 - Message final (5 à 10 lignes, notification) : « OK — <n> posts programmés » (TEST : « TEST OK » / « TEST ÉCHOUÉ »), ou « INTERVENTION REQUISE » si Laurent doit agir. Y mettre : contenus, réseaux, dates, score de viralité, liens des visuels, décor IA et budget restant (n/40 ce mois), meilleur post des 28 jours, problèmes.
 
 ## MODE TEST
-Étapes 0 à 2 sans rien modifier dans Buffer. **1 seul contenu** (étapes 3, 4 complètes), charte v7. Décor IA : aucune génération. Étapes 6 et 7 complètes. Étape 8 : 3 brouillons (carrousel Instagram, carrousel TikTok, image `fb-01.jpg` Facebook). Pas d'étape 8 bis. Rapport et message « TEST OK » / « TEST ÉCHOUÉ ».
+Étapes 0 à 2 sans rien modifier dans Buffer. **1 seul contenu** (étapes 3, 4 complètes), charte v7. Décor IA : aucune génération. Étapes 6 et 7 complètes. Étape 8 : 3 brouillons (carrousel Instagram, carrousel TikTok, carrousel Facebook). Pas d'étape 8 bis. Rapport et message « TEST OK » / « TEST ÉCHOUÉ ».
 
 ## Maintenance
 Dépôt > 800 Mo : le signaler. Jeton GitHub expiré ou Buffer déconnecté : INTERVENTION REQUISE.

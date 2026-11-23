@@ -96,6 +96,7 @@ Inspiration de mécanismes seulement (jamais leurs visuels, leurs textes ni leur
 - **Dernière slide** : « C'est l'erreur n° X des 20 erreurs du guide. Guide gratuit, lien dans ma bio. » Puis valorislab.be et la mention « Contenu éducatif, pas un conseil financier ».
 - **Légende** : 3 lignes maximum avant le « … plus », puis la source et la mention. **Dernière ligne : « Guide gratuit : lien dans ma bio. »**
 - **Supprimé** : « Commente GUIDE » et toute demande de commentaire liée à l'envoi d'un lien, tant qu'aucun envoi automatique en message privé n'est en place (la règle du 13/11/2026 est abrogée).
+- **Jamais de révélation dans la légende** (règle de Laurent, 23/11/2026) : ni la réponse, ni le verdict, ni la première place, sur aucun réseau ; la légende donne envie de swiper et renvoie à la slide de la réponse. Mots interdits listés dans `spoilers` du contenu (contrôlé par `text_check.py`). Facebook publie désormais le même carrousel multi-images qu'Instagram.
 - **Une seule question d'engagement** par légende, liée au format (« Tu avais trouvé l'erreur ? », « Ton verdict ? »).
 - Inchangé : « Contenu éducatif, pas un conseil financier. » (+ hypothèses si un calcul est présenté, + « Performances passées… » si des performances historiques sont citées) ; 3 à 5 hashtags dont #belgique (voir « Référencement »).
 

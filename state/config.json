@@ -28,7 +28,7 @@
     },
     "tagId": "6ae0da26431b6933a500d79e",
     "formats": {
-      "facebook": "image unique fb-01.jpg",
+      "facebook": "carrousel feed-*.jpg (multi-images, depuis le 23/11/2026)",
       "instagram": "carrousel feed-*.jpg",
       "tiktok": "carrousel feed-*.jpg"
     }

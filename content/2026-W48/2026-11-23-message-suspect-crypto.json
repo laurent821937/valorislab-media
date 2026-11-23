@@ -140,7 +140,7 @@
  "alt": "Carrousel VALORISLAB, le message suspect : conversation fictive d'arnaque crypto, un inconnu promet +100 % en 3 semaines, affiche des gains puis réclame des frais pour retirer, schéma décrit par la FSMA.",
  "captions": {
   "instagram": "Un inconnu t'écrit : « J'ai doublé mon argent en 3 semaines. » C'est le début d'une arnaque crypto que la FSMA décrit.\nLes 3 signaux d'alerte sont dans la conversation, la réponse est en slide 5.\nTu avais repéré le piège avant de swiper ?\n\nConversation fictive. Source : FSMA (fsma.be), mises en garde « Cryptocurrency trading platforms: beware of fraud! » et « Peut-on devenir riche en quelques clics ? ». Si tu es victime, ne paie rien de plus, préviens ta banque et porte plainte à la police. Contenu éducatif, pas un conseil financier.\n\n#arnaquecrypto #crypto #fsma #belgique #arnaque\n\nGuide gratuit : lien dans ma bio.",
-  "facebook": "Un inconnu t'écrit : « J'ai doublé mon argent en 3 semaines. » C'est le début d'une arnaque crypto que la FSMA décrit.\nLes 3 signaux : un gain trop beau, des gains affichés à l'écran, des frais pour retirer.\nTu avais repéré le piège ?\n\nConversation fictive. Source : FSMA (fsma.be), mises en garde « Cryptocurrency trading platforms: beware of fraud! » et « Peut-on devenir riche en quelques clics ? ». Si tu es victime, ne paie rien de plus, préviens ta banque et porte plainte à la police. Contenu éducatif, pas un conseil financier.\n\n#arnaquecrypto #crypto #fsma #belgique #arnaque\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "Un inconnu t'écrit : « J'ai doublé mon argent en 3 semaines. » C'est le début d'une arnaque crypto que la FSMA décrit.\nLes 3 signaux d'alerte sont dans la conversation, la réponse est en slide 5.\nTu avais repéré le piège avant de swiper ?\n\nConversation fictive. Source : FSMA (fsma.be), mises en garde « Cryptocurrency trading platforms: beware of fraud! » et « Peut-on devenir riche en quelques clics ? ». Si tu es victime, ne paie rien de plus, préviens ta banque et porte plainte à la police. Contenu éducatif, pas un conseil financier.\n\n#arnaquecrypto #crypto #fsma #belgique #arnaque\n\nGuide gratuit : lien dans ma bio.",
   "tiktok_title": "Arnaque crypto : tu vois le piège dans ce message ?",
   "tiktok": "Un inconnu t'écrit : « J'ai doublé mon argent en 3 semaines. » Arnaque crypto : la FSMA décrit ce schéma, les 3 signaux sont dans le carrousel. Tu avais vu le piège ? Conversation fictive. Contenu éducatif, pas un conseil financier. #arnaquecrypto #crypto #fsma #belgique #arnaque Guide gratuit : lien dans ma bio."
  },
@@ -169,5 +169,11 @@
  },
  "fb": {},
  "cta_photo": "ia-cta-guide-v7b",
- "hook_style": "message"
+ "hook_style": "message",
+ "spoilers": [
+  "un gain trop beau",
+  "frais pour retirer",
+  "fausse plateforme",
+  "gains affichés"
+ ]
 }

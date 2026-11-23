@@ -13,6 +13,7 @@ Blocking errors:
   lines       at most 3 lines before the first blank line (what Instagram shows before « … plus »)
   cover       the cover's key number (if any) is in the Instagram caption
   hook (v7)   hook_style is one of the 12 styles of STRATEGIE.md and not reused in the same week folder
+  spoilers    no caption reveals the answer/verdict/first place listed in `spoilers` (error on Facebook)
   jargon (v7) no technical word on the cover (ETF, TOB, TAEG, précompte…); warning in the slide 2 title
 Prints one JSON line per file; exits 1 on any error.
 """
@@ -68,11 +69,13 @@ def check(path):
         missing = sorted(x for x in numbers(re.sub(r"(#\w+|slide \d+)", " ", cap, flags=re.I)) if x not in pool)
         if missing:
             errors.append(f"{net} : chiffres absents du carrousel et des sources : {', '.join(missing)}")
-        for ref in ([] if net == "facebook" else re.findall(r"slide (\d+)", norm(cap), flags=re.I)):
+        for ref in (re.findall(r"slide (\d+)", norm(cap), flags=re.I)):
             if int(ref) != n - 1:
                 errors.append(f"{net} : renvoie à la slide {ref}, la révélation est en slide {n - 1}")
-        if net == "facebook" and re.search(r"slide \d|swip|carrousel", norm(cap), flags=re.I):
-            errors.append("facebook : une seule image est publiée sur Facebook, pas de renvoi à une slide")
+        # never reveal the answer, the verdict or the first place (Laurent, 23/11/2026)
+        for sp in c.get("spoilers", []):
+            if norm(sp).lower() in norm(cap).lower():
+                (errors if net == "facebook" else warnings).append(f"{net} : la légende révèle « {sp} » (réponse, verdict ou première place)")
         if "commente guide" in norm(cap).lower():
             errors.append(f"{net} : « Commente GUIDE » est supprimé (brief, section 6)")
         if net == "tiktok_title":

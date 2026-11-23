@@ -33,7 +33,8 @@ Référence unique `kit/assets/protagonist/ref-sweat-noir.jpg` (voir `kit/assets
 
 ## Légendes
 - Instagram et TikTok : une question, renvoi à la slide de la réponse (avant-dernière), dernière ligne « Guide gratuit : lien dans ma bio. ».
-- Facebook ne reçoit qu'une image (`fb-01.jpg`) : la légende donne la réponse, sans « slide », « swipe » ni « carrousel » (contrôlé par `text_check.py`).
+- Facebook reçoit le même carrousel multi-images qu'Instagram (décision de Laurent du 23/11/2026) : même logique de légende, renvoi à la slide de la réponse autorisé.
+- **Aucune légende ne révèle la réponse, le verdict ni la première place** : le contenu liste ces mots dans `spoilers` ; `text_check.py` bloque s'ils apparaissent dans la légende Facebook (alerte pour Instagram et TikTok).
 
 ## Contrôles (bloquants)
 `render.py` (CLIP_JS_V7) : rien hors de la zone (40 px de marge, 160 px en bas), rien de coupé, bulles dans l'écran, rien sous le bouton de swipe, le monogramme ou la bulle de couverture, annotations jamais sur un texte, titre de couverture ≥ 110 px sur 4 lignes maximum, 25 mots maximum par slide (chiffres non comptés). Puis `text_check.py`, `seo_check.py`, `qa.py` (contraste, zones TikTok, grille Instagram), `validate.py`.
@@ -45,7 +46,7 @@ Référence unique `kit/assets/protagonist/ref-sweat-noir.jpg` (voir `kit/assets
 Remplace la charte v5 pour tout nouveau contenu (`"charte": "v6"` dans le fichier de contenu). Source : sections 4 et 5 de `docs/brief-refonte-carrousels-2026-11.md`. **Rendu : `kit/render.py` + `kit/templates/slide-v6.html.j2`**, jamais d'image IA pour les slides. Les contenus v5 (sans champ `charte`) restent rendus avec `kit/templates/slide.html.j2` ; la charte v5 est archivée en fin de document.
 
 ## Format et grille
-- 1080 × 1350 (4:5), mêmes images pour Instagram et TikTok ; image unique `fb-01.jpg` pour Facebook (la couverture sans compteur, accroche du bloc `fb` si présent).
+- 1080 × 1350 (4:5), mêmes images sur Instagram, TikTok et Facebook (carrousel multi-images depuis le 23/11/2026).
 - Typographie unique **Inter**, titres en minuscules accentuées (casse de phrase), graisse 800, interlignage serré.
 - Marges : 72 px à gauche, 104 px à droite (colonne de boutons TikTok). Contenu de y 170 à y 1100 ; monogramme et mention à y 1112–1172 ; **rien sous y 1190** (légende TikTok, 160 px du bas).
 
