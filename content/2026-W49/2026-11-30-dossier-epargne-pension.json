@@ -1,0 +1,193 @@
+{
+ "id": "2026-11-30-dossier-epargne-pension",
+ "date": "2026-11-30",
+ "charte": "v7",
+ "format": "F3",
+ "tag": "Dossier n° 01",
+ "bg": "champagne",
+ "theme": "bourse",
+ "pillar": "fiscalite",
+ "topic": "Dossier n° 01 : Julie, 41 ans (cas fictif), plafond supérieur d'épargne-pension, combien verser avant le 31/12 ? 1 050 € = 315 €, 1 100 € = 275 €, 1 350 € = 337,50 € (revenus 2026, Wikifin) ; reprise réécrite en v7 de 2026-11-23-epargne-pension-plafond (jamais publié)",
+ "keywords": [
+  "épargne-pension",
+  "plafond",
+  "réduction d'impôt",
+  "31 décembre",
+  "revenus 2026"
+ ],
+ "seo": {
+  "keyword": "épargne-pension",
+  "secondary": [
+   "réduction d'impôt",
+   "plafond"
+  ],
+  "cluster": "frais-et-fiscalite"
+ },
+ "guide_error": {
+  "chapter": "bourse",
+  "n": 8,
+  "title": "Sous-estimer les frais et la fiscalité"
+ },
+ "kicker": "Bourse",
+ "hook_style": "personnage",
+ "cta_photo": "ia-cta-guide-v7b",
+ "requeued_from": "2026-11-23-epargne-pension-plafond",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Julie veut verser 1 100 €. *Bonne idée ?*",
+   "subtitle": "Cas fictif · épargne-pension",
+   "visual": {
+    "type": "dossier",
+    "tiles": [
+     {
+      "name": "Julie, 41 ans",
+      "price": "cas fictif",
+      "value": "1 100 €"
+     },
+     {
+      "name": "Avant le",
+      "price": "versement",
+      "value": "31/12"
+     }
+    ]
+   }
+  },
+  {
+   "type": "options",
+   "kicker": "La situation",
+   "icon": "?",
+   "title": "Épargne-pension : *3 options.*",
+   "body": "Julie a choisi le **plafond supérieur**. Combien verser ?",
+   "options": [
+    {
+     "letter": "A",
+     "label": "1 050 €",
+     "detail": "le plafond de base"
+    },
+    {
+     "letter": "B",
+     "label": "1 100 €",
+     "detail": "50 € de plus"
+    },
+    {
+     "letter": "C",
+     "label": "1 350 €",
+     "detail": "le plafond supérieur"
+    }
+   ],
+   "next": "la règle"
+  },
+  {
+   "type": "text",
+   "kicker": "La règle",
+   "icon": "!",
+   "title": "Deux plafonds, *deux taux.*",
+   "steps": [
+    {
+     "title": "Jusqu'à 1 050 € : 30 %",
+     "sub": "de réduction d'impôt"
+    },
+    {
+     "title": "Au-delà, jusqu'à 1 350 € : 25 %",
+     "sub": "sur **tout** le montant versé"
+    }
+   ],
+   "source": "Wikifin, mise à jour du 08/01/2026 (revenus 2026).",
+   "next": "le calcul"
+  },
+  {
+   "type": "options",
+   "kicker": "Ce que l'impôt lui rend",
+   "icon": "3",
+   "title": "A et C, *faciles.* Et B ?",
+   "options": [
+    {
+     "letter": "A",
+     "label": "1 050 € × 30 %",
+     "value": "315 €"
+    },
+    {
+     "letter": "C",
+     "label": "1 350 € × 25 %",
+     "value": "337,50 €"
+    },
+    {
+     "letter": "B",
+     "label": "1 100 € × 25 %",
+     "value": "?"
+    }
+   ],
+   "note": "Réduction d'impôt, hors taxes communales.",
+   "next": "la réponse"
+  },
+  {
+   "type": "text",
+   "kicker": "Le piège : B",
+   "icon": "B",
+   "title": "B : 275 €. *40 € de moins que A.*",
+   "body": "De 1 051 € à 1 259 €, tu verses plus pour **récupérer moins**.",
+   "recap": {
+    "head": "La méthode",
+    "items": [
+     "Vérifie ton plafond avant de verser.",
+     "Évite la zone de 1 051 € à 1 259 €.",
+     "Plafond supérieur : signale-le à ta banque."
+    ]
+   }
+  },
+  {
+   "type": "cta",
+   "title": "C'est l'erreur Bourse *n° 8 du guide.*",
+   "body": "Sous-estimer les frais et la fiscalité."
+  }
+ ],
+ "alt": "Carrousel VALORISLAB, dossier n° 01 : Julie, 41 ans, cas fictif, hésite entre 1 050 €, 1 100 € et 1 350 € en épargne-pension avant le 31/12 ; règles des deux plafonds (30 % et 25 %, revenus 2026, Wikifin) et calcul de la réduction d'impôt.",
+ "captions": {
+  "instagram": "Épargne-pension : Julie, 41 ans, veut verser 1 100 € avant le 31 décembre. Juste 50 € de plus que le plafond de base.\nTrois options, deux plafonds, une seule mauvaise surprise : la réponse est en slide 5.\nEt toi, tu aurais choisi quoi ?\n\nCas fictif. Revenus 2026 : réduction d'impôt de 30 % jusqu'à 1 050 €, 25 % sur tout le montant jusqu'à 1 350 € si tu as choisi le plafond supérieur (à signaler chaque année à ta banque ou ton assureur). Source : Wikifin (wikifin.be), « L'épargne-pension », mise à jour du 08/01/2026. Calcul hors taxes communales. Un fonds d'épargne-pension comporte un risque de perte. Contenu éducatif, pas un conseil financier.\n\n#epargnepension #belgique #impots #pension\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "Épargne-pension : Julie, 41 ans, veut verser 1 100 € avant le 31 décembre. Juste 50 € de plus que le plafond de base.\nTrois options, deux plafonds, une seule mauvaise surprise : la réponse est en slide 5.\nEt toi, tu aurais choisi quoi ?\n\nCas fictif. Revenus 2026 : réduction d'impôt de 30 % jusqu'à 1 050 €, 25 % sur tout le montant jusqu'à 1 350 € si tu as choisi le plafond supérieur (à signaler chaque année à ta banque ou ton assureur). Source : Wikifin (wikifin.be), « L'épargne-pension », mise à jour du 08/01/2026. Calcul hors taxes communales. Un fonds d'épargne-pension comporte un risque de perte. Contenu éducatif, pas un conseil financier.\n\n#epargnepension #belgique #impots #pension\n\nGuide gratuit : lien dans ma bio.",
+  "tiktok_title": "Épargne-pension : Julie veut verser 1 100 €. Bonne idée ?",
+  "tiktok": "Épargne-pension : Julie veut verser 1 100 € avant le 31 décembre, 50 € de plus que le plafond de base. La réponse est en slide 5. Tu aurais choisi quoi ? Cas fictif, revenus 2026, source Wikifin. Contenu éducatif, pas un conseil financier. #epargnepension #belgique #impots #pension Guide gratuit : lien dans ma bio."
+ },
+ "sources": [
+  "Wikifin, « L'épargne-pension » : wikifin.be/fr/impots-emploi-et-revenus/declaration-dimpots/reductions-fiscales/lepargne-pension (dernière mise à jour le 8 janvier 2026 ; revenus 2026 : 1 050 € à 30 %, 1 350 € à 25 % sur la totalité du montant, plafond supérieur à signaler chaque année), consulté le 27/11/2026",
+  "Calcul VALORISLAB en Python : 1 050 × 30 % = 315 € ; 1 100 × 25 % = 275 € ; 1 350 × 25 % = 337,50 € ; écart 40 € ; seuil d'équivalence 315 / 25 % = 1 260 €"
+ ],
+ "virality": {
+  "score": 79,
+  "detail": {
+   "retention": 21,
+   "couverture": 16,
+   "situation": 17,
+   "difference": 13,
+   "guide": 7,
+   "conformite": 10
+  },
+  "note": "Format F3 jamais utilisé, premier dossier de la série. Moment du calendrier (versement avant le 31/12), personnage fictif, calcul vérifié le jour même sur Wikifin. B laissé en suspens sur la slide 4, révélation en slide 5.",
+  "hook_variants": [
+   "Julie veut verser 1 100 €. *Bonne idée ?*",
+   "Verse 50 € de plus. *Récupère 40 € de moins.*",
+   "Ton versement de décembre *peut te coûter.*",
+   "« Plus je verse, plus je récupère. » *Vrai ?*",
+   "Avant le 31/12 : *vérifie ce chiffre.*"
+  ],
+  "hook_variant_styles": [
+   "personnage",
+   "contre-intuitif",
+   "moment",
+   "mythe",
+   "moment"
+  ],
+  "mecanismes": [
+   "Un plan en étapes à enregistrer (recap « La méthode »)",
+   "Un seul graphique, un seul message (cartes A/B/C)"
+  ]
+ },
+ "spoilers": [
+  "275",
+  "40 € de moins",
+  "1 259",
+  "récupérer moins"
+ ],
+ "fb": {}
+}

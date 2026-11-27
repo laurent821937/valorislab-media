@@ -1,0 +1,841 @@
+{
+ "id": "2026-11-30-adresse-crypto-historique",
+ "charte": "v7",
+ "kit_version": "2026-11-20.2",
+ "format": "F4",
+ "bg": "champagne",
+ "cover_visual": "document",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-30-adresse-crypto-historique/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 4,
+   "bytes": 161920,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 326.359375,
+     "h": 50,
+     "font": 24,
+     "color": "rgb(255, 255, 255)",
+     "text": "TROUVE L'ERREUR"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 162,
+     "w": 936,
+     "h": 464.875,
+     "font": 116,
+     "color": "rgb(22, 19, 15)",
+     "text": "TU COPIES TON ADRESSE CRYPTO. Tu vois l'erreur ?"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 654.875,
+     "w": 920,
+     "h": 49.390625,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Historique fictif"
+    },
+    {
+     "role": "stat",
+     "x": 100,
+     "y": 863.265625,
+     "w": 381,
+     "h": 154,
+     "font": 64,
+     "color": "rgb(22, 19, 15)",
+     "text": "0x7A3f…9C2e"
+    },
+    {
+     "role": "stat",
+     "x": 561,
+     "y": 863.265625,
+     "w": 381,
+     "h": 154,
+     "font": 64,
+     "color": "rgb(22, 19, 15)",
+     "text": "0x7A3f…9C2e"
+    },
+    {
+     "role": "statLabel",
+     "x": 100,
+     "y": 776.265625,
+     "w": 381,
+     "h": 36,
+     "font": 26,
+     "color": "rgb(22, 19, 15)",
+     "text": "Ligne A"
+    },
+    {
+     "role": "statLabel",
+     "x": 100,
+     "y": 820.265625,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(95, 87, 77)",
+     "text": "reçu hier"
+    },
+    {
+     "role": "statLabel",
+     "x": 561,
+     "y": 776.265625,
+     "w": 381,
+     "h": 36,
+     "font": 26,
+     "color": "rgb(22, 19, 15)",
+     "text": "Ligne B"
+    },
+    {
+     "role": "statLabel",
+     "x": 561,
+     "y": 820.265625,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(95, 87, 77)",
+     "text": "envoi du 3/11"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 748.265625,
+     "w": 437,
+     "h": 297,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "Ligne A reçu hier 0x7A3f…9C2e"
+    },
+    {
+     "role": "card",
+     "x": 533,
+     "y": 748.265625,
+     "w": 437,
+     "h": 297,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "Ligne B envoi du 3/11 0x7A3f…9C2e"
+    },
+    {
+     "role": "button",
+     "x": 633.03125,
+     "y": 1088,
+     "w": 336.96875,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "je te montre →"
+    },
+    {
+     "role": "count",
+     "x": 894.75,
+     "y": 84,
+     "w": 75.25,
+     "h": 49,
+     "font": 24,
+     "color": "rgb(255, 255, 255)",
+     "text": "1/6"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-adresse-crypto-historique/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 151275,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 342.09375,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "1 LE DOCUMENT"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "TON HISTORIQUE. Tu copies laquelle ?"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 49.390625,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Tu renvoies des cryptos à ton adresse habituelle."
+    },
+    {
+     "role": "stat",
+     "x": 795.515625,
+     "y": 635.28125,
+     "w": 142.484375,
+     "h": 56,
+     "font": 46,
+     "color": "rgb(22, 19, 15)",
+     "text": "0,00 €"
+    },
+    {
+     "role": "stat",
+     "x": 812.6875,
+     "y": 798.46875,
+     "w": 125.3125,
+     "h": 56,
+     "font": 46,
+     "color": "rgb(22, 19, 15)",
+     "text": "250 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 592.6875,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "A 0x7A3f…9C2e Reçu hier 0,00 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 755.875,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "B 0x7A3f…9C2e Envoyé le 3 novembre 250 €"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 919.0625,
+     "w": 898,
+     "h": 37.796875,
+     "font": 28,
+     "color": "rgb(95, 87, 77)",
+     "text": "Historique fictif."
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 620.6875,
+     "w": 571.515625,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "0x7A3f…9C2e"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 669.875,
+     "w": 571.515625,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "Reçu hier"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 783.875,
+     "w": 588.6875,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "0x7A3f…9C2e"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 833.0625,
+     "w": 588.6875,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "Envoyé le 3 novembre"
+    },
+    {
+     "role": "button",
+     "x": 685.875,
+     "y": 1088,
+     "w": 284.125,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "un indice →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-adresse-crypto-historique/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 117121,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 271.921875,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "! UN INDICE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "HIER, TU N'AS rien demandé."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 49.390625,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Qui t'enverrait 0,00 € sans raison ?"
+    },
+    {
+     "role": "stat",
+     "x": 72,
+     "y": 667.125,
+     "w": 898,
+     "h": 161.5,
+     "font": 170,
+     "color": "rgb(22, 19, 15)",
+     "text": "0,00 €"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 850.625,
+     "w": 898,
+     "h": 37.796875,
+     "font": 28,
+     "color": "rgb(95, 87, 77)",
+     "text": "reçus d'une adresse presque identique à la tienne."
+    },
+    {
+     "role": "button",
+     "x": 700.890625,
+     "y": 1088,
+     "w": 269.109375,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "le calcul →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-adresse-crypto-historique/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 149923,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 281.5,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "% LE CALCUL"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "TU REGARDES le début et la fin."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 98.78125,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Une adresse de ce type compte 40 caractères après « 0x »."
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 972.96875,
+     "w": 898,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(95, 87, 77)",
+     "text": "Source : calcul VALORISLAB, format d'adresse Ethereum."
+    },
+    {
+     "role": "listItem",
+     "x": 72,
+     "y": 915.96875,
+     "w": 898,
+     "h": 39,
+     "font": 32,
+     "color": "rgb(22, 19, 15)",
+     "text": "8 caractères vérifiés sur 40 : 20 %."
+    },
+    {
+     "role": "button",
+     "x": 661.515625,
+     "y": 1088,
+     "w": 308.484375,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "la réponse →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-adresse-crypto-historique/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 149651,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 312.140625,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "A L'ERREUR : A"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "LA LIGNE A imite ton adresse."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 98.78125,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Un escroc t'a envoyé 0,00 € pour glisser sa copie dans ton historique."
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 569.46875,
+     "w": 898,
+     "h": 124,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 Copie depuis ton carnet d'adresses."
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 715.46875,
+     "w": 898,
+     "h": 124,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "2 Compare l'adresse en entier."
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 861.46875,
+     "w": 898,
+     "h": 124,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "3 Teste d'abord un petit montant."
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 1003.46875,
+     "w": 898,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(95, 87, 77)",
+     "text": "Source : Wikifin : un paiement en crypto ne s'annule pas."
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 609.875,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "Copie depuis ton carnet d'adresses."
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 755.875,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "Compare l'adresse en entier."
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 901.875,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "Teste d'abord un petit montant."
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-adresse-crypto-historique/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "cta",
+   "pose": null,
+   "scene": "ia-cta-guide-v7b",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 251092,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 84,
+     "w": 898,
+     "h": 168.15625,
+     "font": 84,
+     "color": "rgb(22, 19, 15)",
+     "text": "C'EST L'ERREUR CRYPTO n° 7 du guide."
+    },
+    {
+     "role": "button",
+     "x": 151.09375,
+     "y": 972,
+     "w": 777.8125,
+     "h": 89,
+     "font": 62,
+     "color": "rgb(255, 255, 255)",
+     "text": "Guide gratuit LIEN EN BIO"
+    },
+    {
+     "role": "next",
+     "x": 60,
+     "y": 1083,
+     "w": 960,
+     "h": 39,
+     "font": 32,
+     "color": "rgb(255, 255, 255)",
+     "text": "Envoyer des fonds sans tout vérifier."
+    },
+    {
+     "role": "next",
+     "x": 60,
+     "y": 1138,
+     "w": 960,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(216, 207, 195)",
+     "text": "valorislab.be · Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "warnings": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-30-adresse-crypto-historique/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": null,
+  "bytes": 148761,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 84,
+    "w": 326.359375,
+    "h": 50,
+    "font": 24,
+    "color": "rgb(255, 255, 255)",
+    "text": "TROUVE L'ERREUR"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 162,
+    "w": 936,
+    "h": 464.875,
+    "font": 116,
+    "color": "rgb(22, 19, 15)",
+    "text": "TU COPIES TON ADRESSE CRYPTO. Tu vois l'erreur ?"
+   },
+   {
+    "role": "lead",
+    "x": 72,
+    "y": 654.875,
+    "w": 920,
+    "h": 49.390625,
+    "font": 38,
+    "color": "rgb(95, 87, 77)",
+    "text": "Historique fictif"
+   },
+   {
+    "role": "stat",
+    "x": 100,
+    "y": 863.265625,
+    "w": 381,
+    "h": 154,
+    "font": 64,
+    "color": "rgb(22, 19, 15)",
+    "text": "0x7A3f…9C2e"
+   },
+   {
+    "role": "stat",
+    "x": 561,
+    "y": 863.265625,
+    "w": 381,
+    "h": 154,
+    "font": 64,
+    "color": "rgb(22, 19, 15)",
+    "text": "0x7A3f…9C2e"
+   },
+   {
+    "role": "statLabel",
+    "x": 100,
+    "y": 776.265625,
+    "w": 381,
+    "h": 36,
+    "font": 26,
+    "color": "rgb(22, 19, 15)",
+    "text": "Ligne A"
+   },
+   {
+    "role": "statLabel",
+    "x": 100,
+    "y": 820.265625,
+    "w": 381,
+    "h": 29,
+    "font": 24,
+    "color": "rgb(95, 87, 77)",
+    "text": "reçu hier"
+   },
+   {
+    "role": "statLabel",
+    "x": 561,
+    "y": 776.265625,
+    "w": 381,
+    "h": 36,
+    "font": 26,
+    "color": "rgb(22, 19, 15)",
+    "text": "Ligne B"
+   },
+   {
+    "role": "statLabel",
+    "x": 561,
+    "y": 820.265625,
+    "w": 381,
+    "h": 29,
+    "font": 24,
+    "color": "rgb(95, 87, 77)",
+    "text": "envoi du 3/11"
+   },
+   {
+    "role": "card",
+    "x": 72,
+    "y": 748.265625,
+    "w": 437,
+    "h": 297,
+    "font": 16,
+    "color": "rgb(22, 19, 15)",
+    "text": "Ligne A reçu hier 0x7A3f…9C2e"
+   },
+   {
+    "role": "card",
+    "x": 533,
+    "y": 748.265625,
+    "w": 437,
+    "h": 297,
+    "font": 16,
+    "color": "rgb(22, 19, 15)",
+    "text": "Ligne B envoi du 3/11 0x7A3f…9C2e"
+   }
+  ]
+ }
+}

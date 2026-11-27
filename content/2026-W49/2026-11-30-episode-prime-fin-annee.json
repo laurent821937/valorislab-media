@@ -1,0 +1,188 @@
+{
+ "id": "2026-11-30-episode-prime-fin-annee",
+ "date": "2026-11-30",
+ "charte": "v7",
+ "format": "F8",
+ "tag": "Épisode 1",
+ "bg": "light",
+ "theme": "budget",
+ "pillar": "budget",
+ "topic": "Épisode 1 : il touche sa prime de fin d'année (1 200 €, fictif), la dépense avant Noël, puis 3 factures annuelles de janvier (780 €) ; mettre d'abord ces factures de côté, profiter des 420 € restants",
+ "keywords": [
+  "prime de fin d'année",
+  "budget",
+  "factures annuelles",
+  "décembre",
+  "janvier"
+ ],
+ "seo": {
+  "keyword": "prime de fin d'année",
+  "secondary": [
+   "budget",
+   "factures"
+  ],
+  "cluster": "epargne-belgique"
+ },
+ "guide_error": {
+  "chapter": "bonus_finances",
+  "n": 1,
+  "title": "Budget et flux d'argent"
+ },
+ "kicker": "Budget",
+ "hook_style": "episode",
+ "cta_photo": "ia-cta-guide-v7b",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Sa prime de fin d'année tombe. *Mauvaise idée.*",
+   "subtitle": "Histoire fictive",
+   "visual": {
+    "type": "photo",
+    "photo": "ia-cover-prime-episode-v7",
+    "pos": "50% 50%"
+   }
+  },
+  {
+   "type": "app",
+   "kicker": "La situation",
+   "icon": "1",
+   "title": "Sa prime de fin d'année *tombe.*",
+   "body": "Mi-décembre, **1 200 €** d'un coup. Exemple fictif.",
+   "app": {
+    "title": "appli bancaire fictive",
+    "label": "Prime de fin d'année",
+    "value": "+1 200 €",
+    "chip": "Reçu aujourd'hui"
+   },
+   "ann": [
+    "« enfin un peu\nd'air ! »"
+   ],
+   "next": "sa décision"
+  },
+  {
+   "type": "text",
+   "kicker": "Sa décision",
+   "icon": "2",
+   "title": "Tout part *avant Noël.*",
+   "receipt": {
+    "title": "Décembre",
+    "rows": [
+     [
+      "Console",
+      "549 €"
+     ],
+     [
+      "Week-end à deux",
+      "380 €"
+     ],
+     [
+      "Restos et sorties",
+      "271 €"
+     ]
+    ],
+    "total": [
+     "Total",
+     "1 200 €"
+    ]
+   },
+   "next": "et en janvier…"
+  },
+  {
+   "type": "text",
+   "kicker": "La conséquence",
+   "icon": "3",
+   "title": "Janvier : *3 factures oubliées.*",
+   "receipt": {
+    "title": "Janvier",
+    "rows": [
+     [
+      "Assurance auto",
+      "410 €"
+     ],
+     [
+      "Assurance habitation",
+      "180 €"
+     ],
+     [
+      "Abonnement sport",
+      "190 €"
+     ]
+    ],
+    "total": [
+     "À payer",
+     "780 €"
+    ]
+   },
+   "note": "Elles tombent chaque année. Plus de prime pour les payer.",
+   "next": "ce qu'il aurait dû faire"
+  },
+  {
+   "type": "text",
+   "kicker": "Ce qu'il aurait dû faire",
+   "icon": "✓",
+   "title": "D'abord *janvier.* Ensuite, plaisir.",
+   "recap": {
+    "head": "À enregistrer",
+    "items": [
+     "Liste tes factures de janvier : **780 €**.",
+     "Mets-les de côté le jour de la prime.",
+     "Les **420 €** restants : fais-toi plaisir."
+    ]
+   },
+   "note": "Épisode 2 bientôt."
+  },
+  {
+   "type": "cta",
+   "title": "C'est l'étape 1 *du bonus du guide.*",
+   "body": "Budget et flux d'argent : prévoir avant de dépenser."
+  }
+ ],
+ "alt": "Carrousel VALORISLAB, épisode 1 : le protagoniste touche sa prime de fin d'année de 1 200 € (exemple fictif), la dépense avant Noël, puis 3 factures annuelles de janvier arrivent pour 780 € ; la méthode pour les prévoir.",
+ "captions": {
+  "instagram": "Ta prime de fin d'année vient de tomber et tu as déjà une idée. Lui aussi. 1 200 €, dépensés avant Noël.\nPuis janvier arrive. Ce qu'il aurait dû faire est en slide 5.\nTu l'as déjà vécue, cette fin de mois de janvier ?\n\nHistoire et montants fictifs, pour comprendre un budget sur l'année. Les grosses factures annuelles reviennent souvent en début d'année. Contenu éducatif, pas un conseil financier.\n\n#budget #primedefindannee #epargne #belgique\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "Ta prime de fin d'année vient de tomber et tu as déjà une idée. Lui aussi. 1 200 €, dépensés avant Noël.\nPuis janvier arrive. Ce qu'il aurait dû faire est en slide 5.\nTu l'as déjà vécue, cette fin de mois de janvier ?\n\nHistoire et montants fictifs, pour comprendre un budget sur l'année. Contenu éducatif, pas un conseil financier.\n\n#budget #primedefindannee #epargne #belgique\n\nGuide gratuit : lien dans ma bio.",
+  "tiktok_title": "Épisode 1 : sa prime de fin d'année tombe. Mauvaise idée.",
+  "tiktok": "Sa prime de fin d'année tombe : 1 200 €, dépensés avant Noël. Puis janvier arrive. Ce qu'il aurait dû faire est en slide 5. Tu l'as déjà vécu ? Histoire fictive. Contenu éducatif, pas un conseil financier. #budget #primedefindannee #epargne #belgique Guide gratuit : lien dans ma bio."
+ },
+ "sources": [
+  "Histoire, personnage et montants fictifs (exemple pédagogique, aucun chiffre officiel)",
+  "Calcul VALORISLAB en Python : 549 + 380 + 271 = 1 200 € ; 410 + 180 + 190 = 780 € ; 1 200 − 780 = 420 €"
+ ],
+ "virality": {
+  "score": 83,
+  "detail": {
+   "retention": 21,
+   "couverture": 17,
+   "situation": 20,
+   "difference": 14,
+   "guide": 7,
+   "conformite": 10
+  },
+  "note": "Premier épisode de la série F8 (protagoniste, selfie neuf). Moment du calendrier (primes de décembre), émotion « gêne qui fait sourire » puis solution positive (420 € pour se faire plaisir). Couverture selfie sur fond ivoire, après une couverture graphique champagne.",
+  "hook_variants": [
+   "Sa prime de fin d'année tombe. *Mauvaise idée.*",
+   "Ta prime de fin d'année vient de tomber ? *Attends janvier.*",
+   "POV : 1 200 € tombent *mi-décembre.*",
+   "1 200 € en décembre. *0 € en janvier.*",
+   "Même prime. *Deux mois de janvier différents.*"
+  ],
+  "hook_variant_styles": [
+   "episode",
+   "moment",
+   "pov",
+   "chiffre-choc",
+   "avant-apres"
+  ],
+  "mecanismes": [
+   "Un rendez-vous récurrent (épisode numéroté)",
+   "Un plan en étapes à enregistrer (recap)",
+   "Dépenser sans culpabilité (420 € pour se faire plaisir)"
+  ]
+ },
+ "spoilers": [
+  "mets-les de côté",
+  "420",
+  "780"
+ ],
+ "fb": {}
+}

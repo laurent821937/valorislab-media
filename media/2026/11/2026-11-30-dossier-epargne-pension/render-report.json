@@ -1,0 +1,911 @@
+{
+ "id": "2026-11-30-dossier-epargne-pension",
+ "charte": "v7",
+ "kit_version": "2026-11-20.2",
+ "format": "F3",
+ "bg": "champagne",
+ "cover_visual": "dossier",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-30-dossier-epargne-pension/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 3,
+   "bytes": 136417,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 274.515625,
+     "h": 50,
+     "font": 24,
+     "color": "rgb(255, 255, 255)",
+     "text": "DOSSIER N° 01"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 162,
+     "w": 936,
+     "h": 348.875,
+     "font": 116,
+     "color": "rgb(22, 19, 15)",
+     "text": "JULIE VEUT VERSER 1 100 €. Bonne idée ?"
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 538.875,
+     "w": 920,
+     "h": 49.390625,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Cas fictif · épargne-pension"
+    },
+    {
+     "role": "stat",
+     "x": 100,
+     "y": 747.265625,
+     "w": 381,
+     "h": 77,
+     "font": 64,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 100 €"
+    },
+    {
+     "role": "stat",
+     "x": 561,
+     "y": 747.265625,
+     "w": 381,
+     "h": 77,
+     "font": 64,
+     "color": "rgb(22, 19, 15)",
+     "text": "31/12"
+    },
+    {
+     "role": "statLabel",
+     "x": 100,
+     "y": 660.265625,
+     "w": 381,
+     "h": 36,
+     "font": 26,
+     "color": "rgb(22, 19, 15)",
+     "text": "Julie, 41 ans"
+    },
+    {
+     "role": "statLabel",
+     "x": 100,
+     "y": 704.265625,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(95, 87, 77)",
+     "text": "cas fictif"
+    },
+    {
+     "role": "statLabel",
+     "x": 561,
+     "y": 660.265625,
+     "w": 381,
+     "h": 36,
+     "font": 26,
+     "color": "rgb(22, 19, 15)",
+     "text": "Avant le"
+    },
+    {
+     "role": "statLabel",
+     "x": 561,
+     "y": 704.265625,
+     "w": 381,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(95, 87, 77)",
+     "text": "versement"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 632.265625,
+     "w": 437,
+     "h": 220,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "Julie, 41 ans cas fictif 1 100 €"
+    },
+    {
+     "role": "card",
+     "x": 533,
+     "y": 632.265625,
+     "w": 437,
+     "h": 220,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "Avant le versement 31/12"
+    },
+    {
+     "role": "button",
+     "x": 633.03125,
+     "y": 1088,
+     "w": 336.96875,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "je te montre →"
+    },
+    {
+     "role": "count",
+     "x": 894.75,
+     "y": 84,
+     "w": 75.25,
+     "h": 49,
+     "font": 24,
+     "color": "rgb(255, 255, 255)",
+     "text": "1/6"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-dossier-epargne-pension/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "options",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 140079,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 333.703125,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "? LA SITUATION"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "ÉPARGNE-PENSION : 3 options."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 98.78125,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Julie a choisi le plafond supérieur. Combien verser ?"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 565.6875,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "A 1 050 € le plafond de base"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 728.875,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "B 1 100 € 50 € de plus"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 892.0625,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "C 1 350 € le plafond supérieur"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 593.6875,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 050 €"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 642.875,
+     "w": 740,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "le plafond de base"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 756.875,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 100 €"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 806.0625,
+     "w": 740,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "50 € de plus"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 920.0625,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 350 €"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 969.25,
+     "w": 740,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "le plafond supérieur"
+    },
+    {
+     "role": "button",
+     "x": 716.59375,
+     "y": 1088,
+     "w": 253.40625,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "la règle →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-dossier-epargne-pension/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 134399,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 258.5,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "! LA RÈGLE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "DEUX PLAFONDS, deux taux."
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 561.890625,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 Jusqu'à 1 050 € : 30 % de réduction d'impôt"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 725.078125,
+     "w": 898,
+     "h": 141.1875,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "2 Au-delà, jusqu'à 1 350 € : 25 % sur tout le montant versé"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 884.265625,
+     "w": 898,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(95, 87, 77)",
+     "text": "Source : Wikifin, mise à jour du 08/01/2026 (revenus 2026)."
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 589.890625,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "Jusqu'à 1 050 € : 30 %"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 639.078125,
+     "w": 740,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "de réduction d'impôt"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 753.078125,
+     "w": 740,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "Au-delà, jusqu'à 1 350 € : 25 %"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 802.265625,
+     "w": 740,
+     "h": 36,
+     "font": 30,
+     "color": "rgb(95, 87, 77)",
+     "text": "sur tout le montant versé"
+    },
+    {
+     "role": "button",
+     "x": 700.890625,
+     "y": 1088,
+     "w": 269.109375,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "le calcul →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-dossier-epargne-pension/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "options",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 1,
+   "bytes": 129777,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 527.921875,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "3 CE QUE L'IMPÔT LUI REND"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 90.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "A ET C, faciles. ET B ?"
+    },
+    {
+     "role": "stat",
+     "x": 823.328125,
+     "y": 487.171875,
+     "w": 114.671875,
+     "h": 56,
+     "font": 46,
+     "color": "rgb(22, 19, 15)",
+     "text": "315 €"
+    },
+    {
+     "role": "stat",
+     "x": 748.390625,
+     "y": 633.171875,
+     "w": 189.609375,
+     "h": 56,
+     "font": 46,
+     "color": "rgb(22, 19, 15)",
+     "text": "337,50 €"
+    },
+    {
+     "role": "stat",
+     "x": 912.734375,
+     "y": 779.171875,
+     "w": 25.265625,
+     "h": 56,
+     "font": 46,
+     "color": "rgb(22, 19, 15)",
+     "text": "?"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 453.171875,
+     "w": 898,
+     "h": 124,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "A 1 050 € × 30 % 315 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 599.171875,
+     "w": 898,
+     "h": 124,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "C 1 350 € × 25 % 337,50 €"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 745.171875,
+     "w": 898,
+     "h": 124,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "B 1 100 € × 25 % ?"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 891.171875,
+     "w": 898,
+     "h": 37.796875,
+     "font": 28,
+     "color": "rgb(95, 87, 77)",
+     "text": "Réduction d'impôt, hors taxes communales."
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 493.578125,
+     "w": 599.328125,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 050 € × 30 %"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 639.578125,
+     "w": 524.390625,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 350 € × 25 %"
+    },
+    {
+     "role": "listItem",
+     "x": 198,
+     "y": 785.578125,
+     "w": 688.734375,
+     "h": 43.1875,
+     "font": 36,
+     "color": "rgb(22, 19, 15)",
+     "text": "1 100 € × 25 %"
+    },
+    {
+     "role": "button",
+     "x": 661.515625,
+     "y": 1088,
+     "w": 308.484375,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "la réponse →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-dossier-epargne-pension/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 144290,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 296.796875,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "B LE PIÈGE : B"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "B : 275 €. 40 € de moins que A."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 98.78125,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "De 1 051 € à 1 259 €, tu verses plus pour récupérer moins."
+    },
+    {
+     "role": "listItem",
+     "x": 114,
+     "y": 706.46875,
+     "w": 776,
+     "h": 50,
+     "font": 40,
+     "color": "rgb(22, 19, 15)",
+     "text": "✓ Vérifie ton plafond avant de verser."
+    },
+    {
+     "role": "listItem",
+     "x": 114,
+     "y": 768.46875,
+     "w": 776,
+     "h": 50,
+     "font": 40,
+     "color": "rgb(22, 19, 15)",
+     "text": "✓ Évite la zone de 1 051 € à 1 259 €."
+    },
+    {
+     "role": "listItem",
+     "x": 114,
+     "y": 830.46875,
+     "w": 776,
+     "h": 100,
+     "font": 40,
+     "color": "rgb(22, 19, 15)",
+     "text": "✓ Plafond supérieur : signale-le à ta banque."
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-dossier-epargne-pension/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "cta",
+   "pose": null,
+   "scene": "ia-cta-guide-v7b",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 251865,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 84,
+     "w": 898,
+     "h": 168.15625,
+     "font": 84,
+     "color": "rgb(22, 19, 15)",
+     "text": "C'EST L'ERREUR BOURSE n° 8 du guide."
+    },
+    {
+     "role": "button",
+     "x": 151.09375,
+     "y": 972,
+     "w": 777.8125,
+     "h": 89,
+     "font": 62,
+     "color": "rgb(255, 255, 255)",
+     "text": "Guide gratuit LIEN EN BIO"
+    },
+    {
+     "role": "next",
+     "x": 60,
+     "y": 1083,
+     "w": 960,
+     "h": 39,
+     "font": 32,
+     "color": "rgb(255, 255, 255)",
+     "text": "Sous-estimer les frais et la fiscalité."
+    },
+    {
+     "role": "next",
+     "x": 60,
+     "y": 1138,
+     "w": 960,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(216, 207, 195)",
+     "text": "valorislab.be · Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "warnings": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-30-dossier-epargne-pension/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": null,
+  "bytes": 121105,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 84,
+    "w": 274.515625,
+    "h": 50,
+    "font": 24,
+    "color": "rgb(255, 255, 255)",
+    "text": "DOSSIER N° 01"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 162,
+    "w": 936,
+    "h": 348.875,
+    "font": 116,
+    "color": "rgb(22, 19, 15)",
+    "text": "JULIE VEUT VERSER 1 100 €. Bonne idée ?"
+   },
+   {
+    "role": "lead",
+    "x": 72,
+    "y": 538.875,
+    "w": 920,
+    "h": 49.390625,
+    "font": 38,
+    "color": "rgb(95, 87, 77)",
+    "text": "Cas fictif · épargne-pension"
+   },
+   {
+    "role": "stat",
+    "x": 100,
+    "y": 747.265625,
+    "w": 381,
+    "h": 77,
+    "font": 64,
+    "color": "rgb(22, 19, 15)",
+    "text": "1 100 €"
+   },
+   {
+    "role": "stat",
+    "x": 561,
+    "y": 747.265625,
+    "w": 381,
+    "h": 77,
+    "font": 64,
+    "color": "rgb(22, 19, 15)",
+    "text": "31/12"
+   },
+   {
+    "role": "statLabel",
+    "x": 100,
+    "y": 660.265625,
+    "w": 381,
+    "h": 36,
+    "font": 26,
+    "color": "rgb(22, 19, 15)",
+    "text": "Julie, 41 ans"
+   },
+   {
+    "role": "statLabel",
+    "x": 100,
+    "y": 704.265625,
+    "w": 381,
+    "h": 29,
+    "font": 24,
+    "color": "rgb(95, 87, 77)",
+    "text": "cas fictif"
+   },
+   {
+    "role": "statLabel",
+    "x": 561,
+    "y": 660.265625,
+    "w": 381,
+    "h": 36,
+    "font": 26,
+    "color": "rgb(22, 19, 15)",
+    "text": "Avant le"
+   },
+   {
+    "role": "statLabel",
+    "x": 561,
+    "y": 704.265625,
+    "w": 381,
+    "h": 29,
+    "font": 24,
+    "color": "rgb(95, 87, 77)",
+    "text": "versement"
+   },
+   {
+    "role": "card",
+    "x": 72,
+    "y": 632.265625,
+    "w": 437,
+    "h": 220,
+    "font": 16,
+    "color": "rgb(22, 19, 15)",
+    "text": "Julie, 41 ans cas fictif 1 100 €"
+   },
+   {
+    "role": "card",
+    "x": 533,
+    "y": 632.265625,
+    "w": 437,
+    "h": 220,
+    "font": 16,
+    "color": "rgb(22, 19, 15)",
+    "text": "Avant le versement 31/12"
+   }
+  ]
+ }
+}

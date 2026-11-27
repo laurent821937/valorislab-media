@@ -724,5 +724,21 @@
   "style": "v7-moderne",
   "face": true,
   "reference": "kit/assets/protagonist/ref-sweat-noir.jpg"
+ },
+ "ia-cover-prime-episode-v7": {
+  "file": "ia-cover-prime-episode-v7.jpg",
+  "role": "cover",
+  "place": "full",
+  "logo": false,
+  "focus": "50% 35%",
+  "mood": "le protagoniste en selfie, sweat noir et montre, salon lumineux de décembre, téléphone retourné contre la poitrine, sourire malicieux (la prime vient de tomber)",
+  "pillars": [
+   "budget"
+  ],
+  "source": "ia",
+  "created": "2026-11-27",
+  "style": "v7-moderne-selfie",
+  "face": true,
+  "reference": "kit/assets/protagonist/ref-sweat-noir.jpg"
  }
 }

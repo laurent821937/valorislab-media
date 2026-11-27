@@ -1,0 +1,178 @@
+{
+ "id": "2026-11-30-adresse-crypto-historique",
+ "date": "2026-11-30",
+ "charte": "v7",
+ "format": "F4",
+ "bg": "champagne",
+ "theme": "crypto",
+ "pillar": "arnaque",
+ "topic": "Trouve l'erreur : l'adresse crypto copiée depuis l'historique, imitée par un escroc via un envoi de 0,00 € (8 caractères vérifiés sur 40) ; reprise réécrite en v7 de 2026-11-16-empoisonnement-adresse (jamais publié)",
+ "keywords": [
+  "adresse crypto",
+  "empoisonnement d'adresse",
+  "historique",
+  "copier-coller",
+  "irréversible"
+ ],
+ "seo": {
+  "keyword": "adresse crypto",
+  "secondary": [
+   "arnaque crypto",
+   "historique"
+  ],
+  "cluster": "crypto-securite"
+ },
+ "guide_error": {
+  "chapter": "crypto",
+  "n": 7,
+  "title": "Envoyer des fonds sans vérifier le réseau"
+ },
+ "kicker": "Crypto",
+ "hook_style": "defi",
+ "cta_photo": "ia-cta-guide-v7b",
+ "requeued_from": "2026-11-16-empoisonnement-adresse",
+ "slides": [
+  {
+   "type": "cover",
+   "title": "Tu copies ton adresse crypto. *Tu vois l'erreur ?*",
+   "subtitle": "Historique fictif",
+   "visual": {
+    "type": "document",
+    "tiles": [
+     {
+      "name": "Ligne A",
+      "price": "reçu hier",
+      "value": "0x7A3f…9C2e"
+     },
+     {
+      "name": "Ligne B",
+      "price": "envoi du 3/11",
+      "value": "0x7A3f…9C2e"
+     }
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "kicker": "Le document",
+   "icon": "1",
+   "title": "Ton historique. *Tu copies laquelle ?*",
+   "body": "Tu renvoies des cryptos à **ton adresse habituelle**.",
+   "options": [
+    {
+     "letter": "A",
+     "label": "0x7A3f…9C2e",
+     "detail": "Reçu hier",
+     "value": "0,00 €"
+    },
+    {
+     "letter": "B",
+     "label": "0x7A3f…9C2e",
+     "detail": "Envoyé le 3 novembre",
+     "value": "250 €"
+    }
+   ],
+   "note": "Historique fictif.",
+   "next": "un indice"
+  },
+  {
+   "type": "text",
+   "kicker": "Un indice",
+   "icon": "!",
+   "title": "Hier, tu n'as *rien demandé.*",
+   "body": "Qui t'enverrait **0,00 €** sans raison ?",
+   "big": {
+    "value": "0,00 €",
+    "label": "reçus d'une adresse presque identique à la tienne."
+   },
+   "next": "le calcul"
+  },
+  {
+   "type": "text",
+   "kicker": "Le calcul",
+   "icon": "%",
+   "title": "Tu regardes *le début et la fin.*",
+   "body": "Une adresse de ce type compte **40 caractères** après « 0x ».",
+   "dots": {
+    "count": 40,
+    "on": 8,
+    "cols": 10,
+    "label": "**8 caractères vérifiés** sur 40 : 20 %."
+   },
+   "source": "calcul VALORISLAB, format d'adresse Ethereum.",
+   "next": "la réponse"
+  },
+  {
+   "type": "text",
+   "kicker": "L'erreur : A",
+   "icon": "A",
+   "title": "La ligne A *imite ton adresse.*",
+   "body": "Un escroc t'a envoyé **0,00 €** pour glisser sa copie dans ton historique.",
+   "steps": [
+    {
+     "title": "Copie depuis ton carnet d'adresses."
+    },
+    {
+     "title": "Compare l'adresse en entier."
+    },
+    {
+     "title": "Teste d'abord un petit montant."
+    }
+   ],
+   "source": "Wikifin : un paiement en crypto ne s'annule pas."
+  },
+  {
+   "type": "cta",
+   "title": "C'est l'erreur Crypto *n° 7 du guide.*",
+   "body": "Envoyer des fonds sans tout vérifier."
+  }
+ ],
+ "alt": "Carrousel VALORISLAB, trouve l'erreur : un historique fictif montre deux lignes avec la même adresse crypto en apparence, l'une vient d'un envoi de 0,00 € par un escroc ; en ne regardant que le début et la fin, on vérifie 8 caractères sur 40.",
+ "captions": {
+  "instagram": "Tu renvoies des cryptos et tu copies ton adresse crypto habituelle dans l'historique. Sauf qu'une des deux lignes est un piège.\nL'erreur est dans l'historique fictif, la réponse est en slide 5.\nTu l'avais trouvée avant de swiper ?\n\nHistorique fictif. Une adresse de ce type compte 40 caractères après « 0x » : en regardant le début et la fin, tu n'en vérifies que 8. C'est ce que vise ce type d'arnaque crypto. Et selon Wikifin, un paiement en cryptomonnaie ne peut pas être annulé. Source : Wikifin (wikifin.be), quiz crypto. Contenu éducatif, pas un conseil financier.\n\n#crypto #arnaquecrypto #securitecrypto #belgique\n\nGuide gratuit : lien dans ma bio.",
+  "facebook": "Tu renvoies des cryptos et tu copies ton adresse crypto habituelle dans l'historique. Sauf qu'une des deux lignes est un piège.\nL'erreur est dans l'historique fictif, la réponse est en slide 5.\nTu l'avais trouvée avant de swiper ?\n\nHistorique fictif. Une adresse de ce type compte 40 caractères après « 0x » : en regardant le début et la fin, tu n'en vérifies que 8. Et selon Wikifin, un paiement en cryptomonnaie ne peut pas être annulé. Source : Wikifin (wikifin.be), quiz crypto. Contenu éducatif, pas un conseil financier.\n\n#crypto #arnaquecrypto #securitecrypto #belgique\n\nGuide gratuit : lien dans ma bio.",
+  "tiktok_title": "Adresse crypto : tu vois l'erreur dans cet historique ?",
+  "tiktok": "Tu copies ton adresse crypto dans l'historique. Une des deux lignes est un piège : en regardant le début et la fin, tu vérifies 8 caractères sur 40. Tu l'avais trouvée ? Historique fictif. Source : Wikifin. Contenu éducatif, pas un conseil financier. #crypto #arnaquecrypto #securitecrypto #belgique Guide gratuit : lien dans ma bio."
+ },
+ "sources": [
+  "Wikifin, « Quiz Crypto » (question 10) : « Si vous envoyez des cryptomonnaies à quelqu'un, vous ne pouvez pas annuler ce paiement. » wikifin.be/fr/quiz-crypto, consulté le 27/11/2026",
+  "Calcul VALORISLAB en Python : adresse Ethereum = « 0x » + 40 caractères hexadécimaux ; 4 premiers + 4 derniers = 8 sur 40 = 20 %",
+  "Mécanisme de l'empoisonnement d'adresse : glossaire Trust Wallet « Address Poisoning » et Sardine (consultés le 29/10/2026, contenu d'origine)"
+ ],
+ "virality": {
+  "score": 80,
+  "detail": {
+   "retention": 21,
+   "couverture": 16,
+   "situation": 17,
+   "difference": 13,
+   "guide": 6,
+   "conformite": 10
+  },
+  "note": "Format F4 jamais utilisé : le lecteur cherche l'erreur dans un historique fictif, indice puis calcul en pastilles, révélation en slide 5. Différent des 3 derniers posts (F1, F2, F7). Situation un peu moins universelle (détenteurs de crypto) : 17.",
+  "hook_variants": [
+   "Tu copies ton adresse crypto. *Tu vois l'erreur ?*",
+   "0,00 € reçus hier. *Pourquoi ?*",
+   "Ces 2 lignes se ressemblent. *Une est fausse.*",
+   "POV : tu renvoies des cryptos *à ton adresse.*",
+   "8 caractères sur 40. *C'est tout ce que tu vérifies.*"
+  ],
+  "hook_variant_styles": [
+   "defi",
+   "scene",
+   "defi",
+   "pov",
+   "chiffre-choc"
+  ],
+  "mecanismes": [
+   "Montrer l'écran réel (historique fictif annoté)",
+   "Rendre un montant visible avec des objets (pastilles 8/40)"
+  ]
+ },
+ "spoilers": [
+  "ligne A",
+  "la A ",
+  "imite ton adresse"
+ ],
+ "fb": {}
+}

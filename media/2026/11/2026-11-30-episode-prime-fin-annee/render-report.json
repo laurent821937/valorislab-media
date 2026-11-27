@@ -1,0 +1,701 @@
+{
+ "id": "2026-11-30-episode-prime-fin-annee",
+ "charte": "v7",
+ "kit_version": "2026-11-20.2",
+ "format": "F8",
+ "bg": "light",
+ "cover_visual": "photo",
+ "files": [
+  {
+   "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/feed-01.jpg",
+   "format": "feed",
+   "slide": 1,
+   "type": "cover",
+   "pose": null,
+   "scene": "ia-cover-prime-episode-v7",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 3,
+   "bytes": 290352,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 214.296875,
+     "h": 50,
+     "font": 24,
+     "color": "rgb(255, 255, 255)",
+     "text": "ÉPISODE 1"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 162,
+     "w": 936,
+     "h": 348.875,
+     "font": 116,
+     "color": "rgb(22, 19, 15)",
+     "text": "SA PRIME DE FIN D'ANNÉE TOMBE. Mauvaise idée."
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 1034,
+     "w": 198.046875,
+     "h": 46,
+     "font": 22,
+     "color": "rgb(255, 255, 255)",
+     "text": "Histoire fictive"
+    },
+    {
+     "role": "button",
+     "x": 633.03125,
+     "y": 1088,
+     "w": 336.96875,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "je te montre →"
+    },
+    {
+     "role": "count",
+     "x": 894.75,
+     "y": 84,
+     "w": 75.25,
+     "h": 49,
+     "font": 24,
+     "color": "rgb(255, 255, 255)",
+     "text": "1/6"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/feed-02.jpg",
+   "format": "feed",
+   "slide": 2,
+   "type": "app",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 135819,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 333.703125,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "1 LA SITUATION"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "SA PRIME DE FIN D'ANNÉE tombe."
+    },
+    {
+     "role": "lead",
+     "x": 72,
+     "y": 392.15625,
+     "w": 898,
+     "h": 49.390625,
+     "font": 38,
+     "color": "rgb(95, 87, 77)",
+     "text": "Mi-décembre, 1 200 € d'un coup. Exemple fictif."
+    },
+    {
+     "role": "body",
+     "x": 640,
+     "y": 740.265625,
+     "w": 207.40625,
+     "h": 69,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "« enfin un peu d'air ! »"
+    },
+    {
+     "role": "stat",
+     "x": 110,
+     "y": 611.546875,
+     "w": 379.953125,
+     "h": 116,
+     "font": 96,
+     "color": "rgb(22, 19, 15)",
+     "text": "+1 200 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 110,
+     "y": 582.546875,
+     "w": 234.953125,
+     "h": 29,
+     "font": 24,
+     "color": "rgb(95, 95, 95)",
+     "text": "Prime de fin d'année"
+    },
+    {
+     "role": "statLabel",
+     "x": 110,
+     "y": 735.546875,
+     "w": 291.984375,
+     "h": 52,
+     "font": 30,
+     "color": "rgb(19, 95, 81)",
+     "text": "Reçu aujourd'hui"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 485.546875,
+     "w": 520,
+     "h": 338,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": " appli bancaire fictive Prime de fin d'année +1 200 € Reçu aujourd'hui"
+    },
+    {
+     "role": "card",
+     "x": 550,
+     "y": 726.265625,
+     "w": 329.40625,
+     "h": 97,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "← « enfin un peu d'air ! »"
+    },
+    {
+     "role": "button",
+     "x": 647.5,
+     "y": 1088,
+     "w": 322.5,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "sa décision →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/feed-03.jpg",
+   "format": "feed",
+   "slide": 3,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 1,
+   "bytes": 112211,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 315.046875,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "2 SA DÉCISION"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 90.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "TOUT PART avant Noël."
+    },
+    {
+     "role": "stat",
+     "x": 461.9375,
+     "y": 775.578125,
+     "w": 190.0625,
+     "h": 58,
+     "font": 44,
+     "color": "rgb(255, 255, 255)",
+     "text": "1 200 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 112,
+     "y": 517.578125,
+     "w": 540,
+     "h": 50,
+     "font": 24,
+     "color": "rgb(95, 87, 77)",
+     "text": "DÉCEMBRE"
+    },
+    {
+     "role": "statLabel",
+     "x": 112,
+     "y": 775.578125,
+     "w": 108.953125,
+     "h": 58,
+     "font": 44,
+     "color": "rgb(22, 19, 15)",
+     "text": "Total"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 481.578125,
+     "w": 620,
+     "h": 419,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "DÉCEMBRE Console 549 € Week-end à deux 380 € Restos et sorties 271 € T"
+    },
+    {
+     "role": "listItem",
+     "x": 112,
+     "y": 567.578125,
+     "w": 540,
+     "h": 62,
+     "font": 30,
+     "color": "rgb(22, 19, 15)",
+     "text": "Console 549 €"
+    },
+    {
+     "role": "listItem",
+     "x": 112,
+     "y": 629.578125,
+     "w": 540,
+     "h": 62,
+     "font": 30,
+     "color": "rgb(22, 19, 15)",
+     "text": "Week-end à deux 380 €"
+    },
+    {
+     "role": "listItem",
+     "x": 112,
+     "y": 691.578125,
+     "w": 540,
+     "h": 62,
+     "font": 30,
+     "color": "rgb(22, 19, 15)",
+     "text": "Restos et sorties 271 €"
+    },
+    {
+     "role": "button",
+     "x": 604.921875,
+     "y": 1088,
+     "w": 365.078125,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "et en janvier… →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/feed-04.jpg",
+   "format": "feed",
+   "slide": 4,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 145023,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 406.484375,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "3 LA CONSÉQUENCE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "JANVIER : 3 factures oubliées."
+    },
+    {
+     "role": "stat",
+     "x": 495.015625,
+     "y": 790.671875,
+     "w": 156.984375,
+     "h": 58,
+     "font": 44,
+     "color": "rgb(255, 255, 255)",
+     "text": "780 €"
+    },
+    {
+     "role": "statLabel",
+     "x": 112,
+     "y": 532.671875,
+     "w": 540,
+     "h": 50,
+     "font": 24,
+     "color": "rgb(95, 87, 77)",
+     "text": "JANVIER"
+    },
+    {
+     "role": "statLabel",
+     "x": 112,
+     "y": 790.671875,
+     "w": 168.40625,
+     "h": 58,
+     "font": 44,
+     "color": "rgb(22, 19, 15)",
+     "text": "À payer"
+    },
+    {
+     "role": "card",
+     "x": 72,
+     "y": 496.671875,
+     "w": 620,
+     "h": 419,
+     "font": 16,
+     "color": "rgb(22, 19, 15)",
+     "text": "JANVIER Assurance auto 410 € Assurance habitation 180 € Abonnement spo"
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 937.671875,
+     "w": 898,
+     "h": 37.796875,
+     "font": 28,
+     "color": "rgb(95, 87, 77)",
+     "text": "Elles tombent chaque année. Plus de prime pour les payer."
+    },
+    {
+     "role": "listItem",
+     "x": 112,
+     "y": 582.671875,
+     "w": 540,
+     "h": 62,
+     "font": 30,
+     "color": "rgb(22, 19, 15)",
+     "text": "Assurance auto 410 €"
+    },
+    {
+     "role": "listItem",
+     "x": 112,
+     "y": 644.671875,
+     "w": 540,
+     "h": 62,
+     "font": 30,
+     "color": "rgb(22, 19, 15)",
+     "text": "Assurance habitation 180 €"
+    },
+    {
+     "role": "listItem",
+     "x": 112,
+     "y": 706.671875,
+     "w": 540,
+     "h": 62,
+     "font": 30,
+     "color": "rgb(22, 19, 15)",
+     "text": "Abonnement sport 190 €"
+    },
+    {
+     "role": "button",
+     "x": 468.84375,
+     "y": 1088,
+     "w": 501.15625,
+     "h": 86,
+     "font": 36,
+     "color": "rgb(255, 255, 255)",
+     "text": "ce qu'il aurait dû faire →"
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/feed-05.jpg",
+   "format": "feed",
+   "slide": 5,
+   "type": "text",
+   "pose": null,
+   "scene": null,
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 135510,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "kicker",
+     "x": 72,
+     "y": 84,
+     "w": 536.421875,
+     "h": 68,
+     "font": 30,
+     "color": "rgb(255, 255, 255)",
+     "text": "✓ CE QU'IL AURAIT DÛ FAIRE"
+    },
+    {
+     "role": "title",
+     "x": 72,
+     "y": 184,
+     "w": 898,
+     "h": 180.15625,
+     "font": 90,
+     "color": "rgb(22, 19, 15)",
+     "text": "D'ABORD janvier. ENSUITE, PLAISIR."
+    },
+    {
+     "role": "note",
+     "x": 72,
+     "y": 870.171875,
+     "w": 898,
+     "h": 37.796875,
+     "font": 28,
+     "color": "rgb(95, 87, 77)",
+     "text": "Épisode 2 bientôt."
+    },
+    {
+     "role": "listItem",
+     "x": 114,
+     "y": 638.171875,
+     "w": 776,
+     "h": 50,
+     "font": 40,
+     "color": "rgb(22, 19, 15)",
+     "text": "✓ Liste tes factures de janvier : 780 €."
+    },
+    {
+     "role": "listItem",
+     "x": 114,
+     "y": 700.171875,
+     "w": 776,
+     "h": 50,
+     "font": 40,
+     "color": "rgb(22, 19, 15)",
+     "text": "✓ Mets-les de côté le jour de la prime."
+    },
+    {
+     "role": "listItem",
+     "x": 114,
+     "y": 762.171875,
+     "w": 776,
+     "h": 50,
+     "font": 40,
+     "color": "rgb(22, 19, 15)",
+     "text": "✓ Les 420 € restants : fais-toi plaisir."
+    },
+    {
+     "role": "brand",
+     "x": 607.796875,
+     "y": 96,
+     "w": 362.203125,
+     "h": 51,
+     "font": 20,
+     "color": "rgb(95, 87, 77)",
+     "text": "VALORISLAB Contenu éducatif, pas un conseil financier"
+    },
+    {
+     "role": "next",
+     "x": 607.796875,
+     "y": 126,
+     "w": 362.203125,
+     "h": 21,
+     "font": 18,
+     "color": "rgb(95, 87, 77)",
+     "text": "Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  },
+  {
+   "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/feed-06.jpg",
+   "format": "feed",
+   "slide": 6,
+   "type": "cta",
+   "pose": null,
+   "scene": "ia-cta-guide-v7b",
+   "note": null,
+   "scale": 1,
+   "overflow": false,
+   "title_lines": 2,
+   "bytes": 256601,
+   "W": 1080,
+   "H": 1350,
+   "boxes": [
+    {
+     "role": "title",
+     "x": 72,
+     "y": 84,
+     "w": 898,
+     "h": 168.15625,
+     "font": 84,
+     "color": "rgb(22, 19, 15)",
+     "text": "C'EST L'ÉTAPE 1 du bonus du guide."
+    },
+    {
+     "role": "button",
+     "x": 151.09375,
+     "y": 972,
+     "w": 777.8125,
+     "h": 89,
+     "font": 62,
+     "color": "rgb(255, 255, 255)",
+     "text": "Guide gratuit LIEN EN BIO"
+    },
+    {
+     "role": "next",
+     "x": 60,
+     "y": 1083,
+     "w": 960,
+     "h": 39,
+     "font": 32,
+     "color": "rgb(255, 255, 255)",
+     "text": "Budget et flux d'argent : prévoir avant de dépenser."
+    },
+    {
+     "role": "next",
+     "x": 60,
+     "y": 1138,
+     "w": 960,
+     "h": 26,
+     "font": 22,
+     "color": "rgb(216, 207, 195)",
+     "text": "valorislab.be · Contenu éducatif, pas un conseil financier"
+    }
+   ],
+   "hero": null
+  }
+ ],
+ "errors": [],
+ "warnings": [],
+ "fb": {
+  "file": "media/2026/11/2026-11-30-episode-prime-fin-annee/fb-01.jpg",
+  "scale": 1,
+  "overflow": false,
+  "scene": "ia-cover-prime-episode-v7",
+  "bytes": 284157,
+  "W": 1080,
+  "H": 1350,
+  "boxes": [
+   {
+    "role": "kicker",
+    "x": 72,
+    "y": 84,
+    "w": 214.296875,
+    "h": 50,
+    "font": 24,
+    "color": "rgb(255, 255, 255)",
+    "text": "ÉPISODE 1"
+   },
+   {
+    "role": "title",
+    "x": 72,
+    "y": 162,
+    "w": 936,
+    "h": 348.875,
+    "font": 116,
+    "color": "rgb(22, 19, 15)",
+    "text": "SA PRIME DE FIN D'ANNÉE TOMBE. Mauvaise idée."
+   },
+   {
+    "role": "note",
+    "x": 72,
+    "y": 1034,
+    "w": 198.046875,
+    "h": 46,
+    "font": 22,
+    "color": "rgb(255, 255, 255)",
+    "text": "Histoire fictive"
+   }
+  ]
+ }
+}
