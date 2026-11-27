@@ -431,7 +431,9 @@
     "1 050 €",
     "1 350 €"
    ],
-   "note": "anciens posts v5 supprimés de Buffer le 20/11/2026 (demande de Laurent), jamais publiés sauf mention sent"
+   "note": "anciens posts v5 supprimés de Buffer le 20/11/2026 (demande de Laurent), jamais publiés sauf mention sent",
+   "requeued": true,
+   "requeued_as": "2026-11-30-dossier-epargne-pension"
   },
   {
    "id": "2026-11-23-effet-de-levier",
@@ -543,6 +545,120 @@
      "dueAt": "2026-11-29T09:41:00+01:00"
     }
    }
+  },
+  {
+   "id": "2026-11-30-adresse-crypto-historique",
+   "date": "2026-11-30",
+   "source": "auto",
+   "pillar": "arnaque",
+   "theme": "crypto",
+   "format": "F4",
+   "topic": "Trouve l'erreur : l'adresse crypto copiée depuis l'historique, imitée par un escroc via un envoi de 0,00 € (8 caractères vérifiés sur 40) ; reprise réécrite en v7 de 2026-11-16-empoisonnement-adresse (jamais publié)",
+   "keywords": [
+    "adresse crypto",
+    "empoisonnement d'adresse",
+    "historique",
+    "copier-coller",
+    "irréversible"
+   ],
+   "hook_style": "defi",
+   "bg": "champagne",
+   "cover": "document",
+   "buffer": {
+    "tiktok": {
+     "id": "6b094585658222306cf9791f",
+     "dueAt": "2026-11-30T09:34:00+01:00"
+    },
+    "instagram": {
+     "id": "6b094594062ed764a8fc4fb9",
+     "dueAt": "2026-12-01T19:26:00+01:00"
+    },
+    "facebook": {
+     "id": "6b0945a1e94385a8fd8bfb7c",
+     "dueAt": "2026-12-02T09:54:00+01:00"
+    }
+   },
+   "requeued_from": "2026-11-16-empoisonnement-adresse"
+  },
+  {
+   "id": "2026-11-30-episode-prime-fin-annee",
+   "date": "2026-11-30",
+   "source": "auto",
+   "pillar": "budget",
+   "theme": "budget",
+   "format": "F8",
+   "topic": "Épisode 1 : il touche sa prime de fin d'année (1 200 €, fictif), la dépense avant Noël, puis 3 factures annuelles de janvier (780 €) ; mettre d'abord ces factures de côté, profiter des 420 € restants",
+   "keywords": [
+    "prime de fin d'année",
+    "budget",
+    "factures annuelles",
+    "décembre",
+    "janvier"
+   ],
+   "hook_style": "episode",
+   "bg": "light",
+   "cover": "photo",
+   "buffer": {
+    "instagram": {
+     "id": "6b0945b1658222306cf98752",
+     "dueAt": "2026-12-02T18:06:00+01:00"
+    },
+    "facebook": {
+     "id": "6b0945be1fd46e62e72ac6ac",
+     "dueAt": "2026-12-03T09:26:00+01:00"
+    },
+    "tiktok": {
+     "id": "6b0945cc049983dcfba330bd",
+     "dueAt": "2026-12-05T08:36:00+01:00"
+    }
+   }
+  },
+  {
+   "id": "2026-11-30-dossier-epargne-pension",
+   "date": "2026-11-30",
+   "source": "auto",
+   "pillar": "fiscalite",
+   "theme": "bourse",
+   "format": "F3",
+   "topic": "Dossier n° 01 : Julie, 41 ans (cas fictif), plafond supérieur d'épargne-pension, combien verser avant le 31/12 ? 1 050 € = 315 €, 1 100 € = 275 €, 1 350 € = 337,50 € (revenus 2026, Wikifin) ; reprise réécrite en v7 de 2026-11-23-epargne-pension-plafond (jamais publié)",
+   "keywords": [
+    "épargne-pension",
+    "plafond",
+    "réduction d'impôt",
+    "31 décembre",
+    "revenus 2026"
+   ],
+   "hook_style": "personnage",
+   "bg": "champagne",
+   "cover": "dossier",
+   "buffer": {
+    "instagram": {
+     "id": "6b0945de776ce21276ff89be",
+     "dueAt": "2026-12-03T10:51:00+01:00"
+    },
+    "facebook": {
+     "id": "6b0945ee1fd46e62e72ad278",
+     "dueAt": "2026-12-04T08:45:00+01:00"
+    },
+    "tiktok": {
+     "id": "6b0945fe776ce21276ff9a95",
+     "dueAt": "2026-12-06T09:41:00+01:00"
+    }
+   },
+   "requeued_from": "2026-11-23-epargne-pension-plafond"
+  },
+  {
+   "id": "2026-11-16-empoisonnement-adresse",
+   "date": "2026-11-16",
+   "source": "auto",
+   "pillar": "erreur",
+   "theme": "crypto",
+   "topic": "Empoisonnement d'adresse crypto (contenu v5 jamais publié)",
+   "keywords": [
+    "empoisonnement d'adresse"
+   ],
+   "requeued": true,
+   "requeued_as": "2026-11-30-adresse-crypto-historique"
   }
  ],
  "ai_decors": [
@@ -880,6 +996,15 @@
    "status": "ok",
    "content_id": "2026-W48",
    "note": "protagoniste fidèle à la référence de Laurent"
+  },
+  {
+   "date": "2026-11-27",
+   "slug": "ia-cover-prime-episode-v7",
+   "generations": 1,
+   "status": "ok",
+   "content_id": "2026-11-30-episode-prime-fin-annee",
+   "reference": true,
+   "note": "couverture selfie v7, ciel de mur prolongé en haut (recadrage) pour dégager le visage"
   }
  ]
 }
